@@ -18,5 +18,16 @@ export default defineConfig({
   build: {
     target: 'es2022',
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        // Cytoscape pesa más que el resto de la aplicación junta. Separarlo deja
+        // que el navegador lo cachee entre despliegues y que la primera pantalla
+        // no espere a descargarlo, que en la conexión de un centro se nota.
+        manualChunks: {
+          cytoscape: ['cytoscape', 'cytoscape-fcose'],
+          react: ['react', 'react-dom'],
+        },
+      },
+    },
   },
 });

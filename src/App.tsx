@@ -12,7 +12,11 @@ import {
   selectStatus,
   useAppStore,
 } from '@/app/store.ts';
+import type { SemanticLevel } from '@/graph';
+import { project } from '@/graph';
 import { AlertsPanel } from '@/features/alerts/AlertsPanel.tsx';
+import { MapControls } from '@/features/map/MapControls.tsx';
+import { StarMap } from '@/features/map/StarMap.tsx';
 import { ContributionMatrix } from '@/features/matrix/ContributionMatrix.tsx';
 import { NodeList } from '@/features/explorer/NodeList.tsx';
 import { TraceabilityPanel } from '@/features/traceability/TraceabilityPanel.tsx';
@@ -25,9 +29,10 @@ import { TraceabilityPanel } from '@/features/traceability/TraceabilityPanel.tsx
  * por eso no podrán discrepar (§5).
  */
 
-type Tab = 'trazabilidad' | 'matriz' | 'alertas';
+type Tab = 'mapa' | 'trazabilidad' | 'matriz' | 'alertas';
 
 const TABS: { id: Tab; label: string }[] = [
+  { id: 'mapa', label: 'Mapa estelar' },
   { id: 'trazabilidad', label: 'Trazabilidad' },
   { id: 'matriz', label: 'Matriz de contribución' },
   { id: 'alertas', label: 'Alertas' },
@@ -49,7 +54,11 @@ export function App() {
   const undo = useAppStore((state) => state.undo);
   const redo = useAppStore((state) => state.redo);
 
-  const [tab, setTab] = useState<Tab>('trazabilidad');
+  const [tab, setTab] = useState<Tab>('mapa');
+  const [level, setLevel] = useState<SemanticLevel>('CONSTELACIONES');
+  const [subjectIds, setSubjectIds] = useState<readonly string[]>([]);
+  const [minWeight, setMinWeight] = useState(0);
+  const [weekIndex, setWeekIndex] = useState<number | null>(null);
 
   useEffect(() => {
     void load();
@@ -60,6 +69,13 @@ export function App() {
   const adjacency = useMemo(() => buildAdjacency(snapshot?.edges ?? []), [snapshot?.edges]);
   const nodes = useMemo(() => (snapshot ? buildNodeIndex(snapshot) : new Map()), [snapshot]);
   const summary = useMemo(() => summarizeFindings(findings), [findings]);
+
+  // La proyección del grafo también se deriva: el mapa y el panel de trazabilidad
+  // leen el mismo snapshot, así que no pueden mostrar cosas distintas (§5).
+  const projection = useMemo(
+    () => (snapshot ? project(snapshot, level, { subjectIds, minWeight, weekIndex }) : null),
+    [snapshot, level, subjectIds, minWeight, weekIndex],
+  );
 
   if (status === 'cargando' || status === 'inicial') {
     return (
@@ -200,6 +216,22 @@ export function App() {
             ))}
           </div>
 
+          {tab === 'mapa' && projection && (
+            <div className="flex flex-col gap-5">
+              <MapControls
+                snapshot={snapshot}
+                level={level}
+                onLevel={setLevel}
+                subjectIds={subjectIds}
+                onSubjects={setSubjectIds}
+                minWeight={minWeight}
+                onMinWeight={setMinWeight}
+                weekIndex={weekIndex}
+                onWeek={setWeekIndex}
+              />
+              <StarMap projection={projection} selectedId={selectedId} onSelect={select} />
+            </div>
+          )}
           {tab === 'trazabilidad' && (
             <TraceabilityPanel
               snapshot={snapshot}
