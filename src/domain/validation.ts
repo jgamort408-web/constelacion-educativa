@@ -56,6 +56,59 @@ function collectKnownIds(snapshot: ProjectSnapshot): Set<Uuid> {
   return ids;
 }
 
+/**
+ * ERROR · dos elementos comparten identificador.
+ *
+ * Rompe la premisa sobre la que descansa todo lo demás: que un identificador
+ * designa una cosa. Si se cuela, la base de datos sobrescribe silenciosamente uno
+ * con el otro al guardar, y el docente pierde datos sin que nada avise.
+ */
+const duplicateIds: Rule = (snapshot) => {
+  const findings: Finding[] = [];
+  const seen = new Set<Uuid>();
+  const reported = new Set<Uuid>();
+
+  const check = (id: Uuid, what: string): void => {
+    if (seen.has(id)) {
+      if (!reported.has(id)) {
+        reported.add(id);
+        findings.push({
+          rule: 'identificador-duplicado',
+          severity: 'ERROR',
+          message: `Hay más de un elemento (${what}) con el mismo identificador.`,
+          nodeIds: [id],
+          hint: 'Al guardar, uno sobrescribiría al otro. Regenera el identificador de uno de los dos.',
+        });
+      }
+      return;
+    }
+    seen.add(id);
+  };
+
+  for (const entity of [
+    ...snapshot.subjects,
+    ...snapshot.teachers,
+    ...snapshot.learningSituations,
+    ...snapshot.activities,
+    ...snapshot.sessions,
+    ...snapshot.milestones,
+    ...snapshot.finalProducts,
+    ...snapshot.competencies,
+    ...snapshot.evaluationCriteria,
+    ...snapshot.basicKnowledge,
+    ...snapshot.assessmentInstruments,
+    ...snapshot.evidences,
+  ]) {
+    check(entity.id, 'entidad');
+  }
+
+  for (const edge of snapshot.edges) {
+    check(edge.id, `relación «${EDGE_RULES[edge.type].label}»`);
+  }
+
+  return findings;
+};
+
 /** ERROR · una arista apunta a algo que no existe. */
 const danglingEdges: Rule = (snapshot) => {
   const known = collectKnownIds(snapshot);
@@ -115,7 +168,19 @@ const dependencyCycles: Rule = (snapshot) => {
   }));
 };
 
-/** ERROR · una actividad depende de otra programada después que ella. */
+/**
+ * ERROR · una actividad necesita un resultado que todavía no existe.
+ *
+ * La comparación correcta no es entre fechas de comienzo, sino entre el **final**
+ * del prerrequisito y el **comienzo** de quien lo necesita: si Tecnología empieza
+ * su maqueta cuando Matemáticas aún no ha terminado el presupuesto, el problema es
+ * real aunque Matemáticas empezara antes (§11).
+ *
+ * Se compara fecha y hora, no solo fecha. Un prerrequisito impartido a primera
+ * hora y una actividad dependiente a última del mismo día es una secuencia
+ * perfectamente válida, y marcarla como error entrenaría al docente a ignorar el
+ * panel de alertas.
+ */
 const dependencyAfterDependent: Rule = (snapshot) => {
   const findings: Finding[] = [];
   const sessionsByActivity = new Map<Uuid, string[]>();
@@ -124,28 +189,30 @@ const dependencyAfterDependent: Rule = (snapshot) => {
     if (edge.type !== 'ejecuta') continue;
     const session = snapshot.sessions.find((candidate) => candidate.id === edge.sourceId);
     if (!session) continue;
-    const dates = sessionsByActivity.get(edge.targetId) ?? [];
-    dates.push(session.date);
-    sessionsByActivity.set(edge.targetId, dates);
+    const moments = sessionsByActivity.get(edge.targetId) ?? [];
+    moments.push(`${session.date}T${session.startTime}`);
+    sessionsByActivity.set(edge.targetId, moments);
   }
 
-  const firstDate = (activityId: Uuid): string | undefined =>
-    sessionsByActivity.get(activityId)?.sort()[0];
+  const sorted = (activityId: Uuid): string[] =>
+    [...(sessionsByActivity.get(activityId) ?? [])].sort();
+  const readable = (moment: string): string => moment.replace('T', ' a las ');
   const titleOf = new Map(snapshot.activities.map((a) => [a.id, a.title]));
 
   for (const edge of snapshot.edges) {
     if (edge.type !== 'depende_de') continue;
-    const dependentStart = firstDate(edge.sourceId);
-    const prerequisiteStart = firstDate(edge.targetId);
-    if (!dependentStart || !prerequisiteStart) continue;
 
-    if (prerequisiteStart >= dependentStart) {
+    const dependentStart = sorted(edge.sourceId)[0];
+    const prerequisiteEnd = sorted(edge.targetId).at(-1);
+    if (dependentStart === undefined || prerequisiteEnd === undefined) continue;
+
+    if (prerequisiteEnd >= dependentStart) {
       findings.push({
         rule: 'dependencia-tardia',
         severity: 'ERROR',
-        message: `«${titleOf.get(edge.sourceId) ?? edge.sourceId}» necesita «${
-          titleOf.get(edge.targetId) ?? edge.targetId
-        }», pero esta se imparte el ${prerequisiteStart} y aquella empieza el ${dependentStart}.`,
+        message: `«${titleOf.get(edge.sourceId) ?? edge.sourceId}» empieza el ${readable(
+          dependentStart,
+        )}, pero «${titleOf.get(edge.targetId) ?? edge.targetId}», que necesita, no termina hasta el ${readable(prerequisiteEnd)}.`,
         nodeIds: [edge.sourceId, edge.targetId],
         hint: 'Adelanta la actividad de la que se depende, o retrasa la que la necesita.',
       });
@@ -310,6 +377,7 @@ const activityWithoutOwner: Rule = (snapshot) => {
 };
 
 const RULES: readonly Rule[] = [
+  duplicateIds,
   danglingEdges,
   invalidEdgeEndpoints,
   dependencyCycles,

@@ -64,6 +64,40 @@ function findingsFor(snapshot: ProjectSnapshot, rule: string) {
   return validateSnapshot(snapshot).filter((finding) => finding.rule === rule);
 }
 
+describe('identificadores duplicados', () => {
+  it('detecta dos entidades con el mismo identificador', () => {
+    const snapshot = baseSnapshot({
+      activities: [activity(ids.act1, 'Primera'), activity(ids.act1, 'Segunda')],
+    });
+    const findings = findingsFor(snapshot, 'identificador-duplicado');
+    expect(findings).toHaveLength(1);
+    expect(findings[0]?.severity).toBe('ERROR');
+  });
+
+  it('detecta dos aristas con el mismo identificador', () => {
+    const duplicated = makeEdge(P, 'depende_de', [ids.act1, 'ACTIVIDAD'], [ids.act2, 'ACTIVIDAD']);
+    const snapshot = baseSnapshot({
+      activities: [activity(ids.act1, 'A'), activity(ids.act2, 'B')],
+      edges: [duplicated, { ...duplicated }],
+    });
+    expect(findingsFor(snapshot, 'identificador-duplicado')).toHaveLength(1);
+  });
+
+  it('informa una sola vez por identificador repetido, no una por repetición', () => {
+    const snapshot = baseSnapshot({
+      activities: [activity(ids.act1, 'A'), activity(ids.act1, 'B'), activity(ids.act1, 'C')],
+    });
+    expect(findingsFor(snapshot, 'identificador-duplicado')).toHaveLength(1);
+  });
+
+  it('no avisa cuando todos los identificadores son distintos', () => {
+    const snapshot = baseSnapshot({
+      activities: [activity(ids.act1, 'A'), activity(ids.act2, 'B')],
+    });
+    expect(findingsFor(snapshot, 'identificador-duplicado')).toHaveLength(0);
+  });
+});
+
 describe('referencias rotas', () => {
   it('detecta una arista que apunta a algo inexistente', () => {
     const snapshot = baseSnapshot({
