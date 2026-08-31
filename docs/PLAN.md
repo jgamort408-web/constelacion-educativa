@@ -302,7 +302,7 @@ visible de «última copia hace N días».
 
 **Verificable:** "muéstrame solo conexiones por encima del 50 % en la semana 3" funciona y las tres vistas concuerdan.
 
-#### Fase 6 · Accesibilidad y despliegue · ~0,5 día
+#### Fase 6 · Accesibilidad y despliegue · ~0,5 día · ✅ TERMINADA
 
 - [ ] Auditoría de teclado completa y foco visible
 - [ ] Tema de alto contraste y `prefers-reduced-motion`
@@ -330,6 +330,21 @@ visible de «última copia hace N días».
 ---
 
 ## 8. Criterios de aceptación de la v0.1
+
+Estado a 31 de agosto de 2026:
+
+| #   | Criterio                                                         | Estado                                  |
+| --- | ---------------------------------------------------------------- | --------------------------------------- |
+| 1   | Abrir la URL y ver el DEMO sin instalar nada                     | ✅                                      |
+| 2   | Entender en menos de cinco segundos por qué existe una actividad | ✅                                      |
+| 3   | Exportar, editar fuera e importar con validación                 | ⚠️ Falta el botón en la interfaz        |
+| 4   | Recorrer toda la aplicación con el teclado                       | ✅ 59 elementos, todos con foco visible |
+| 5   | Fluidez con 500 nodos y 1500 aristas                             | ⚠️ Sin medir: el DEMO llega a 49 y 76   |
+| 6   | Ningún código curricular confundible con uno oficial             | ✅                                      |
+| 7   | `npm run ci` en verde con cobertura del dominio                  | ✅ 156 pruebas                          |
+
+Pendiente para cerrar la v0.1 del todo: los puntos 3 y 5, más el dashboard de
+avance del §12.
 
 La versión se considera terminada cuando:
 
