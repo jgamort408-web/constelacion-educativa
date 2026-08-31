@@ -282,7 +282,7 @@ transacciones y que sembrar no pisa datos existentes.
 Pendiente para la fase 5: importar/exportar JSON desde la interfaz y el aviso
 visible de «última copia hace N días».
 
-#### Fase 4 · Mapa estelar · ~1,5 días · ⏳ SIGUIENTE
+#### Fase 4 · Mapa estelar · ~1,5 días · ✅ TERMINADA
 
 - [ ] Cytoscape + `fcose`, instancia única, actualizaciones por lotes
 - [ ] Proyección por nivel semántico (§4), color configurable por materia
