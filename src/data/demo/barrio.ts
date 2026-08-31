@@ -832,12 +832,13 @@ export function buildDemoSnapshot(): ProjectSnapshot {
       estimatedSessions: situation.sessions,
     })),
 
-    activities: ACTIVITIES.map((activity) => ({
+    activities: ACTIVITIES.map((activity, position) => ({
       id: activityId(activity.key),
       projectId,
       learningSituationId: situationId(activity.situation),
       title: activity.title,
       description: activity.description,
+      order: position,
       estimatedSessions: activity.sessions,
       status: 'PENDIENTE',
       product: activity.product,

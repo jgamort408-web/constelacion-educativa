@@ -15,3 +15,4 @@ export * from './snapshot.ts';
 export * from './graph.ts';
 export * from './contribution.ts';
 export * from './validation.ts';
+export * from './lookup.ts';

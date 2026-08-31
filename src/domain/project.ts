@@ -113,6 +113,14 @@ export const activitySchema = z.object({
   learningSituationId: uuidSchema,
   title: nonEmptyString(200),
   description: richText(),
+  /**
+   * Posición dentro de su situación de aprendizaje.
+   *
+   * Sin este campo, el orden de las actividades sería el que devolviera la base
+   * de datos, que es arbitrario y distinto en cada carga. Un docente que ve sus
+   * actividades barajadas cada vez que abre la aplicación deja de fiarse de ella.
+   */
+  order: countSchema.default(0),
   estimatedSessions: countSchema,
   status: activityStatusSchema.default('PENDIENTE'),
   /** Producto intermedio que deja la actividad, si deja alguno. */

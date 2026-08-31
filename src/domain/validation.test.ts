@@ -33,13 +33,14 @@ const OFFICIAL_VERSION = {
   isDemo: false,
 };
 
-function activity(id: string, title: string) {
+function activity(id: string, title: string, order = 0) {
   return {
     id,
     projectId: P,
     learningSituationId: ids.sda1,
     title,
     description: '',
+    order,
     estimatedSessions: 1,
     status: 'PENDIENTE' as const,
     product: '',

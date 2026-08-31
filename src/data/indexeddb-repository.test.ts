@@ -71,6 +71,43 @@ describe('guardar y cargar', () => {
     expect(orders).toEqual([...orders].sort((a, b) => a - b));
   });
 
+  it('devuelve siempre el mismo orden, aunque la base no lo garantice', async () => {
+    // IndexedDB devuelve las filas en el orden que le conviene. Sin ordenación
+    // explícita, la matriz de contribución y la barra lateral salían barajadas
+    // en cada carga, y un docente que ve sus actividades cambiar de sitio deja
+    // de fiarse de la herramienta.
+    const original = buildDemoSnapshot();
+    await repository.save(original);
+
+    const primera = await repository.load(original.project.id);
+    const segunda = await repository.load(original.project.id);
+
+    expect(segunda.subjects.map((s) => s.id)).toEqual(primera.subjects.map((s) => s.id));
+    expect(segunda.activities.map((a) => a.id)).toEqual(primera.activities.map((a) => a.id));
+    expect(segunda.sessions.map((s) => s.id)).toEqual(primera.sessions.map((s) => s.id));
+  });
+
+  it('ordena las materias alfabéticamente y las actividades por su posición', async () => {
+    const original = buildDemoSnapshot();
+    await repository.save(original);
+    const loaded = await repository.load(original.project.id);
+
+    const names = loaded.subjects.map((s) => s.name);
+    expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b, 'es')));
+
+    const orders = loaded.activities.map((a) => a.order);
+    expect(orders).toEqual([...orders].sort((a, b) => a - b));
+  });
+
+  it('las sesiones salen en orden cronológico', async () => {
+    const original = buildDemoSnapshot();
+    await repository.save(original);
+    const loaded = await repository.load(original.project.id);
+
+    const moments = loaded.sessions.map((s) => `${s.date}T${s.startTime}`);
+    expect(moments).toEqual([...moments].sort());
+  });
+
   it('resume el proyecto sin cargarlo entero', async () => {
     const original = buildDemoSnapshot();
     await repository.save(original);
@@ -146,6 +183,7 @@ describe('edición: crear, modificar y borrar', () => {
       learningSituationId: situation.id,
       title: 'Actividad añadida a mano',
       description: '',
+      order: 99,
       estimatedSessions: 1,
       status: 'PENDIENTE' as const,
       product: '',
@@ -316,6 +354,7 @@ describe('deshacer', () => {
           learningSituationId: situation.id,
           title: 'Temporal',
           description: '',
+          order: 99,
           estimatedSessions: 1,
           status: 'PENDIENTE',
           product: '',

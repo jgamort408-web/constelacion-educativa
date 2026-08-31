@@ -1,19 +1,227 @@
+import { useEffect, useMemo, useState } from 'react';
+import { buildAdjacency, buildNodeIndex, summarizeFindings } from '@/domain';
+import { mutation, singlePatch } from '@/data';
+import {
+  selectCanRedo,
+  selectCanUndo,
+  selectError,
+  selectFindings,
+  selectLastAction,
+  selectSelectedId,
+  selectSnapshot,
+  selectStatus,
+  useAppStore,
+} from '@/app/store.ts';
+import { AlertsPanel } from '@/features/alerts/AlertsPanel.tsx';
+import { ContributionMatrix } from '@/features/matrix/ContributionMatrix.tsx';
+import { NodeList } from '@/features/explorer/NodeList.tsx';
+import { TraceabilityPanel } from '@/features/traceability/TraceabilityPanel.tsx';
+
 /**
- * Andamiaje de la fase 0. La aplicación real se construye a partir de la fase 4;
- * hasta entonces esta pantalla solo confirma que la cadena de herramientas
- * (Vite, React, TypeScript estricto, Tailwind) está correctamente montada.
+ * Armazón de la aplicación.
+ *
+ * Todavía sin el mapa estelar: esto es la representación en lista y árbol de los
+ * mismos datos que dibujará el grafo en la fase 4. Ambas leerán del mismo store, y
+ * por eso no podrán discrepar (§5).
  */
+
+type Tab = 'trazabilidad' | 'matriz' | 'alertas';
+
+const TABS: { id: Tab; label: string }[] = [
+  { id: 'trazabilidad', label: 'Trazabilidad' },
+  { id: 'matriz', label: 'Matriz de contribución' },
+  { id: 'alertas', label: 'Alertas' },
+];
+
 export function App() {
+  const status = useAppStore(selectStatus);
+  const error = useAppStore(selectError);
+  const snapshot = useAppStore(selectSnapshot);
+  const findings = useAppStore(selectFindings);
+  const selectedId = useAppStore(selectSelectedId);
+  const canUndo = useAppStore(selectCanUndo);
+  const canRedo = useAppStore(selectCanRedo);
+  const lastAction = useAppStore(selectLastAction);
+
+  const load = useAppStore((state) => state.load);
+  const select = useAppStore((state) => state.select);
+  const apply = useAppStore((state) => state.apply);
+  const undo = useAppStore((state) => state.undo);
+  const redo = useAppStore((state) => state.redo);
+
+  const [tab, setTab] = useState<Tab>('trazabilidad');
+
+  useEffect(() => {
+    void load();
+  }, [load]);
+
+  // Se derivan del snapshot, no se guardan en el store: es lo que garantiza que
+  // todas las vistas hablen de lo mismo.
+  const adjacency = useMemo(() => buildAdjacency(snapshot?.edges ?? []), [snapshot?.edges]);
+  const nodes = useMemo(() => (snapshot ? buildNodeIndex(snapshot) : new Map()), [snapshot]);
+  const summary = useMemo(() => summarizeFindings(findings), [findings]);
+
+  if (status === 'cargando' || status === 'inicial') {
+    return (
+      <main className="flex min-h-screen items-center justify-center">
+        <p className="text-tinta-500">Abriendo el proyecto…</p>
+      </main>
+    );
+  }
+
+  if (status === 'error' || !snapshot) {
+    return (
+      <main className="mx-auto flex min-h-screen max-w-lg flex-col justify-center gap-3 px-6">
+        <h1 className="text-xl font-semibold text-tinta-100">No se pudo abrir el proyecto</h1>
+        <p className="text-sm text-tinta-300">{error}</p>
+      </main>
+    );
+  }
+
+  const isDemo = snapshot.curriculumVersions.some((version) => version.isDemo);
+
+  /** Renombra la actividad seleccionada, para probar el CRUD y el deshacer. */
+  function renameSelected() {
+    if (!snapshot) return;
+    const activity = snapshot.activities.find((candidate) => candidate.id === selectedId);
+    if (!activity) return;
+
+    void apply(
+      singlePatch(
+        `Renombró «${activity.title}»`,
+        mutation.upsert('activity', { ...activity, title: `${activity.title} (revisada)` }),
+      ),
+    );
+  }
+
   return (
-    <main className="mx-auto flex min-h-screen max-w-2xl flex-col justify-center gap-4 px-6">
-      <p className="font-mono text-xs tracking-[0.16em] text-laton-500 uppercase">
-        Fase 0 · Fundación
-      </p>
-      <h1 className="text-4xl font-medium tracking-tight text-tinta-100">Constelación Educativa</h1>
-      <p className="max-w-prose text-tinta-300">
-        Cadena de herramientas operativa. El dominio se construye en la fase 1, antes que cualquier
-        pantalla.
-      </p>
-    </main>
+    <div className="mx-auto flex min-h-screen max-w-[1240px] flex-col px-6 pb-16">
+      <header className="border-b border-cielo-600 py-6">
+        <div className="flex flex-wrap items-baseline justify-between gap-3">
+          <div>
+            <p className="font-mono text-[10px] tracking-[0.16em] text-laton-500 uppercase">
+              Constelación Educativa · v0.1 en construcción
+            </p>
+            <h1 className="mt-1 text-2xl font-semibold text-tinta-100">{snapshot.project.title}</h1>
+            <p className="mt-1 text-sm text-tinta-300">
+              {snapshot.project.course} · {snapshot.project.startDate} a {snapshot.project.endDate}
+            </p>
+          </div>
+
+          {isDemo && (
+            <p className="max-w-xs rounded border border-amber-500/40 bg-amber-500/10 px-3 py-2 text-xs text-amber-200">
+              <strong className="font-semibold">Datos de demostración.</strong> Los códigos
+              curriculares llevan prefijo <code>DEMO.</code> y no proceden de ninguna norma.
+            </p>
+          )}
+        </div>
+
+        <dl className="mt-5 flex flex-wrap gap-x-8 gap-y-2 font-mono text-[11px] text-tinta-500">
+          <Stat label="Materias" value={snapshot.subjects.length} />
+          <Stat label="Situaciones" value={snapshot.learningSituations.length} />
+          <Stat label="Actividades" value={snapshot.activities.length} />
+          <Stat label="Sesiones" value={snapshot.sessions.length} />
+          <Stat label="Relaciones" value={snapshot.edges.length} />
+          <Stat label="Criterios" value={snapshot.evaluationCriteria.length} />
+          <Stat label="Errores" value={summary.ERROR} />
+          <Stat label="Advertencias" value={summary.ADVERTENCIA} />
+        </dl>
+      </header>
+
+      <div className="flex flex-wrap items-center gap-2 border-b border-cielo-700 py-3">
+        <button
+          type="button"
+          onClick={renameSelected}
+          disabled={selectedId === null}
+          className="rounded border border-cielo-600 px-3 py-1 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
+        >
+          Renombrar la actividad seleccionada
+        </button>
+        <button
+          type="button"
+          onClick={() => void undo()}
+          disabled={!canUndo}
+          className="rounded border border-cielo-600 px-3 py-1 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
+        >
+          Deshacer
+        </button>
+        <button
+          type="button"
+          onClick={() => void redo()}
+          disabled={!canRedo}
+          className="rounded border border-cielo-600 px-3 py-1 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
+        >
+          Rehacer
+        </button>
+        {lastAction && (
+          <span className="font-mono text-[11px] text-tinta-500">Último cambio: {lastAction}</span>
+        )}
+        <span className="ml-auto font-mono text-[11px] text-tinta-500">
+          Guardado en tu navegador
+        </span>
+      </div>
+
+      {error && (
+        <p role="alert" className="mt-3 rounded bg-rose-500/10 px-3 py-2 text-sm text-rose-300">
+          {error}
+        </p>
+      )}
+
+      <main className="grid flex-1 gap-8 pt-6 lg:grid-cols-[320px_minmax(0,1fr)]">
+        <aside className="lg:sticky lg:top-6 lg:self-start">
+          <h2 className="mb-3 font-mono text-[10px] tracking-[0.14em] text-tinta-500 uppercase">
+            Proyecto
+          </h2>
+          <NodeList snapshot={snapshot} nodes={nodes} selectedId={selectedId} onSelect={select} />
+        </aside>
+
+        <section className="min-w-0">
+          <div role="tablist" className="mb-5 flex gap-1 border-b border-cielo-700">
+            {TABS.map((entry) => (
+              <button
+                key={entry.id}
+                type="button"
+                role="tab"
+                aria-selected={tab === entry.id}
+                onClick={() => {
+                  setTab(entry.id);
+                }}
+                className={`-mb-px border-b-2 px-3 py-2 text-sm transition-colors ${
+                  tab === entry.id
+                    ? 'border-laton-500 text-laton-400'
+                    : 'border-transparent text-tinta-500 hover:text-tinta-300'
+                }`}
+              >
+                {entry.label}
+                {entry.id === 'alertas' && findings.length > 0 && (
+                  <span className="ml-2 font-mono text-[10px] tabular-nums">{findings.length}</span>
+                )}
+              </button>
+            ))}
+          </div>
+
+          {tab === 'trazabilidad' && (
+            <TraceabilityPanel
+              snapshot={snapshot}
+              index={adjacency}
+              nodes={nodes}
+              selectedId={selectedId}
+              onSelect={select}
+            />
+          )}
+          {tab === 'matriz' && <ContributionMatrix snapshot={snapshot} />}
+          {tab === 'alertas' && <AlertsPanel findings={findings} nodes={nodes} onSelect={select} />}
+        </section>
+      </main>
+    </div>
+  );
+}
+
+function Stat({ label, value }: { label: string; value: number }) {
+  return (
+    <div className="flex items-baseline gap-2">
+      <dt className="tracking-[0.1em] uppercase">{label}</dt>
+      <dd className="text-sm text-tinta-100 tabular-nums">{value}</dd>
+    </div>
   );
 }

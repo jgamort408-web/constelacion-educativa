@@ -199,11 +199,18 @@ export class IndexedDbProjectRepository implements ProjectRepository {
       schemaVersion: SCHEMA_VERSION,
       exportedAt: new Date().toISOString(),
       project,
-      subjects,
+      // El orden lo fija el dominio, no la base: IndexedDB devuelve las filas en
+      // el orden que le conviene, y sin esto la matriz de contribución y la barra
+      // lateral saldrían barajadas en cada carga.
+      subjects: [...subjects].sort((a, b) => a.name.localeCompare(b.name, 'es')),
       teachers,
-      learningSituations: learningSituations.sort((a, b) => a.order - b.order),
-      activities,
-      sessions,
+      learningSituations: [...learningSituations].sort((a, b) => a.order - b.order),
+      activities: [...activities].sort(
+        (a, b) => a.order - b.order || a.title.localeCompare(b.title, 'es'),
+      ),
+      sessions: [...sessions].sort(
+        (a, b) => a.date.localeCompare(b.date) || a.startTime.localeCompare(b.startTime),
+      ),
       milestones,
       finalProducts,
       timetable,
