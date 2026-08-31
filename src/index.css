@@ -1,0 +1,56 @@
+@import 'tailwindcss';
+
+/* Paleta base: carta astronómica. El tema oscuro es el principal (§3 del prompt
+   maestro), pero cada color se declara aquí como token para que el modo de alto
+   contraste de la fase 6 pueda redefinirlos sin tocar un solo componente. */
+@theme {
+  --color-cielo-950: #070912;
+  --color-cielo-900: #0e1120;
+  --color-cielo-800: #161a2c;
+  --color-cielo-700: #1e2337;
+  --color-cielo-600: #2c3149;
+  --color-tinta-100: #e5e6f0;
+  --color-tinta-300: #a8aec4;
+  --color-tinta-500: #767d96;
+  --color-laton-400: #e8be66;
+  --color-laton-500: #d2a34a;
+  --color-laton-600: #8a6116;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--color-cielo-900);
+    color: var(--color-tinta-100);
+    font-family:
+      'IBM Plex Sans',
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* §16: el foco debe verse siempre, sin excepciones. */
+  :focus-visible {
+    outline: 2px solid var(--color-laton-400);
+    outline-offset: 2px;
+  }
+
+  /* §16: respetar la preferencia del sistema por reducir movimiento. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
