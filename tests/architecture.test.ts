@@ -124,6 +124,32 @@ describe('reglas de arquitectura', () => {
     ).toEqual([]);
   });
 
+  it('solo src/data/ conoce Dexie', () => {
+    // Es la regla del ADR 0002 y la que hace barata la migración a Supabase: si
+    // una pantalla llama a Dexie directamente, cambiar de motor de persistencia
+    // deja de ser escribir una implementación y pasa a ser reescribir la interfaz.
+    const layers = readdirSync(SRC).filter(
+      (entry) => entry !== 'data' && statSync(join(SRC, entry)).isDirectory(),
+    );
+
+    const violations: string[] = [];
+    for (const layer of layers) {
+      for (const file of collectSourceFiles(join(SRC, layer))) {
+        const source = readFileSync(file, 'utf8');
+        for (const specifier of importedModules(source)) {
+          if (rootPackage(specifier) === 'dexie') {
+            violations.push(relative(ROOT, file).split(sep).join('/'));
+          }
+        }
+      }
+    }
+
+    expect(
+      violations,
+      `\nEstos archivos importan Dexie fuera de src/data/:\n  ${violations.join('\n  ')}\n\nUsa la interfaz ProjectRepository.\n`,
+    ).toEqual([]);
+  });
+
   it('cada carpeta de src/ documenta qué puede vivir en ella', () => {
     const dirs = readdirSync(SRC).filter((entry) => statSync(join(SRC, entry)).isDirectory());
     const undocumented = dirs.filter((dir) => {
