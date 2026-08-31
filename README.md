@@ -9,21 +9,40 @@ responde bien:
 > ¿Por qué estamos haciendo esta actividad, y quién depende de ella?
 
 > [!NOTE]
-> En desarrollo. La v0.1 está en construcción; consulta [`docs/PLAN.md`](docs/PLAN.md) para
-> el alcance y el estado de cada fase.
+> v0.1 en desarrollo. Lo que aparece abajo ya funciona; el estado por fases está en
+> [`docs/PLAN.md`](docs/PLAN.md).
 
 ## Qué hace
 
 - **Mapa estelar interactivo** con cinco niveles de zoom semántico: del proyecto completo a
-  las sesiones concretas de cada materia.
-- **Trazabilidad en ambos sentidos**: de una actividad al criterio de evaluación que
-  desarrolla, y de un criterio a todas las actividades donde se trabaja.
+  las sesiones concretas de cada materia. Pulsar un nodo enciende sus relaciones y atenúa el
+  resto.
+- **Trazabilidad en ambos sentidos**: de una actividad a los criterios que desarrolla, y de
+  un criterio a todas las actividades donde se trabaja. Incluye la cadena completa de
+  prerrequisitos.
 - **Matriz de contribución interdisciplinar**: cuánto aporta cada materia a cada situación,
-  con el desglose de cómo se ha calculado ese porcentaje.
-- **Detección de problemas**: dependencias imposibles, criterios sin evaluar, semanas
-  sobrecargadas.
+  y el desglose factor a factor de cómo sale ese porcentaje. Un valor fijado por el equipo
+  docente nunca se sobrescribe.
+- **Detección de problemas**: dependencias imposibles, ciclos, criterios sin instrumento de
+  evaluación, semanas sobrecargadas. Separadas en errores, advertencias y sugerencias.
+- **Edición con deshacer**: crear, modificar y borrar, en transacciones que se aplican
+  enteras o no se aplican.
 - **Todo en tu navegador**: sin cuentas, sin servidor y sin que ningún dato salga de tu
   equipo.
+
+## Accesibilidad
+
+No es un añadido al final: el grafo se dibuja sobre un `<canvas>`, que para un lector de
+pantalla es un rectángulo vacío. Por eso el **panel de trazabilidad** expone exactamente los
+mismos nodos y relaciones como un árbol navegable, leyendo del mismo estado.
+
+- Toda la aplicación se recorre con el teclado, con enlace para saltar la navegación.
+- Teclas `1` a `5` para cambiar de nivel del mapa.
+- Modo de alto contraste, que también se aplica al grafo.
+- Se respeta `prefers-reduced-motion`.
+- El color nunca es el único portador de información: hay tachado, borde, grosor y etiqueta.
+- Los contrastes se verifican en el CI contra WCAG 2.2 AA leyendo los colores del propio
+  CSS, no de una copia. Ver [`tests/contrast.test.ts`](tests/contrast.test.ts).
 
 ## Estado del currículo
 
@@ -70,6 +89,12 @@ src/
 
 Cada carpeta lleva su propio `README.md` explicando qué puede y qué no puede vivir en ella.
 Las decisiones estructurales están en [`docs/adr/`](docs/adr/).
+
+## Un aviso sobre tus datos
+
+El proyecto vive en el IndexedDB de tu navegador. **Limpiar los datos del sitio lo borra**,
+igual que borraría cualquier otra cosa guardada por una web. Exporta a JSON con regularidad:
+es la única copia que sobrevive a eso.
 
 ## Contribuir
 

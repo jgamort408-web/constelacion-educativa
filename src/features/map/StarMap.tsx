@@ -3,7 +3,7 @@ import cytoscape, { type Core, type EventObjectNode } from 'cytoscape';
 import fcose from 'cytoscape-fcose';
 import type { Uuid } from '@/domain';
 import type { GraphProjection } from '@/graph';
-import { highlightFor, layoutFor, STYLESHEET } from '@/graph';
+import { buildStylesheet, highlightFor, layoutFor, readPalette } from '@/graph';
 
 /**
  * El mapa estelar (§3).
@@ -30,6 +30,13 @@ interface Props {
   projection: GraphProjection;
   selectedId: Uuid | null;
   onSelect: (id: Uuid | null) => void;
+  /**
+   * Cambia cuando el usuario activa el alto contraste.
+   *
+   * Cytoscape pinta sobre un canvas y no hereda el CSS, así que hay que
+   * releerle la paleta y volver a aplicarle el estilo a mano.
+   */
+  highContrast: boolean;
 }
 
 /** Por debajo de este zoom las etiquetas de los nodos dejan de leerse. */
@@ -39,7 +46,7 @@ function prefersReducedMotion(): boolean {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 }
 
-export function StarMap({ projection, selectedId, onSelect }: Props) {
+export function StarMap({ projection, selectedId, onSelect, highContrast }: Props) {
   const containerRef = useRef<HTMLDivElement>(null);
   const cyRef = useRef<Core | null>(null);
   const onSelectRef = useRef(onSelect);
@@ -51,7 +58,7 @@ export function StarMap({ projection, selectedId, onSelect }: Props) {
 
     const cy = cytoscape({
       container: containerRef.current,
-      style: STYLESHEET,
+      style: buildStylesheet(readPalette()),
       minZoom: 0.15,
       maxZoom: 3,
       wheelSensitivity: 0.2,
@@ -101,6 +108,14 @@ export function StarMap({ projection, selectedId, onSelect }: Props) {
     }),
     [projection],
   );
+
+  // Al cambiar el contraste hay que releer los tokens y reaplicar el estilo: el
+  // canvas no se entera de que el CSS ha cambiado.
+  useEffect(() => {
+    const cy = cyRef.current;
+    if (!cy) return;
+    cy.style(buildStylesheet(readPalette()));
+  }, [highContrast]);
 
   // Reemplazo del contenido: un solo lote, un solo recálculo de layout.
   useEffect(() => {

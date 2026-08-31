@@ -1,0 +1,63 @@
+name: Desplegar a GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Solo lectura del repositorio y escritura de la publicación: nada más.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Un despliegue a la vez, sin cancelar el que esté en curso.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  construir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      # Se vuelve a verificar antes de publicar: el CI y el despliegue corren en
+      # paralelo, así que sin esto podría publicarse una versión que el CI está
+      # a punto de marcar como rota.
+      - name: Verificar antes de publicar
+        run: npm run ci
+        env:
+          GITHUB_PAGES: 'true'
+
+      - name: Construir para Pages
+        run: npm run build
+        env:
+          GITHUB_PAGES: 'true'
+
+      # GitHub Pages sirve archivos estáticos: una ruta que no existe devuelve
+      # 404. Copiar index.html a 404.html hace que cualquier ruta caiga en la
+      # aplicación, que es lo que espera una SPA.
+      - name: Preparar respaldo para rutas de la SPA
+        run: cp dist/index.html dist/404.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  desplegar:
+    needs: construir
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -13,13 +13,14 @@ import {
   useAppStore,
 } from '@/app/store.ts';
 import type { SemanticLevel } from '@/graph';
-import { project } from '@/graph';
+import { project, SEMANTIC_LEVELS } from '@/graph';
 import { AlertsPanel } from '@/features/alerts/AlertsPanel.tsx';
 import { MapControls } from '@/features/map/MapControls.tsx';
 import { StarMap } from '@/features/map/StarMap.tsx';
 import { ContributionMatrix } from '@/features/matrix/ContributionMatrix.tsx';
 import { NodeList } from '@/features/explorer/NodeList.tsx';
 import { TraceabilityPanel } from '@/features/traceability/TraceabilityPanel.tsx';
+import { useHighContrast } from '@/hooks/useHighContrast.ts';
 
 /**
  * Armazón de la aplicación.
@@ -54,6 +55,8 @@ export function App() {
   const undo = useAppStore((state) => state.undo);
   const redo = useAppStore((state) => state.redo);
 
+  const contraste = useHighContrast();
+
   const [tab, setTab] = useState<Tab>('mapa');
   const [level, setLevel] = useState<SemanticLevel>('CONSTELACIONES');
   const [subjectIds, setSubjectIds] = useState<readonly string[]>([]);
@@ -63,6 +66,37 @@ export function App() {
   useEffect(() => {
     void load();
   }, [load]);
+
+  // Atajos 1-5 para los niveles del mapa (§16: todo accesible por teclado).
+  // Se ignoran mientras se escribe en un campo, o teclear un número en un
+  // formulario cambiaría la vista bajo los pies de quien escribe.
+  useEffect(() => {
+    function onKey(event: KeyboardEvent) {
+      const target = event.target;
+      if (
+        target instanceof HTMLInputElement ||
+        target instanceof HTMLSelectElement ||
+        target instanceof HTMLTextAreaElement
+      ) {
+        return;
+      }
+      if (event.ctrlKey || event.metaKey || event.altKey) return;
+
+      const position = Number(event.key);
+      if (Number.isInteger(position) && position >= 1 && position <= SEMANTIC_LEVELS.length) {
+        const next = SEMANTIC_LEVELS[position - 1];
+        if (next) {
+          setTab('mapa');
+          setLevel(next);
+        }
+      }
+    }
+
+    window.addEventListener('keydown', onKey);
+    return () => {
+      window.removeEventListener('keydown', onKey);
+    };
+  }, []);
 
   // Se derivan del snapshot, no se guardan en el store: es lo que garantiza que
   // todas las vistas hablen de lo mismo.
@@ -112,6 +146,10 @@ export function App() {
 
   return (
     <div className="mx-auto flex min-h-screen max-w-[1240px] flex-col px-6 pb-16">
+      <a href="#contenido" className="salto">
+        Saltar al contenido
+      </a>
+
       <header className="border-b border-cielo-600 py-6">
         <div className="flex flex-wrap items-baseline justify-between gap-3">
           <div>
@@ -149,7 +187,7 @@ export function App() {
           type="button"
           onClick={renameSelected}
           disabled={selectedId === null}
-          className="rounded border border-cielo-600 px-3 py-1 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
+          className="rounded border border-borde-500 px-3 py-1 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
         >
           Renombrar la actividad seleccionada
         </button>
@@ -157,7 +195,7 @@ export function App() {
           type="button"
           onClick={() => void undo()}
           disabled={!canUndo}
-          className="rounded border border-cielo-600 px-3 py-1 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
+          className="rounded border border-borde-500 px-3 py-1 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
         >
           Deshacer
         </button>
@@ -165,16 +203,22 @@ export function App() {
           type="button"
           onClick={() => void redo()}
           disabled={!canRedo}
-          className="rounded border border-cielo-600 px-3 py-1 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
+          className="rounded border border-borde-500 px-3 py-1 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
         >
           Rehacer
         </button>
         {lastAction && (
           <span className="font-mono text-[11px] text-tinta-500">Último cambio: {lastAction}</span>
         )}
-        <span className="ml-auto font-mono text-[11px] text-tinta-500">
-          Guardado en tu navegador
-        </span>
+        <button
+          type="button"
+          onClick={contraste.alternar}
+          aria-pressed={contraste.activo}
+          className="ml-auto rounded border border-borde-500 px-3 py-1 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400"
+        >
+          Alto contraste: {contraste.activo ? 'activado' : 'desactivado'}
+        </button>
+        <span className="font-mono text-[11px] text-tinta-500">Guardado en tu navegador</span>
       </div>
 
       {error && (
@@ -183,7 +227,7 @@ export function App() {
         </p>
       )}
 
-      <main className="grid flex-1 gap-8 pt-6 lg:grid-cols-[320px_minmax(0,1fr)]">
+      <main id="contenido" className="grid flex-1 gap-8 pt-6 lg:grid-cols-[320px_minmax(0,1fr)]">
         <aside className="lg:sticky lg:top-6 lg:self-start">
           <h2 className="mb-3 font-mono text-[10px] tracking-[0.14em] text-tinta-500 uppercase">
             Proyecto
@@ -229,7 +273,12 @@ export function App() {
                 weekIndex={weekIndex}
                 onWeek={setWeekIndex}
               />
-              <StarMap projection={projection} selectedId={selectedId} onSelect={select} />
+              <StarMap
+                projection={projection}
+                selectedId={selectedId}
+                onSelect={select}
+                highContrast={contraste.activo}
+              />
             </div>
           )}
           {tab === 'trazabilidad' && (

@@ -62,7 +62,7 @@ export function MapControls({
               className={`rounded border px-3 py-1.5 text-xs transition-colors ${
                 level === candidate
                   ? 'border-laton-500 bg-laton-500/10 text-laton-400'
-                  : 'border-cielo-600 text-tinta-300 hover:border-tinta-500'
+                  : 'border-borde-500 text-tinta-300 hover:border-tinta-100'
               }`}
             >
               <span className="font-mono text-[10px] text-tinta-500">{position + 1}</span>{' '}
@@ -88,8 +88,8 @@ export function MapControls({
                 }}
                 className={`flex items-center gap-1.5 rounded border px-2.5 py-1 text-xs transition-colors ${
                   active
-                    ? 'border-cielo-600 text-tinta-100'
-                    : 'border-cielo-700 text-tinta-500 line-through'
+                    ? 'border-borde-500 text-tinta-100'
+                    : 'border-cielo-600 text-tinta-500 line-through'
                 }`}
               >
                 <span
@@ -143,7 +143,7 @@ export function MapControls({
               onChange={(event) => {
                 onWeek(event.target.value === '' ? null : Number(event.target.value));
               }}
-              className="rounded border border-cielo-600 bg-cielo-800 px-2 py-1 text-tinta-100"
+              className="rounded border border-borde-500 bg-cielo-800 px-2 py-1 text-tinta-100"
             >
               <option value="">Todas</option>
               {weeks.map((week) => (

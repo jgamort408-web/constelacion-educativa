@@ -7,4 +7,5 @@
  */
 
 export * from './projection.ts';
-export { STYLESHEET, layoutFor } from './style.ts';
+export { buildStylesheet, layoutFor, readPalette } from './style.ts';
+export type { Palette } from './style.ts';

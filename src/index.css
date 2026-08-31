@@ -9,6 +9,15 @@
   --color-cielo-800: #161a2c;
   --color-cielo-700: #1e2337;
   --color-cielo-600: #2c3149;
+  /*
+   * Borde de controles interactivos.
+   *
+   * Separado de cielo-600 a propósito. El criterio 1.4.11 de WCAG exige 3:1 para
+   * lo que delimita un componente de interfaz, y cielo-600 se queda en 1,47:1
+   * sobre el fondo: vale para separar visualmente dos zonas, no para ser el único
+   * límite de un botón. tests/contrast.test.ts vigila los dos umbrales.
+   */
+  --color-borde-500: #5a6390;
   --color-tinta-100: #e5e6f0;
   --color-tinta-300: #a8aec4;
   --color-tinta-500: #767d96;
@@ -36,10 +45,55 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* §16: el foco debe verse siempre, sin excepciones. */
+  /*
+   * §16: el foco debe verse siempre, sin excepciones.
+   *
+   * `outline` y no `box-shadow`, porque outline sobrevive al modo de alto
+   * contraste forzado de Windows y box-shadow no. En un centro educativo hay
+   * equipos con ese modo activado y ahí el foco simplemente desaparecería.
+   */
   :focus-visible {
     outline: 2px solid var(--color-laton-400);
     outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* Enlace para saltar la navegación, visible solo al enfocarlo con el teclado. */
+  .salto {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 100;
+  }
+  .salto:focus {
+    left: 1rem;
+    top: 1rem;
+    padding: 0.5rem 0.9rem;
+    background-color: var(--color-laton-400);
+    color: var(--color-cielo-950);
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  /*
+   * Modo de alto contraste (§16).
+   *
+   * No es un tema aparte: redefine los mismos tokens, así que ningún componente
+   * necesita saber que existe. Sube los grises hacia el blanco y refuerza los
+   * bordes, manteniendo los colores de materia, que son identificativos.
+   */
+  :root[data-contraste='alto'] {
+    --color-cielo-950: #000000;
+    --color-cielo-900: #000000;
+    --color-cielo-800: #101010;
+    --color-cielo-700: #1c1c1c;
+    --color-cielo-600: #6a6a6a;
+    --color-borde-500: #b8b8b8;
+    --color-tinta-100: #ffffff;
+    --color-tinta-300: #ececec;
+    --color-tinta-500: #c4c4c4;
+    --color-laton-400: #ffd479;
+    --color-laton-500: #ffc94f;
   }
 
   /* §16: respetar la preferencia del sistema por reducir movimiento. */
