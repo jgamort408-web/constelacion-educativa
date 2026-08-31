@@ -3,15 +3,29 @@
 > Documento de trabajo. Traduce el `PROMPT MAESTRO` a un plan ejecutable por fases.
 > Última revisión: 2026-08-31.
 
+## Estado
+
+| Fase                            | Estado       | Pruebas           |
+| ------------------------------- | ------------ | ----------------- |
+| 0 · Fundación                   | ✅ Terminada | 6 de arquitectura |
+| 1 · Dominio y contrato de datos | ✅ Terminada | 71                |
+| 2 · Datos DEMO                  | ✅ Terminada | 14                |
+| 3 · Base de datos y CRUD        | ✅ Terminada | 27                |
+| 4 · Mapa estelar                | ⏳ Siguiente | —                 |
+| 5 · Filtros, matriz y dashboard | ⬜ Pendiente | —                 |
+| 6 · Accesibilidad y despliegue  | ⬜ Pendiente | —                 |
+
+**118 pruebas en verde.** Repositorio: `jgamort408-web/constelacion-educativa`.
+
 ## 0. Decisiones tomadas (marco del plan)
 
 | Decisión          | Valor                                           | Consecuencia arquitectónica                              |
 | ----------------- | ----------------------------------------------- | -------------------------------------------------------- |
 | Usuarios de la v1 | Solo el autor; equipo docente en fase posterior | Sin backend, sin cuentas. Persistencia local.            |
-| Plazo             | Sprint intenso (~6 días de trabajo efectivo)    | Alcance recortado a "explorar", no "editar".             |
+| Plazo             | Sprint intenso (~8 días de trabajo efectivo)    | Ampliado de 6 a 8 al entrar la edición (ADR 0005).       |
 | IA                | Fuera de la v1, con la costura preparada        | Existe `AIProvider` y JSON Schema; ninguna llamada real. |
 | Currículo         | Solo DEMO + importador documentado              | Ningún código curricular oficial inventado.              |
-| Primer entregable | Mapa + panel + filtros + matriz + dashboard     | La edición entra por importar/exportar JSON validado.    |
+| Primer entregable | Mapa + panel + filtros + matriz + dashboard     | Con edición real: crear, modificar y borrar.             |
 | Nombre            | `constelacion-educativa`                        | Repo `jgamort408/constelacion-educativa`.                |
 | Licencia          | MIT, repositorio público                        | Sin datos personales en el repo.                         |
 | Caso de uso       | Proyecto DEMO "Transformamos nuestro barrio"    | Sin presión de calendario escolar sobre la v0.1.         |
@@ -216,7 +230,7 @@ Cada fase termina en un estado **ejecutable y verificable** (§32). No se avanza
 
 ### Sprint v0.1 — "Explorar" (~6 días efectivos)
 
-#### Fase 0 · Fundación · ~0,5 día
+#### Fase 0 · Fundación · ~0,5 día · ✅ TERMINADA
 
 - [ ] `git init`, repo público `jgamort408/constelacion-educativa`, licencia MIT
 - [ ] Vite + React 19 + TypeScript en modo `strict` (+ `noUncheckedIndexedAccess`)
@@ -228,7 +242,7 @@ Cada fase termina en un estado **ejecutable y verificable** (§32). No se avanza
 
 **Verificable:** `npm run ci` en verde sobre un repo sin funcionalidad todavía.
 
-#### Fase 1 · Dominio y contrato de datos · ~1 día
+#### Fase 1 · Dominio y contrato de datos · ~1 día · ✅ TERMINADA
 
 - [ ] Esquemas Zod de las entidades de §3 y del tipo `Edge`
 - [ ] Tipos derivados con `z.infer` — ni un solo tipo escrito a mano por duplicado
@@ -239,7 +253,7 @@ Cada fase termina en un estado **ejecutable y verificable** (§32). No se avanza
 
 **Verificable:** suite de tests del dominio en verde. Todavía no hay interfaz alguna.
 
-#### Fase 2 · Datos DEMO · ~0,5 día
+#### Fase 2 · Datos DEMO · ~0,5 día · ✅ TERMINADA
 
 - [ ] "Transformamos nuestro barrio", 3.º ESO, 6 semanas, 5 materias
 - [ ] 3-4 situaciones de aprendizaje, 12-15 actividades, sesiones, dependencias reales entre materias
@@ -248,16 +262,27 @@ Cada fase termina en un estado **ejecutable y verificable** (§32). No se avanza
 
 **Verificable:** `npm test` valida el conjunto DEMO completo.
 
-#### Fase 3 · Persistencia local · ~0,5 día
+#### Fase 3 · Base de datos y CRUD · ~1,5 días · ✅ TERMINADA
 
-- [ ] `ProjectRepository` (interfaz) + `IndexedDbProjectRepository` sobre Dexie
-- [ ] Siembra del DEMO en el primer arranque
-- [ ] Importar/exportar JSON con validación previa y reporte de errores legible (§29)
-- [ ] Copia de seguridad automática y aviso de "última copia"
+Ampliada respecto al plan original: la v0.1 debe permitir **crear, modificar y
+borrar** de verdad, no solo cargar el ejemplo. Ver [ADR 0005](adr/0005-base-de-datos-local.md).
 
-**Verificable:** exportar → borrar la base → importar → estado idéntico.
+- [x] `ProjectRepository` (interfaz) + `IndexedDbProjectRepository` sobre Dexie
+- [x] 18 tablas normalizadas con índices elegidos por las consultas reales
+- [x] Esquema versionado con migraciones, desde el primer día
+- [x] Escrituras en transacción: todo el patch o nada
+- [x] Validación Zod antes de escribir, con errores legibles por campo
+- [x] Patch inverso calculado en cada escritura → base del deshacer (§10)
+- [x] Siembra del DEMO solo si la base está vacía
+- [x] Copias de seguridad automáticas, podadas a las diez más recientes
 
-#### Fase 4 · Mapa estelar · ~1,5 días
+**Verificado:** 27 pruebas contra IndexedDB real, incluida la atomicidad de las
+transacciones y que sembrar no pisa datos existentes.
+
+Pendiente para la fase 5: importar/exportar JSON desde la interfaz y el aviso
+visible de «última copia hace N días».
+
+#### Fase 4 · Mapa estelar · ~1,5 días · ⏳ SIGUIENTE
 
 - [ ] Cytoscape + `fcose`, instancia única, actualizaciones por lotes
 - [ ] Proyección por nivel semántico (§4), color configurable por materia
