@@ -149,9 +149,12 @@ def lineas_por_columna(pagina):
             for i, corte in enumerate(cortes):
                 if x0 >= corte - 5:
                     indice = i
-            columnas[indice].append((y0, texto))
+            # La x entra en la clave de orden: sin ella, dos fragmentos con la
+            # misma y se ordenaban alfabéticamente y las palabras salían
+            # barajadas («Se inicia en la de identificación la de importancia»).
+            columnas[indice].append((round(y0, 1), round(x0, 1), texto))
 
-    return [sorted(c) for c in columnas]
+    return [[(y, t) for y, _, t in sorted(c)] for c in columnas]
 
 
 def agrupar_con_rango(lineas, patron):

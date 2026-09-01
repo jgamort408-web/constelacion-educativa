@@ -1,0 +1,2014 @@
+{
+ "_aviso": "Generado por scripts/generar-curriculo-demo.ts. No editar a mano. Son criterios REALES de la Orden de 30 de mayo de 2023, no de demostración.",
+ "normativa": "Orden de 30 de mayo de 2023, por la que se desarrolla el currículo correspondiente a la etapa de Educación Secundaria Obligatoria en la Comunidad Autónoma de Andalucía (BOJA n.º 104, de 2 de junio de 2023). Anexo II.",
+ "subjects": [
+  {
+   "id": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "nombre": "Geografía e Historia",
+   "corto": "GEH"
+  },
+  {
+   "id": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "nombre": "Lengua Castellana y Literatura",
+   "corto": "LCL"
+  },
+  {
+   "id": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "nombre": "Matemáticas",
+   "corto": "MAT"
+  }
+ ],
+ "curriculumVersions": [
+  {
+   "id": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "source": "BOJA · Andalucía · Geografía e Historia · Educación Secundaria Obligatoria",
+   "normativa": "Orden de 30 de mayo de 2023, por la que se desarrolla el currículo correspondiente a la etapa de Educación Secundaria Obligatoria en la Comunidad Autónoma de Andalucía (BOJA n.º 104, de 2 de junio de 2023). Anexo II.",
+   "publishedAt": "2023-06-02",
+   "importedAt": "2026-09-01T17:16:05.911Z",
+   "version": "orden-30-mayo-2023",
+   "isDemo": false
+  },
+  {
+   "id": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "source": "BOJA · Andalucía · Lengua Castellana y Literatura · Educación Secundaria Obligatoria",
+   "normativa": "Orden de 30 de mayo de 2023, por la que se desarrolla el currículo correspondiente a la etapa de Educación Secundaria Obligatoria en la Comunidad Autónoma de Andalucía (BOJA n.º 104, de 2 de junio de 2023). Anexo II.",
+   "publishedAt": "2023-06-02",
+   "importedAt": "2026-09-01T17:16:05.911Z",
+   "version": "orden-30-mayo-2023",
+   "isDemo": false
+  },
+  {
+   "id": "57dfb003-c655-4161-818c-6537d90cd659",
+   "source": "BOJA · Andalucía · Matemáticas · Educación Secundaria Obligatoria",
+   "normativa": "Orden de 30 de mayo de 2023, por la que se desarrolla el currículo correspondiente a la etapa de Educación Secundaria Obligatoria en la Comunidad Autónoma de Andalucía (BOJA n.º 104, de 2 de junio de 2023). Anexo II.",
+   "publishedAt": "2023-06-02",
+   "importedAt": "2026-09-01T17:16:05.911Z",
+   "version": "orden-30-mayo-2023",
+   "isDemo": false
+  }
+ ],
+ "competencies": [
+  {
+   "id": "cb82c67f-d6d9-4415-8859-59f31d587b8d",
+   "officialCode": "GEH.1.1",
+   "name": "Buscar, seleccionar, tratar y organizar información sobre temas relevantes del presente y del pasado, usando críticamente fuentes históricas y geográficas, para adquirir conocimientos, elaborar y expresar contenidos en varios formatos.",
+   "description": "Buscar, seleccionar, tratar y organizar información sobre temas relevantes del presente y del pasado, usando críticamente fuentes históricas y geográficas, para adquirir conocimientos, elaborar y expresar contenidos en varios formatos.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "cc82c812-d3d9-4f5c-8959-5b861a5876d4",
+   "officialCode": "GEH.1.2",
+   "name": "Indagar, argumentar y elaborar productos propios sobre problemas geográficos, históricos y sociales que resulten relevantes en la actualidad, desde lo local a lo global, para desarrollar un pensamiento crítico, respetuoso con las diferencias, que contribuya a la construcción de la propia identidad y",
+   "description": "Indagar, argumentar y elaborar productos propios sobre problemas geográficos, históricos y sociales que resulten relevantes en la actualidad, desde lo local a lo global, para desarrollar un pensamiento crítico, respetuoso con las diferencias, que contribuya a la construcción de la propia identidad y a enriquecer el acervo común.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "cd82c9a5-d4d9-40ef-8a59-5d191b587867",
+   "officialCode": "GEH.1.3",
+   "name": "Conocer los principales desafíos a los que se han enfrentado distintas sociedades a lo largo del tiempo, identificando las causas y consecuencias de los cambios producidos y los problemas a los que se enfrentan en la actualidad, mediante el desarrollo de proyectos de investigación y el uso de fuente",
+   "description": "Conocer los principales desafíos a los que se han enfrentado distintas sociedades a lo largo del tiempo, identificando las causas y consecuencias de los cambios producidos y los problemas a los que se enfrentan en la actualidad, mediante el desarrollo de proyectos de investigación y el uso de fuentes fiables, para realizar propuestas que contribuyan al desarrollo sostenible.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "c682bea0-d1d9-4c36-8b59-5eac185873ae",
+   "officialCode": "GEH.1.4",
+   "name": "Identificar y analizar los elementos del paisaje y su articulación en sistemas complejos naturales, rurales y urbanos, así como su evolución en el tiempo, interpretando las causas de las transformaciones y valorando el grado de equilibrio existente en los distintos ecosistemas, para promover su cons",
+   "description": "Identificar y analizar los elementos del paisaje y su articulación en sistemas complejos naturales, rurales y urbanos, así como su evolución en el tiempo, interpretando las causas de las transformaciones y valorando el grado de equilibrio existente en los distintos ecosistemas, para promover su conservación, mejora y uso sostenible.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "c782c033-d2d9-4dc9-8c59-603f19587541",
+   "officialCode": "GEH.1.5",
+   "name": "Analizar de forma crítica planteamientos históricos y geográficos, explicando la construcción de los sistemas democráticos y los principios constitucionales que rigen la vida en comunidad, así como asumiendo los deberes y derechos propios de nuestro marco de convivencia, para promover la participaci",
+   "description": "Analizar de forma crítica planteamientos históricos y geográficos, explicando la construcción de los sistemas democráticos y los principios constitucionales que rigen la vida en comunidad, así como asumiendo los deberes y derechos propios de nuestro marco de convivencia, para promover la participación ciudadana y la cohesión social.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "c882c1c6-cfd9-4910-8d59-61d216587088",
+   "officialCode": "GEH.1.6",
+   "name": "Comprender los procesos geográficos, históricos y culturales que han conformado la realidad multicultural en la que vivimos, conociendo y difundiendo la historia y cultura de las minorías étnicas presentes en nuestro país, y valorando la aportación de los movimientos en defensa de la igualdad y la i",
+   "description": "Comprender los procesos geográficos, históricos y culturales que han conformado la realidad multicultural en la que vivimos, conociendo y difundiendo la historia y cultura de las minorías étnicas presentes en nuestro país, y valorando la aportación de los movimientos en defensa de la igualdad y la inclusión, para reducir estereotipos, evitar cualquier tipo de discriminación y violencia, y reconocer la riqueza de la diversidad.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "c982c359-d0d9-4aa3-8e59-63651758721b",
+   "officialCode": "GEH.1.7",
+   "name": "Identificar los fundamentos que sostienen las diversas identidades propias y las ajenas, a través del conocimiento y puesta en valor del patrimonio material e inmaterial que compartimos para conservarlo y respetar los sentimientos de pertenencia, así como para favorecer procesos que contribuyan a la",
+   "description": "Identificar los fundamentos que sostienen las diversas identidades propias y las ajenas, a través del conocimiento y puesta en valor del patrimonio material e inmaterial que compartimos para conservarlo y respetar los sentimientos de pertenencia, así como para favorecer procesos que contribuyan a la cohesión y solidaridad territorial en orden a los valores del europeísmo y de la Declaración Universal de los Derechos Humanos.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "d282d184-ddd9-4f1a-8f59-64f814586d62",
+   "officialCode": "GEH.1.8",
+   "name": "Tomar conciencia del papel de los ciclos demográficos, el ciclo vital, las formas de vida y las relaciones intergeneracionales y de dependencia en la sociedad actual y su evolución a lo largo del tiempo, analizándolas de forma crítica, para promover alternativas saludables, sostenibles, enriquecedor",
+   "description": "Tomar conciencia del papel de los ciclos demográficos, el ciclo vital, las formas de vida y las relaciones intergeneracionales y de dependencia en la sociedad actual y su evolución a lo largo del tiempo, analizándolas de forma crítica, para promover alternativas saludables, sostenibles, enriquecedoras y respetuosas con la dignidad humana y el compromiso con la sociedad y el entorno.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "d382d317-ded9-40ad-8059-668b15586ef5",
+   "officialCode": "GEH.1.9",
+   "name": "Conocer y valorar la importancia de la seguridad integral ciudadana en la cultura de la convivencia internacional, de nuestro país y de Andalucía, destacando la contribución del Estado, sus instituciones y otras entidades sociales a la paz, a la cooperación internacional y al desarrollo sostenible,",
+   "description": "Conocer y valorar la importancia de la seguridad integral ciudadana en la cultura de la convivencia internacional, de nuestro país y de Andalucía, destacando la contribución del Estado, sus instituciones y otras entidades sociales a la paz, a la cooperación internacional y al desarrollo sostenible, para promover la consecución de un mundo más seguro, solidario, sostenible y justo.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "e6b164e0-ec64-4706-8ac4-4ea438c3dc4e",
+   "officialCode": "LCL.1.1",
+   "name": "Describir y apreciar la diversidad lingüística del mundo a partir del reconocimiento de las lenguas del alumnado y la realidad plurilingüe y pluricultural de España, analizando el origen y desarrollo sociohistórico de sus lenguas y las características de las principales variedades dialectales del es",
+   "description": "Describir y apreciar la diversidad lingüística del mundo a partir del reconocimiento de las lenguas del alumnado y la realidad plurilingüe y pluricultural de España, analizando el origen y desarrollo sociohistórico de sus lenguas y las características de las principales variedades dialectales del español, como el andaluz, para favorecer la reflexión interlingüística, combatir los estereotipos y prejuicios lingüísticos y valorar esta diversidad como fuente de riqueza cultural CCL1, CCL5, CP2, CP3, CC1, CC2, CCEC1, CCEC3.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "e9b16999-eb64-4573-8dc4-535d37c3dabb",
+   "officialCode": "LCL.1.2",
+   "name": "Comprender e interpretar textos orales y multimodales recogiendo el sentido general y la información más relevante, identificando el punto de vista y la intención del emisor y valorando su fiabilidad, su forma y su contenido, para construir conocimiento, para formarse una opinión y para ensanchar la",
+   "description": "Comprender e interpretar textos orales y multimodales recogiendo el sentido general y la información más relevante, identificando el punto de vista y la intención del emisor y valorando su fiabilidad, su forma y su contenido, para construir conocimiento, para formarse una opinión y para ensanchar las posibilidades de disfrute y ocio.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "e8b16806-ea64-43e0-8cc4-51ca36c3d928",
+   "officialCode": "LCL.1.3",
+   "name": "Producir textos orales y multimodales con fluidez, coherencia, cohesión y registro adecuado, atendiendo a las convenciones propias de los diferentes géneros discursivos, y participar en interacciones orales con actitud cooperativa y respetuosa, tanto para construir conocimiento y establecer vínculos",
+   "description": "Producir textos orales y multimodales con fluidez, coherencia, cohesión y registro adecuado, atendiendo a las convenciones propias de los diferentes géneros discursivos, y participar en interacciones orales con actitud cooperativa y respetuosa, tanto para construir conocimiento y establecer vínculos personales como para intervenir de manera activa e informada en diferentes contextos sociales.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "ebb16cbf-f164-4ee5-87c4-49eb3dc3e42d",
+   "officialCode": "LCL.1.4",
+   "name": "Comprender, interpretar y valorar textos escritos, con sentido crítico y diferentes propósitos de lectura, reconociendo el sentido global y las ideas principales y secundarias, identificando la intención del emisor, reflexionando sobre el contenido y la forma y evaluando su calidad y fiabilidad, par",
+   "description": "Comprender, interpretar y valorar textos escritos, con sentido crítico y diferentes propósitos de lectura, reconociendo el sentido global y las ideas principales y secundarias, identificando la intención del emisor, reflexionando sobre el contenido y la forma y evaluando su calidad y fiabilidad, para dar respuesta a necesidades e intereses comunicativos diversos y para construir conocimiento.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "eab16b2c-f064-4d52-86c4-48583cc3e29a",
+   "officialCode": "LCL.1.5",
+   "name": "Producir textos escritos y multimodales coherentes, cohesionados, adecuados y correctos atendiendo a las convenciones propias del género discursivo elegido, para construir conocimiento y para dar respuesta de manera informada, eficaz y creativa a demandas comunicativas concretas.",
+   "description": "Producir textos escritos y multimodales coherentes, cohesionados, adecuados y correctos atendiendo a las convenciones propias del género discursivo elegido, para construir conocimiento y para dar respuesta de manera informada, eficaz y creativa a demandas comunicativas concretas.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "edb16fe5-ef64-4bbf-89c4-4d113bc3e107",
+   "officialCode": "LCL.1.6",
+   "name": "Seleccionar y contrastar información procedente de diferentes fuentes de manera progresivamente autónoma, evaluando su fiabilidad y pertinencia en función de los objetivos de lectura y evitando los riesgos de manipulación y desinformación, e integrarla y transformarla en conocimiento, para comunicar",
+   "description": "Seleccionar y contrastar información procedente de diferentes fuentes de manera progresivamente autónoma, evaluando su fiabilidad y pertinencia en función de los objetivos de lectura y evitando los riesgos de manipulación y desinformación, e integrarla y transformarla en conocimiento, para comunicarla desde un punto de vista crítico y personal a la par que respetuoso con la propiedad intelectual.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "ecb16e52-ee64-4a2c-88c4-4b7e3ac3df74",
+   "officialCode": "LCL.1.7",
+   "name": "Seleccionar y leer de manera progresivamente autónoma obras diversas, como fuente de placer y conocimiento, configurando un itinerario lector que se enriquezca progresivamente en cuanto a diversidad, complejidad y calidad de las obras, y compartir experiencias de lectura para construir la propia ide",
+   "description": "Seleccionar y leer de manera progresivamente autónoma obras diversas, como fuente de placer y conocimiento, configurando un itinerario lector que se enriquezca progresivamente en cuanto a diversidad, complejidad y calidad de las obras, y compartir experiencias de lectura para construir la propia identidad lectora y para disfrutar de la dimensión social de la lectura.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "efb1730b-f564-4531-83c4-439f31c3d149",
+   "officialCode": "LCL.1.8",
+   "name": "Leer, interpretar y valorar obras o fragmentos literarios del patrimonio andaluz, nacional y universal, utilizando un metalenguaje específico y movilizando la experiencia biográfica y los conocimientos literarios y culturales que permiten establecer vínculos entre textos diversos y con otras manifes",
+   "description": "Leer, interpretar y valorar obras o fragmentos literarios del patrimonio andaluz, nacional y universal, utilizando un metalenguaje específico y movilizando la experiencia biográfica y los conocimientos literarios y culturales que permiten establecer vínculos entre textos diversos y con otras manifestaciones artísticas, para conformar un mapa cultural, para ensanchar las posibilidades de disfrute de la literatura y para crear textos de intención literaria.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "eeb17178-f464-439e-82c4-420c30c3cfb6",
+   "officialCode": "LCL.1.9",
+   "name": "Movilizar el conocimiento sobre la estructura de la lengua y sus usos y reflexionar de manera progresivamente autónoma sobre las elecciones lingüísticas y discursivas, con la terminología adecuada, para desarrollar la conciencia lingüística, para aumentar el repertorio comunicativo y para mejorar la",
+   "description": "Movilizar el conocimiento sobre la estructura de la lengua y sus usos y reflexionar de manera progresivamente autónoma sobre las elecciones lingüísticas y discursivas, con la terminología adecuada, para desarrollar la conciencia lingüística, para aumentar el repertorio comunicativo y para mejorar las destrezas tanto de producción oral y escrita como de comprensión e interpretación crítica.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "f941b370-5790-4a02-8707-b2fcda541a5a",
+   "officialCode": "LCL.1.10",
+   "name": "Poner las propias prácticas comunicativas al servicio de la convivencia democrática, la resolución dialogada de los conflictos y la igualdad de derechos de todas las personas, utilizando un lenguaje no discriminatorio y desterrando los abusos de poder a través de la palabra, para favorecer un uso no",
+   "description": "Poner las propias prácticas comunicativas al servicio de la convivencia democrática, la resolución dialogada de los conflictos y la igualdad de derechos de todas las personas, utilizando un lenguaje no discriminatorio y desterrando los abusos de poder a través de la palabra, para favorecer un uso no solo eficaz sino también ético y democrático del lenguaje.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "8d770371-a233-4453-89e8-e0e54aea706b",
+   "officialCode": "MAT.1.1",
+   "name": "Interpretar, modelizar y resolver problemas de la vida cotidiana y propios de las matemáticas, aplicando diferentes estrategias y formas de razonamiento, para explorar distintas maneras de proceder y obtener posi- bles soluciones.",
+   "description": "Interpretar, modelizar y resolver problemas de la vida cotidiana y propios de las matemáticas, aplicando diferentes estrategias y formas de razonamiento, para explorar distintas maneras de proceder y obtener posi- bles soluciones.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "8a76feb8-a333-45e6-86e8-dc2c4bea71fe",
+   "officialCode": "MAT.1.2",
+   "name": "Analizar las soluciones de un problema usando diferentes técnicas y herramientas, evaluando las respuestas obtenidas, para verificar su validez e idoneidad desde un punto de vista matemático y su repercusión global.",
+   "description": "Analizar las soluciones de un problema usando diferentes técnicas y herramientas, evaluando las respuestas obtenidas, para verificar su validez e idoneidad desde un punto de vista matemático y su repercusión global.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "8b77004b-a433-4779-87e8-ddbf4cea7391",
+   "officialCode": "MAT.1.3",
+   "name": "Formular y comprobar conjeturas sencillas o plantear problemas de forma autónoma, reconociendo el valor del razonamiento y la argumentación, para generar nuevo conocimiento.",
+   "description": "Formular y comprobar conjeturas sencillas o plantear problemas de forma autónoma, reconociendo el valor del razonamiento y la argumentación, para generar nuevo conocimiento.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "9077082a-a533-490c-84e8-d9064dea7524",
+   "officialCode": "MAT.1.4",
+   "name": "Utilizar los principios del pensamiento computacional organizando datos, descomponiendo en partes, reconociendo patrones, interpretando, modificando y creando algoritmos para modelizar situaciones y resolver problemas de forma eficaz.",
+   "description": "Utilizar los principios del pensamiento computacional organizando datos, descomponiendo en partes, reconociendo patrones, interpretando, modificando y creando algoritmos para modelizar situaciones y resolver problemas de forma eficaz.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "917709bd-a633-4a9f-85e8-da994eea76b7",
+   "officialCode": "MAT.1.5",
+   "name": "Reconocer y utilizar conexiones entre los diferentes elementos matemáticos, interconectando conceptos y procedimientos para desarrollar una visión de las matemáticas como un todo integrado.",
+   "description": "Reconocer y utilizar conexiones entre los diferentes elementos matemáticos, interconectando conceptos y procedimientos para desarrollar una visión de las matemáticas como un todo integrado.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "8e770504-a733-4c32-82e8-d5e04fea784a",
+   "officialCode": "MAT.1.6",
+   "name": "Identificar las matemáticas implicadas en otras materias, en situaciones reales y en el entorno, susceptibles de ser abordadas en términos matemáticos, interrelacionando conceptos y procedimientos, para aplicarlos en situaciones diversas.",
+   "description": "Identificar las matemáticas implicadas en otras materias, en situaciones reales y en el entorno, susceptibles de ser abordadas en términos matemáticos, interrelacionando conceptos y procedimientos, para aplicarlos en situaciones diversas.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "8f770697-a833-4dc5-83e8-d77350ea79dd",
+   "officialCode": "MAT.1.7",
+   "name": "Representar, de forma individual y colectiva, conceptos, procedimientos, información y resultados matemáticos, usando diferentes tecnologías, para visualizar ideas y estructurar procesos matemáticos.",
+   "description": "Representar, de forma individual y colectiva, conceptos, procedimientos, información y resultados matemáticos, usando diferentes tecnologías, para visualizar ideas y estructurar procesos matemáticos.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "8476f546-a933-4f58-80e8-ebea41ea6240",
+   "officialCode": "MAT.1.8",
+   "name": "Comunicar de forma individual y colectiva conceptos, procedimientos y argumentos matemáticos, usando lenguaje oral, escrito o gráfico, utilizando la terminología matemática apropiada, para dar significado y coherencia a las ideas matemáticas.",
+   "description": "Comunicar de forma individual y colectiva conceptos, procedimientos y argumentos matemáticos, usando lenguaje oral, escrito o gráfico, utilizando la terminología matemática apropiada, para dar significado y coherencia a las ideas matemáticas.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "8576f6d9-aa33-40eb-81e8-ed7d42ea63d3",
+   "officialCode": "MAT.1.9",
+   "name": "Desarrollar destrezas personales, identificando y gestionando emociones, poniendo en práctica estrategias de aceptación del error como parte del proceso de aprendizaje y adaptándose ante situaciones de incertidumbre, para mejorar la perseverancia en la consecución de objetivos y el disfrute en el ap",
+   "description": "Desarrollar destrezas personales, identificando y gestionando emociones, poniendo en práctica estrategias de aceptación del error como parte del proceso de aprendizaje y adaptándose ante situaciones de incertidumbre, para mejorar la perseverancia en la consecución de objetivos y el disfrute en el aprendizaje de las matemáticas.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  },
+  {
+   "id": "f35a1f53-ba7e-47d9-8e99-ef4f4a0edf41",
+   "officialCode": "MAT.1.10",
+   "name": "Desarrollar destrezas sociales, reconociendo y respetando las emociones y experiencias de los demás, participando activa y reflexivamente en proyectos en equipos heterogéneos con roles asignados, para construir una identidad positiva como estudiante de matemáticas, para fomentar el bienestar persona",
+   "description": "Desarrollar destrezas sociales, reconociendo y respetando las emociones y experiencias de los demás, participando activa y reflexivamente en proyectos en equipos heterogéneos con roles asignados, para construir una identidad positiva como estudiante de matemáticas, para fomentar el bienestar personal y grupal y para crear relaciones saludables.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "stage": "ESO",
+   "gradeSpan": {
+    "from": 1,
+    "to": 1
+   },
+   "operativeDescriptors": []
+  }
+ ],
+ "evaluationCriteria": [
+  {
+   "id": "7005feae-c5e8-449c-8cac-f5ba135c08d4",
+   "officialCode": "GEH.1.1.1",
+   "name": "Iniciarse en la elaboración, expresión y presentación de contenidos propios en forma de esquemas, tablas informativas otros formatos utilizando estrategias sencillas de búsqueda, selección y tratamiento de la información de forma guiada sobre procesos y acontecimientos relevantes del presente y del",
+   "description": "Iniciarse en la elaboración, expresión y presentación de contenidos propios en forma de esquemas, tablas informativas otros formatos utilizando estrategias sencillas de búsqueda, selección y tratamiento de la información de forma guiada sobre procesos y acontecimientos relevantes del presente y del pasado.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "cb82c67f-d6d9-4415-8859-59f31d587b8d",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.1",
+    "GEH.1.A.5"
+   ]
+  },
+  {
+   "id": "6f05fd1b-c8e8-4955-8bac-f427165c0d8d",
+   "officialCode": "GEH.1.1.2",
+   "name": "Contrastar argumentar sobre temas y acontecimientos de la Prehistoria, la Edad Antigua, la Edad Media y la Edad Moderna, iniciándose en el uso y análisis de forma crítica de fuentes primarias secundarias como pruebas históricas.",
+   "description": "Contrastar argumentar sobre temas y acontecimientos de la Prehistoria, la Edad Antigua, la Edad Media y la Edad Moderna, iniciándose en el uso y análisis de forma crítica de fuentes primarias secundarias como pruebas históricas.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "cb82c67f-d6d9-4415-8859-59f31d587b8d",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.5",
+    "GEH.1.B.2"
+   ]
+  },
+  {
+   "id": "60d8af77-0b5b-4d51-8ce1-a3633880b049",
+   "officialCode": "GEH.1.2.1",
+   "name": "Identificar, valorar y",
+   "description": "Identificar, valorar y",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "cc82c812-d3d9-4f5c-8959-5b861a5876d4",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.3"
+   ]
+  },
+  {
+   "id": "61d8b10a-085b-4898-8de1-a4f63580ab90",
+   "officialCode": "GEH.1.2.2",
+   "name": "Iniciarse en la exposición argumentada de forma crítica sobre problemas de actualidad del entorno más próximo a través de conocimientos geográficos e históricos, contrastando y valorando fuentes diversas.",
+   "description": "Iniciarse en la exposición argumentada de forma crítica sobre problemas de actualidad del entorno más próximo a través de conocimientos geográficos e históricos, contrastando y valorando fuentes diversas.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "cc82c812-d3d9-4f5c-8959-5b861a5876d4",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.B.1",
+    "GEH.1.B.2",
+    "GEH.1.C.4"
+   ]
+  },
+  {
+   "id": "62d8b29d-095b-4a2b-8ee1-a6893680ad23",
+   "officialCode": "GEH.1.2.3",
+   "name": "Iniciarse en el uso adecuado de términos, conceptos acontecimientos relevantes en su entorno relacionados con la geografía, la historia y otras disciplinas de las ciencias sociales, a través de intervenciones orales, textos escritos y otros productos, ofreciendo planteamientos personales.",
+   "description": "Iniciarse en el uso adecuado de términos, conceptos acontecimientos relevantes en su entorno relacionados con la geografía, la historia y otras disciplinas de las ciencias sociales, a través de intervenciones orales, textos escritos y otros productos, ofreciendo planteamientos personales.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "cc82c812-d3d9-4f5c-8959-5b861a5876d4",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.6"
+   ]
+  },
+  {
+   "id": "5bd8a798-0e5b-420a-8fe1-a81c3b80b502",
+   "officialCode": "GEH.1.2.4",
+   "name": "Identificar los elementos que conforman la propia identidad en el contexto del mundo actual, de sus retos y conflictos aportando juicios propios, críticos y argumentados desde el respeto a las opiniones de los demás.",
+   "description": "Identificar los elementos que conforman la propia identidad en el contexto del mundo actual, de sus retos y conflictos aportando juicios propios, críticos y argumentados desde el respeto a las opiniones de los demás.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "cc82c812-d3d9-4f5c-8959-5b861a5876d4",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.C.4",
+    "GEH.1.C.9"
+   ]
+  },
+  {
+   "id": "c65474f8-70d7-42d2-82ab-ba243cbeaa2a",
+   "officialCode": "GEH.1.3.1",
+   "name": "Conocer acontecimientos relevantes",
+   "description": "Conocer acontecimientos relevantes",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "cd82c9a5-d4d9-40ef-8a59-5d191b587867",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.6"
+   ]
+  },
+  {
+   "id": "c95479b1-6fd7-413f-85ab-bedd3bbea897",
+   "officialCode": "GEH.1.3.2",
+   "name": "Identificar de una manera general los principales problemas, a los que se ha enfrentado la humanidad a lo largo de la historia, los cambios producidos, señalando sus causas y consecuencias, así como los problemas que, en la actualidad, debemos plantear en torno a los Objetivos de Desarrollo Sostenib",
+   "description": "Identificar de una manera general los principales problemas, a los que se ha enfrentado la humanidad a lo largo de la historia, los cambios producidos, señalando sus causas y consecuencias, así como los problemas que, en la actualidad, debemos plantear en torno a los Objetivos de Desarrollo Sostenible.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "cd82c9a5-d4d9-40ef-8a59-5d191b587867",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.6",
+    "GEH.1.A.7",
+    "GEH.1.B.1"
+   ]
+  },
+  {
+   "id": "c854781e-6ed7-4fac-84ab-bd4a3abea704",
+   "officialCode": "GEH.1.3.3",
+   "name": "Representar información básica sobre acontecimientos geográficos e históricos utilizando mapas, representaciones gráficas sencillas y visuales, tanto en soporte físico como digital.",
+   "description": "Representar información básica sobre acontecimientos geográficos e históricos utilizando mapas, representaciones gráficas sencillas y visuales, tanto en soporte físico como digital.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "cd82c9a5-d4d9-40ef-8a59-5d191b587867",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.1"
+   ]
+  },
+  {
+   "id": "cb547cd7-6dd7-4e19-8fab-b56b39bea571",
+   "officialCode": "GEH.1.3.4",
+   "name": "Utilizar una secuencia cronológica sencilla con objeto de identificar la relación entre hechos y procesos en diferentes períodos lugares históricos (simultaneidad y duración), utilizando términos y conceptos apropiados básicos.",
+   "description": "Utilizar una secuencia cronológica sencilla con objeto de identificar la relación entre hechos y procesos en diferentes períodos lugares históricos (simultaneidad y duración), utilizando términos y conceptos apropiados básicos.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "cd82c9a5-d4d9-40ef-8a59-5d191b587867",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.1",
+    "GEH.1.A.6",
+    "GEH.1.B.3"
+   ]
+  },
+  {
+   "id": "40196459-0cb9-49cf-837f-346dd9de95a7",
+   "officialCode": "GEH.1.4.1",
+   "name": "Describir el entorno desde una perspectiva sistémica e integradora, a través del concepto de paisaje, identificando sus principales elementos.",
+   "description": "Describir el entorno desde una perspectiva sistémica e integradora, a través del concepto de paisaje, identificando sus principales elementos.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c682bea0-d1d9-4c36-8b59-5eac185873ae",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.2",
+    "GEH.1.A.4",
+    "GEH.1.B.10"
+   ]
+  },
+  {
+   "id": "3d195fa0-0db9-4b62-807f-2fb4dade973a",
+   "officialCode": "GEH.1.4.2",
+   "name": "Conocer el grado de sostenibilidad de equilibrio de los diferentes espacios y desde distintas escalas y entender su transformación degradación a través del tiempo por la acción humana en la explotación de los recursos, su relación con la evolución de la población y las estrategias desarrolladas para",
+   "description": "Conocer el grado de sostenibilidad de equilibrio de los diferentes espacios y desde distintas escalas y entender su transformación degradación a través del tiempo por la acción humana en la explotación de los recursos, su relación con la evolución de la población y las estrategias desarrolladas para su control y dominio y los conflictos que ha provocado.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c682bea0-d1d9-4c36-8b59-5eac185873ae",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.1",
+    "GEH.1.A.4",
+    "GEH.1.B.6",
+    "GEH.1.B.7"
+   ]
+  },
+  {
+   "id": "3e196133-0eb9-4cf5-817f-3147dbde98cd",
+   "officialCode": "GEH.1.4.3",
+   "name": "Investigar, con cierto grado de autonomía, acerca de la necesidad de acciones de defensa, protección, conservación y mejora del entorno (natural, rural y urbano) a través de propuestas e iniciativas que reflejen compromisos y conductas en favor de la sostenibilidad y del reparto justo y solidario de",
+   "description": "Investigar, con cierto grado de autonomía, acerca de la necesidad de acciones de defensa, protección, conservación y mejora del entorno (natural, rural y urbano) a través de propuestas e iniciativas que reflejen compromisos y conductas en favor de la sostenibilidad y del reparto justo y solidario de los recursos.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c682bea0-d1d9-4c36-8b59-5eac185873ae",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.4",
+    "GEH.1.C.4",
+    "GEH.1.C.7"
+   ]
+  },
+  {
+   "id": "c4f5f87a-f197-4510-87bc-fbeebebbc0e8",
+   "officialCode": "GEH.1.5.1",
+   "name": "Identificar e interpretar",
+   "description": "Identificar e interpretar",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c782c033-d2d9-4dc9-8c59-603f19587541",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.B.4"
+   ]
+  },
+  {
+   "id": "c3f5f6e7-f497-49c9-86bc-fa5bc1bbc5a1",
+   "officialCode": "GEH.1.5.2",
+   "name": "Señalar aquellas experiencias históricas más destacables, y anteriores a la época contemporánea, en las que se logró establecer sistemas políticos que favorecieron el ejercicio de derechos y libertades de los individuos y de la colectividad, considerándolas como antecedentes de las posteriores conqu",
+   "description": "Señalar aquellas experiencias históricas más destacables, y anteriores a la época contemporánea, en las que se logró establecer sistemas políticos que favorecieron el ejercicio de derechos y libertades de los individuos y de la colectividad, considerándolas como antecedentes de las posteriores conquistas democráticas y referentes históricos de las libertades actuales.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c782c033-d2d9-4dc9-8c59-603f19587541",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.B.15",
+    "GEH.1.B.8",
+    "GEH.1.C.1",
+    "GEH.1.C.6"
+   ]
+  },
+  {
+   "id": "c2f5f554-f397-4836-85bc-f8c8c0bbc40e",
+   "officialCode": "GEH.1.5.3",
+   "name": "Mostrar actitudes pacíficas y respetuosas y asumir las normas como marco necesario para la convivencia, entendiendo qué significa tener capacidad crítica identificando respondiendo de manera asertiva ante las situaciones de injusticia y desigualdad.",
+   "description": "Mostrar actitudes pacíficas y respetuosas y asumir las normas como marco necesario para la convivencia, entendiendo qué significa tener capacidad crítica identificando respondiendo de manera asertiva ante las situaciones de injusticia y desigualdad.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c782c033-d2d9-4dc9-8c59-603f19587541",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.C.2",
+    "GEH.1.C.3",
+    "GEH.1.C.9"
+   ]
+  },
+  {
+   "id": "952aa623-b6bb-4565-888f-acb783901f5d",
+   "officialCode": "GEH.1.6.1",
+   "name": "Situar el nacimiento y desarrollo de distintas civilizaciones y ubicarlas en el espacio y en el tiempo, integrando los elementos históricos, culturales, institucionales y religiosos",
+   "description": "Situar el nacimiento y desarrollo de distintas civilizaciones y ubicarlas en el espacio y en el tiempo, integrando los elementos históricos, culturales, institucionales y religiosos",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c882c1c6-cfd9-4910-8d59-61d216587088",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.1",
+    "GEH.1.B.11",
+    "GEH.1.B.13",
+    "GEH.1.B.3",
+    "GEH.1.B.5",
+    "GEH.1.B.8",
+    "GEH.1.C.8"
+   ]
+  },
+  {
+   "id": "962aa7b6-b3bb-40ac-898f-ae4a80901aa4",
+   "officialCode": "GEH.1.6.2",
+   "name": "Reconocer las desigualdades sociales existentes en épocas pasadas y los mecanismos de dominación y control que se han aplicado, reconociendo aquellos grupos que se han visto sometidos y silenciados, identificando la presencia de mujeres y de personajes pertenecientes a otros colectivos discriminados",
+   "description": "Reconocer las desigualdades sociales existentes en épocas pasadas y los mecanismos de dominación y control que se han aplicado, reconociendo aquellos grupos que se han visto sometidos y silenciados, identificando la presencia de mujeres y de personajes pertenecientes a otros colectivos discriminados.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c882c1c6-cfd9-4910-8d59-61d216587088",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.B.12",
+    "GEH.1.B.5",
+    "GEH.1.B.9"
+   ]
+  },
+  {
+   "id": "972aa949-b4bb-423f-8a8f-afdd81901c37",
+   "officialCode": "GEH.1.6.3",
+   "name": "Mostrar actitudes no discriminatorias y valorar la diversidad social multicultural, argumentando en favor de la inclusión, el reconocimiento de las minorías étnico-culturales, la colaboración y la cohesión social.",
+   "description": "Mostrar actitudes no discriminatorias y valorar la diversidad social multicultural, argumentando en favor de la inclusión, el reconocimiento de las minorías étnico-culturales, la colaboración y la cohesión social.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c882c1c6-cfd9-4910-8d59-61d216587088",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.C.2"
+   ]
+  },
+  {
+   "id": "982aaadc-b1bb-4d86-838f-a4d87e90177e",
+   "officialCode": "GEH.1.6.4",
+   "name": "Investigar acerca de la igualdad real de hombres y mujeres actuando en contra de cualquier actitud y comportamiento discriminatorio por razón de género.",
+   "description": "Investigar acerca de la igualdad real de hombres y mujeres actuando en contra de cualquier actitud y comportamiento discriminatorio por razón de género.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c882c1c6-cfd9-4910-8d59-61d216587088",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.5",
+    "GEH.1.C.3"
+   ]
+  },
+  {
+   "id": "1af4bce4-9c36-4166-8e0b-7238686d4a9e",
+   "officialCode": "GEH.1.7.1",
+   "name": "Identificar las culturas y civilizaciones que se han desarrollado a lo largo de la historia antigua relacionarlas con las diversas identidades",
+   "description": "Identificar las culturas y civilizaciones que se han desarrollado a lo largo de la historia antigua relacionarlas con las diversas identidades",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c982c359-d0d9-4aa3-8e59-63651758721b",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.B.13",
+    "GEH.1.B.14",
+    "GEH.1.B.15",
+    "GEH.1.B.5",
+    "GEH.1.C.8"
+   ]
+  },
+  {
+   "id": "1df4c19d-9b36-4fd3-810b-76f1676d490b",
+   "officialCode": "GEH.1.7.2",
+   "name": "Identificar el origen histórico de distintas identidades colectivas que se han desarrollado en España, iniciándose en la interpretación del uso que se ha hecho de las mismas y mostrando una actitud de respeto y tolerancia hacia los diferentes sentidos de pertenencia, promoviendo la solidaridad y la",
+   "description": "Identificar el origen histórico de distintas identidades colectivas que se han desarrollado en España, iniciándose en la interpretación del uso que se ha hecho de las mismas y mostrando una actitud de respeto y tolerancia hacia los diferentes sentidos de pertenencia, promoviendo la solidaridad y la cohesión social.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c982c359-d0d9-4aa3-8e59-63651758721b",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.B.14",
+    "GEH.1.B.15",
+    "GEH.1.C.2"
+   ]
+  },
+  {
+   "id": "1cf4c00a-9a36-4e40-800b-755e666d4778",
+   "officialCode": "GEH.1.7.3",
+   "name": "Identificar los fundamentos de la idea de Europa a través de las diferentes experiencias históricas del pasado el legado histórico, artístico y cultural como patrimonio común de la ciudadanía europea.",
+   "description": "Identificar los fundamentos de la idea de Europa a través de las diferentes experiencias históricas del pasado el legado histórico, artístico y cultural como patrimonio común de la ciudadanía europea.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c982c359-d0d9-4aa3-8e59-63651758721b",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.B.15"
+   ]
+  },
+  {
+   "id": "17f4b82b-a136-4945-830b-7a176d6d527d",
+   "officialCode": "GEH.1.7.4",
+   "name": "Iniciarse en la valoración, protección y conservación del patrimonio artístico, histórico y cultural como fundamento de la identidad colectiva local, autonómica, nacional, europea universal, considerándolo como un bien para el disfrute recreativo y cultural y un recurso para el desarrollo de los pue",
+   "description": "Iniciarse en la valoración, protección y conservación del patrimonio artístico, histórico y cultural como fundamento de la identidad colectiva local, autonómica, nacional, europea universal, considerándolo como un bien para el disfrute recreativo y cultural y un recurso para el desarrollo de los pueblos.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "c982c359-d0d9-4aa3-8e59-63651758721b",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.B.15",
+    "GEH.1.C.8"
+   ]
+  },
+  {
+   "id": "93cc29a5-b819-41e3-8023-6ed1b683998b",
+   "officialCode": "GEH.1.8.1",
+   "name": "Identificar de una manera general los",
+   "description": "Identificar de una manera general los",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "d282d184-ddd9-4f1a-8f59-64f814586d62",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.B.9"
+   ]
+  },
+  {
+   "id": "90cc24ec-b919-4376-8d23-6a18b7839b1e",
+   "officialCode": "GEH.1.8.2",
+   "name": "Identificar los elementos que constituyen el ciclo vital y analizar a un nivel básico cómo han cambiado sus características, necesidades y obligaciones en distintos momentos históricos, así como las raíces de la distribución por motivos de género del trabajo doméstico, asumiendo las responsabilidade",
+   "description": "Identificar los elementos que constituyen el ciclo vital y analizar a un nivel básico cómo han cambiado sus características, necesidades y obligaciones en distintos momentos históricos, así como las raíces de la distribución por motivos de género del trabajo doméstico, asumiendo las responsabilidades compromisos propios de la edad en el ámbito familiar, en el entorno escolar y en la comunidad y valorando la riqueza que aportan las relaciones intergeneracionales..",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "d282d184-ddd9-4f1a-8f59-64f814586d62",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.C.10",
+    "GEH.1.C.3"
+   ]
+  },
+  {
+   "id": "91cc267f-ba19-4509-8e23-6babb8839cb1",
+   "officialCode": "GEH.1.8.3",
+   "name": "Identificar los cambios en los hábitos de vida actuales respecto a los tradicionales contrastarlos con los que son saludables sostenibles en su entorno, a través de comportamientos respetuosos con la salud propia, con la de los demás y con otros seres vivos, tomando conciencia de la importancia de p",
+   "description": "Identificar los cambios en los hábitos de vida actuales respecto a los tradicionales contrastarlos con los que son saludables sostenibles en su entorno, a través de comportamientos respetuosos con la salud propia, con la de los demás y con otros seres vivos, tomando conciencia de la importancia de promover el propio desarrollo personal.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "d282d184-ddd9-4f1a-8f59-64f814586d62",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.C.10",
+    "GEH.1.C.7"
+   ]
+  },
+  {
+   "id": "794725a6-3de3-48a4-859f-34521b5ffb4c",
+   "officialCode": "GEH.1.9.1",
+   "name": "Identificar e interpretar de forma guiada la conexión de España y",
+   "description": "Identificar e interpretar de forma guiada la conexión de España y",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "d382d317-ded9-40ad-8059-668b15586ef5",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.B.14",
+    "GEH.1.C.8"
+   ]
+  },
+  {
+   "id": "78472413-40e3-4d5d-849f-32bf1e600005",
+   "officialCode": "GEH.1.9.2",
+   "name": "Interpretar de forma guiada desde la perspectiva del desarrollo sostenible y la ciudadanía global los principales desafíos del mundo actual, y ser conscientes de la importancia de implicarse en la búsqueda de soluciones en su entorno más cercano y en el modo de concretarlos desde su capacidad de acc",
+   "description": "Interpretar de forma guiada desde la perspectiva del desarrollo sostenible y la ciudadanía global los principales desafíos del mundo actual, y ser conscientes de la importancia de implicarse en la búsqueda de soluciones en su entorno más cercano y en el modo de concretarlos desde su capacidad de acción, valorando además la contribución de programas y misiones dirigidos por los Estados, los organismos internacionales las asociaciones civiles para el logro de la paz, la seguridad y la cooperación entre los pueblos.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "competencyId": "d382d317-ded9-40ad-8059-668b15586ef5",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "GEH.1.A.3",
+    "GEH.1.A.4",
+    "GEH.1.A.7",
+    "GEH.1.C.4",
+    "GEH.1.C.6"
+   ]
+  },
+  {
+   "id": "b1a13510-2653-4e0a-8dcb-a88c50ca7a32",
+   "officialCode": "LCL.1.1.2",
+   "name": "Identificar prejuicios y estereotipos lingüísticos adoptando una actitud de respeto y valoración de la riqueza cultural, lingüística y dialectal.",
+   "description": "Identificar prejuicios y estereotipos lingüísticos adoptando una actitud de respeto y valoración de la riqueza cultural, lingüística y dialectal.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "e6b164e0-ec64-4706-8ac4-4ea438c3dc4e",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "8f7c9254-3480-4bae-8ba7-9cf05e0a4536",
+   "officialCode": "LCL.1.2.1",
+   "name": "Comprender el sentido global, la estructura, la información más relevante en función de necesidades comunicativas y la intención del emisor en",
+   "description": "Comprender el sentido global, la estructura, la información más relevante en función de necesidades comunicativas y la intención del emisor en",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "e9b16999-eb64-4573-8dc4-535d37c3dabb",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "927c970d-3380-4a1b-8ea7-a1a95d0a43a3",
+   "officialCode": "LCL.1.2.2",
+   "name": "Valorar de manera progresivamente autónoma la forma y el contenido de textos orales multimodales sencillos que sean significativos para el alumnado, los riesgos que conllevan la manipulación y desinformación.",
+   "description": "Valorar de manera progresivamente autónoma la forma y el contenido de textos orales multimodales sencillos que sean significativos para el alumnado, los riesgos que conllevan la manipulación y desinformación.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "e9b16999-eb64-4573-8dc4-535d37c3dabb",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "89b1b213-5043-442d-86cb-3b2f792d19f5",
+   "officialCode": "LCL.1.3.1",
+   "name": "Realizar narraciones orales sencillas, organizando el contenido ajustándose progresivamente a las convenciones propias del género discursivo, con fluidez, coherencia, cohesión y el registro adecuado, utilizando de manera eficaz recursos verbales y no verbales.",
+   "description": "Realizar narraciones orales sencillas, organizando el contenido ajustándose progresivamente a las convenciones propias del género discursivo, con fluidez, coherencia, cohesión y el registro adecuado, utilizando de manera eficaz recursos verbales y no verbales.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "e8b16806-ea64-43e0-8cc4-51ca36c3d928",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "8ab1b3a6-4d43-4f74-87cb-3cc2762d153c",
+   "officialCode": "LCL.1.3.2",
+   "name": "Participar de manera activa y adecuada en interacciones informales, en el trabajo en equipo y en situaciones orales formales básicas de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.",
+   "description": "Participar de manera activa y adecuada en interacciones informales, en el trabajo en equipo y en situaciones orales formales básicas de carácter dialogado, con actitudes de escucha activa y estrategias de cooperación conversacional y cortesía lingüística.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "e8b16806-ea64-43e0-8cc4-51ca36c3d928",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "e48dd41e-df6f-49e4-89aa-863208f9036c",
+   "officialCode": "LCL.1.4.1",
+   "name": "Comprender interpretar el sentido global y la intención del emisor de textos escritos multimodales sencillos.",
+   "description": "Comprender interpretar el sentido global y la intención del emisor de textos escritos multimodales sencillos.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "ebb16cbf-f164-4ee5-87c4-49eb3dc3e42d",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "e38dd28b-e26f-4e9d-88aa-849f0bf90825",
+   "officialCode": "LCL.1.4.2",
+   "name": "Valorar la forma y el contenido de textos escritos y multimodales sencillos evaluando su calidad, fiabilidad e idoneidad del canal utilizado.",
+   "description": "Valorar la forma y el contenido de textos escritos y multimodales sencillos evaluando su calidad, fiabilidad e idoneidad del canal utilizado.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "ebb16cbf-f164-4ee5-87c4-49eb3dc3e42d",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "ffb0a8dd-59a5-4323-856c-beb1241bd82b",
+   "officialCode": "LCL.1.5.1",
+   "name": "Planificar la redacción de textos escritos y multimodales básicos y sencillos, atendiendo a la situación comunicativa, destinatario, propósito y canal. La tomar apuntes, esquemas, conceptuales o resúmenes.",
+   "description": "Planificar la redacción de textos escritos y multimodales básicos y sencillos, atendiendo a la situación comunicativa, destinatario, propósito y canal. La tomar apuntes, esquemas, conceptuales o resúmenes.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "eab16b2c-f064-4d52-86c4-48583cc3e29a",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "fcb0a424-5aa5-44b6-826c-b9f8251bd9be",
+   "officialCode": "LCL.1.5.2",
+   "name": "Incorporar progresivamente algunos procedimientos lingüísticos básicos para enriquecer los textos con precisión léxica y corrección ortográfica y gramatical.",
+   "description": "Incorporar progresivamente algunos procedimientos lingüísticos básicos para enriquecer los textos con precisión léxica y corrección ortográfica y gramatical.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "eab16b2c-f064-4d52-86c4-48583cc3e29a",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "3adc4a68-8970-457a-8ff8-fc7cb2aa8d22",
+   "officialCode": "LCL.1.6.1",
+   "name": "Localizar y seleccionar de manera información procedente de diferentes fuentes; organizarla e integrarla en esquemas propios reelaborarla, atendiendo a esquemas dados.",
+   "description": "Localizar y seleccionar de manera información procedente de diferentes fuentes; organizarla e integrarla en esquemas propios reelaborarla, atendiendo a esquemas dados.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "edb16fe5-ef64-4bbf-89c4-4d113bc3e107",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "3ddc4f21-8870-43e7-82f9-0135b1aa8b8f",
+   "officialCode": "LCL.1.6.2",
+   "name": "Elaborar trabajos de investigación de manera dirigida sobre temas de interés, personal a partir de la información seleccionada, teniendo en cuenta las características",
+   "description": "Elaborar trabajos de investigación de manera dirigida sobre temas de interés, personal a partir de la información seleccionada, teniendo en cuenta las características",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "edb16fe5-ef64-4bbf-89c4-4d113bc3e107",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "3cdc4d8e-8770-4254-81f8-ffa2b0aa89fc",
+   "officialCode": "LCL.1.6.3",
+   "name": "Iniciarse en hábitos de uso seguro de las tecnologías digitales en relación con la búsqueda y la comunicación información, comprendiendo necesidad de formación en el uso y manejo de Internet.",
+   "description": "Iniciarse en hábitos de uso seguro de las tecnologías digitales en relación con la búsqueda y la comunicación información, comprendiendo necesidad de formación en el uso y manejo de Internet.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "edb16fe5-ef64-4bbf-89c4-4d113bc3e107",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "55ff1f27-0494-4159-8a7e-007b4dce2b61",
+   "officialCode": "LCL.1.7.1",
+   "name": "Leer seleccionados, dejando constancia del itinerario lector y de la experiencia de lectura a través de diferentes soportes, de manera que se materialice progresivamente construcción de conocimiento y gusto por la lectura.",
+   "description": "Leer seleccionados, dejando constancia del itinerario lector y de la experiencia de lectura a través de diferentes soportes, de manera que se materialice progresivamente construcción de conocimiento y gusto por la lectura.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "ecb16e52-ee64-4a2c-88c4-4b7e3ac3df74",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "56ff20ba-0194-4ca0-8b7e-020e4ace26a8",
+   "officialCode": "LCL.1.7.2",
+   "name": "Compartir experiencia de lectura en algún soporte relacionando el sentido de la obra con la propia experiencia biográfica y con su contexto educativo y social.",
+   "description": "Compartir experiencia de lectura en algún soporte relacionando el sentido de la obra con la propia experiencia biográfica y con su contexto educativo y social.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "ecb16e52-ee64-4a2c-88c4-4b7e3ac3df74",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "c2700c82-9322-4650-8d06-4bce2b16cb08",
+   "officialCode": "LCL.1.8.1",
+   "name": "Leer y explicar de manera guiada interpretación de fragmentos literarios leídos, estableciendo algunas relaciones de sus elementos constitutivos con principios básicos del género subgéneros",
+   "description": "Leer y explicar de manera guiada interpretación de fragmentos literarios leídos, estableciendo algunas relaciones de sus elementos constitutivos con principios básicos del género subgéneros",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "efb1730b-f564-4531-83c4-439f31c3d149",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "c1700aef-9622-4b09-8c06-4a3b2e16cfc1",
+   "officialCode": "LCL.1.8.2",
+   "name": "Identificar de manera guiada características literarias y culturales en los textos leídos, en función de temas, tópicos, estructuras, lenguaje y valores éticos y estéticos.",
+   "description": "Identificar de manera guiada características literarias y culturales en los textos leídos, en función de temas, tópicos, estructuras, lenguaje y valores éticos y estéticos.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "efb1730b-f564-4531-83c4-439f31c3d149",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "c070095c-9522-4976-8b06-48a82d16ce2e",
+   "officialCode": "LCL.1.8.3",
+   "name": "Crear textos personales o colectivos con intención literaria y conciencia de estilo, a partir de la lectura de obras o fragmentos significativos del patrimonio andaluz, nacional universal.",
+   "description": "Crear textos personales o colectivos con intención literaria y conciencia de estilo, a partir de la lectura de obras o fragmentos significativos del patrimonio andaluz, nacional universal.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "efb1730b-f564-4531-83c4-439f31c3d149",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "dd92e141-ae45-4b0f-878a-864dc63a6947",
+   "officialCode": "LCL.1.9.1",
+   "name": "Revisar los propios textos de manera guiada, e identificar y subsanar algunos problemas de comprensión utilizando conocimientos explícitos sobre la lengua y su uso.",
+   "description": "Revisar los propios textos de manera guiada, e identificar y subsanar algunos problemas de comprensión utilizando conocimientos explícitos sobre la lengua y su uso.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "eeb17178-f464-439e-82c4-420c30c3cfb6",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "db92de1b-b045-4e35-858a-8327c83a6c6d",
+   "officialCode": "LCL.1.9.3",
+   "name": "Formular generalizaciones de manera guiada sobre aspectos básicos del funcionamiento de la lengua, consultando de manera diccionarios, manuales y gramáticas.",
+   "description": "Formular generalizaciones de manera guiada sobre aspectos básicos del funcionamiento de la lengua, consultando de manera diccionarios, manuales y gramáticas.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "eeb17178-f464-439e-82c4-420c30c3cfb6",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "506261a9-bb85-4ed3-8c0c-4f7daf161deb",
+   "officialCode": "LCL.1.10.1",
+   "name": "Identificar y evitar los usos discriminatorios de la lengua y los abusos de poder a través de la palabra a partir de la reflexión sobre los elementos lingüísticos, textuales y discursivos utilizados que rigen la comunicación entre las personas.",
+   "description": "Identificar y evitar los usos discriminatorios de la lengua y los abusos de poder a través de la palabra a partir de la reflexión sobre los elementos lingüísticos, textuales y discursivos utilizados que rigen la comunicación entre las personas.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "f941b370-5790-4a02-8707-b2fcda541a5a",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "4d625cf0-bc85-4066-890c-4ac4b0161f7e",
+   "officialCode": "LCL.1.10.2",
+   "name": "Utilizar estrategias para la resolución dialogada",
+   "description": "Utilizar estrategias para la resolución dialogada",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "competencyId": "f941b370-5790-4a02-8707-b2fcda541a5a",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "weight": null,
+   "relatedKnowledgeCodes": []
+  },
+  {
+   "id": "f2281c2c-22b8-407e-89c7-6158aa0aa6f6",
+   "officialCode": "MAT.1.1.1",
+   "name": "Iniciarse en la interpretación de problemas matemáticos sencillos, reconociendo los datos dados, estableciendo, de manera",
+   "description": "Iniciarse en la interpretación de problemas matemáticos sencillos, reconociendo los datos dados, estableciendo, de manera",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8d770371-a233-4453-89e8-e0e54aea706b",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.2",
+    "MAT.1.E.1"
+   ]
+  },
+  {
+   "id": "f52820e5-21b8-4eeb-8cc7-6611a90aa563",
+   "officialCode": "MAT.1.1.2",
+   "name": "Aplicar, en problemas de contextos cercanos de la vida cotidiana, herramientas y estrategias apropiadas, como pueden ser la descomposici ón en problemas más sencillos, el tanteo, el ensayo y error o la búsqueda de patrones, que contribuyan a la resolución de problemas de su entorno más cercano.",
+   "description": "Aplicar, en problemas de contextos cercanos de la vida cotidiana, herramientas y estrategias apropiadas, como pueden ser la descomposici ón en problemas más sencillos, el tanteo, el ensayo y error o la búsqueda de patrones, que contribuyan a la resolución de problemas de su entorno más cercano.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8d770371-a233-4453-89e8-e0e54aea706b",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.3",
+    "MAT.1.B.1"
+   ]
+  },
+  {
+   "id": "f4281f52-20b8-4d58-8bc7-647ea80aa3d0",
+   "officialCode": "MAT.1.1.3",
+   "name": "Obtener las soluciones matemáticas en problemas de contextos cercanos de la vida cotidiana, activando los conocimiento s necesarios, aceptando el error como",
+   "description": "Obtener las soluciones matemáticas en problemas de contextos cercanos de la vida cotidiana, activando los conocimiento s necesarios, aceptando el error como",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8d770371-a233-4453-89e8-e0e54aea706b",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.2",
+    "MAT.1.A.3",
+    "MAT.1.F.1"
+   ]
+  },
+  {
+   "id": "36fd4421-12ed-4087-8f3b-238d9bcada5f",
+   "officialCode": "MAT.1.2.1",
+   "name": "Comprobar, de forma razonada la corrección de las soluciones de un problema, usando herramientas digitales como calculadoras, hojas de cálculo programas específicos.",
+   "description": "Comprobar, de forma razonada la corrección de las soluciones de un problema, usando herramientas digitales como calculadoras, hojas de cálculo programas específicos.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8a76feb8-a333-45e6-86e8-dc2c4bea71fe",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.3"
+   ]
+  },
+  {
+   "id": "33fd3f68-13ed-421a-8c3b-1ed49ccadbf2",
+   "officialCode": "MAT.1.2.2",
+   "name": "Comprobar, mediante la lectura comprensiva, la validez de las soluciones obtenidas en un problema comprobando su coherencia en el contexto planteado evaluando el alcance repercusión de estas soluciones desde diferentes perspectivas: igualdad de género, sostenibilidad, consumo",
+   "description": "Comprobar, mediante la lectura comprensiva, la validez de las soluciones obtenidas en un problema comprobando su coherencia en el contexto planteado evaluando el alcance repercusión de estas soluciones desde diferentes perspectivas: igualdad de género, sostenibilidad, consumo",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8a76feb8-a333-45e6-86e8-dc2c4bea71fe",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.6",
+    "MAT.1.B.2",
+    "MAT.1.F.3"
+   ]
+  },
+  {
+   "id": "9bd9a5e2-77c9-4248-84b6-e90e00096b60",
+   "officialCode": "MAT.1.3.1",
+   "name": "Formular y comprobar conjeturas sencillas en situaciones del entorno cercano, de forma guiada, trabajando de forma individual colectiva la utilización del razonamiento inductivo para formular argumentos matemáticos, analizando patrones, propiedades y relaciones.",
+   "description": "Formular y comprobar conjeturas sencillas en situaciones del entorno cercano, de forma guiada, trabajando de forma individual colectiva la utilización del razonamiento inductivo para formular argumentos matemáticos, analizando patrones, propiedades y relaciones.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8b77004b-a433-4779-87e8-ddbf4cea7391",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.3",
+    "MAT.1.B.1"
+   ]
+  },
+  {
+   "id": "9ad9a44f-7ac9-4701-83b6-e77b03097019",
+   "officialCode": "MAT.1.3.2",
+   "name": "Plantear, en términos matemáticos, variantes de un problema dado, en contextos cercanos de la vida cotidiana, modificando alguno de sus datos o alguna",
+   "description": "Plantear, en términos matemáticos, variantes de un problema dado, en contextos cercanos de la vida cotidiana, modificando alguno de sus datos o alguna",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8b77004b-a433-4779-87e8-ddbf4cea7391",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.D.4"
+   ]
+  },
+  {
+   "id": "99d9a2bc-79c9-456e-82b6-e5e802096e86",
+   "officialCode": "MAT.1.3.3",
+   "name": "Emplear herramientas tecnológicas adecuadas, calculadoras o software matemáticos como paquetes estadísticos o programas de análisis numérico en la investigación comprobación de conjeturas o problemas.",
+   "description": "Emplear herramientas tecnológicas adecuadas, calculadoras o software matemáticos como paquetes estadísticos o programas de análisis numérico en la investigación comprobación de conjeturas o problemas.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8b77004b-a433-4779-87e8-ddbf4cea7391",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.E.2"
+   ]
+  },
+  {
+   "id": "38f9915f-f18e-41a9-89da-c70399ce8d21",
+   "officialCode": "MAT.1.4.1",
+   "name": "Reconocer patrones en la resolución de problemas sencillos, organizar datos descomponer un problema en partes más simples, facilitando su interpretación computaciona",
+   "description": "Reconocer patrones en la resolución de problemas sencillos, organizar datos descomponer un problema en partes más simples, facilitando su interpretación computaciona",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "9077082a-a533-490c-84e8-d9064dea7524",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.1"
+   ]
+  },
+  {
+   "id": "39f992f2-ee8e-4cf0-8ada-c89696ce8868",
+   "officialCode": "MAT.1.4.2",
+   "name": "Modelizar situaciones del entorno cercano resolver problemas sencillos de forma eficaz, interpretando y modificando algoritmos, creando modelos de situaciones cotidianas.",
+   "description": "Modelizar situaciones del entorno cercano resolver problemas sencillos de forma eficaz, interpretando y modificando algoritmos, creando modelos de situaciones cotidianas.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "9077082a-a533-490c-84e8-d9064dea7524",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.D.1",
+    "MAT.1.D.2"
+   ]
+  },
+  {
+   "id": "9d382260-f709-400a-8e68-72c4feaaeee2",
+   "officialCode": "MAT.1.5.1",
+   "name": "Reconocer y usar las relaciones entre los conocimiento experiencias matemáticas de los bloques de saberes formando un todo coherente,",
+   "description": "Reconocer y usar las relaciones entre los conocimiento experiencias matemáticas de los bloques de saberes formando un todo coherente,",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "917709bd-a633-4a9f-85e8-da994eea76b7",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.3"
+   ]
+  },
+  {
+   "id": "a0382719-f609-4e77-8168-777dfdaaed4f",
+   "officialCode": "MAT.1.5.2",
+   "name": "Realizar conexiones entre diferentes procesos matemáticos sencillos, aplicando conocimiento experiencias previas enlazándolas con las nuevas ideas.",
+   "description": "Realizar conexiones entre diferentes procesos matemáticos sencillos, aplicando conocimiento experiencias previas enlazándolas con las nuevas ideas.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "917709bd-a633-4a9f-85e8-da994eea76b7",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.2",
+    "MAT.1.A.4"
+   ]
+  },
+  {
+   "id": "625c32b5-47dd-47f3-838c-50b9701c39eb",
+   "officialCode": "MAT.1.6.1",
+   "name": "Reconocer situaciones en el entorno más cercano susceptibles de ser formuladas y resueltas mediante herramientas y estrategias matemáticas, estableciendo conexiones entre el mundo real y las matemáticas y usando los procesos inherentes a la",
+   "description": "Reconocer situaciones en el entorno más cercano susceptibles de ser formuladas y resueltas mediante herramientas y estrategias matemáticas, estableciendo conexiones entre el mundo real y las matemáticas y usando los procesos inherentes a la",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8e770504-a733-4c32-82e8-d5e04fea784a",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.1",
+    "MAT.1.A.5",
+    "MAT.1.E.1",
+    "MAT.1.E.2"
+   ]
+  },
+  {
+   "id": "5f5c2dfc-48dd-4986-808c-4c00711c3b7e",
+   "officialCode": "MAT.1.6.2",
+   "name": "Analizar conexiones coherentes entre ideas y conceptos matemáticos con otras materias y con la vida real y aplicarlas mediante el uso de procedimient os sencillos en la resolución de problemas en situaciones del entorno cercano.",
+   "description": "Analizar conexiones coherentes entre ideas y conceptos matemáticos con otras materias y con la vida real y aplicarlas mediante el uso de procedimient os sencillos en la resolución de problemas en situaciones del entorno cercano.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8e770504-a733-4c32-82e8-d5e04fea784a",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.D.4"
+   ]
+  },
+  {
+   "id": "605c2f8f-49dd-4b19-818c-4d93721c3d11",
+   "officialCode": "MAT.1.6.3",
+   "name": "Reconocer en diferentes contextos del entorno más cercano, la aportación de las matemáticas al progreso de la humanidad su contribución a la superación",
+   "description": "Reconocer en diferentes contextos del entorno más cercano, la aportación de las matemáticas al progreso de la humanidad su contribución a la superación",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8e770504-a733-4c32-82e8-d5e04fea784a",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.E.2",
+    "MAT.1.F.3"
+   ]
+  },
+  {
+   "id": "47395df6-4c6a-43b4-8869-ae5a54f9652c",
+   "officialCode": "MAT.1.7.1",
+   "name": "Representar conceptos, procedimient os, información y resultados matemáticos usando herramientas digitales sencillas, formas de representació n adecuadas para visualizar ideas estructurar procesos matemáticos, interpretando y resolviendo problemas del entorno cercano valorando su utilidad para compa",
+   "description": "Representar conceptos, procedimient os, información y resultados matemáticos usando herramientas digitales sencillas, formas de representació n adecuadas para visualizar ideas estructurar procesos matemáticos, interpretando y resolviendo problemas del entorno cercano valorando su utilidad para compartir información.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8f770697-a833-4dc5-83e8-d77350ea79dd",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.2",
+    "MAT.1.E.1"
+   ]
+  },
+  {
+   "id": "46395c63-4f6a-486d-8769-acc757f969e5",
+   "officialCode": "MAT.1.7.2",
+   "name": "Esbozar representacio nes matemáticas utilizando herramientas de interpretación",
+   "description": "Esbozar representacio nes matemáticas utilizando herramientas de interpretación",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8f770697-a833-4dc5-83e8-d77350ea79dd",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.5",
+    "MAT.1.E.1"
+   ]
+  },
+  {
+   "id": "e4594973-c5e0-4135-8e7b-d86fbd29893d",
+   "officialCode": "MAT.1.8.1",
+   "name": "Comunicar ideas, conceptos procesos sencillos, utilizando el lenguaje matemático apropiado, empleando diferentes medios, incluidos los digitales, oralmente y por escrito, al describir, explicar justificar sus conocimiento matemáticos.",
+   "description": "Comunicar ideas, conceptos procesos sencillos, utilizando el lenguaje matemático apropiado, empleando diferentes medios, incluidos los digitales, oralmente y por escrito, al describir, explicar justificar sus conocimiento matemáticos.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8476f546-a933-4f58-80e8-ebea41ea6240",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.D.3"
+   ]
+  },
+  {
+   "id": "e5594b06-c2e0-4c7c-8f7b-da02ba298484",
+   "officialCode": "MAT.1.8.2",
+   "name": "Reconocer y emplear el lenguaje matemático presente en contextos cotidianos de su entorno personal, expresando y comunicando",
+   "description": "Reconocer y emplear el lenguaje matemático presente en contextos cotidianos de su entorno personal, expresando y comunicando",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8476f546-a933-4f58-80e8-ebea41ea6240",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.A.4"
+   ]
+  },
+  {
+   "id": "e8e6f534-aabd-4c76-8358-3a302205eafe",
+   "officialCode": "MAT.1.9.1",
+   "name": "Gestionar las emociones propias desarrollar el autoconcepto matemático como herramienta, generando expectativas positivas en la adaptación, el tratamiento y la gestión de retos matemáticos y cambios en contextos cotidianos de su entorno personal iniciándose en el pensamiento crítico creativo.",
+   "description": "Gestionar las emociones propias desarrollar el autoconcepto matemático como herramienta, generando expectativas positivas en la adaptación, el tratamiento y la gestión de retos matemáticos y cambios en contextos cotidianos de su entorno personal iniciándose en el pensamiento crítico creativo.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8576f6d9-aa33-40eb-81e8-ed7d42ea63d3",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.F.1"
+   ]
+  },
+  {
+   "id": "ebe6f9ed-a9bd-4ae3-8658-3ee92105e96b",
+   "officialCode": "MAT.1.9.2",
+   "name": "Mostrar una actitud positiva perseverante, aceptando la crítica razonada, analizando sus limitaciones y buscando",
+   "description": "Mostrar una actitud positiva perseverante, aceptando la crítica razonada, analizando sus limitaciones y buscando",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "8576f6d9-aa33-40eb-81e8-ed7d42ea63d3",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.F.1"
+   ]
+  },
+  {
+   "id": "61a1808a-338b-4220-817b-6e2e9fb9c468",
+   "officialCode": "MAT.1.10.1",
+   "name": "Colaborar activamente y construir relaciones saludables en el trabajo de las matemáticas en equipos heterogéneos, respetando diferentes opiniones, iniciándose en el desarrollo de destrezas: de comunicación efectiva, de planificación, de indagación, de motivación y confianza en sus propias posibilida",
+   "description": "Colaborar activamente y construir relaciones saludables en el trabajo de las matemáticas en equipos heterogéneos, respetando diferentes opiniones, iniciándose en el desarrollo de destrezas: de comunicación efectiva, de planificación, de indagación, de motivación y confianza en sus propias posibilidades de pensamiento crítico creativo, tomando decisiones y realizando juicios informados.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "f35a1f53-ba7e-47d9-8e99-ef4f4a0edf41",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.F.2"
+   ]
+  },
+  {
+   "id": "60a17ef7-368b-46d9-807b-6c9ba2b9c921",
+   "officialCode": "MAT.1.10.2",
+   "name": "Participar en el reparto de tareas que deban",
+   "description": "Participar en el reparto de tareas que deban",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "competencyId": "f35a1f53-ba7e-47d9-8e99-ef4f4a0edf41",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "weight": null,
+   "relatedKnowledgeCodes": [
+    "MAT.1.F.2",
+    "MAT.1.F.3"
+   ]
+  }
+ ],
+ "basicKnowledge": [
+  {
+   "id": "5bb91081-b71e-4bf7-8fce-bc9518d3678f",
+   "officialCode": "GEH.1.A.1",
+   "name": "Ubicación espacial: representación del espacio, orientación y escalas. Utilización de recursos digitales e interpretación y elaboración de mapas, esquemas, imágenes y representaciones gráficas. Tecnologías de la Información Geográfica (TIG).",
+   "description": "Ubicación espacial: representación del espacio, orientación y escalas. Utilización de recursos digitales e interpretación y elaboración de mapas, esquemas, imágenes y representaciones gráficas. Tecnologías de la Información Geográfica (TIG).",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "58b90bc8-b81e-4d8a-8cce-b7dc19d36922",
+   "officialCode": "GEH.1.A.2",
+   "name": "Formas y procesos de modificación de la superficie terrestre. Componentes básicos y principales formas del relieve terrestre. Agentes de modificación del relieve. Las aguas. El relieve y las aguas de Andalucía, España, Europa y el mundo.",
+   "description": "Formas y procesos de modificación de la superficie terrestre. Componentes básicos y principales formas del relieve terrestre. Agentes de modificación del relieve. Las aguas. El relieve y las aguas de Andalucía, España, Europa y el mundo.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "59b90d5b-b91e-4f1d-8dce-b96f1ad36ab5",
+   "officialCode": "GEH.1.A.3",
+   "name": "Emergencia climática. Elementos y factores que condicionan el clima. Variedad de climas de la Tierra. Métodos de recogida de datos meteorológicos e interpretación de gráficos (climogramas). El impacto de las actividades humanas sobre el clima. Riesgos y catástrofes climáticas en el presente, en el p",
+   "description": "Emergencia climática. Elementos y factores que condicionan el clima. Variedad de climas de la Tierra. Métodos de recogida de datos meteorológicos e interpretación de gráficos (climogramas). El impacto de las actividades humanas sobre el clima. Riesgos y catástrofes climáticas en el presente, en el pasado y en el futuro. Vulnerabilidad, prevención y resiliencia de la población ante las catástrofes y los efectos del cambio climático.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "5eb9153a-b21e-4418-8ace-b4b613d35fb0",
+   "officialCode": "GEH.1.A.4",
+   "name": "Biodiversidad. Zonas bioclimáticas. Climas y paisajes de Europa, España y Andalucía. Dinámicas y amenazas de los ecosistemas planetarios. La influencia humana en la alteración de los ecosistemas en el pasado y la actualidad. Riqueza y valor del patrimonio natural. Conservación y mejora del entorno l",
+   "description": "Biodiversidad. Zonas bioclimáticas. Climas y paisajes de Europa, España y Andalucía. Dinámicas y amenazas de los ecosistemas planetarios. La influencia humana en la alteración de los ecosistemas en el pasado y la actualidad. Riqueza y valor del patrimonio natural. Conservación y mejora del entorno local y global. Problemas medioambientales específicos de Andalucía.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "5fb916cd-b31e-45ab-8bce-b64914d36143",
+   "officialCode": "GEH.1.A.5",
+   "name": "Tecnologías de la información. Manejo y utilización de dispositivos, aplicaciones informáticas y plataformas digitales. Búsqueda, tratamiento de la información y elaboración de conocimiento. Uso seguro de las redes de comunicación. Lectura crítica de la información.",
+   "description": "Tecnologías de la información. Manejo y utilización de dispositivos, aplicaciones informáticas y plataformas digitales. Búsqueda, tratamiento de la información y elaboración de conocimiento. Uso seguro de las redes de comunicación. Lectura crítica de la información.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "5cb91214-b41e-473e-88ce-b19015d362d6",
+   "officialCode": "GEH.1.A.6",
+   "name": "Sociedad del conocimiento. Introducción a los objetivos y estrategias de las Ciencias Sociales y al uso de sus procedimientos, términos y conceptos. Uso de plataformas digitales.",
+   "description": "Sociedad del conocimiento. Introducción a los objetivos y estrategias de las Ciencias Sociales y al uso de sus procedimientos, términos y conceptos. Uso de plataformas digitales.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "5db913a7-b51e-48d1-89ce-b32316d36469",
+   "officialCode": "GEH.1.A.7",
+   "name": "Objetivos de Desarrollo Sostenible. La visión de los dilemas del mundo actual, punto de partida para el pensamiento crítico y el desarrollo de juicios propios. B. Sociedades y territorios.",
+   "description": "Objetivos de Desarrollo Sostenible. La visión de los dilemas del mundo actual, punto de partida para el pensamiento crítico y el desarrollo de juicios propios. B. Sociedades y territorios.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "15a6b40c-c64c-4b2e-8aa9-e2c0a84f9f26",
+   "officialCode": "GEH.1.B.1",
+   "name": "Métodos básicos de investigación para la construcción del conocimiento de la Geografía y la Historia. Metodologías del pensamiento geográfico y del pensamiento histórico.",
+   "description": "Métodos básicos de investigación para la construcción del conocimiento de la Geografía y la Historia. Metodologías del pensamiento geográfico y del pensamiento histórico.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "18a6b8c5-c54c-499b-8da9-e779a74f9d93",
+   "officialCode": "GEH.1.B.2",
+   "name": "Las fuentes históricas y arqueológicas como base para la construcción del conocimiento histórico. Objetos y artefactos como fuente para la historia y el legado inmaterial. El significado de los archivos, bibliotecas y museos y del legado histórico y cultural como patrimonio colectivo.",
+   "description": "Las fuentes históricas y arqueológicas como base para la construcción del conocimiento histórico. Objetos y artefactos como fuente para la historia y el legado inmaterial. El significado de los archivos, bibliotecas y museos y del legado histórico y cultural como patrimonio colectivo.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "17a6b732-c44c-4808-8ca9-e5e6a64f9c00",
+   "officialCode": "GEH.1.B.3",
+   "name": "Tiempo histórico: construcción e interpretación de",
+   "description": "Tiempo histórico: construcción e interpretación de",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "12a6af53-cb4c-430d-8fa9-ea9fad4fa705",
+   "officialCode": "GEH.1.B.4",
+   "name": "Análisis interdisciplinar del origen del ser humano y del nacimiento de la sociedad. Grandes migraciones humanas y el nacimiento de las primeras culturas. Paleolítico, Neolítico y Edad de los Metales. Prehistoria en la península ibérica.",
+   "description": "Análisis interdisciplinar del origen del ser humano y del nacimiento de la sociedad. Grandes migraciones humanas y el nacimiento de las primeras culturas. Paleolítico, Neolítico y Edad de los Metales. Prehistoria en la península ibérica.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "11a6adc0-ca4c-417a-8ea9-e90cac4fa572",
+   "officialCode": "GEH.1.B.5",
+   "name": "Condicionantes geográficos e interpretaciones históricas del surgimiento de las civilizaciones. Mesopotamia y Egipto. Complejidad social y nacimiento de la autoridad: familia, clan, tribu, casta, linaje. Desigualdad social y disputa por el poder en la Prehistoria y la Antigüedad. Formación de oligar",
+   "description": "Condicionantes geográficos e interpretaciones históricas del surgimiento de las civilizaciones. Mesopotamia y Egipto. Complejidad social y nacimiento de la autoridad: familia, clan, tribu, casta, linaje. Desigualdad social y disputa por el poder en la Prehistoria y la Antigüedad. Formación de oligarquías, la imagen del poder, y la evolución de la aristocracia.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "14a6b279-c94c-4fe7-81a9-edc5ab4fa3df",
+   "officialCode": "GEH.1.B.6",
+   "name": "Las grandes rutas comerciales y las estrategias por el control de los recursos: talasocracias e imperios, conquista y colonización. De la civilización minoica al imperio romano.",
+   "description": "Las grandes rutas comerciales y las estrategias por el control de los recursos: talasocracias e imperios, conquista y colonización. De la civilización minoica al imperio romano.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "13a6b0e6-c84c-4e54-80a9-ec32aa4fa24c",
+   "officialCode": "GEH.1.B.7",
+   "name": "Violencia y conflictos armados. El crecimiento de los ejércitos y la evolución del armamento: hoplitas y legiones. Los civiles durante las guerras de la Edad Antigua.",
+   "description": "Violencia y conflictos armados. El crecimiento de los ejércitos y la evolución del armamento: hoplitas y legiones. Los civiles durante las guerras de la Edad Antigua.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "1ea6c237-bf4c-4029-83a9-f0ebb14fad51",
+   "officialCode": "GEH.1.B.8",
+   "name": "La organización política del ser humano y las formulaciones estatales en el mundo Antiguo: democracias, repúblicas, imperios y reinos. Los imperios fluviales. Grecia desde su origen al imperio de Alejandro magno. Origen y etapas de la historia de Roma.",
+   "description": "La organización política del ser humano y las formulaciones estatales en el mundo Antiguo: democracias, repúblicas, imperios y reinos. Los imperios fluviales. Grecia desde su origen al imperio de Alejandro magno. Origen y etapas de la historia de Roma.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "1da6c0a4-be4c-4e96-82a9-ef58b04fabbe",
+   "officialCode": "GEH.1.B.9",
+   "name": "La transformación humana del territorio y la distribución desigual de los recursos y del trabajo. Evolución de los sistemas económicos, de los ciclos demográficos, de los modos de vida y de los modelos de organización social en la Prehistoria y la Antigüedad. La lucha por la supervivencia y el estat",
+   "description": "La transformación humana del territorio y la distribución desigual de los recursos y del trabajo. Evolución de los sistemas económicos, de los ciclos demográficos, de los modos de vida y de los modelos de organización social en la Prehistoria y la Antigüedad. La lucha por la supervivencia y el estatus social.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "516dba74-47ce-403a-8970-3fd00b576fa2",
+   "officialCode": "GEH.1.B.10",
+   "name": "Interpretación del territorio y del paisaje. La ciudad y el mundo rural a lo largo de la Antigüedad: polis, urbes y ciudades.",
+   "description": "Interpretación del territorio y del paisaje. La ciudad y el mundo rural a lo largo de la Antigüedad: polis, urbes y ciudades.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "526dbc07-48ce-41cd-8a70-41630c577135",
+   "officialCode": "GEH.1.B.11",
+   "name": "El papel de la religión en la organización social, la legitimación del poder y la formación de identidades: politeísmo, monoteísmo y el surgimiento de las grandes religiones. El politeísmo de Mesopotamia y Egipto y su relación con la aparición del estado. La mitología griega y la religión romana. El",
+   "description": "El papel de la religión en la organización social, la legitimación del poder y la formación de identidades: politeísmo, monoteísmo y el surgimiento de las grandes religiones. El politeísmo de Mesopotamia y Egipto y su relación con la aparición del estado. La mitología griega y la religión romana. El cristianismo.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "536dbd9a-45ce-4d14-8b70-42f609576c7c",
+   "officialCode": "GEH.1.B.12",
+   "name": "Las personas invisibilizadas de la historia: mujeres, esclavos y extranjeros. Marginación, segregación, control y sumisión en la Edad Antigua. La resistencia a la opresión. Personajes femeninos en la Antigüedad.",
+   "description": "Las personas invisibilizadas de la historia: mujeres, esclavos y extranjeros. Marginación, segregación, control y sumisión en la Edad Antigua. La resistencia a la opresión. Personajes femeninos en la Antigüedad.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "546dbf2d-46ce-4ea7-8c70-44890a576e0f",
+   "officialCode": "GEH.1.B.13",
+   "name": "Significado y función de las expresiones artísticas y culturales en las distintas civilizaciones: Mesopotamia, Egipto, Grecia y Roma. Diversidad y riqueza cultural.",
+   "description": "Significado y función de las expresiones artísticas y culturales en las distintas civilizaciones: Mesopotamia, Egipto, Grecia y Roma. Diversidad y riqueza cultural.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "4d6db428-43ce-49ee-8d70-461c07576956",
+   "officialCode": "GEH.1.B.14",
+   "name": "España en el tiempo y su conexión con los grandes procesos de la historia antigua: pueblos mediterráneos colonizadores, pueblos prerromanos y romanización. Relación de Andalucía con las civilizaciones mediterráneas: colonizaciones",
+   "description": "España en el tiempo y su conexión con los grandes procesos de la historia antigua: pueblos mediterráneos colonizadores, pueblos prerromanos y romanización. Relación de Andalucía con las civilizaciones mediterráneas: colonizaciones",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "4e6db5bb-44ce-4b81-8e70-47af08576ae9",
+   "officialCode": "GEH.1.B.15",
+   "name": "Las raíces clásicas de la cultura occidental. El legado histórico y el acervo cultural en la formación de las identidades colectivas. La huella humana y el respeto, la protección y conservación del patrimonio ambiental, histórico, artístico y cultural. El patrimonio andaluz y su conservación. C. Com",
+   "description": "Las raíces clásicas de la cultura occidental. El legado histórico y el acervo cultural en la formación de las identidades colectivas. La huella humana y el respeto, la protección y conservación del patrimonio ambiental, histórico, artístico y cultural. El patrimonio andaluz y su conservación. C. Compromiso cívico.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "b0ca524b-e20e-43ad-852e-e6bfc2d4a325",
+   "officialCode": "GEH.1.C.1",
+   "name": "Dignidad humana y derechos universales. Convención sobre los Derechos del Niño.",
+   "description": "Dignidad humana y derechos universales. Convención sobre los Derechos del Niño.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque C · 1.º ESO"
+  },
+  {
+   "id": "b1ca53de-df0e-4ef4-862e-e852bfd49e6c",
+   "officialCode": "GEH.1.C.2",
+   "name": "Alteridad: respeto y aceptación «del otro». Comportamientos no discriminatorios y contrarios a cualquier actitud diferenciadora y segregadora.",
+   "description": "Alteridad: respeto y aceptación «del otro». Comportamientos no discriminatorios y contrarios a cualquier actitud diferenciadora y segregadora.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque C · 1.º ESO"
+  },
+  {
+   "id": "b2ca5571-e00e-4087-872e-e9e5c0d49fff",
+   "officialCode": "GEH.1.C.3",
+   "name": "Igualdad de género. Manifestaciones y conductas no sexistas.",
+   "description": "Igualdad de género. Manifestaciones y conductas no sexistas.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque C · 1.º ESO"
+  },
+  {
+   "id": "b3ca5704-dd0e-4bce-802e-dee0bdd49b46",
+   "officialCode": "GEH.1.C.4",
+   "name": "Interés ante los retos y problemas de actualidad en el entorno local y global.",
+   "description": "Interés ante los retos y problemas de actualidad en el entorno local y global.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque C · 1.º ESO"
+  },
+  {
+   "id": "b4ca5897-de0e-4d61-812e-e073bed49cd9",
+   "officialCode": "GEH.1.C.5",
+   "name": "Las redes sociales. Seguridad y prevención ante los riesgos y peligros del uso de las tecnologías de la información y la comunicación.",
+   "description": "Las redes sociales. Seguridad y prevención ante los riesgos y peligros del uso de las tecnologías de la información y la comunicación.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque C · 1.º ESO"
+  },
+  {
+   "id": "b5ca5a2a-db0e-48a8-822e-e206bbd49820",
+   "officialCode": "GEH.1.C.6",
+   "name": "Convivencia cívica y cultura democrática. Incorporación e implicación de la sociedad civil en procesos democráticos. Participación en proyectos comunitarios.",
+   "description": "Convivencia cívica y cultura democrática. Incorporación e implicación de la sociedad civil en procesos democráticos. Participación en proyectos comunitarios.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque C · 1.º ESO"
+  },
+  {
+   "id": "b6ca5bbd-dc0e-4a3b-832e-e399bcd499b3",
+   "officialCode": "GEH.1.C.7",
+   "name": "Conciencia ambiental. Respeto, protección y cuidado de los seres vivos y del planeta.",
+   "description": "Conciencia ambiental. Respeto, protección y cuidado de los seres vivos y del planeta.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque C · 1.º ESO"
+  },
+  {
+   "id": "a7ca4420-d90e-4582-8c2e-f1c4c9d4ae2a",
+   "officialCode": "GEH.1.C.8",
+   "name": "Conservación y defensa del patrimonio histórico, artístico y cultural. El patrimonio andaluz. El andalucismo histórico. Blas Infante Los símbolos de Andalucía y sus instituciones.",
+   "description": "Conservación y defensa del patrimonio histórico, artístico y cultural. El patrimonio andaluz. El andalucismo histórico. Blas Infante Los símbolos de Andalucía y sus instituciones.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque C · 1.º ESO"
+  },
+  {
+   "id": "a8ca45b3-da0e-4715-8d2e-f357cad4afbd",
+   "officialCode": "GEH.1.C.9",
+   "name": "Identificación y gestión de las emociones y su repercusión en comportamientos individuales y colectivos.",
+   "description": "Identificación y gestión de las emociones y su repercusión en comportamientos individuales y colectivos.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque C · 1.º ESO"
+  },
+  {
+   "id": "c97fd7a1-798d-4027-87d4-f31dc9bcba0f",
+   "officialCode": "GEH.1.C.10",
+   "name": "Ciclos vitales, uso del tiempo libre y hábitos de consumo. Diferencias y cambios en las formas de vida en las sociedades actuales y en las del pasado.",
+   "description": "Ciclos vitales, uso del tiempo libre y hábitos de consumo. Diferencias y cambios en las formas de vida en las sociedades actuales y en las del pasado.",
+   "curriculumVersionId": "e68e321d-e234-4577-86ea-0551f0dc9f4f",
+   "subjectId": "28ad3168-0ef6-46f2-8bcd-8334da58831a",
+   "block": "Bloque C · 1.º ESO"
+  },
+  {
+   "id": "950fddfd-49f5-4693-803b-c7f1d0ee7e2b",
+   "officialCode": "LCL.1.A.1",
+   "name": "Observación de la propia biografía lingüística y de la diversidad lingüística del centro. Las familias lingüísticas y las lenguas del mundo.",
+   "description": "Observación de la propia biografía lingüística y de la diversidad lingüística del centro. Las familias lingüísticas y las lenguas del mundo.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "920fd944-4af5-4826-8d3b-c338d1ee7fbe",
+   "officialCode": "LCL.1.A.2",
+   "name": "Reconocimiento de las lenguas de España: origen, distribución geográfica y nociones básicas.",
+   "description": "Reconocimiento de las lenguas de España: origen, distribución geográfica y nociones básicas.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "930fdad7-4bf5-49b9-8e3b-c4cbd2ee8151",
+   "officialCode": "LCL.1.A.3",
+   "name": "Aproximación a la lengua de signos. Aproximación al sistema braille y la tiflotecnología. Alfabeto dactilológico.",
+   "description": "Aproximación a la lengua de signos. Aproximación al sistema braille y la tiflotecnología. Alfabeto dactilológico.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "900fd61e-4cf5-4b4c-833b-ccaad3ee82e4",
+   "officialCode": "LCL.1.A.4",
+   "name": "Las variedades dialectales del español, con especial atención a la modalidad lingüística andaluza.",
+   "description": "Las variedades dialectales del español, con especial atención a la modalidad lingüística andaluza.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "910fd7b1-4df5-4cdf-843b-ce3dd4ee8477",
+   "officialCode": "LCL.1.A.5",
+   "name": "Identificación de prejuicios y estereotipos lingüísticos y exploración de formas de evitarlos. B. Comunicación. Estrategias de producción, comprensión y análisis crítico de textos orales, escritos y multimodales de diferentes ámbitos, con atención conjunta a los siguientes aspectos:",
+   "description": "Identificación de prejuicios y estereotipos lingüísticos y exploración de formas de evitarlos. B. Comunicación. Estrategias de producción, comprensión y análisis crítico de textos orales, escritos y multimodales de diferentes ámbitos, con atención conjunta a los siguientes aspectos:",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "4efd8188-7923-482a-8ac8-05bc5f7d3322",
+   "officialCode": "LCL.1.B.1",
+   "name": "Contexto. Componentes del hecho comunicativo: distancia social entre los interlocutores; propósitos comunicativos; canal de comunicación y elementos no verbales de la comunicación.",
+   "description": "Contexto. Componentes del hecho comunicativo: distancia social entre los interlocutores; propósitos comunicativos; canal de comunicación y elementos no verbales de la comunicación.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "51fd8641-7823-4697-8dc8-0a755e7d318f",
+   "officialCode": "LCL.1.B.2",
+   "name": "1. Secuencias textuales básicas, con especial atención a las narrativas, descriptivas. El texto narrativo y subgéneros. Formas de la narración. La lengua en la narración. Clases de narraciones. Tipos de narradores. El texto descriptivo. La lengua en la descripción. Funciones de la descripción. Tipos",
+   "description": "1. Secuencias textuales básicas, con especial atención a las narrativas, descriptivas. El texto narrativo y subgéneros. Formas de la narración. La lengua en la narración. Clases de narraciones. Tipos de narradores. El texto descriptivo. La lengua en la descripción. Funciones de la descripción. Tipos de descripción.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "50fd84ae-7723-4504-8cc8-08e25d7d2ffc",
+   "officialCode": "LCL.1.B.3",
+   "name": "5. Alfabetización informacional: búsqueda y selección de la información con criterios de fiabilidad, calidad y pertinencia. Utilización de plataformas virtuales para la realización de proyectos escolares.",
+   "description": "5. Alfabetización informacional: búsqueda y selección de la información con criterios de fiabilidad, calidad y pertinencia. Utilización de plataformas virtuales para la realización de proyectos escolares.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "53fd8967-7623-4371-87c8-01035c7d2e69",
+   "officialCode": "LCL.1.B.4",
+   "name": "3. Corrección lingüística y revisión ortográfica y gramatical de los textos. Uso de diccionarios, manuales de consulta y de correctores ortográficos en soporte analógico o digital. Conocimiento y uso de las normas de ortografía: la división en sílabas, las reglas de acentuación, la tilde diacrítica,",
+   "description": "3. Corrección lingüística y revisión ortográfica y gramatical de los textos. Uso de diccionarios, manuales de consulta y de correctores ortográficos en soporte analógico o digital. Conocimiento y uso de las normas de ortografía: la división en sílabas, las reglas de acentuación, la tilde diacrítica, el uso de mayúsculas y minúsculas.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "ea211fc7-74e5-4e49-854d-09bbfaa0d161",
+   "officialCode": "LCL.1.C.1",
+   "name": "1. Implicación en la lectura de manera progresivamente autónoma a partir de una preselección de textos variados que incluyan obras de autoras y autores, con especial atención al patrimonio literario andaluz y singularmente a quienes han sido escogidos desde el año 2000 por el Centro Andaluz de las L",
+   "description": "1. Implicación en la lectura de manera progresivamente autónoma a partir de una preselección de textos variados que incluyan obras de autoras y autores, con especial atención al patrimonio literario andaluz y singularmente a quienes han sido escogidos desde el año 2000 por el Centro Andaluz de las Letras como Autor del Año o Nuevo Clásico Andaluz. Reflexión sobre los textos y sobre la propia práctica de lectura sustentada en modelos.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque C · 1.º ESO"
+  },
+  {
+   "id": "eb21215a-71e5-4990-864d-0b4ef7a0cca8",
+   "officialCode": "LCL.1.C.2",
+   "name": "1. Lectura de obras y fragmentos relevantes de la literatura juvenil contemporánea y del patrimonio literario andaluz, nacional y universal, inscritas en itinerarios temáticos o de género, que incluyan la presencia de autoras y autores. Juan Ramón Jiménez, Federico García Lorca, Rafael Alberti, Mari",
+   "description": "1. Lectura de obras y fragmentos relevantes de la literatura juvenil contemporánea y del patrimonio literario andaluz, nacional y universal, inscritas en itinerarios temáticos o de género, que incluyan la presencia de autoras y autores. Juan Ramón Jiménez, Federico García Lorca, Rafael Alberti, Mariluz Escribano, María Victoria Atencia, Elvira Lindo, entre otros.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque C · 1.º ESO"
+  },
+  {
+   "id": "ce3d9f4a-fb20-4ee8-8fd9-478660dbafa0",
+   "officialCode": "LCL.1.D.1",
+   "name": "Observación de las diferencias lingüísticas relevantes e intersecciones entre lengua oral y lengua escrita.",
+   "description": "Observación de las diferencias lingüísticas relevantes e intersecciones entre lengua oral y lengua escrita.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque D · 1.º ESO"
+  },
+  {
+   "id": "cd3d9db7-fe20-43a1-8ed9-45f363dbb459",
+   "officialCode": "LCL.1.D.2",
+   "name": "Distinción entre la forma (categoría gramatical) y la función de las palabras (funciones sintácticas), y conocimiento de los procedimientos léxicos (afijos) y sintácticos para el cambio de categoría. Las palabras variables: el nombre, el adjetivo, los determinantes, los pronombres y el verbo. Las pa",
+   "description": "Distinción entre la forma (categoría gramatical) y la función de las palabras (funciones sintácticas), y conocimiento de los procedimientos léxicos (afijos) y sintácticos para el cambio de categoría. Las palabras variables: el nombre, el adjetivo, los determinantes, los pronombres y el verbo. Las palabras invariables: el adverbio, la preposición, la conjunción y la interjección.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque D · 1.º ESO"
+  },
+  {
+   "id": "cc3d9c24-fd20-420e-8dd9-446062dbb2c6",
+   "officialCode": "LCL.1.D.3",
+   "name": "Relación entre los esquemas semántico y sintáctico de la oración simple. El sujeto y su identificación. El predicado: diferenciación e identificación de los distintos tipos. Oraciones unimembres. Distinción y reconocimiento del complemento directo, indirecto, circunstancial, de régimen y del complem",
+   "description": "Relación entre los esquemas semántico y sintáctico de la oración simple. El sujeto y su identificación. El predicado: diferenciación e identificación de los distintos tipos. Oraciones unimembres. Distinción y reconocimiento del complemento directo, indirecto, circunstancial, de régimen y del complemento predicativo. Oraciones activas y pasivas. Transformación de oraciones activas en pasivas.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque D · 1.º ESO"
+  },
+  {
+   "id": "cb3d9a91-0020-46c7-84d9-4f6565dbb77f",
+   "officialCode": "LCL.1.D.4",
+   "name": "Lexemas y morfemas flexivos y derivativos. La familia léxica. Las siglas y los acrónimos. Los préstamos lingüísticos. Reflexión sobre los cambios en su significado, las relaciones semánticas entre palabras y sus valores denotativos y connotativos. Sinonimia y antonimia, monosemia y polisemia. El cam",
+   "description": "Lexemas y morfemas flexivos y derivativos. La familia léxica. Las siglas y los acrónimos. Los préstamos lingüísticos. Reflexión sobre los cambios en su significado, las relaciones semánticas entre palabras y sus valores denotativos y connotativos. Sinonimia y antonimia, monosemia y polisemia. El cambio semántico: metáfora, metonimia, palabras tabú y eufemismos.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque D · 1.º ESO"
+  },
+  {
+   "id": "ca3d98fe-ff20-4534-83d9-4dd264dbb5ec",
+   "officialCode": "LCL.1.D.5",
+   "name": "Estrategias de uso progresivamente autónomo de diccionarios y manuales de gramática. para obtener información gramatical básica. La gramática de Elio Antonio de Nebrija.",
+   "description": "Estrategias de uso progresivamente autónomo de diccionarios y manuales de gramática. para obtener información gramatical básica. La gramática de Elio Antonio de Nebrija.",
+   "curriculumVersionId": "fec57406-d670-4340-8873-3e4a17e8fc48",
+   "subjectId": "107ee9db-e25a-4905-8a4e-4077be138bfd",
+   "block": "Bloque D · 1.º ESO"
+  },
+  {
+   "id": "8444b3dd-2af4-496b-8954-4331a321cc03",
+   "officialCode": "MAT.1.A.1",
+   "name": "1. Estrategias variadas de recuento sistemático en situaciones de la vida cotidiana.",
+   "description": "1. Estrategias variadas de recuento sistemático en situaciones de la vida cotidiana.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "8144af24-2bf4-4afe-8654-3e78a421cd96",
+   "officialCode": "MAT.1.A.2",
+   "name": "3. Números enteros, fraccionarios, decimales y raíces en la expresión de cantidades en contextos de la vida cotidiana.",
+   "description": "3. Números enteros, fraccionarios, decimales y raíces en la expresión de cantidades en contextos de la vida cotidiana.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "8244b0b7-2cf4-4c91-8754-400ba521cf29",
+   "officialCode": "MAT.1.A.3",
+   "name": "5. Propiedades de las operaciones (suma, resta, multiplicación, división y potenciación): cálculos de manera eficiente con números naturales, enteros, fraccionarios y decimales tanto mentalmente como de forma manual, con calculadora u hoja de cálculo.",
+   "description": "5. Propiedades de las operaciones (suma, resta, multiplicación, división y potenciación): cálculos de manera eficiente con números naturales, enteros, fraccionarios y decimales tanto mentalmente como de forma manual, con calculadora u hoja de cálculo.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "7f44abfe-2df4-4e24-8c54-47eaa621d0bc",
+   "officialCode": "MAT.1.A.4",
+   "name": "1. Factores, múltiplos y divisores. Factorización en números primos para resolver problemas: estrategias y herramientas.",
+   "description": "1. Factores, múltiplos y divisores. Factorización en números primos para resolver problemas: estrategias y herramientas.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "8044ad91-2ef4-4fb7-8d54-497da721d24f",
+   "officialCode": "MAT.1.A.5",
+   "name": "3. Situaciones de proporcionalidad en diferentes contextos: análisis y desarrollo de métodos para la resolución de problemas (aumentos y disminuciones porcentuales, rebajas y subidas de precios, impuestos, escalas, cambios de divisas, velocidad y tiempo, etc.).",
+   "description": "3. Situaciones de proporcionalidad en diferentes contextos: análisis y desarrollo de métodos para la resolución de problemas (aumentos y disminuciones porcentuales, rebajas y subidas de precios, impuestos, escalas, cambios de divisas, velocidad y tiempo, etc.).",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "7d44a8d8-2ff5-414a-8a54-44c4a821d3e2",
+   "officialCode": "MAT.1.A.6",
+   "name": "Educación financiera. Métodos para la toma de decisiones de consumo responsable atendiendo a las relaciones entre calidad y precio, y a las relaciones entre valor y precio en contextos cotidianos. B. Sentido de la medida.",
+   "description": "Educación financiera. Métodos para la toma de decisiones de consumo responsable atendiendo a las relaciones entre calidad y precio, y a las relaciones entre valor y precio en contextos cotidianos. B. Sentido de la medida.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque A · 1.º ESO"
+  },
+  {
+   "id": "bf705568-b983-4e62-83e0-80fc51b0b35a",
+   "officialCode": "MAT.1.B.1",
+   "name": "2. Estrategias de elección de las unidades y operaciones adecuadas en problemas que impliquen medida.",
+   "description": "2. Estrategias de elección de las unidades y operaciones adecuadas en problemas que impliquen medida.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "c2705a21-b883-4ccf-86e0-85b550b0b1c7",
+   "officialCode": "MAT.1.B.2",
+   "name": "Estimación y relaciones. Estrategias para la toma de decisión justificada del grado de precisión requerida en situaciones de medida. D. Sentido algebraico.",
+   "description": "Estimación y relaciones. Estrategias para la toma de decisión justificada del grado de precisión requerida en situaciones de medida. D. Sentido algebraico.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque B · 1.º ESO"
+  },
+  {
+   "id": "3d733eaa-bae2-4ae0-88f1-c2c6d30e6658",
+   "officialCode": "MAT.1.D.1",
+   "name": "Patrones, pautas regularidades: observación determinación de la regla de formación en casos sencillos.",
+   "description": "Patrones, pautas regularidades: observación determinación de la regla de formación en casos sencillos.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque D · 1.º ESO"
+  },
+  {
+   "id": "3c733d17-bde2-4f99-87f1-c133d60e6b11",
+   "officialCode": "MAT.1.D.2",
+   "name": "Modelo matemático. Modelización de situaciones de la vida cotidiana usando representaciones matemáticas y el lenguaje algebraico.",
+   "description": "Modelo matemático. Modelización de situaciones de la vida cotidiana usando representaciones matemáticas y el lenguaje algebraico.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque D · 1.º ESO"
+  },
+  {
+   "id": "3b733b84-bce2-4e06-86f1-bfa0d50e697e",
+   "officialCode": "MAT.1.D.3",
+   "name": "Variable: comprensión del concepto en sus diferentes naturalezas.",
+   "description": "Variable: comprensión del concepto en sus diferentes naturalezas.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque D · 1.º ESO"
+  },
+  {
+   "id": "3a7339f1-bfe2-42bf-8df1-caa5d80e6e37",
+   "officialCode": "MAT.1.D.4",
+   "name": "2. Relaciones lineales y cuadráticas: identificación y comparación de diferentes modos de representación, tablas, gráficas o expresiones algebraicas, y sus propiedades a partir de ellas. E. Sentido estocástico.",
+   "description": "2. Relaciones lineales y cuadráticas: identificación y comparación de diferentes modos de representación, tablas, gráficas o expresiones algebraicas, y sus propiedades a partir de ellas. E. Sentido estocástico.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque D · 1.º ESO"
+  },
+  {
+   "id": "393544c9-56a3-49df-84b3-31c5eed09ed7",
+   "officialCode": "MAT.1.E.1",
+   "name": "4. Interpretación de las medidas de localización y dispersión. Elección, en función de la situación objeto de estudio, y cálculo de la medida de centralización más adecuada.",
+   "description": "4. Interpretación de las medidas de localización y dispersión. Elección, en función de la situación objeto de estudio, y cálculo de la medida de centralización más adecuada.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque E · 1.º ESO"
+  },
+  {
+   "id": "36354010-57a3-4b72-81b3-2d0cefd0a06a",
+   "officialCode": "MAT.1.E.2",
+   "name": "2. Datos relevantes para dar respuesta a cuestiones planteadas en investigaciones estadísticas: selección y presentación de la información procedente de una muestra mediante herramientas digitales.",
+   "description": "2. Datos relevantes para dar respuesta a cuestiones planteadas en investigaciones estadísticas: selección y presentación de la información procedente de una muestra mediante herramientas digitales.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque E · 1.º ESO"
+  },
+  {
+   "id": "14109d54-64e3-4676-8f8f-2170fdfdee0e",
+   "officialCode": "MAT.1.F.1",
+   "name": "3. Estrategias de fomento de la flexibilidad cognitiva: apertura a cambios de estrategia y transformación del error en oportunidad de aprendizaje.",
+   "description": "3. Estrategias de fomento de la flexibilidad cognitiva: apertura a cambios de estrategia y transformación del error en oportunidad de aprendizaje.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque F · 1.º ESO"
+  },
+  {
+   "id": "1710a20d-63e3-44e3-828f-2629fcfdec7b",
+   "officialCode": "MAT.1.F.2",
+   "name": "1. Técnicas cooperativas para optimizar el trabajo en equipo y compartir y construir conocimiento matemático.",
+   "description": "1. Técnicas cooperativas para optimizar el trabajo en equipo y compartir y construir conocimiento matemático.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque F · 1.º ESO"
+  },
+  {
+   "id": "1610a07a-62e3-4350-818f-2496fbfdeae8",
+   "officialCode": "MAT.1.F.3",
+   "name": "3. Reconocimiento de la contribución de la cultura andaluza, en los diferentes periodos históricos y en particular del andalusí, al desarrollo de las matemáticas.",
+   "description": "3. Reconocimiento de la contribución de la cultura andaluza, en los diferentes periodos históricos y en particular del andalusí, al desarrollo de las matemáticas.",
+   "curriculumVersionId": "57dfb003-c655-4161-818c-6537d90cd659",
+   "subjectId": "a61e65d2-9141-4ca0-812a-d7befbbd0ac8",
+   "block": "Bloque F · 1.º ESO"
+  }
+ ]
+}

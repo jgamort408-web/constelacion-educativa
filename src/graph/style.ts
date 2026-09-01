@@ -1,4 +1,4 @@
-import type { LayoutOptions, StylesheetJson } from 'cytoscape';
+import type { Css, LayoutOptions, StylesheetJson } from 'cytoscape';
 import type { SemanticLevel } from './projection.ts';
 
 /**
@@ -73,23 +73,81 @@ export function buildStylesheet(palette: Palette = PALETA_POR_DEFECTO): Styleshe
     {
       selector: 'node',
       style: {
+        // La forma y el icono vienen del dato: son el segundo y tercer portador
+        // de información después del color, que la §16 prohíbe usar en solitario.
+        // Los tipos de Cytoscape no contemplan un mapeo de datos en `shape`,
+        // aunque la biblioteca sí lo admite y está verificado en el navegador.
+        shape: 'data(shape)' as unknown as Css.Node['shape'],
         'background-color': 'data(color)',
-        'background-opacity': 0.9,
+        'background-opacity': 0.92,
+        'background-image': 'data(icono)',
+        'background-image-opacity': 0.92,
+        'background-width': '50%',
+        'background-height': '50%',
+        'background-fit': 'contain',
+        'background-clip': 'none',
         width: 'data(size)',
         height: 'data(size)',
         label: 'data(label)',
         color: TINTA,
-        'font-size': 12,
+        'font-size': 13,
+        'font-weight': 500,
         'font-family': 'IBM Plex Sans, system-ui, sans-serif',
         'text-valign': 'bottom',
-        'text-margin-y': 6,
+        'text-margin-y': 7,
         'text-wrap': 'wrap',
-        'text-max-width': '120px',
+        'text-max-width': '150px',
+        // Fondo sólido tras la etiqueta. Sobre un mapa denso el contorno solo no
+        // basta: las letras se pierden entre las aristas que pasan por detrás.
+        'text-background-color': CIELO,
+        'text-background-opacity': 0.85,
+        'text-background-padding': '3px',
+        'text-background-shape': 'roundrectangle',
         'text-outline-color': CIELO,
-        'text-outline-width': 3,
+        'text-outline-width': 1,
+        // Por debajo de este tamaño la etiqueta se oculta en vez de quedar
+        // ilegible: un texto de dos píxeles no informa, solo ensucia.
+        'min-zoomed-font-size': 8,
         'border-width': 0,
         'transition-property': 'opacity, border-width, background-opacity',
-        'transition-duration': 180,
+        'transition-duration': 220,
+      },
+    },
+
+    // ── Contenedores: la materia agrupa a sus competencias, y estas a sus
+    // criterios. Sin esta jerarquía los criterios de tres materias salían
+    // mezclados y encontrar uno era imposible.
+    {
+      // Los contenedores no se atenúan del todo: son el mapa de referencia que
+      // permite situar lo resaltado.
+      selector: ':parent.atenuado',
+      style: { opacity: 0.5 },
+    },
+    {
+      selector: ':parent',
+      style: {
+        shape: 'round-rectangle',
+        'background-opacity': 0.06,
+        'background-image': 'none',
+        'border-width': 1,
+        'border-opacity': 0.5,
+        'border-color': 'data(color)',
+        padding: '20px',
+        'text-valign': 'top',
+        'text-halign': 'center',
+        'text-margin-y': -6,
+        'font-size': 15,
+        'font-weight': 600,
+        'min-zoomed-font-size': 5,
+      },
+    },
+    {
+      selector: 'node[type = "COMPETENCIA_ESPECIFICA"]:parent',
+      style: {
+        'background-opacity': 0.12,
+        'border-style': 'dashed',
+        padding: '13px',
+        'font-size': 12,
       },
     },
 
@@ -100,10 +158,10 @@ export function buildStylesheet(palette: Palette = PALETA_POR_DEFECTO): Styleshe
         'background-color': palette.superficie,
         'border-width': 2,
         'border-color': LATON,
-        'font-size': 14,
+        'font-size': 17,
         'font-weight': 600,
-        'text-valign': 'center',
-        'text-margin-y': 0,
+        'text-valign': 'bottom',
+        'text-margin-y': 10,
       },
     },
     {
@@ -121,12 +179,10 @@ export function buildStylesheet(palette: Palette = PALETA_POR_DEFECTO): Styleshe
       style: {
         'border-width': 2,
         'border-color': CIELO,
-        'font-size': 12,
+        'font-size': 15,
         'font-weight': 600,
-        'text-valign': 'center',
-        'text-margin-y': 0,
-        color: '#0e1120',
-        'text-outline-width': 0,
+        'text-valign': 'bottom',
+        'text-margin-y': 9,
       },
     },
     {
@@ -136,21 +192,20 @@ export function buildStylesheet(palette: Palette = PALETA_POR_DEFECTO): Styleshe
         'background-opacity': 0.22,
         'border-width': 2,
         'border-color': LATON,
-        shape: 'round-diamond',
-        'font-size': 12,
+        'font-size': 13,
       },
     },
     {
       selector: 'node[type = "CRITERIO_EVALUACION"]',
-      style: { shape: 'round-rectangle', 'font-size': 9 },
+      style: { 'font-size': 11 },
     },
     {
       selector: 'node[type = "SABER_BASICO"]',
-      style: { shape: 'round-tag', 'font-size': 9 },
+      style: { 'font-size': 10 },
     },
     {
       selector: 'node[type = "SESION"]',
-      style: { shape: 'round-rectangle', 'font-size': 8 },
+      style: { 'font-size': 10 },
     },
 
     // Nodos sin materia propia: gris neutro, nunca un color que sugiera una materia.
@@ -221,7 +276,12 @@ export function buildStylesheet(palette: Palette = PALETA_POR_DEFECTO): Styleshe
     },
     {
       selector: '.atenuado',
-      style: { opacity: 0.12 },
+      style: {
+        // 0.12 dejaba el resto del mapa prácticamente invisible: al seleccionar
+        // un nodo entre ciento setenta, se perdía todo el contexto y no se sabía
+        // dónde estaba lo resaltado. Atenuar es bajar el volumen, no apagar.
+        opacity: 0.3,
+      },
     },
     {
       selector: 'node.seleccionado',
@@ -248,7 +308,8 @@ export function buildStylesheet(palette: Palette = PALETA_POR_DEFECTO): Styleshe
 export function layoutFor(level: SemanticLevel, reducedMotion: boolean): LayoutOptions {
   const base = {
     animate: !reducedMotion,
-    animationDuration: 420,
+    animationDuration: 460,
+    animationEasing: 'ease-out-cubic',
     fit: true,
     padding: 60,
   };
@@ -267,11 +328,28 @@ export function layoutFor(level: SemanticLevel, reducedMotion: boolean): LayoutO
     // tiene de dónde separarlos: el grafo sale apelotonado en una diagonal.
     // Aleatorizar les da un punto de partida del que el algoritmo puede tirar.
     randomize: true,
-    nodeSeparation: 130,
-    idealEdgeLength: level === 'SESIONES' ? 70 : 130,
-    nodeRepulsion: 14000,
+    // El nivel de currículo trae más de cien nodos, la mayoría sin aristas:
+    // son criterios que aún no se han asignado. Se compactan dentro de su
+    // materia en vez de esparcirse por el lienzo.
+    nodeSeparation: level === 'CURRICULO' ? 55 : 130,
+    idealEdgeLength: level === 'SESIONES' ? 70 : level === 'CURRICULO' ? 70 : 130,
+    nodeRepulsion: level === 'CURRICULO' ? 4500 : 14000,
+    // `tile` empaqueta los nodos sueltos en rejilla dentro de su contenedor, en
+    // lugar de dejarlos flotando alrededor.
+    tile: true,
+    tilingPaddingVertical: 8,
+    tilingPaddingHorizontal: 8,
+    packComponents: true,
     gravity: 0.28,
+    // Los contenedores (materia, competencia) necesitan su propia gravedad, o
+    // sus hijos se dispersan y el grupo deja de leerse como grupo.
+    gravityCompound: 1.4,
+    gravityRangeCompound: 1.5,
+    nestingFactor: 0.2,
     numIter: 3000,
+    // Una entrada suave: los nodos aparecen desde su posición previa en vez de
+    // saltar. Con muchos nodos, un salto seco desorienta.
+    animationDuration: 520,
     // Sin esto, fCoSE aplica su propia animación además de la del layout y el
     // resultado tiembla en equipos lentos.
     animationEasing: 'ease-out',

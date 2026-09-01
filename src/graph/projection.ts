@@ -1,5 +1,6 @@
 import type { EdgeType, NodeType, ProjectSnapshot, Uuid } from '@/domain';
 import { buildContributionMatrix, computeContribution } from '@/domain';
+import { ASPECTO, iconoDeCriterio } from './iconos.ts';
 
 /**
  * Proyección del dominio al grafo visual (§3, §4).
@@ -57,6 +58,28 @@ export interface GraphNode {
   readonly size: number;
   /** Texto largo para el título accesible y el tooltip. */
   readonly detail: string;
+  /**
+   * Nodo contenedor, para agrupar visualmente.
+   *
+   * Los criterios cuelgan de su competencia y las competencias de su materia, de
+   * modo que en pantalla forman islas en vez de una nube revuelta: el criterio
+   * 1.2.1 aparece dentro de la competencia 1.2, que aparece dentro de su materia.
+   */
+  readonly parent?: Uuid;
+  /**
+   * Clave de ordenación natural.
+   *
+   * Ordenar por texto pone el 10 justo detrás del 1, porque compara carácter a
+   * carácter. Esta clave rellena los números con ceros para que 1, 2, … 9, 10
+   * salgan en su orden.
+   */
+  readonly sortKey: string;
+  /** Silueta del nodo. La forma es el segundo portador de información (§16). */
+  readonly shape: string;
+  /** Icono en línea, como data URI. */
+  readonly icono: string;
+  /** Qué representa el icono, para el panel y los lectores de pantalla. */
+  readonly iconoRotulo: string;
 }
 
 export interface GraphEdge {
@@ -101,14 +124,45 @@ const SIZE: Record<NodeType, number> = {
   SESION: 12,
 };
 
+/**
+ * Clave de orden que respeta el valor de los números.
+ *
+ * «MAT.1.10.2» debe ir después de «MAT.1.9.1», no entre «MAT.1.1» y «MAT.1.2».
+ * Se consigue rellenando cada tramo numérico a seis cifras.
+ */
+export function naturalKey(texto: string): string {
+  return texto.replace(/\d+/g, (n) => n.padStart(6, '0'));
+}
+
 function node(
   id: Uuid,
   type: NodeType,
   label: string,
   detail: string,
   color: string | null,
+  extra: { parent?: Uuid; sortKey?: string } = {},
 ): GraphNode {
-  return { id, type, label, detail, color, size: SIZE[type] };
+  const aspecto = ASPECTO[type];
+  // Los criterios llevan además el icono de su familia de verbo: dice qué pide
+  // hacer, que es más útil que repetir el símbolo genérico de «criterio».
+  const propio =
+    type === 'CRITERIO_EVALUACION'
+      ? iconoDeCriterio(detail || label)
+      : { icono: aspecto.icono, rotulo: aspecto.rotulo };
+
+  return {
+    id,
+    type,
+    label,
+    detail,
+    color,
+    size: SIZE[type],
+    sortKey: naturalKey(extra.sortKey ?? label),
+    shape: aspecto.shape,
+    icono: propio.icono,
+    iconoRotulo: propio.rotulo,
+    ...(extra.parent === undefined ? {} : { parent: extra.parent }),
+  };
 }
 
 /** Trunca una etiqueta larga: en un nodo del grafo no cabe una frase entera. */
@@ -238,7 +292,7 @@ export function project(
       }
     }
 
-    return { level, nodes, edges };
+    return ordenar({ level, nodes, edges });
   }
 
   // A partir de aquí todos los niveles parten de situaciones y actividades.
@@ -346,6 +400,30 @@ export function project(
 
   // ── Nivel 4 · CURRÍCULO ──────────────────────────────────────────────────
   if (level === 'CURRICULO') {
+    // Las materias son los contenedores de primer nivel: cada una recoge sus
+    // competencias, y cada competencia sus criterios. Sin esta jerarquía los
+    // criterios de tres materias salían mezclados y era imposible encontrar uno.
+    subjectNodes.forEach(addNode);
+
+    const competenciasConCriterios = new Set(
+      snapshot.evaluationCriteria.map((criterion) => criterion.competencyId),
+    );
+
+    for (const competency of snapshot.competencies) {
+      if (!visibleSubjects.has(competency.subjectId)) continue;
+      if (!competenciasConCriterios.has(competency.id)) continue;
+      addNode(
+        node(
+          competency.id,
+          'COMPETENCIA_ESPECIFICA',
+          competency.officialCode ?? short(competency.name, 16),
+          competency.description,
+          colorOf.get(competency.subjectId) ?? null,
+          { parent: competency.subjectId, sortKey: competency.officialCode ?? competency.name },
+        ),
+      );
+    }
+
     for (const criterion of snapshot.evaluationCriteria) {
       if (!visibleSubjects.has(criterion.subjectId)) continue;
       addNode(
@@ -353,8 +431,15 @@ export function project(
           criterion.id,
           'CRITERIO_EVALUACION',
           criterion.officialCode ?? short(criterion.name, 18),
-          criterion.name,
+          criterion.description,
           colorOf.get(criterion.subjectId) ?? null,
+          {
+            // Cuelga de su competencia si está dibujada; si no, de su materia.
+            parent: included.has(criterion.competencyId)
+              ? criterion.competencyId
+              : criterion.subjectId,
+            sortKey: criterion.officialCode ?? criterion.name,
+          },
         ),
       );
     }
@@ -365,9 +450,10 @@ export function project(
         node(
           knowledge.id,
           'SABER_BASICO',
-          short(knowledge.name, 22),
-          `${knowledge.block} · ${subjectName.get(knowledge.subjectId) ?? ''}`,
+          knowledge.officialCode ?? short(knowledge.name, 20),
+          `${knowledge.block} · ${knowledge.description}`,
           colorOf.get(knowledge.subjectId) ?? null,
+          { parent: knowledge.subjectId, sortKey: knowledge.officialCode ?? knowledge.name },
         ),
       );
     }
@@ -396,7 +482,7 @@ export function project(
       }
     }
 
-    return { level, nodes, edges };
+    return ordenar({ level, nodes, edges });
   }
 
   // ── Nivel 5 · SESIONES ───────────────────────────────────────────────────
@@ -427,7 +513,15 @@ export function project(
     });
   }
 
-  return { level, nodes, edges };
+  return ordenar({ level, nodes, edges });
+}
+
+/** Devuelve la proyección con los nodos en orden natural. */
+function ordenar(proyeccion: GraphProjection): GraphProjection {
+  return {
+    ...proyeccion,
+    nodes: [...proyeccion.nodes].sort((a, b) => a.sortKey.localeCompare(b.sortKey, 'es')),
+  };
 }
 
 /**

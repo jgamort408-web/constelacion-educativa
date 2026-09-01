@@ -183,6 +183,35 @@ function main(): void {
       );
     }
 
+    // Criterios cortados a mitad de frase. El texto que hay es correcto pero
+    // incompleto: el resto cae en un corte de tabla que el analizador no cruza.
+    // Se importan y se marcan, porque medio criterio bien copiado sigue siendo
+    // útil para localizarlo en la norma, y ocultarlo no lo sería.
+    for (const criterio of criteriosEnRango) {
+      const texto = criterio.texto.trim();
+      // Solo los inequívocamente cortados. Exigir además que termine en punto
+      // marcaba 162 criterios, la mayoría correctos: el boletín no siempre
+      // cierra la frase con punto, y un aviso que grita por todo no avisa.
+      if (texto.length >= 60) continue;
+      pendientes.push(
+        pendingCurriculumReferenceSchema.parse({
+          id: stableId(
+            'andalucia:trunc',
+            `${materia.prefijo}:${criterio.curso}:${criterio.codigo}`,
+          ),
+          citedCode: `${materia.prefijo}.${criterio.curso}.${criterio.codigo}`,
+          expectedType: 'CRITERIO_EVALUACION',
+          origin:
+            `Anexo II · ${materia.nombre} ${criterio.curso}.º: texto incompleto, cortado por la tabla`.slice(
+              0,
+              120,
+            ),
+          occurrences: 1,
+          detectedAt: ahora,
+        }),
+      );
+    }
+
     // Huecos en la numeración: un criterio que la Orden tiene y aquí falta.
     const porCompetencia = new Map<string, number[]>();
     for (const criterio of criteriosEnRango) {

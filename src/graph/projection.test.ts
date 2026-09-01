@@ -20,13 +20,13 @@ describe('niveles semánticos', () => {
 
   it('la galaxia muestra solo el proyecto y las materias', () => {
     const { nodes } = project(snapshot, 'GALAXIA');
-    expect(nodes).toHaveLength(6); // 1 proyecto + 5 materias
+    expect(nodes).toHaveLength(snapshot.subjects.length + 1);
     expect(new Set(nodes.map((n) => n.type))).toEqual(new Set(['PROYECTO', 'MATERIA']));
   });
 
   it('cada materia se une al proyecto con su contribución calculada', () => {
     const { edges } = project(snapshot, 'GALAXIA');
-    expect(edges).toHaveLength(5);
+    expect(edges).toHaveLength(snapshot.subjects.length);
     for (const edge of edges) {
       expect(edge.weight).toBeGreaterThanOrEqual(0);
       expect(edge.weight).toBeLessThanOrEqual(1);
@@ -37,24 +37,28 @@ describe('niveles semánticos', () => {
   it('las constelaciones añaden las situaciones de aprendizaje', () => {
     const { nodes } = project(snapshot, 'CONSTELACIONES');
     const situations = nodes.filter((n) => n.type === 'SITUACION_APRENDIZAJE');
-    expect(situations).toHaveLength(4);
+    expect(situations).toHaveLength(snapshot.learningSituations.length);
   });
 
   it('el nivel de actividades incluye las catorce y el producto final', () => {
     const { nodes } = project(snapshot, 'ACTIVIDADES');
-    expect(nodes.filter((n) => n.type === 'ACTIVIDAD')).toHaveLength(14);
+    expect(nodes.filter((n) => n.type === 'ACTIVIDAD')).toHaveLength(snapshot.activities.length);
     expect(nodes.filter((n) => n.type === 'PRODUCTO_FINAL')).toHaveLength(1);
   });
 
   it('el nivel de currículo trae criterios y saberes', () => {
     const { nodes } = project(snapshot, 'CURRICULO');
-    expect(nodes.filter((n) => n.type === 'CRITERIO_EVALUACION')).toHaveLength(11);
-    expect(nodes.filter((n) => n.type === 'SABER_BASICO')).toHaveLength(10);
+    expect(nodes.filter((n) => n.type === 'CRITERIO_EVALUACION')).toHaveLength(
+      snapshot.evaluationCriteria.length,
+    );
+    expect(nodes.filter((n) => n.type === 'SABER_BASICO')).toHaveLength(
+      snapshot.basicKnowledge.length,
+    );
   });
 
   it('el nivel de sesiones trae las treinta y una sesiones', () => {
     const { nodes } = project(snapshot, 'SESIONES');
-    expect(nodes.filter((n) => n.type === 'SESION')).toHaveLength(31);
+    expect(nodes.filter((n) => n.type === 'SESION')).toHaveLength(snapshot.sessions.length);
   });
 
   it('las situaciones se dibujan más grandes que las actividades (§3)', () => {
@@ -109,7 +113,7 @@ describe('filtros (§22)', () => {
 
   it('sin materias seleccionadas se muestran todas', () => {
     const vacio = project(snapshot, 'GALAXIA', { subjectIds: [] });
-    expect(vacio.nodes).toHaveLength(6);
+    expect(vacio.nodes).toHaveLength(snapshot.subjects.length + 1);
   });
 
   it('el umbral de intensidad descarta las conexiones débiles', () => {
@@ -147,7 +151,7 @@ describe('resaltado al seleccionar (§3)', () => {
   });
 
   it('resalta el nodo, sus aristas y los nodos al otro extremo', () => {
-    const activity = snapshot.activities[6];
+    const activity = snapshot.activities[2];
     if (!activity) throw new Error('el ejemplo debería tener actividades');
 
     const { nodes, edges } = highlightFor(projection, activity.id);

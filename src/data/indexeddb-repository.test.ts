@@ -113,10 +113,11 @@ describe('guardar y cargar', () => {
     await repository.save(original);
 
     const [summary] = await repository.list();
-    expect(summary?.title).toBe('Transformamos nuestro barrio');
-    expect(summary?.subjectCount).toBe(5);
-    expect(summary?.activityCount).toBe(14);
-    expect(summary?.isDemo).toBe(true);
+    // Se comparan con el propio ejemplo, no con cifras escritas a mano: así la
+    // prueba sigue valiendo cuando el ejemplo cambie.
+    expect(summary?.title).toBe(original.project.title);
+    expect(summary?.subjectCount).toBe(original.subjects.length);
+    expect(summary?.activityCount).toBe(original.activities.length);
   });
 
   it('guardar dos veces sustituye, no duplica', async () => {
@@ -470,6 +471,6 @@ describe('borrado y arranque', () => {
     const snapshot = await openProject(repository);
 
     expect(snapshot).not.toBeNull();
-    expect(snapshot?.activities).toHaveLength(14);
+    expect(snapshot?.activities).toHaveLength(buildDemoSnapshot().activities.length);
   });
 });

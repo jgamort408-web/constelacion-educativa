@@ -22,7 +22,8 @@
     "schema": "tsx scripts/generate-schema.ts",
     "ci": "npm run typecheck && npm run lint && npm run format:check && npm run test && npm run build",
     "importar:curriculo": "tsx --tsconfig tsconfig.app.json scripts/importar-curriculo.ts",
-    "importar:andalucia": "tsx --tsconfig tsconfig.app.json scripts/importar-curriculo-andalucia.ts"
+    "importar:andalucia": "tsx --tsconfig tsconfig.app.json scripts/importar-curriculo-andalucia.ts",
+    "generar:curriculo-demo": "tsx --tsconfig tsconfig.app.json scripts/generar-curriculo-demo.ts"
   },
   "dependencies": {
     "cytoscape": "^3.31.0",

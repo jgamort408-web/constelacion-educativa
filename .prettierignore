@@ -9,3 +9,6 @@ scripts/boja/anexo2-crudo.json
 
 # Catálogos curriculares generados: el formato lo fija el importador
 public/curriculo/*.json
+
+# Subconjunto curricular del ejemplo: lo genera un script
+src/data/demo/curriculo-demo.json
