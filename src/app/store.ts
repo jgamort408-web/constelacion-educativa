@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import type { Finding, ProjectSnapshot, Uuid } from '@/domain';
 import { validateSnapshot } from '@/domain';
-import type { Patch, ProjectRepository } from '@/data';
+import type { FuenteCurricular, Patch, ProjectRepository } from '@/data';
 import {
   adoptForProject,
   IndexedDbProjectRepository,
@@ -49,7 +49,7 @@ export interface AppState {
 
   load: () => Promise<void>;
   select: (id: Uuid | null) => void;
-  adoptOfficialCurriculum: () => Promise<void>;
+  adoptOfficialCurriculum: (fuente: FuenteCurricular) => Promise<void>;
   dropOfficialCurriculum: () => Promise<void>;
   apply: (patch: Patch) => Promise<void>;
   undo: () => Promise<void>;
@@ -109,24 +109,33 @@ export const useAppStore = create<AppState>((set, get) => ({
    * materia de otra forma, su currículo no se enlaza. Eso se avisa en vez de
    * dejar una lista vacía sin explicación.
    */
-  async adoptOfficialCurriculum() {
+  async adoptOfficialCurriculum(fuente) {
     const { snapshot } = get();
     if (!snapshot) return;
 
     set({ loadingCurriculum: true, error: null, curriculumNotice: null });
     try {
-      const catalogo = await loadCatalogue();
+      const catalogo = await loadCatalogue(fuente);
       const emparejamiento = matchSubjects(catalogo, snapshot);
       const adoptado = adoptForProject(catalogo, emparejamiento);
 
       await repository.adoptCurriculum(adoptado);
       const actualizado = await repository.load(snapshot.project.id);
 
-      const aviso =
-        emparejamiento.unmatchedProject.length > 0
-          ? `Sin currículo oficial para: ${emparejamiento.unmatchedProject.join(', ')}. ` +
-            'El catálogo empareja las materias por su nombre.'
-          : null;
+      const avisos: string[] = [];
+      if (emparejamiento.unmatchedProject.length > 0) {
+        avisos.push(
+          `Sin currículo para: ${emparejamiento.unmatchedProject.join(', ')}. ` +
+            'El catálogo empareja las materias por su nombre.',
+        );
+      }
+      if (adoptado.pending.length > 0) {
+        avisos.push(
+          `${adoptado.pending.length} elementos quedan pendientes de validación: la fuente los ` +
+            'tiene pero no se pudieron extraer del PDF del boletín.',
+        );
+      }
+      const aviso = avisos.length > 0 ? avisos.join(' ') : null;
 
       set({
         snapshot: actualizado,

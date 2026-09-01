@@ -226,7 +226,30 @@ BYG.3.H.2.  Medidas de prevención y tratamientos de las enfermedades infecciosa
 Eso son códigos citables en una programación, cosa que el currículo estatal no ofrece.
 Es la razón de peso para acabar importando el andaluz.
 
-### 6.2 Lo que hace difícil esta importación
+### 6.2 Resultado de la importación
+
+Hecha. `python scripts/boja/extraer.py` seguido de `npm run importar:andalucia` produce,
+para 1.º-3.º de ESO:
+
+|                          | Andalucía (Orden 2023) | Estado (RD 217/2022) |
+| ------------------------ | ---------------------: | -------------------: |
+| Competencias específicas |                    184 |                  105 |
+| Criterios de evaluación  |                    487 |                  271 |
+| Saberes básicos          |                    590 |                  534 |
+| ¿Separa por curso?       |                     Sí |                   No |
+| ¿Codifica los saberes?   |       Sí (`BYG.1.E.8`) |                   No |
+
+Andalucía tiene casi el doble de criterios porque los desglosa curso a curso donde el
+Estado agrupa. Las competencias específicas coinciden en número con las estatales en
+diez de las once materias, lo que es la mejor señal de que la extracción es correcta.
+
+**Cinco elementos quedan pendientes** y se importan marcados como
+`pendingCurriculumReference`, no ocultos: `GEH.3.3.1`, `LCL.1.1.1`, `LCL.1.9.2`,
+`LCL.3.7.1` y el enunciado de la competencia 2 de Tecnología y Digitalización. La norma
+los recoge, pero caen en cortes de tabla que el analizador no resuelve. Un currículo con
+cinco huecos señalados es útil; uno con cinco huecos ocultos es una trampa.
+
+### 6.3 Lo que hizo difícil esta importación
 
 Verificado probando los extractores sobre el PDF real:
 
@@ -243,7 +266,7 @@ No es imposible, pero **no es el mismo trabajo que el importador de educagob**: 
 analiza HTML bien estructurado; este exige reconstruir una tabla a partir de
 coordenadas, y verificar el resultado materia por materia contra el PDF.
 
-### 6.3 Cómo conviven las dos fuentes
+### 6.4 Cómo conviven las dos fuentes
 
 El modelo ya lo admite: cada elemento apunta a su `CurriculumVersion`, y `gradeSpan`
 representa tanto un curso suelto (Andalucía) como un agrupamiento (Estado). Se pueden

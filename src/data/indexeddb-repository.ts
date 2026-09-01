@@ -371,6 +371,7 @@ export class IndexedDbProjectRepository implements ProjectRepository {
         this.db.competencies.bulkPut([...adopted.competencies]),
         this.db.evaluationCriteria.bulkPut([...adopted.evaluationCriteria]),
         this.db.basicKnowledge.bulkPut([...adopted.basicKnowledge]),
+        this.db.pendingCurriculumReferences.bulkPut([...adopted.pending]),
       ]);
     });
   }
@@ -392,6 +393,7 @@ export class IndexedDbProjectRepository implements ProjectRepository {
       this.db.evaluationCriteria.filter((c) => ids.has(c.curriculumVersionId)).delete(),
       this.db.basicKnowledge.filter((c) => ids.has(c.curriculumVersionId)).delete(),
       this.db.curriculumVersions.bulkDelete([...ids]),
+      this.db.pendingCurriculumReferences.clear(),
     ]);
   }
 

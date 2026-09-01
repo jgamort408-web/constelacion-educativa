@@ -5,6 +5,7 @@ import {
   competencySchema,
   curriculumVersionSchema,
   evaluationCriterionSchema,
+  pendingCurriculumReferenceSchema,
 } from '@/domain';
 
 /**
@@ -30,19 +31,43 @@ const catalogueSchema = z.object({
   competencies: z.array(competencySchema),
   evaluationCriteria: z.array(evaluationCriterionSchema),
   basicKnowledge: z.array(basicKnowledgeSchema),
+  /** Solo el catálogo andaluz los trae: elementos que el PDF no dejó extraer. */
+  pendingCurriculumReferences: z.array(pendingCurriculumReferenceSchema).default([]),
 });
 
 export type CurriculumCatalogue = z.infer<typeof catalogueSchema>;
 
-/** Ruta del catálogo, respetando el `base` con que se haya construido la app. */
-const RUTA = `${import.meta.env.BASE_URL}curriculo/eso-estado-rd217-2022.json`;
+/**
+ * Los dos currículos disponibles.
+ *
+ * No son intercambiables y la interfaz no debe presentarlos como tal: para una
+ * programación en un centro andaluz manda el BOJA, y el estatal sirve para
+ * comparar o para trabajar fuera de Andalucía.
+ */
+export const FUENTES = {
+  andalucia: {
+    archivo: 'eso-andalucia-orden-2023.json',
+    titulo: 'Andalucía · Orden de 30 de mayo de 2023',
+    detalle:
+      'Currículo propio de Andalucía. Separa por curso y codifica los saberes básicos. Es el que manda en una programación de un centro andaluz.',
+  },
+  estado: {
+    archivo: 'eso-estado-rd217-2022.json',
+    titulo: 'Estado · Real Decreto 217/2022',
+    detalle:
+      'Enseñanzas mínimas del Estado. Agrupa cursos y no codifica los saberes. Útil fuera de Andalucía o para comparar.',
+  },
+} as const;
 
-let cache: CurriculumCatalogue | null = null;
+export type FuenteCurricular = keyof typeof FUENTES;
 
-export async function loadCatalogue(): Promise<CurriculumCatalogue> {
-  if (cache) return cache;
+const cache = new Map<FuenteCurricular, CurriculumCatalogue>();
 
-  const respuesta = await fetch(RUTA);
+export async function loadCatalogue(fuente: FuenteCurricular): Promise<CurriculumCatalogue> {
+  const guardado = cache.get(fuente);
+  if (guardado) return guardado;
+
+  const respuesta = await fetch(`${import.meta.env.BASE_URL}curriculo/${FUENTES[fuente].archivo}`);
   if (!respuesta.ok) {
     throw new Error(
       `No se pudo cargar el catálogo curricular (HTTP ${respuesta.status}). ` +
@@ -60,8 +85,8 @@ export async function loadCatalogue(): Promise<CurriculumCatalogue> {
     );
   }
 
-  cache = resultado.data;
-  return cache;
+  cache.set(fuente, resultado.data);
+  return resultado.data;
 }
 
 /**
@@ -172,6 +197,8 @@ export interface AdoptedCurriculum {
   readonly evaluationCriteria: readonly EvaluationCriterion[];
   readonly basicKnowledge: readonly BasicKnowledge[];
   readonly versions: CurriculumCatalogue['curriculumVersions'];
+  /** Elementos que la fuente tiene pero el extractor no alcanzó (§7). */
+  readonly pending: CurriculumCatalogue['pendingCurriculumReferences'];
 }
 
 export function adoptForProject(
@@ -206,5 +233,6 @@ export function adoptForProject(
     evaluationCriteria,
     basicKnowledge,
     versions: catalogue.curriculumVersions.filter((v) => versionesUsadas.has(v.id)),
+    pending: catalogue.pendingCurriculumReferences,
   };
 }

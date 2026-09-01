@@ -3,3 +3,6 @@ dist
 coverage
 schema
 package-lock.json
+
+# JSON crudo del extractor: es un intermedio, no una fuente ni un entregable
+scripts/boja/anexo2-crudo.json

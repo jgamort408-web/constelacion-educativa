@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react';
 import type { ProjectSnapshot, Uuid } from '@/domain';
+import type { FuenteCurricular } from '@/data';
+import { FUENTES } from '@/data';
 import { spanLabel } from '@/domain';
 
 /**
@@ -25,7 +27,7 @@ interface Props {
   snapshot: ProjectSnapshot;
   selectedId: Uuid | null;
   cargando: boolean;
-  onCargarOficial: () => void;
+  onCargarOficial: (fuente: FuenteCurricular) => void;
   onRetirarOficial: () => void;
   onAsignar: (criterionId: Uuid) => void;
 }
@@ -98,36 +100,61 @@ export function CurriculumPanel({
   }, [snapshot.competencies, snapshot.evaluationCriteria, materiaId, curso, busqueda, materias]);
 
   const hayOficial = snapshot.curriculumVersions.some((v) => !v.isDemo);
+  const cargado = snapshot.curriculumVersions.find((v) => !v.isDemo);
+  const pendientes = snapshot.pendingCurriculumReferences.length;
   const totalCriterios = snapshot.evaluationCriteria.length;
   const actividad = snapshot.activities.find((a) => a.id === selectedId);
 
   return (
     <div className="flex flex-col gap-5">
-      <div className="flex flex-wrap items-center gap-3 rounded border border-cielo-600 bg-cielo-800 p-4">
-        <div className="min-w-0 flex-1">
-          <p className="text-sm text-tinta-100">
-            {hayOficial
-              ? 'Currículo oficial del Estado cargado.'
-              : 'Solo hay currículo de demostración.'}
-          </p>
+      <div className="rounded border border-cielo-600 bg-cielo-800 p-4">
+        <p className="text-sm text-tinta-100">
+          {cargado
+            ? `Currículo cargado: ${cargado.source.split(' · ')[0]}.`
+            : 'Solo hay currículo de demostración.'}
+        </p>
+        {cargado ? (
+          <p className="mt-1 max-w-prose text-xs text-tinta-500">{cargado.normativa}</p>
+        ) : (
           <p className="mt-1 text-xs text-tinta-500">
-            {hayOficial
-              ? 'Real Decreto 217/2022 (enseñanzas mínimas). No es el currículo de Andalucía: para una programación andaluza manda la Orden de 30 de mayo de 2023.'
-              : 'Puedes cargar el del Real Decreto 217/2022 para trabajar con criterios reales.'}
+            Elige la fuente con la que quieres trabajar. No son intercambiables.
           </p>
+        )}
+
+        <div className="mt-3 flex flex-wrap gap-2">
+          {(Object.keys(FUENTES) as FuenteCurricular[]).map((clave) => (
+            <button
+              key={clave}
+              type="button"
+              onClick={() => {
+                onCargarOficial(clave);
+              }}
+              disabled={cargando}
+              title={FUENTES[clave].detalle}
+              className="rounded border border-borde-500 px-3 py-1.5 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
+            >
+              {cargando ? 'Cargando…' : `Cargar ${FUENTES[clave].titulo}`}
+            </button>
+          ))}
+          {hayOficial && (
+            <button
+              type="button"
+              onClick={onRetirarOficial}
+              disabled={cargando}
+              className="rounded border border-cielo-600 px-3 py-1.5 text-xs text-tinta-500 hover:border-borde-500 hover:text-tinta-300 disabled:opacity-40"
+            >
+              Retirar
+            </button>
+          )}
         </div>
-        <button
-          type="button"
-          onClick={hayOficial ? onRetirarOficial : onCargarOficial}
-          disabled={cargando}
-          className="rounded border border-borde-500 px-3 py-1.5 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
-        >
-          {cargando
-            ? 'Cargando…'
-            : hayOficial
-              ? 'Retirar currículo oficial'
-              : 'Cargar currículo oficial'}
-        </button>
+
+        {pendientes > 0 && (
+          <p className="mt-3 rounded bg-amber-500/10 px-3 py-2 text-xs text-amber-200">
+            <strong className="font-semibold">{pendientes} elementos pendientes.</strong> La norma
+            los recoge pero no se pudieron extraer del PDF del boletín. Consúltalos en la fuente
+            antes de citarlos.
+          </p>
+        )}
       </div>
 
       <div className="flex flex-wrap items-end gap-4">

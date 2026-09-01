@@ -346,7 +346,7 @@ export function App() {
               snapshot={snapshot}
               selectedId={selectedId}
               cargando={loadingCurriculum}
-              onCargarOficial={() => void adoptCurriculum()}
+              onCargarOficial={(fuente) => void adoptCurriculum(fuente)}
               onRetirarOficial={() => void dropCurriculum()}
               onAsignar={assignCriterion}
             />
