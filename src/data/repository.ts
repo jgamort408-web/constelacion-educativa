@@ -1,3 +1,4 @@
+import type { AdoptedCurriculum } from './curriculum-catalogue.ts';
 import type {
   Activity,
   AssessmentInstrument,
@@ -138,6 +139,19 @@ export interface ProjectRepository {
 
   /** Existe algún proyecto guardado. Decide si hay que sembrar el DEMO. */
   isEmpty(): Promise<boolean>;
+
+  /**
+   * Carga un currículo oficial completo en el catálogo global.
+   *
+   * No pasa por `applyPatch` a propósito: son cerca de mil registros y calcular
+   * el inverso de cada uno para la pila de deshacer costaría más que la propia
+   * operación. Su reverso es una acción explícita, `removeOfficialCurriculum`,
+   * que el docente decide, no un Ctrl+Z accidental.
+   */
+  adoptCurriculum(adopted: AdoptedCurriculum): Promise<void>;
+
+  /** Retira todo el currículo no marcado como demostración. */
+  removeOfficialCurriculum(): Promise<void>;
 }
 
 /** Atajos para construir mutaciones sin repetir la forma del objeto. */

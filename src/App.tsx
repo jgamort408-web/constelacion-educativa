@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { buildAdjacency, buildNodeIndex, summarizeFindings } from '@/domain';
 import { mutation, singlePatch } from '@/data';
+import { newId } from '@/utils/ids.ts';
 import {
   selectCanRedo,
   selectCanUndo,
@@ -8,6 +9,8 @@ import {
   selectFindings,
   selectLastAction,
   selectSelectedId,
+  selectCurriculumNotice,
+  selectLoadingCurriculum,
   selectSnapshot,
   selectStatus,
   useAppStore,
@@ -15,6 +18,7 @@ import {
 import type { SemanticLevel } from '@/graph';
 import { project, SEMANTIC_LEVELS } from '@/graph';
 import { AlertsPanel } from '@/features/alerts/AlertsPanel.tsx';
+import { CurriculumPanel } from '@/features/curriculum/CurriculumPanel.tsx';
 import { MapControls } from '@/features/map/MapControls.tsx';
 import { StarMap } from '@/features/map/StarMap.tsx';
 import { ContributionMatrix } from '@/features/matrix/ContributionMatrix.tsx';
@@ -30,12 +34,13 @@ import { useHighContrast } from '@/hooks/useHighContrast.ts';
  * por eso no podrán discrepar (§5).
  */
 
-type Tab = 'mapa' | 'trazabilidad' | 'matriz' | 'alertas';
+type Tab = 'mapa' | 'trazabilidad' | 'matriz' | 'curriculo' | 'alertas';
 
 const TABS: { id: Tab; label: string }[] = [
   { id: 'mapa', label: 'Mapa estelar' },
   { id: 'trazabilidad', label: 'Trazabilidad' },
   { id: 'matriz', label: 'Matriz de contribución' },
+  { id: 'curriculo', label: 'Currículo' },
   { id: 'alertas', label: 'Alertas' },
 ];
 
@@ -48,12 +53,16 @@ export function App() {
   const canUndo = useAppStore(selectCanUndo);
   const canRedo = useAppStore(selectCanRedo);
   const lastAction = useAppStore(selectLastAction);
+  const loadingCurriculum = useAppStore(selectLoadingCurriculum);
+  const curriculumNotice = useAppStore(selectCurriculumNotice);
 
   const load = useAppStore((state) => state.load);
   const select = useAppStore((state) => state.select);
   const apply = useAppStore((state) => state.apply);
   const undo = useAppStore((state) => state.undo);
   const redo = useAppStore((state) => state.redo);
+  const adoptCurriculum = useAppStore((state) => state.adoptOfficialCurriculum);
+  const dropCurriculum = useAppStore((state) => state.dropOfficialCurriculum);
 
   const contraste = useHighContrast();
 
@@ -144,6 +153,41 @@ export function App() {
     );
   }
 
+  /**
+   * Asigna un criterio de evaluación a la actividad seleccionada.
+   *
+   * Crea la arista «desarrolla», que es lo que hace que ese criterio aparezca en
+   * la trazabilidad, en el mapa y en el cálculo de contribución de esa materia.
+   */
+  function assignCriterion(criterionId: string) {
+    if (!snapshot || selectedId === null) return;
+    const activity = snapshot.activities.find((a) => a.id === selectedId);
+    const criterion = snapshot.evaluationCriteria.find((c) => c.id === criterionId);
+    if (!activity || !criterion) return;
+
+    void apply(
+      singlePatch(
+        `Asignó ${criterion.officialCode ?? 'un criterio'} a «${activity.title}»`,
+        mutation.upsert('edge', {
+          id: newId(),
+          projectId: snapshot.project.id,
+          type: 'desarrolla',
+          sourceId: activity.id,
+          sourceType: 'ACTIVIDAD',
+          targetId: criterion.id,
+          targetType: 'CRITERIO_EVALUACION',
+          metadata: {
+            weight: null,
+            mode: 'MANUAL',
+            sessions: null,
+            criteriaIds: [],
+            note: 'Asignado desde el catálogo curricular',
+          },
+        }),
+      ),
+    );
+  }
+
   return (
     <div className="mx-auto flex min-h-screen max-w-[1240px] flex-col px-6 pb-16">
       <a href="#contenido" className="salto">
@@ -227,6 +271,12 @@ export function App() {
         </p>
       )}
 
+      {curriculumNotice && (
+        <p role="status" className="mt-3 rounded bg-amber-500/10 px-3 py-2 text-sm text-amber-200">
+          {curriculumNotice}
+        </p>
+      )}
+
       <main id="contenido" className="grid flex-1 gap-8 pt-6 lg:grid-cols-[320px_minmax(0,1fr)]">
         <aside className="lg:sticky lg:top-6 lg:self-start">
           <h2 className="mb-3 font-mono text-[10px] tracking-[0.14em] text-tinta-500 uppercase">
@@ -291,6 +341,16 @@ export function App() {
             />
           )}
           {tab === 'matriz' && <ContributionMatrix snapshot={snapshot} />}
+          {tab === 'curriculo' && (
+            <CurriculumPanel
+              snapshot={snapshot}
+              selectedId={selectedId}
+              cargando={loadingCurriculum}
+              onCargarOficial={() => void adoptCurriculum()}
+              onRetirarOficial={() => void dropCurriculum()}
+              onAsignar={assignCriterion}
+            />
+          )}
           {tab === 'alertas' && <AlertsPanel findings={findings} nodes={nodes} onSelect={select} />}
         </section>
       </main>

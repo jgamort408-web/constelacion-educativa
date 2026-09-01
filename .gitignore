@@ -37,6 +37,6 @@ pnpm-debug.log*
 .env.local
 .env.*.local
 
-# currículo importado y caché de descargas
+# caché de descargas del importador (el JSON generado SÍ se versiona:
+# es el dato que la aplicación sirve, y sin él no hay currículo real)
 .cache/
-curriculo/*.json

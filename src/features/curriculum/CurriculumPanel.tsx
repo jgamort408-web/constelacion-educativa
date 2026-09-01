@@ -1,0 +1,271 @@
+import { useMemo, useState } from 'react';
+import type { ProjectSnapshot, Uuid } from '@/domain';
+import { spanLabel } from '@/domain';
+
+/**
+ * Catálogo curricular del proyecto (§9).
+ *
+ * Muestra los criterios y saberes realmente cargados, agrupados por materia y
+ * competencia, y permite asignar un criterio a la actividad seleccionada.
+ *
+ * Dos reglas de presentación que no son estéticas:
+ *
+ *   1. **Cada elemento dice de dónde viene.** Un criterio del Real Decreto y uno
+ *      de demostración no pueden parecer lo mismo: el segundo no se puede citar
+ *      en una programación.
+ *   2. **El tramo de cursos se muestra tal cual es.** Si un criterio cubre 3.º y
+ *      4.º, se dice. Presentarlo como «de 3.º» sería inventar una división que la
+ *      norma no hace (ver docs/FUENTE-CURRICULO.md).
+ */
+
+/** Centinela del selector de materia: no es un identificador de materia. */
+const TODAS = '__todas__';
+
+interface Props {
+  snapshot: ProjectSnapshot;
+  selectedId: Uuid | null;
+  cargando: boolean;
+  onCargarOficial: () => void;
+  onRetirarOficial: () => void;
+  onAsignar: (criterionId: Uuid) => void;
+}
+
+export function CurriculumPanel({
+  snapshot,
+  selectedId,
+  cargando,
+  onCargarOficial,
+  onRetirarOficial,
+  onAsignar,
+}: Props) {
+  // `Uuid` es un alias de string, así que una unión con 'todas' no aporta tipo.
+  // El centinela va aparte para que el compilador siga distinguiéndolos.
+  const [materiaId, setMateriaId] = useState<string>(TODAS);
+  const [curso, setCurso] = useState<number | 'todos'>('todos');
+  const [busqueda, setBusqueda] = useState('');
+
+  const versiones = useMemo(
+    () => new Map(snapshot.curriculumVersions.map((v) => [v.id, v])),
+    [snapshot.curriculumVersions],
+  );
+  const materias = useMemo(
+    () => new Map(snapshot.subjects.map((s) => [s.id, s])),
+    [snapshot.subjects],
+  );
+
+  /** Criterios de la actividad seleccionada, para no ofrecer duplicados. */
+  const yaAsignados = useMemo(() => {
+    if (selectedId === null) return new Set<Uuid>();
+    return new Set(
+      snapshot.edges
+        .filter((e) => e.type === 'desarrolla' && e.sourceId === selectedId)
+        .map((e) => e.targetId),
+    );
+  }, [snapshot.edges, selectedId]);
+
+  const grupos = useMemo(() => {
+    const texto = busqueda.trim().toLowerCase();
+
+    const competenciasVisibles = snapshot.competencies.filter((competencia) => {
+      if (materiaId !== TODAS && competencia.subjectId !== materiaId) return false;
+      if (curso !== 'todos') {
+        const { from, to } = competencia.gradeSpan;
+        if (curso < from || curso > to) return false;
+      }
+      return true;
+    });
+
+    return competenciasVisibles
+      .map((competencia) => ({
+        competencia,
+        criterios: snapshot.evaluationCriteria.filter(
+          (criterio) =>
+            criterio.competencyId === competencia.id &&
+            (texto === '' ||
+              criterio.description.toLowerCase().includes(texto) ||
+              (criterio.officialCode ?? '').toLowerCase().includes(texto)),
+        ),
+      }))
+      .filter((grupo) => grupo.criterios.length > 0)
+      .sort((a, b) => {
+        const materiaA = materias.get(a.competencia.subjectId)?.name ?? '';
+        const materiaB = materias.get(b.competencia.subjectId)?.name ?? '';
+        return (
+          materiaA.localeCompare(materiaB, 'es') ||
+          (a.competencia.officialCode ?? '').localeCompare(b.competencia.officialCode ?? '', 'es')
+        );
+      });
+  }, [snapshot.competencies, snapshot.evaluationCriteria, materiaId, curso, busqueda, materias]);
+
+  const hayOficial = snapshot.curriculumVersions.some((v) => !v.isDemo);
+  const totalCriterios = snapshot.evaluationCriteria.length;
+  const actividad = snapshot.activities.find((a) => a.id === selectedId);
+
+  return (
+    <div className="flex flex-col gap-5">
+      <div className="flex flex-wrap items-center gap-3 rounded border border-cielo-600 bg-cielo-800 p-4">
+        <div className="min-w-0 flex-1">
+          <p className="text-sm text-tinta-100">
+            {hayOficial
+              ? 'Currículo oficial del Estado cargado.'
+              : 'Solo hay currículo de demostración.'}
+          </p>
+          <p className="mt-1 text-xs text-tinta-500">
+            {hayOficial
+              ? 'Real Decreto 217/2022 (enseñanzas mínimas). No es el currículo de Andalucía: para una programación andaluza manda la Orden de 30 de mayo de 2023.'
+              : 'Puedes cargar el del Real Decreto 217/2022 para trabajar con criterios reales.'}
+          </p>
+        </div>
+        <button
+          type="button"
+          onClick={hayOficial ? onRetirarOficial : onCargarOficial}
+          disabled={cargando}
+          className="rounded border border-borde-500 px-3 py-1.5 text-xs text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
+        >
+          {cargando
+            ? 'Cargando…'
+            : hayOficial
+              ? 'Retirar currículo oficial'
+              : 'Cargar currículo oficial'}
+        </button>
+      </div>
+
+      <div className="flex flex-wrap items-end gap-4">
+        <label className="flex flex-col gap-1 text-xs text-tinta-300">
+          <span className="font-mono text-[10px] tracking-[0.14em] text-tinta-500 uppercase">
+            Materia
+          </span>
+          <select
+            value={materiaId}
+            onChange={(e) => {
+              setMateriaId(e.target.value);
+            }}
+            className="rounded border border-borde-500 bg-cielo-800 px-2 py-1 text-tinta-100"
+          >
+            <option value={TODAS}>Todas</option>
+            {snapshot.subjects.map((s) => (
+              <option key={s.id} value={s.id}>
+                {s.name}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className="flex flex-col gap-1 text-xs text-tinta-300">
+          <span className="font-mono text-[10px] tracking-[0.14em] text-tinta-500 uppercase">
+            Curso
+          </span>
+          <select
+            value={curso}
+            onChange={(e) => {
+              setCurso(e.target.value === 'todos' ? 'todos' : Number(e.target.value));
+            }}
+            className="rounded border border-borde-500 bg-cielo-800 px-2 py-1 text-tinta-100"
+          >
+            <option value="todos">Todos</option>
+            <option value="1">1.º ESO</option>
+            <option value="2">2.º ESO</option>
+            <option value="3">3.º ESO</option>
+          </select>
+        </label>
+
+        <label className="flex flex-1 flex-col gap-1 text-xs text-tinta-300">
+          <span className="font-mono text-[10px] tracking-[0.14em] text-tinta-500 uppercase">
+            Buscar en los criterios
+          </span>
+          <input
+            type="search"
+            value={busqueda}
+            onChange={(e) => {
+              setBusqueda(e.target.value);
+            }}
+            placeholder="argumentar, resolver problemas, MAT.3…"
+            className="rounded border border-borde-500 bg-cielo-800 px-2 py-1 text-tinta-100 placeholder:text-tinta-500"
+          />
+        </label>
+      </div>
+
+      <p className="text-xs text-tinta-500">
+        {grupos.reduce((suma, g) => suma + g.criterios.length, 0)} criterios visibles de{' '}
+        {totalCriterios} cargados.
+        {actividad ? (
+          <>
+            {' '}
+            Se asignarán a <span className="text-tinta-300">«{actividad.title}»</span>.
+          </>
+        ) : (
+          ' Selecciona una actividad en la barra lateral para poder asignarlos.'
+        )}
+      </p>
+
+      <div className="flex flex-col gap-5">
+        {grupos.map(({ competencia, criterios }) => {
+          const materia = materias.get(competencia.subjectId);
+          const version = versiones.get(competencia.curriculumVersionId);
+
+          return (
+            <section key={competencia.id} className="border-l-2 border-cielo-600 pl-4">
+              <header className="flex flex-wrap items-baseline gap-2">
+                <span
+                  aria-hidden="true"
+                  className="inline-block h-2.5 w-2.5 flex-none translate-y-px rounded-full"
+                  style={{ backgroundColor: materia?.color ?? '#5a6390' }}
+                />
+                <span className="font-mono text-[11px] text-laton-500">
+                  {competencia.officialCode}
+                </span>
+                <span className="text-xs text-tinta-500">
+                  {materia?.name} · {spanLabel(competencia.gradeSpan)}
+                </span>
+                {version?.isDemo === true && (
+                  <span className="rounded bg-amber-500/15 px-1.5 py-0.5 font-mono text-[9px] tracking-[0.08em] text-amber-300 uppercase">
+                    demostración
+                  </span>
+                )}
+              </header>
+              <p className="mt-1 max-w-prose text-sm text-tinta-300">{competencia.description}</p>
+
+              <ul className="mt-3 flex flex-col gap-1.5">
+                {criterios.map((criterio) => {
+                  const asignado = yaAsignados.has(criterio.id);
+                  return (
+                    <li key={criterio.id} className="flex items-start gap-3">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          onAsignar(criterio.id);
+                        }}
+                        disabled={selectedId === null || asignado}
+                        title={
+                          asignado
+                            ? 'Ya asignado a esta actividad'
+                            : 'Asignar a la actividad seleccionada'
+                        }
+                        className="mt-0.5 flex-none rounded border border-borde-500 px-2 py-0.5 font-mono text-[10px] text-tinta-300 hover:border-laton-500 hover:text-laton-400 disabled:border-cielo-600 disabled:opacity-40"
+                      >
+                        {asignado ? '✓ asignado' : '+ asignar'}
+                      </button>
+                      <span className="min-w-0 text-sm">
+                        <span className="font-mono text-[11px] text-tinta-500">
+                          {criterio.officialCode}
+                        </span>{' '}
+                        <span className="text-tinta-100">{criterio.description}</span>
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
+          );
+        })}
+
+        {grupos.length === 0 && (
+          <p className="text-sm text-tinta-500">
+            Ningún criterio coincide con el filtro.
+            {!hayOficial && ' Prueba a cargar el currículo oficial.'}
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}

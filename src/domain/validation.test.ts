@@ -289,6 +289,58 @@ describe('criterios sin instrumento', () => {
   });
 });
 
+describe('cobertura curricular', () => {
+  it('resume en UN solo hallazgo los criterios sin trabajar, no uno por criterio', () => {
+    // Al cargar el currículo oficial entran más de cien criterios de golpe. Una
+    // advertencia por cada uno enterraba los errores de verdad bajo el ruido.
+    const snapshot = baseSnapshot({
+      curriculumVersions: [OFFICIAL_VERSION],
+      evaluationCriteria: Array.from({ length: 8 }, (_, i) => ({
+        id: testId(`c${i}`),
+        officialCode: `MAT.1.${i + 1}`,
+        name: `Criterio ${i + 1}`,
+        description: '',
+        curriculumVersionId: OFFICIAL_VERSION.id,
+        competencyId: ids.mat,
+        subjectId: ids.mat,
+        weight: null,
+      })),
+    });
+
+    const findings = findingsFor(snapshot, 'cobertura-curricular');
+    expect(findings).toHaveLength(1);
+    expect(findings[0]?.severity).toBe('SUGERENCIA');
+    expect(findings[0]?.message).toContain('8');
+  });
+
+  it('no dice nada cuando todos los criterios se trabajan', () => {
+    const snapshot = baseSnapshot({
+      activities: [activity(ids.act1, 'A')],
+      curriculumVersions: [OFFICIAL_VERSION],
+      evaluationCriteria: [
+        {
+          id: ids.crit1,
+          officialCode: 'MAT.1.1',
+          name: 'Criterio',
+          description: '',
+          curriculumVersionId: OFFICIAL_VERSION.id,
+          competencyId: ids.mat,
+          subjectId: ids.mat,
+          weight: null,
+        },
+      ],
+      edges: [
+        makeEdge(P, 'desarrolla', [ids.act1, 'ACTIVIDAD'], [ids.crit1, 'CRITERIO_EVALUACION']),
+      ],
+    });
+    expect(findingsFor(snapshot, 'cobertura-curricular')).toHaveLength(0);
+  });
+
+  it('no dice nada si no hay currículo cargado', () => {
+    expect(findingsFor(baseSnapshot(), 'cobertura-curricular')).toHaveLength(0);
+  });
+});
+
 describe('semana desequilibrada', () => {
   it('avisa si una materia acapara más del 60 % de una semana', () => {
     const snapshot = baseSnapshot({

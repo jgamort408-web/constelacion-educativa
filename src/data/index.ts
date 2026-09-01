@@ -12,3 +12,9 @@ export type { Backup, ProjectMeta } from './database.ts';
 export { IndexedDbProjectRepository } from './indexeddb-repository.ts';
 export { buildDemoSnapshot, DEMO_INFO } from './demo/barrio.ts';
 export { openProject, seedIfEmpty } from './bootstrap.ts';
+export { adoptForProject, loadCatalogue, matchSubjects } from './curriculum-catalogue.ts';
+export type {
+  AdoptedCurriculum,
+  CurriculumCatalogue,
+  SubjectMatch,
+} from './curriculum-catalogue.ts';

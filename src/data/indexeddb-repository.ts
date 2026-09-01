@@ -26,6 +26,7 @@ import type { ConstelacionDatabase } from './database.ts';
 import { getDatabase } from './database.ts';
 import type { EntityKind, Mutation, Patch, PatchResult, ProjectRepository } from './repository.ts';
 import { RepositoryError } from './repository.ts';
+import type { AdoptedCurriculum } from './curriculum-catalogue.ts';
 
 /**
  * Implementación del repositorio sobre IndexedDB (ADR 0002, ADR 0005).
@@ -349,6 +350,49 @@ export class IndexedDbProjectRepository implements ProjectRepository {
       },
       findings,
     };
+  }
+
+  /**
+   * Escribe el currículo oficial en el catálogo global.
+   *
+   * Las tablas curriculares no están acotadas por proyecto: el currículo lo es de
+   * la etapa, no de un proyecto concreto, y varios proyectos del mismo equipo
+   * comparten criterios. Por eso esta operación no recibe `projectId`.
+   *
+   * Sustituye lo oficial anterior dentro de la misma transacción, para que no
+   * quede una carga a medias si algo falla, y **no toca lo marcado como
+   * demostración**: el DEMO tiene que seguir funcionando después.
+   */
+  async adoptCurriculum(adopted: AdoptedCurriculum): Promise<void> {
+    await this.db.transaction('rw', this.db.tables, async () => {
+      await this.dropOfficialCurriculum();
+      await Promise.all([
+        this.db.curriculumVersions.bulkPut([...adopted.versions]),
+        this.db.competencies.bulkPut([...adopted.competencies]),
+        this.db.evaluationCriteria.bulkPut([...adopted.evaluationCriteria]),
+        this.db.basicKnowledge.bulkPut([...adopted.basicKnowledge]),
+      ]);
+    });
+  }
+
+  async removeOfficialCurriculum(): Promise<void> {
+    await this.db.transaction('rw', this.db.tables, async () => {
+      await this.dropOfficialCurriculum();
+    });
+  }
+
+  /** Borra los elementos cuya versión curricular NO es de demostración. */
+  private async dropOfficialCurriculum(): Promise<void> {
+    const oficiales = await this.db.curriculumVersions.filter((v) => !v.isDemo).toArray();
+    if (oficiales.length === 0) return;
+    const ids = new Set(oficiales.map((v) => v.id));
+
+    await Promise.all([
+      this.db.competencies.filter((c) => ids.has(c.curriculumVersionId)).delete(),
+      this.db.evaluationCriteria.filter((c) => ids.has(c.curriculumVersionId)).delete(),
+      this.db.basicKnowledge.filter((c) => ids.has(c.curriculumVersionId)).delete(),
+      this.db.curriculumVersions.bulkDelete([...ids]),
+    ]);
   }
 
   async remove(projectId: Uuid): Promise<void> {

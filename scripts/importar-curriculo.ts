@@ -30,7 +30,10 @@ import { stableId } from '../src/utils/ids.ts';
 
 const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CACHE = join(RAIZ, '.cache', 'educagob');
-const SALIDA = join(RAIZ, 'curriculo');
+// Se escribe en public/ para que Vite lo sirva como recurso estático y la
+// aplicación lo descargue solo cuando el docente abre el catálogo. Empaquetarlo
+// añadiría 650 KB al primer pintado de una pantalla que quizá no visite.
+const SALIDA = join(RAIZ, 'public', 'curriculo');
 
 const BASE =
   'https://educagob.educacionfpydeportes.gob.es/curriculo/curriculo-lomloe/' +
@@ -307,6 +310,7 @@ interface Problema {
 
 async function main(): Promise<void> {
   const problemas: Problema[] = [];
+  const materias: { id: string; nombre: string; corto: string }[] = [];
   const versiones: unknown[] = [];
   const competencias: unknown[] = [];
   const criterios: unknown[] = [];
@@ -318,6 +322,9 @@ async function main(): Promise<void> {
   for (const materia of MATERIAS) {
     const portada = await descargar(`${BASE}/${materia.slug}.html`, `${materia.slug}.html`);
     const paginas = descubrirPaginas(portada, materia.slug);
+
+    const materiaIdCatalogo = stableId('educagob:materia', materia.slug);
+    materias.push({ id: materiaIdCatalogo, nombre: materia.nombre, corto: materia.corto });
 
     const versionId = stableId('educagob:version', materia.slug);
     versiones.push(
@@ -376,7 +383,7 @@ async function main(): Promise<void> {
         });
       }
 
-      const materiaId = stableId('educagob:materia', materia.slug);
+      const materiaId = materiaIdCatalogo;
       const tramo = `${esperado.span.from}-${esperado.span.to}`;
 
       for (const ce of datos.competencias) {
@@ -466,6 +473,10 @@ async function main(): Promise<void> {
         normativa: NORMATIVA,
         ambito: 'Estado (enseñanzas mínimas). NO es el currículo de Andalucía.',
         importadoEl: ahora,
+        // Los nombres de materia viajan con el catálogo para que la aplicación
+        // pueda emparejarlos con las materias del proyecto, que tienen sus
+        // propios identificadores.
+        subjects: materias,
         curriculumVersions: versiones,
         competencies: competencias,
         evaluationCriteria: criterios,

@@ -2,7 +2,13 @@ import { create } from 'zustand';
 import type { Finding, ProjectSnapshot, Uuid } from '@/domain';
 import { validateSnapshot } from '@/domain';
 import type { Patch, ProjectRepository } from '@/data';
-import { IndexedDbProjectRepository, openProject } from '@/data';
+import {
+  adoptForProject,
+  IndexedDbProjectRepository,
+  loadCatalogue,
+  matchSubjects,
+  openProject,
+} from '@/data';
 
 /**
  * Estado de la aplicación.
@@ -36,8 +42,15 @@ export interface AppState {
   /** Etiqueta del último cambio, para poder decir qué se va a deshacer. */
   lastAction: string | null;
 
+  /** Hay una carga de currículo en curso. */
+  loadingCurriculum: boolean;
+  /** Aviso de la última carga: materias que no se pudieron emparejar. */
+  curriculumNotice: string | null;
+
   load: () => Promise<void>;
   select: (id: Uuid | null) => void;
+  adoptOfficialCurriculum: () => Promise<void>;
+  dropOfficialCurriculum: () => Promise<void>;
   apply: (patch: Patch) => Promise<void>;
   undo: () => Promise<void>;
   redo: () => Promise<void>;
@@ -59,6 +72,8 @@ export const useAppStore = create<AppState>((set, get) => ({
   undoStack: [],
   redoStack: [],
   lastAction: null,
+  loadingCurriculum: false,
+  curriculumNotice: null,
 
   async load() {
     set({ status: 'cargando', error: null });
@@ -84,6 +99,74 @@ export const useAppStore = create<AppState>((set, get) => ({
 
   select(id) {
     set({ selectedId: id });
+  },
+
+  /**
+   * Descarga el catálogo oficial, lo empareja con las materias del proyecto y lo
+   * guarda.
+   *
+   * El emparejamiento es por nombre y puede fallar: si el equipo llama a su
+   * materia de otra forma, su currículo no se enlaza. Eso se avisa en vez de
+   * dejar una lista vacía sin explicación.
+   */
+  async adoptOfficialCurriculum() {
+    const { snapshot } = get();
+    if (!snapshot) return;
+
+    set({ loadingCurriculum: true, error: null, curriculumNotice: null });
+    try {
+      const catalogo = await loadCatalogue();
+      const emparejamiento = matchSubjects(catalogo, snapshot);
+      const adoptado = adoptForProject(catalogo, emparejamiento);
+
+      await repository.adoptCurriculum(adoptado);
+      const actualizado = await repository.load(snapshot.project.id);
+
+      const aviso =
+        emparejamiento.unmatchedProject.length > 0
+          ? `Sin currículo oficial para: ${emparejamiento.unmatchedProject.join(', ')}. ` +
+            'El catálogo empareja las materias por su nombre.'
+          : null;
+
+      set({
+        snapshot: actualizado,
+        findings: validateSnapshot(actualizado),
+        loadingCurriculum: false,
+        curriculumNotice: aviso,
+        // La pila de deshacer no cubre esta operación: se revierte con
+        // «Retirar currículo oficial», que es una decisión, no un Ctrl+Z.
+        undoStack: [],
+        redoStack: [],
+      });
+    } catch (cause) {
+      set({
+        loadingCurriculum: false,
+        error: cause instanceof Error ? cause.message : 'No se pudo cargar el currículo.',
+      });
+    }
+  },
+
+  async dropOfficialCurriculum() {
+    const { snapshot } = get();
+    if (!snapshot) return;
+
+    set({ loadingCurriculum: true, error: null, curriculumNotice: null });
+    try {
+      await repository.removeOfficialCurriculum();
+      const actualizado = await repository.load(snapshot.project.id);
+      set({
+        snapshot: actualizado,
+        findings: validateSnapshot(actualizado),
+        loadingCurriculum: false,
+        undoStack: [],
+        redoStack: [],
+      });
+    } catch (cause) {
+      set({
+        loadingCurriculum: false,
+        error: cause instanceof Error ? cause.message : 'No se pudo retirar el currículo.',
+      });
+    }
   },
 
   async apply(patch) {
@@ -152,3 +235,5 @@ export const selectSelectedId = (state: AppState) => state.selectedId;
 export const selectLastAction = (state: AppState) => state.lastAction;
 export const selectCanUndo = (state: AppState) => state.undoStack.length > 0;
 export const selectCanRedo = (state: AppState) => state.redoStack.length > 0;
+export const selectLoadingCurriculum = (state: AppState) => state.loadingCurriculum;
+export const selectCurriculumNotice = (state: AppState) => state.curriculumNotice;

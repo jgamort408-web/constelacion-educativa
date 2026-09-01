@@ -251,21 +251,45 @@ const criterionWithoutInstrument: Rule = (snapshot) => {
   return findings;
 };
 
-/** ADVERTENCIA · un criterio del proyecto que no se trabaja en ninguna actividad. */
+/**
+ * SUGERENCIA · qué parte del currículo cargado sigue sin trabajarse.
+ *
+ * Emite **un solo hallazgo con el recuento**, no uno por criterio. La diferencia
+ * importa: al cargar el currículo oficial entran ciento sesenta y cinco criterios
+ * de golpe, y una advertencia por cada uno convertía el panel en un muro de ruido
+ * que enterraba los errores de verdad. Con el catálogo completo cargado, «no
+ * trabajado todavía» es el estado normal de la mayoría, no una anomalía.
+ *
+ * Por eso también baja de ADVERTENCIA a SUGERENCIA: informa de la cobertura, no
+ * señala un fallo.
+ */
 const untouchedCriteria: Rule = (snapshot) => {
+  if (snapshot.evaluationCriteria.length === 0) return [];
+
   const worked = new Set(
     snapshot.edges.filter((edge) => edge.type === 'desarrolla').map((edge) => edge.targetId),
   );
+  const pendientes = snapshot.evaluationCriteria.filter((criterion) => !worked.has(criterion.id));
+  if (pendientes.length === 0) return [];
 
-  return snapshot.evaluationCriteria
-    .filter((criterion) => !worked.has(criterion.id))
-    .map((criterion) => ({
-      rule: 'criterio-sin-trabajar',
-      severity: 'ADVERTENCIA' as const,
-      message: `El criterio ${criterion.officialCode ?? criterion.name} está cargado en el proyecto pero no se trabaja en ninguna actividad.`,
-      nodeIds: [criterion.id],
-      hint: 'Asígnalo a una actividad o retíralo del proyecto.',
-    }));
+  const total = snapshot.evaluationCriteria.length;
+  const cubiertos = total - pendientes.length;
+  const muestra = pendientes
+    .slice(0, 4)
+    .map((criterion) => criterion.officialCode ?? criterion.name.slice(0, 30))
+    .join(', ');
+
+  return [
+    {
+      rule: 'cobertura-curricular',
+      severity: 'SUGERENCIA',
+      message:
+        `El proyecto trabaja ${cubiertos} de los ${total} criterios cargados. ` +
+        `Quedan ${pendientes.length} sin asignar a ninguna actividad, entre ellos ${muestra}.`,
+      nodeIds: pendientes.slice(0, 12).map((criterion) => criterion.id),
+      hint: 'Es normal si acabas de cargar el currículo completo: un proyecto no cubre toda la materia.',
+    },
+  ];
 };
 
 /** ADVERTENCIA · una situación de aprendizaje que no aporta al producto final. */
