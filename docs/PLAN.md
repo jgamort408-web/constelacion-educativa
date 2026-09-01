@@ -1,21 +1,60 @@
 # Plan de producción — Constelación Educativa
 
 > Documento de trabajo. Traduce el `PROMPT MAESTRO` a un plan ejecutable por fases.
-> Última revisión: 2026-08-31.
+> Cuenta **cómo se llegó hasta aquí**; para saber qué falta y en qué orden, lee
+> [PROPUESTA.md](PROPUESTA.md).
+>
+> Versión legible: <https://claude.ai/code/artifact/b1b69b20-ca19-44c9-836c-e7b5c2857a7f>
+> Última revisión: 2026-09-01.
 
 ## Estado
 
-| Fase                            | Estado       | Pruebas           |
-| ------------------------------- | ------------ | ----------------- |
-| 0 · Fundación                   | ✅ Terminada | 6 de arquitectura |
-| 1 · Dominio y contrato de datos | ✅ Terminada | 71                |
-| 2 · Datos DEMO                  | ✅ Terminada | 14                |
-| 3 · Base de datos y CRUD        | ✅ Terminada | 27                |
-| 4 · Mapa estelar                | ⏳ Siguiente | —                 |
-| 5 · Filtros, matriz y dashboard | ⬜ Pendiente | —                 |
-| 6 · Accesibilidad y despliegue  | ⬜ Pendiente | —                 |
+**v0.1 desplegada y en uso.** 157 pruebas en verde.
 
-**118 pruebas en verde.** Repositorio: `jgamort408-web/constelacion-educativa`.
+- En línea: <https://jgamort408-web.github.io/constelacion-educativa/>
+- Repositorio: `jgamort408-web/constelacion-educativa`
+- Qué falta para que sea usable de verdad: [PROPUESTA.md](PROPUESTA.md)
+
+| Fase                            | Estado                                         |
+| ------------------------------- | ---------------------------------------------- |
+| 0 · Fundación                   | ✅ Terminada                                   |
+| 1 · Dominio y contrato de datos | ✅ Terminada                                   |
+| 2 · Datos DEMO                  | ✅ Terminada · rehecha con currículo real      |
+| 3 · Base de datos y CRUD        | ✅ Terminada                                   |
+| 4 · Mapa estelar                | ✅ Terminada · con formas, iconos y agrupación |
+| 5 · Panel, matriz y alertas     | ✅ Terminada                                   |
+| 6 · Accesibilidad y despliegue  | ✅ Terminada                                   |
+| 7 · Currículo oficial           | ✅ Terminada · **no estaba en este plan**      |
+
+### Lo que se hizo y este plan no preveía
+
+El plan original daba el currículo por resuelto con «datos DEMO y un importador
+documentado». La realidad pedía más, y se hizo:
+
+- **Mapa de la fuente estatal** (educagob) e importador con verificación de recuentos:
+  105 competencias, 271 criterios y 534 saberes de las 11 materias de 1.º-3.º.
+  Ver [FUENTE-CURRICULO.md](FUENTE-CURRICULO.md).
+- **Extracción del currículo andaluz** desde el PDF del BOJA: 184 competencias, 487
+  criterios y 590 saberes, con 27 elementos marcados como pendientes de validación en
+  vez de ocultos.
+- **El currículo llega a la aplicación**: se elige fuente, se explora por materia, curso
+  y texto —la búsqueda entra también en los saberes— y al asignar un criterio se
+  arrastran los saberes que la norma le relaciona.
+- **El proyecto de ejemplo se rehízo** con criterios reales: «Cartografía sonora de
+  nuestro barrio», una situación y tres materias, en vez de las cuatro situaciones y
+  catorce actividades con códigos DEMO del ejemplo anterior.
+
+### Cambios de modelo que forzaron las fuentes
+
+- `competencySchema` perdió `grade: string` y ganó `gradeSpan: {from, to}`. El currículo
+  del Estado agrupa cursos y no los separa; el de Andalucía sí. Presentar «los criterios
+  de 3.º de Lengua» como lista cerrada sería inventar una división que la norma no hace.
+- `evaluationCriterionSchema` ganó `relatedKnowledgeCodes`, excepción consciente al
+  ADR 0003 y razonada en el propio esquema: esa relación es de la norma, no del
+  proyecto.
+- Regla de validación nueva: identificadores duplicados. Y la de cobertura curricular
+  pasó a emitir **un solo hallazgo con el recuento** en vez de uno por criterio, porque
+  al cargar el currículo completo saltaban 165 advertencias que enterraban los errores.
 
 ## 0. Decisiones tomadas (marco del plan)
 
@@ -24,11 +63,11 @@
 | Usuarios de la v1 | Solo el autor; equipo docente en fase posterior | Sin backend, sin cuentas. Persistencia local.            |
 | Plazo             | Sprint intenso (~8 días de trabajo efectivo)    | Ampliado de 6 a 8 al entrar la edición (ADR 0005).       |
 | IA                | Fuera de la v1, con la costura preparada        | Existe `AIProvider` y JSON Schema; ninguna llamada real. |
-| Currículo         | Solo DEMO + importador documentado              | Ningún código curricular oficial inventado.              |
+| Currículo         | Real: Estado y Andalucía, ambos importados      | Superado: el plan solo preveía datos DEMO.               |
 | Primer entregable | Mapa + panel + filtros + matriz + dashboard     | Con edición real: crear, modificar y borrar.             |
 | Nombre            | `constelacion-educativa`                        | Repo `jgamort408/constelacion-educativa`.                |
 | Licencia          | MIT, repositorio público                        | Sin datos personales en el repo.                         |
-| Caso de uso       | Proyecto DEMO "Transformamos nuestro barrio"    | Sin presión de calendario escolar sobre la v0.1.         |
+| Caso de uso       | Ejemplo «Cartografía sonora de nuestro barrio»  | Una situación, tres materias, criterios reales del BOJA. |
 
 ---
 
@@ -255,7 +294,7 @@ Cada fase termina en un estado **ejecutable y verificable** (§32). No se avanza
 
 #### Fase 2 · Datos DEMO · ~0,5 día · ✅ TERMINADA
 
-- [ ] "Transformamos nuestro barrio", 3.º ESO, 6 semanas, 5 materias
+- [x] Rehecho: «Cartografía sonora de nuestro barrio», 1.º ESO, 3 materias, currículo real
 - [ ] 3-4 situaciones de aprendizaje, 12-15 actividades, sesiones, dependencias reales entre materias
 - [ ] Todos los códigos con prefijo `DEMO.` y `CurriculumVersion { isDemo: true }`
 - [ ] Test golden: el DEMO valida contra el esquema y no produce ningún `ERROR`
@@ -337,14 +376,16 @@ Estado a 31 de agosto de 2026:
 | --- | ---------------------------------------------------------------- | --------------------------------------- |
 | 1   | Abrir la URL y ver el DEMO sin instalar nada                     | ✅                                      |
 | 2   | Entender en menos de cinco segundos por qué existe una actividad | ✅                                      |
-| 3   | Exportar, editar fuera e importar con validación                 | ⚠️ Falta el botón en la interfaz        |
+| 3   | Exportar, editar fuera e importar con validación                 | ⚠️ Falta el botón · hito A de PROPUESTA |
 | 4   | Recorrer toda la aplicación con el teclado                       | ✅ 59 elementos, todos con foco visible |
-| 5   | Fluidez con 500 nodos y 1500 aristas                             | ⚠️ Sin medir: el DEMO llega a 49 y 76   |
-| 6   | Ningún código curricular confundible con uno oficial             | ✅                                      |
-| 7   | `npm run ci` en verde con cobertura del dominio                  | ✅ 156 pruebas                          |
+| 5   | Fluidez con 500 nodos y 1500 aristas                             | ⚠️ Sin medir · el mapa llega hoy a 177  |
+| 6   | Ningún código curricular confundible con uno oficial             | ✅ Ya son códigos oficiales de verdad   |
+| 7   | `npm run ci` en verde con cobertura del dominio                  | ✅ 157 pruebas                          |
 
 Pendiente para cerrar la v0.1 del todo: los puntos 3 y 5, más el dashboard de
-avance del §12.
+avance del §12. Todo ello está planificado en [PROPUESTA.md](PROPUESTA.md), que es
+el documento que hay que leer ahora: este plan describe cómo se llegó hasta aquí,
+aquel describe cómo se sigue.
 
 La versión se considera terminada cuando:
 

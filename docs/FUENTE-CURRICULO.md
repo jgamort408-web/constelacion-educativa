@@ -3,8 +3,9 @@
 Mapa de <https://educagob.educacionfpydeportes.gob.es/curriculo.html> levantado el
 1 de septiembre de 2026, verificado descargando y analizando las 15 páginas relevantes.
 
-Es la especificación del importador: qué hay, dónde está, con qué estructura y qué
-trampas tiene.
+Es la especificación de los dos importadores: qué hay, dónde está, con qué estructura
+y qué trampas tiene. Ambos están implementados y verificados; los resultados están en
+§2 (Estado) y §6.2 (Andalucía).
 
 ---
 

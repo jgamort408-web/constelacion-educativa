@@ -1,7 +1,7 @@
 # Propuesta de puesta en marcha
 
 > Versión legible y compartible: <https://claude.ai/code/artifact/71aeb0eb-27e4-480f-a639-505087b9b31b>
-> 1 de septiembre de 2026.
+> Cómo se llegó hasta aquí: [PLAN.md](PLAN.md). 1 de septiembre de 2026.
 
 ## El diagnóstico
 

@@ -8,9 +8,13 @@ responde bien:
 
 > ¿Por qué estamos haciendo esta actividad, y quién depende de ella?
 
+**▶ [Probarla en línea](https://jgamort408-web.github.io/constelacion-educativa/)** ·
+sin instalar nada, con un proyecto de ejemplo cargado.
+
 > [!NOTE]
-> v0.1 en desarrollo. Lo que aparece abajo ya funciona; el estado por fases está en
-> [`docs/PLAN.md`](docs/PLAN.md).
+> v0.1 desplegada. Lo que aparece abajo ya funciona. Cómo se llegó hasta aquí está en
+> [`docs/PLAN.md`](docs/PLAN.md); qué falta para que un equipo docente la use cada
+> semana, en [`docs/PROPUESTA.md`](docs/PROPUESTA.md).
 
 ## Qué hace
 
@@ -44,14 +48,38 @@ mismos nodos y relaciones como un árbol navegable, leyendo del mismo estado.
 - Los contrastes se verifican en el CI contra WCAG 2.2 AA leyendo los colores del propio
   CSS, no de una copia. Ver [`tests/contrast.test.ts`](tests/contrast.test.ts).
 
-## Estado del currículo
+## Currículo oficial, no inventado
 
-La aplicación incluye un proyecto de demostración cuyos códigos curriculares llevan el
-prefijo `DEMO.` y están marcados como tales en la interfaz.
+La aplicación trae **dos currículos completos de 1.º a 3.º de ESO**, extraídos de sus
+fuentes oficiales y verificados:
 
-**No contiene currículo oficial andaluz.** Los datos normativos se cargan mediante el
-importador documentado, con su fuente, normativa y versión registradas. Ningún código
-inventado puede confundirse con una referencia real del BOJA.
+|                          | Andalucía · Orden de 30 de mayo de 2023 | Estado · Real Decreto 217/2022 |
+| ------------------------ | --------------------------------------: | -----------------------------: |
+| Competencias específicas |                                     184 |                            105 |
+| Criterios de evaluación  |                                     487 |                            271 |
+| Saberes básicos          |                                     590 |                            534 |
+| ¿Separa por curso?       |                                      Sí |                     No, agrupa |
+| ¿Codifica los saberes?   |                        Sí (`BYG.1.E.8`) |                             No |
+
+Se elige la fuente al cargarlo, y cada elemento registra de dónde viene. **Para una
+programación en un centro andaluz manda el BOJA**; el estatal sirve para trabajar fuera
+de Andalucía o para comparar.
+
+Veintisiete elementos del BOJA se importan **marcados como pendientes de validación**:
+la norma los recoge, pero caen en cortes de tabla que el analizador no resuelve. Un
+currículo con huecos señalados es útil; uno con huecos ocultos es una trampa.
+
+El mapa de ambas fuentes, con sus trampas verificadas, está en
+[`docs/FUENTE-CURRICULO.md`](docs/FUENTE-CURRICULO.md).
+
+## El proyecto de ejemplo
+
+**«Cartografía sonora de nuestro barrio»** — 1.º de ESO, cinco semanas, tres materias.
+El alumnado recorre su barrio grabando cómo suena, mide el ruido, lo cartografía y lo
+cuenta en público. Geografía levanta el mapa, Matemáticas lo mide y Lengua lo convierte
+en discurso.
+
+Usa criterios reales de la Orden de 30 de mayo de 2023, con sus códigos citables.
 
 ## Empezar
 
@@ -71,6 +99,15 @@ npm run dev
 | `npm run schema`    | Genera `schema/project.v1.json` desde los esquemas Zod |
 | `npm run ci`        | Todo lo anterior, tal y como lo ejecuta el CI          |
 
+Para regenerar los currículos, que no hace falta salvo que cambie la norma:
+
+| Comando                          | Qué hace                                                  |
+| -------------------------------- | --------------------------------------------------------- |
+| `npm run importar:curriculo`     | Descarga y analiza el currículo del Estado desde educagob |
+| `python scripts/boja/extraer.py` | Extrae el Anexo II del PDF del BOJA (necesita `pymupdf`)  |
+| `npm run importar:andalucia`     | Valida y transforma lo extraído al modelo del proyecto    |
+| `npm run generar:curriculo-demo` | Recorta el subconjunto que usa el ejemplo                 |
+
 ## Arquitectura
 
 El principio que gobierna el código: **el dominio no depende de ningún framework.**
@@ -81,8 +118,8 @@ push.
 src/
   domain/     Entidades, esquemas Zod y funciones puras. El núcleo reutilizable.
   data/       Interfaz ProjectRepository e implementación sobre IndexedDB.
-  graph/      Proyección del dominio a Cytoscape: niveles, estilos, layouts.
-  features/   Rebanadas verticales: map/ dashboard/ matrix/ editor/ io/
+  graph/      Proyección del dominio a Cytoscape: niveles, estilos, iconos, layouts.
+  features/   Rebanadas verticales: map/ curriculum/ matrix/ alerts/ traceability/
   components/ Interfaz reutilizable, sin conocimiento del dominio.
   ai/         Contrato del futuro copiloto. Sin llamadas reales en la v0.1.
 ```
@@ -95,6 +132,20 @@ Las decisiones estructurales están en [`docs/adr/`](docs/adr/).
 El proyecto vive en el IndexedDB de tu navegador. **Limpiar los datos del sitio lo borra**,
 igual que borraría cualquier otra cosa guardada por una web. Exporta a JSON con regularidad:
 es la única copia que sobrevive a eso.
+
+## Documentación
+
+| Documento                                              | Qué cuenta                                                                              |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------- |
+| [`docs/PROPUESTA.md`](docs/PROPUESTA.md)               | **Qué falta y en qué orden.** Tres hitos hasta que un equipo docente la use cada semana |
+| [`docs/PLAN.md`](docs/PLAN.md)                         | Cómo se llegó hasta aquí: las siete fases, con lo que se verificó en cada una           |
+| [`docs/FUENTE-CURRICULO.md`](docs/FUENTE-CURRICULO.md) | El mapa de las dos fuentes curriculares y sus trampas                                   |
+| [`docs/adr/`](docs/adr/)                               | Las decisiones estructurales, con lo que se descartó y por qué                          |
+| [`docs/PROMPT-MAESTRO.md`](docs/PROMPT-MAESTRO.md)     | La especificación original de la que nace todo                                          |
+
+Versiones legibles y compartibles:
+[el plan](https://claude.ai/code/artifact/b1b69b20-ca19-44c9-836c-e7b5c2857a7f) ·
+[la propuesta](https://claude.ai/code/artifact/71aeb0eb-27e4-480f-a639-505087b9b31b)
 
 ## Contribuir
 
