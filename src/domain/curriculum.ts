@@ -129,6 +129,20 @@ export const evaluationCriterionSchema = z.object({
    * establecido. Alimenta el factor "criterios" del cálculo de contribución.
    */
   weight: z.number().min(0).max(1).nullable(),
+  /**
+   * Saberes que la propia norma relaciona con este criterio, por su código.
+   *
+   * Es una excepción consciente al ADR 0003, que prohíbe los arrays de
+   * identificadores como sustituto de una relación. Se admite aquí porque esta
+   * relación **no es del proyecto sino de la norma**: es inmutable, no tiene
+   * atributos que guardar, viaja con el criterio y se consulta en un único
+   * momento, al asignarlo a una actividad, para generar entonces sí las aristas
+   * de verdad. Las relaciones del proyecto siguen siendo aristas.
+   *
+   * Solo lo trae el currículo de Andalucía, cuyo Anexo II las tabula. El
+   * currículo del Estado no establece esta correspondencia.
+   */
+  relatedKnowledgeCodes: z.array(nonEmptyString(40)).default([]),
 });
 export type EvaluationCriterion = z.infer<typeof evaluationCriterionSchema>;
 

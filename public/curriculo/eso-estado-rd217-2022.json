@@ -2,7 +2,7 @@
   "fuente": "https://educagob.educacionfpydeportes.gob.es/",
   "normativa": "Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenación y las enseñanzas mínimas de la Educación Secundaria Obligatoria (BOE de 30 de marzo de 2022).",
   "ambito": "Estado (enseñanzas mínimas). NO es el currículo de Andalucía.",
-  "importadoEl": "2026-09-01T16:12:06.998Z",
+  "importadoEl": "2026-09-01T16:59:27.735Z",
   "subjects": [
     {
       "id": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
@@ -66,7 +66,7 @@
       "source": "educagob · Biología y Geología · Educación Secundaria Obligatoria",
       "normativa": "Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenación y las enseñanzas mínimas de la Educación Secundaria Obligatoria (BOE de 30 de marzo de 2022).",
       "publishedAt": "2022-03-30",
-      "importedAt": "2026-09-01T16:12:06.998Z",
+      "importedAt": "2026-09-01T16:59:27.735Z",
       "version": "rd-217-2022",
       "isDemo": false
     },
@@ -75,7 +75,7 @@
       "source": "educagob · Educación Física · Educación Secundaria Obligatoria",
       "normativa": "Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenación y las enseñanzas mínimas de la Educación Secundaria Obligatoria (BOE de 30 de marzo de 2022).",
       "publishedAt": "2022-03-30",
-      "importedAt": "2026-09-01T16:12:06.998Z",
+      "importedAt": "2026-09-01T16:59:27.735Z",
       "version": "rd-217-2022",
       "isDemo": false
     },
@@ -84,7 +84,7 @@
       "source": "educagob · Educación Plástica, Visual y Audiovisual · Educación Secundaria Obligatoria",
       "normativa": "Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenación y las enseñanzas mínimas de la Educación Secundaria Obligatoria (BOE de 30 de marzo de 2022).",
       "publishedAt": "2022-03-30",
-      "importedAt": "2026-09-01T16:12:06.998Z",
+      "importedAt": "2026-09-01T16:59:27.735Z",
       "version": "rd-217-2022",
       "isDemo": false
     },
@@ -93,7 +93,7 @@
       "source": "educagob · Física y Química · Educación Secundaria Obligatoria",
       "normativa": "Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenación y las enseñanzas mínimas de la Educación Secundaria Obligatoria (BOE de 30 de marzo de 2022).",
       "publishedAt": "2022-03-30",
-      "importedAt": "2026-09-01T16:12:06.998Z",
+      "importedAt": "2026-09-01T16:59:27.735Z",
       "version": "rd-217-2022",
       "isDemo": false
     },
@@ -102,7 +102,7 @@
       "source": "educagob · Geografía e Historia · Educación Secundaria Obligatoria",
       "normativa": "Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenación y las enseñanzas mínimas de la Educación Secundaria Obligatoria (BOE de 30 de marzo de 2022).",
       "publishedAt": "2022-03-30",
-      "importedAt": "2026-09-01T16:12:06.998Z",
+      "importedAt": "2026-09-01T16:59:27.735Z",
       "version": "rd-217-2022",
       "isDemo": false
     },
@@ -111,7 +111,7 @@
       "source": "educagob · Lengua Castellana y Literatura · Educación Secundaria Obligatoria",
       "normativa": "Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenación y las enseñanzas mínimas de la Educación Secundaria Obligatoria (BOE de 30 de marzo de 2022).",
       "publishedAt": "2022-03-30",
-      "importedAt": "2026-09-01T16:12:06.998Z",
+      "importedAt": "2026-09-01T16:59:27.735Z",
       "version": "rd-217-2022",
       "isDemo": false
     },
@@ -120,7 +120,7 @@
       "source": "educagob · Lengua Extranjera · Educación Secundaria Obligatoria",
       "normativa": "Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenación y las enseñanzas mínimas de la Educación Secundaria Obligatoria (BOE de 30 de marzo de 2022).",
       "publishedAt": "2022-03-30",
-      "importedAt": "2026-09-01T16:12:06.998Z",
+      "importedAt": "2026-09-01T16:59:27.735Z",
       "version": "rd-217-2022",
       "isDemo": false
     },
@@ -129,7 +129,7 @@
       "source": "educagob · Matemáticas · Educación Secundaria Obligatoria",
       "normativa": "Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenación y las enseñanzas mínimas de la Educación Secundaria Obligatoria (BOE de 30 de marzo de 2022).",
       "publishedAt": "2022-03-30",
-      "importedAt": "2026-09-01T16:12:06.998Z",
+      "importedAt": "2026-09-01T16:59:27.735Z",
       "version": "rd-217-2022",
       "isDemo": false
     },
@@ -138,7 +138,7 @@
       "source": "educagob · Música · Educación Secundaria Obligatoria",
       "normativa": "Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenación y las enseñanzas mínimas de la Educación Secundaria Obligatoria (BOE de 30 de marzo de 2022).",
       "publishedAt": "2022-03-30",
-      "importedAt": "2026-09-01T16:12:06.998Z",
+      "importedAt": "2026-09-01T16:59:27.735Z",
       "version": "rd-217-2022",
       "isDemo": false
     },
@@ -147,7 +147,7 @@
       "source": "educagob · Tecnología y Digitalización · Educación Secundaria Obligatoria",
       "normativa": "Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenación y las enseñanzas mínimas de la Educación Secundaria Obligatoria (BOE de 30 de marzo de 2022).",
       "publishedAt": "2022-03-30",
-      "importedAt": "2026-09-01T16:12:06.998Z",
+      "importedAt": "2026-09-01T16:59:27.735Z",
       "version": "rd-217-2022",
       "isDemo": false
     },
@@ -156,7 +156,7 @@
       "source": "educagob · Educación en Valores Cívicos y Éticos · Educación Secundaria Obligatoria",
       "normativa": "Real Decreto 217/2022, de 29 de marzo, por el que se establece la ordenación y las enseñanzas mínimas de la Educación Secundaria Obligatoria (BOE de 30 de marzo de 2022).",
       "publishedAt": "2022-03-30",
-      "importedAt": "2026-09-01T16:12:06.998Z",
+      "importedAt": "2026-09-01T16:59:27.735Z",
       "version": "rd-217-2022",
       "isDemo": false
     }
@@ -1642,7 +1642,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "765912c5-ff7f-42bf-894c-ad2902e83967",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "dbffd181-bba7-474f-84fc-66cdaf5f8c77",
@@ -1652,7 +1653,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "765912c5-ff7f-42bf-894c-ad2902e83967",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "daffcfee-baa7-45bc-83fc-653aae5f8ae4",
@@ -1662,7 +1664,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "765912c5-ff7f-42bf-894c-ad2902e83967",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "1f12293d-2e18-43eb-8721-09890132d5f3",
@@ -1672,7 +1675,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "73590e0c-007f-4452-864c-a87003e83afa",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "1c122484-2f18-457e-8421-04d00232d786",
@@ -1682,7 +1686,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "73590e0c-007f-4452-864c-a87003e83afa",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "1d122617-3018-4711-8521-06630332d919",
@@ -1692,7 +1697,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "73590e0c-007f-4452-864c-a87003e83afa",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "83ee8afe-12f5-4f2c-8b5f-036a05c081b4",
@@ -1702,7 +1708,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "74590f9f-017f-45e5-874c-aa0304e83c8d",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "82ee896b-15f5-43e5-8a5f-01d708c0866d",
@@ -1712,7 +1719,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "74590f9f-017f-45e5-874c-aa0304e83c8d",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "81ee87d8-14f5-4252-895f-004407c084da",
@@ -1722,7 +1730,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "74590f9f-017f-45e5-874c-aa0304e83c8d",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "88ee92dd-0ff5-4a73-885e-feb102c07cfb",
@@ -1732,7 +1741,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "74590f9f-017f-45e5-874c-aa0304e83c8d",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "87ee914a-0ef5-48e0-875e-fd1e01c07b68",
@@ -1742,7 +1752,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "74590f9f-017f-45e5-874c-aa0304e83c8d",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "a9133273-8329-45b5-887e-eee77731ccbd",
@@ -1752,7 +1763,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "71590ae6-fa7f-4ae0-8c4c-b1e2fde83188",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "aa133406-8029-40fc-897e-f07a7431c804",
@@ -1762,7 +1774,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "71590ae6-fa7f-4ae0-8c4c-b1e2fde83188",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ada0de34-6806-40f6-8d5c-1a28dc0e2e7e",
@@ -1772,7 +1785,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "72590c79-fb7f-4c73-8d4c-b375fee8331b",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b0a0e2ed-6706-4f63-805c-1ee1db0e2ceb",
@@ -1782,7 +1796,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "72590c79-fb7f-4c73-8d4c-b375fee8331b",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "afa0e15a-6606-4dd0-8f5c-1d4eda0e2b58",
@@ -1792,7 +1807,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "72590c79-fb7f-4c73-8d4c-b375fee8331b",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "52c4bc29-59c7-445f-8230-789dcc430e87",
@@ -1802,7 +1818,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "6f5907c0-fc7f-4e06-8a4c-aebcffe834ae",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4fc4b770-5ac7-45f2-8f30-73e4cd43101a",
@@ -1812,7 +1829,8 @@
       "curriculumVersionId": "79c979d3-f45c-48ed-8884-113f7f634805",
       "competencyId": "6f5907c0-fc7f-4e06-8a4c-aebcffe834ae",
       "subjectId": "bed50db2-29f9-40d4-871d-8cc685fd0a3c",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "47560d86-65fe-45a0-83dc-d1aa22c2dc98",
@@ -1822,7 +1840,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "aece03e7-c826-4ad9-8c73-5f13eef52531",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "46560bf3-68fe-4a59-82dc-d01725c2e151",
@@ -1832,7 +1851,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "aece03e7-c826-4ad9-8c73-5f13eef52531",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "45560a60-67fe-48c6-81dc-ce8424c2dfbe",
@@ -1842,7 +1862,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "aece03e7-c826-4ad9-8c73-5f13eef52531",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4c561565-6afe-4d7f-80dc-ccf127c2e477",
@@ -1852,7 +1873,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "aece03e7-c826-4ad9-8c73-5f13eef52531",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4b5613d2-69fe-4bec-8fdc-cb5e26c2e2e4",
@@ -1862,7 +1884,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "aece03e7-c826-4ad9-8c73-5f13eef52531",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4a56123f-6cfe-40a5-8edc-c9cb29c2e79d",
@@ -1872,7 +1895,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "aece03e7-c826-4ad9-8c73-5f13eef52531",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b9170a6f-2b22-45f5-84af-5013e8369ecd",
@@ -1882,7 +1906,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "afce057a-c526-4620-8d73-60a6ebf52078",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ba170c02-2822-413c-85af-51a6e5369a14",
@@ -1892,7 +1917,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "afce057a-c526-4620-8d73-60a6ebf52078",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "bb170d95-2922-42cf-86af-5339e6369ba7",
@@ -1902,7 +1928,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "afce057a-c526-4620-8d73-60a6ebf52078",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "1df36c30-0fff-4136-8a7a-30544db2644e",
@@ -1912,7 +1939,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "b0ce070d-c626-47b3-8e73-6239ecf5220b",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "20f370e9-0eff-4fa3-8d7a-350d4cb262bb",
@@ -1922,7 +1950,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "b0ce070d-c626-47b3-8e73-6239ecf5220b",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "1ff36f56-0dff-4e10-8c7a-337a4bb26128",
@@ -1932,7 +1961,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "b0ce070d-c626-47b3-8e73-6239ecf5220b",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b7b88df1-d611-442b-8aae-46ddf2d64243",
@@ -1942,7 +1972,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a9cdfc08-cb26-4f92-8f73-63ccf1f529ea",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b4b88938-d711-45be-87ae-4224f3d643d6",
@@ -1952,7 +1983,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a9cdfc08-cb26-4f92-8f73-63ccf1f529ea",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b5b88acb-d811-4751-88ae-43b7f4d64569",
@@ -1962,7 +1994,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a9cdfc08-cb26-4f92-8f73-63ccf1f529ea",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "9bf65572-baee-4f6c-8f8b-721ef763ee04",
@@ -1972,7 +2005,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "aacdfd9b-cc26-4125-8073-655ff2f52b7d",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "9af653df-bdee-4425-8e8b-708bfa63f2bd",
@@ -1982,7 +2016,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "aacdfd9b-cc26-4125-8073-655ff2f52b7d",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "04aaebce-79a8-4500-889f-25ead8fc84d8",
@@ -1992,7 +2027,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a5ca10df-c61a-49a1-8b98-8f33a437a8d9",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "03aaea3b-7ca8-49b9-879f-2457dbfc8991",
@@ -2002,7 +2038,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a5ca10df-c61a-49a1-8b98-8f33a437a8d9",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "02aae8a8-7ba8-4826-869f-22c4dafc87fe",
@@ -2012,7 +2049,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a5ca10df-c61a-49a1-8b98-8f33a437a8d9",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "09aaf3ad-7ea8-4cdf-859f-2131ddfc8cb7",
@@ -2022,7 +2060,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a5ca10df-c61a-49a1-8b98-8f33a437a8d9",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "08aaf21a-7da8-4b4c-849f-1f9edcfc8b24",
@@ -2032,7 +2071,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a5ca10df-c61a-49a1-8b98-8f33a437a8d9",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "07aaf087-80a8-4005-839f-1e0bdffc8fdd",
@@ -2042,7 +2082,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a5ca10df-c61a-49a1-8b98-8f33a437a8d9",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "f57d9c97-becc-4ed5-8971-a4539e70470d",
@@ -2052,7 +2093,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a6ca1272-c31a-44e8-8c98-90c6a137a420",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "f67d9e2a-bbcc-4a1c-8a71-a5e69b704254",
@@ -2062,7 +2104,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a6ca1272-c31a-44e8-8c98-90c6a137a420",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "f77d9fbd-bccc-4baf-8b71-a7799c7043e7",
@@ -2072,7 +2115,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a6ca1272-c31a-44e8-8c98-90c6a137a420",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "d9bb6418-23a9-4096-8f3c-849403ec0c8e",
@@ -2082,7 +2126,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a7ca1405-c41a-467b-8d98-9259a237a5b3",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "dcbb68d1-22a9-4f03-823c-894d02ec0afb",
@@ -2092,7 +2137,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a7ca1405-c41a-467b-8d98-9259a237a5b3",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "dbbb673e-21a9-4d70-813c-87ba01ec0968",
@@ -2102,7 +2148,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a7ca1405-c41a-467b-8d98-9259a237a5b3",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "53805379-687e-488b-8f70-9b1da90fea83",
@@ -2112,7 +2159,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a0ca0900-c91a-4e5a-8e98-93eca737ad92",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "50804ec0-697e-4a1e-8c70-9664aa0fec16",
@@ -2122,7 +2170,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a0ca0900-c91a-4e5a-8e98-93eca737ad92",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "51805053-6a7e-4bb1-8d70-97f7ab0feda9",
@@ -2132,7 +2181,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a0ca0900-c91a-4e5a-8e98-93eca737ad92",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "585db11a-cd5a-4a4c-844d-c65ead9d9644",
@@ -2142,7 +2192,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a1ca0a93-ca1a-4fed-8f98-957fa837af25",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "575daf87-d05a-4f05-834d-c4cbb09d9afd",
@@ -2152,7 +2203,8 @@
       "curriculumVersionId": "272cf87e-19f5-4a50-8d95-62e2896f0a78",
       "competencyId": "a1ca0a93-ca1a-4fed-8f98-957fa837af25",
       "subjectId": "def3b605-914a-4c8f-8886-dcc1644a97a7",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "d2b87091-7925-4d43-8afa-534d6d5deccb",
@@ -2162,7 +2214,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "25ddbe78-dc6d-419a-8796-756ceb74efc2",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "cfb86bd8-7a25-4ed6-87fa-4e946e5dee5e",
@@ -2172,7 +2225,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "25ddbe78-dc6d-419a-8796-756ceb74efc2",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "8d4577dc-27b4-449a-8586-9118fd29d642",
@@ -2182,7 +2236,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "28ddc331-db6d-4007-8a96-7a25ea74ee2f",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "90457c95-26b4-4307-8886-95d1fc29d4af",
@@ -2192,7 +2247,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "28ddc331-db6d-4007-8a96-7a25ea74ee2f",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "2906e6db-22d7-46f9-8148-c997184cab01",
@@ -2202,7 +2258,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "27ddc19e-da6d-4e74-8996-7892e974ec9c",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "2a06e86e-1fd7-4240-8248-cb2a154ca648",
@@ -2212,7 +2269,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "27ddc19e-da6d-4e74-8996-7892e974ec9c",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "639324a6-a912-4798-8428-de1a7e878940",
@@ -2222,7 +2280,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "2addc657-d96d-4ce1-8496-70b3e874eb09",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "62932313-ac12-4c51-8328-dc8781878df9",
@@ -2232,7 +2291,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "2addc657-d96d-4ce1-8496-70b3e874eb09",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "7e1828a5-c4d4-4017-8f4b-8079990c8d3f",
@@ -2242,7 +2302,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "29ddc4c4-d86d-4b4e-8396-6f20e774e976",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "7b1823ec-c5d4-41aa-8c4b-7bc09a0c8ed2",
@@ -2252,7 +2313,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "29ddc4c4-d86d-4b4e-8396-6f20e774e976",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b8f41850-d401-4f4e-8a27-a2842888c4d6",
@@ -2262,7 +2324,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "2cddc97d-d76d-49bb-8696-73d9e674e7e3",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "bbf41d09-d301-4dbb-8d27-a73d2788c343",
@@ -2272,7 +2335,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "2cddc97d-d76d-49bb-8696-73d9e674e7e3",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "d416ed0f-6e85-49cd-8599-f6c3c3ac6315",
@@ -2282,7 +2346,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "2bddc7ea-d66d-4828-8596-7246e574e650",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "af41f77a-86f4-4ffc-887a-0b46ca365c14",
@@ -2292,7 +2357,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "1eddb373-d56d-4695-8096-8397f474fded",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ae41f5e7-89f4-44b5-877a-09b3cd3660cd",
@@ -2302,7 +2368,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "1eddb373-d56d-4695-8096-8397f474fded",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ad41f454-88f4-4322-867a-0820cc365f3a",
@@ -2312,7 +2379,8 @@
       "curriculumVersionId": "2db51bce-aac9-4308-8a15-752a02924880",
       "competencyId": "1eddb373-d56d-4695-8096-8397f474fded",
       "subjectId": "077585ef-6861-4761-84f9-05034efec569",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "a7b7b1d7-ee51-4855-8196-eee30b19356d",
@@ -2322,7 +2390,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "5d988b12-0065-4178-84c3-e29691bc3570",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "a8b7b36a-eb51-439c-8296-f076081930b4",
@@ -2332,7 +2401,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "5d988b12-0065-4178-84c3-e29691bc3570",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "a9b7b4fd-ec51-452f-8396-f20909193247",
@@ -2342,7 +2412,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "5d988b12-0065-4178-84c3-e29691bc3570",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b6e5010e-a92c-4e80-8162-413a45a57338",
@@ -2352,7 +2423,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "5c98897f-0365-4631-83c3-e10394bc3a29",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b5e4ff7b-ac2c-4339-8062-3fa748a577f1",
@@ -2362,7 +2434,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "5c98897f-0365-4631-83c3-e10394bc3a29",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b4e4fde8-ab2c-41a6-8f62-3e1447a5765e",
@@ -2372,7 +2445,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "5c98897f-0365-4631-83c3-e10394bc3a29",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "51693b8d-c3b1-427f-8c85-ad19e029adb7",
@@ -2382,7 +2456,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "5b9887ec-0265-449e-82c3-df7093bc3896",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4e6936d4-c4b1-4412-8985-a860e129af4a",
@@ -2392,7 +2467,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "5b9887ec-0265-449e-82c3-df7093bc3896",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4f693867-c5b1-45a5-8a85-a9f3e229b0dd",
@@ -2402,7 +2478,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "5b9887ec-0265-449e-82c3-df7093bc3896",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "60968ac4-27cf-4b82-82c0-bdb84446f6ba",
@@ -2412,7 +2489,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "5a988659-0565-4957-89c3-ea7596bc3d4f",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "63968f7d-26cf-49ef-85c0-c2714346f527",
@@ -2422,7 +2500,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "5a988659-0565-4957-89c3-ea7596bc3d4f",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "5c08df03-42f1-4041-8d44-f837bf6a6299",
@@ -2432,7 +2511,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "599884c6-0465-47c4-88c3-e8e295bc3bbc",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "5d08e096-3ff1-4b88-8e44-f9cabc6a5de0",
@@ -2442,7 +2522,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "599884c6-0465-47c4-88c3-e8e295bc3bbc",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0a97c65a-fcdf-43cc-8c72-476e9a45bb24",
@@ -2452,7 +2533,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "58988333-0765-4c7d-87c3-e74f98bc4075",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0997c4c7-ffdf-4885-8b72-45db9d45bfdd",
@@ -2462,7 +2544,8 @@
       "curriculumVersionId": "45f121d8-d833-4d86-8fa0-615417146d6e",
       "competencyId": "58988333-0765-4c7d-87c3-e74f98bc4075",
       "subjectId": "5bf8263f-ee63-4805-8ac4-a7d3827826fd",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "59dcbf44-66cd-432a-848a-2380e96826f2",
@@ -2472,7 +2555,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7d5bba49-eb29-4ff7-8c1d-4efdfb58d91f",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "5cdcc3fd-65cd-4197-878a-2839e868255f",
@@ -2482,7 +2566,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7d5bba49-eb29-4ff7-8c1d-4efdfb58d91f",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ff009d39-37a0-4193-89ae-fd555a3ba13b",
@@ -2492,7 +2577,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7a5bb590-ec29-418a-891d-4a44fc58dab2",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "fc009880-38a0-4326-86ae-f89c5b3ba2ce",
@@ -2502,7 +2588,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7a5bb590-ec29-418a-891d-4a44fc58dab2",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "fd009a13-39a0-44b9-87ae-fa2f5c3ba461",
@@ -2512,7 +2599,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7a5bb590-ec29-418a-891d-4a44fc58dab2",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0200a1f2-3aa0-464c-84ae-f5765d3ba5f4",
@@ -2522,7 +2610,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7a5bb590-ec29-418a-891d-4a44fc58dab2",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "03ddfada-3d6b-41d4-8e8b-5f163fb69d3c",
@@ -2532,7 +2621,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7b5bb723-ed29-431d-8a1d-4bd7fd58dc45",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "02ddf947-406b-468d-8d8b-5d8342b6a1f5",
@@ -2542,7 +2632,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7b5bb723-ed29-431d-8a1d-4bd7fd58dc45",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "01ddf7b4-3f6b-44fa-8c8b-5bf041b6a062",
@@ -2552,7 +2643,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7b5bb723-ed29-431d-8a1d-4bd7fd58dc45",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "00ddf621-3a6b-4d1b-838b-66f53cb69883",
@@ -2562,7 +2654,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7b5bb723-ed29-431d-8a1d-4bd7fd58dc45",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ffddf48e-396b-4b88-828b-65623bb696f0",
@@ -2572,7 +2665,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7b5bb723-ed29-431d-8a1d-4bd7fd58dc45",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "a0fde657-ad9f-485d-8360-870b30894e05",
@@ -2582,7 +2676,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "805bbf02-e629-4818-871d-471ef658d140",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "a1fde7ea-aa9f-43a4-8460-889e2d89494c",
@@ -2592,7 +2687,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "805bbf02-e629-4818-871d-471ef658d140",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "a2fde97d-ab9f-4537-8560-8a312e894adf",
@@ -2602,7 +2698,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "805bbf02-e629-4818-871d-471ef658d140",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "853badd8-927c-439e-883c-e8cc94c7df06",
@@ -2612,7 +2709,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "815bc095-e729-49ab-881d-48b1f758d2d3",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "883bb291-917c-420b-8b3c-ed8593c7dd73",
@@ -2622,7 +2720,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "815bc095-e729-49ab-881d-48b1f758d2d3",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "873bb0fe-907c-4078-8a3c-ebf292c7dbe0",
@@ -2632,7 +2731,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "815bc095-e729-49ab-881d-48b1f758d2d3",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4aaf700d-03ed-4ea7-8e4f-45410688dbef",
@@ -2642,7 +2742,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7e5bbbdc-e829-4b3e-851d-43f8f858d466",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "47af6b54-04ed-403a-8b4f-40880788dd82",
@@ -2652,7 +2753,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7e5bbbdc-e829-4b3e-851d-43f8f858d466",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "48af6ce7-05ed-41cd-8c4f-421b0888df15",
@@ -2662,7 +2764,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7e5bbbdc-e829-4b3e-851d-43f8f858d466",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "45af682e-feed-46c8-814f-49fa0188d410",
@@ -2672,7 +2775,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7e5bbbdc-e829-4b3e-851d-43f8f858d466",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b02b358e-e8ca-49e8-832c-70826b653db0",
@@ -2682,7 +2786,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7f5bbd6f-e929-4cd1-861d-458bf958d5f9",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "af2b33fb-ebca-4ea1-822c-6eef6e654269",
@@ -2692,7 +2797,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7f5bbd6f-e929-4cd1-861d-458bf958d5f9",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ae2b3268-eaca-4d0e-812c-6d5c6d6540d6",
@@ -2702,7 +2808,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7f5bbd6f-e929-4cd1-861d-458bf958d5f9",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b52b3d6d-edca-41c7-802c-6bc97065458f",
@@ -2712,7 +2819,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "7f5bbd6f-e929-4cd1-861d-458bf958d5f9",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "7da2ea3b-8b81-40c1-86bb-8327db995439",
@@ -2722,7 +2830,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "845bc54e-e229-41cc-831d-40d20258e424",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "7ea2ebce-8881-4c08-87bb-84bad8994f80",
@@ -2732,7 +2841,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "845bc54e-e229-41cc-831d-40d20258e424",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "7fa2ed61-8981-4d9b-88bb-864dd9995113",
@@ -2742,7 +2852,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "845bc54e-e229-41cc-831d-40d20258e424",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "631de63c-705e-4c02-8b98-ae68e076b1da",
@@ -2752,7 +2863,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "855bc6e1-e329-435f-841d-42650358e5b7",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "661deaf5-6f5e-4a6f-8e98-b321df76b047",
@@ -2762,7 +2874,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "855bc6e1-e329-435f-841d-42650358e5b7",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "1f25377c-db90-476a-8cd9-99e079c15f12",
@@ -2772,7 +2885,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "065ee3d1-5716-422f-8e62-68fd2eb99877",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "22253c35-da90-45d7-8fd9-9e9978c15d7f",
@@ -2782,7 +2896,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "065ee3d1-5716-422f-8e62-68fd2eb99877",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "21253aa2-d990-4444-8ed9-9d0677c15bec",
@@ -2792,7 +2907,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "065ee3d1-5716-422f-8e62-68fd2eb99877",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e498f9b1-ac62-45d3-81fd-aa356a940fdb",
@@ -2802,7 +2918,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "035edf18-5816-43c2-8b62-64442fb99a0a",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e198f4f8-ad62-4766-8efd-a57c6b94116e",
@@ -2812,7 +2929,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "035edf18-5816-43c2-8b62-64442fb99a0a",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "c8d6c132-b22d-4614-86da-d576ced2a0dc",
@@ -2822,7 +2940,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "045ee0ab-5916-4555-8c62-65d730b99b9d",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "c6d6be0c-b42d-493a-84da-d250d0d2a402",
@@ -2832,7 +2951,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "045ee0ab-5916-4555-8c62-65d730b99b9d",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "c5d6bc79-af2d-415b-8bda-dd55cbd29c23",
@@ -2842,7 +2962,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "045ee0ab-5916-4555-8c62-65d730b99b9d",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e5f7762f-2261-4c9d-8cec-686bbfa551a5",
@@ -2852,7 +2973,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "095ee88a-5216-4a50-8962-611e29b99098",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e6f777c2-1f61-47e4-8dec-69febca54cec",
@@ -2862,7 +2984,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "095ee88a-5216-4a50-8962-611e29b99098",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4ad3d7f0-073e-47de-81c9-93aca5204da6",
@@ -2872,7 +2995,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "0a5eea1d-5316-4be3-8a62-62b12ab9922b",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4dd3dca9-063e-464b-84c9-9865a4204c13",
@@ -2882,7 +3006,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "0a5eea1d-5316-4be3-8a62-62b12ab9922b",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0ff7e845-78af-42e7-869e-bba115a4160f",
@@ -2892,7 +3017,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "075ee564-5416-4d76-8762-5df82bb993be",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0cf7e38c-79af-447a-839e-b6e816a417a2",
@@ -2902,7 +3028,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "075ee564-5416-4d76-8762-5df82bb993be",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "74367946-5d8d-4e28-8b7b-1d62fa814150",
@@ -2912,7 +3039,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "085ee6f7-5516-4f09-8862-5f8b2cb99551",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "733677b3-608d-42e1-8a7b-1bcffd814609",
@@ -2922,7 +3050,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "085ee6f7-5516-4f09-8862-5f8b2cb99551",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "115664c3-0043-4501-8f0a-f9876bf28c59",
@@ -2932,7 +3061,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "fd5ed5a6-5e16-4d34-8562-5ad225b98a4c",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "12566656-fd43-4048-800a-fb1a68f287a0",
@@ -2942,7 +3072,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "fd5ed5a6-5e16-4d34-8562-5ad225b98a4c",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "15e41084-e520-4042-83e7-5b48f0cf207a",
@@ -2952,7 +3083,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "fe5ed739-5f16-4ec7-8662-5c6526b98bdf",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "18e4153d-e420-4eaf-86e7-6001efcf1ee7",
@@ -2962,7 +3094,8 @@
       "curriculumVersionId": "b069c6f0-7e60-42fe-8e06-bb9cf0b01816",
       "competencyId": "fe5ed739-5f16-4ec7-8662-5c6526b98bdf",
       "subjectId": "d928445f-0602-4065-877c-1013ab23e40d",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "c0843914-7340-4bf2-8ae8-cd208cb0c79a",
@@ -2972,7 +3105,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "626a3ad9-9413-4fff-83e1-af5dc8e94027",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "c3843dcd-7240-4a5f-8de8-d1d98bb0c607",
@@ -2982,7 +3116,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "626a3ad9-9413-4fff-83e1-af5dc8e94027",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e5a8e089-e414-463b-800c-dd75de21e043",
@@ -2992,7 +3127,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "5f6a3620-9513-4192-80e1-aaa4c9e941ba",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e2a8dbd0-e514-47ce-8d0c-d8bcdf21e1d6",
@@ -3002,7 +3138,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "5f6a3620-9513-4192-80e1-aaa4c9e941ba",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e9e6da6a-c98f-423c-84ea-08b6e2af8c04",
@@ -3012,7 +3149,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "606a37b3-9613-4325-81e1-ac37cae9434d",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e8e6d8d7-cc8f-46f5-83ea-0723e5af90bd",
@@ -3022,7 +3160,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "606a37b3-9613-4325-81e1-ac37cae9434d",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "8706c5e7-ba61-4305-8afb-9babd3823ccd",
@@ -3032,7 +3171,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "656a3f92-8f13-4820-8ee1-a77ec3e93848",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "8806c77a-b761-4e4c-8bfb-9d3ed0823814",
@@ -3042,7 +3182,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "656a3f92-8f13-4820-8ee1-a77ec3e93848",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "6be3f128-1ea0-4406-8fd8-c6ec38fe024e",
@@ -3052,7 +3193,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "666a4125-9013-49b3-8fe1-a911c4e939db",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "6ee3f5e1-1da0-4273-82d8-cba537fe00bb",
@@ -3062,7 +3204,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "666a4125-9013-49b3-8fe1-a911c4e939db",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "30b84f9d-9061-40ef-84ad-eee129d0b317",
@@ -3072,7 +3215,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "636a3c6c-9113-4b46-8ce1-a458c5e93b6e",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "2db84ae4-9161-4282-81ad-ea282ad0b4aa",
@@ -3082,7 +3226,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "636a3c6c-9113-4b46-8ce1-a458c5e93b6e",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "2eb84c77-9261-4415-82ad-ebbb2bd0b63d",
@@ -3092,7 +3237,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "636a3c6c-9113-4b46-8ce1-a458c5e93b6e",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "15957ade-f53d-42b0-898a-50a20e0e7a98",
@@ -3102,7 +3248,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "646a3dff-9213-4cd9-8de1-a5ebc6e93d01",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "1495794b-f83d-4769-888a-4f0f110e7f51",
@@ -3112,7 +3259,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "646a3dff-9213-4cd9-8de1-a5ebc6e93d01",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "63abc9cb-6571-4939-8d1a-2cc7b1647531",
@@ -3122,7 +3270,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "696a45de-9b13-4b04-8ae1-a132bfe931fc",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "64abcb5e-6271-4480-8e1a-2e5aae647078",
@@ -3132,7 +3281,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "696a45de-9b13-4b04-8ae1-a132bfe931fc",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "65abccf1-6371-4613-8f1a-2fedaf64720b",
@@ -3142,7 +3292,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "696a45de-9b13-4b04-8ae1-a132bfe931fc",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "c8882b8c-6a4f-46da-81f6-8e8895a23cb2",
@@ -3152,7 +3303,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "6a6a4771-9c13-4c97-8be1-a2c5c0e9338f",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "cb883045-694f-4547-84f6-934194a23b1f",
@@ -3162,7 +3314,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "6a6a4771-9c13-4c97-8be1-a2c5c0e9338f",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ca882eb2-684f-43b4-83f6-91ae93a2398c",
@@ -3172,7 +3325,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "6a6a4771-9c13-4c97-8be1-a2c5c0e9338f",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "f61058e2-435c-47dc-8285-0c666844a154",
@@ -3182,7 +3336,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "d63abccb-e999-42dd-8947-28975e2fe435",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "f510574f-465c-4c95-8185-0ad36b44a60d",
@@ -3192,7 +3347,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "d63abccb-e999-42dd-8947-28975e2fe435",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ed0fd24c-0399-4412-8e92-ac80ebf51d9a",
@@ -3202,7 +3358,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "605e69a1-522a-41d7-8626-c95dbfe54d1f",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "f00fd705-0299-427f-8192-b139eaf51c07",
@@ -3212,7 +3369,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "605e69a1-522a-41d7-8626-c95dbfe54d1f",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "33222ec1-f46c-44db-83b7-86553d663643",
@@ -3222,7 +3380,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "5d5e64e8-532a-436a-8326-c4a4c0e54eb2",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "30222a08-f56c-466e-80b7-819c3e6637d6",
@@ -3232,7 +3391,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "5d5e64e8-532a-436a-8326-c4a4c0e54eb2",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "17ff5a02-58ab-45dc-8893-e81641f3e204",
@@ -3242,7 +3402,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "5e5e667b-542a-44fd-8426-c637c1e55045",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "16ff586f-5bab-4a95-8793-e68344f3e6bd",
@@ -3252,7 +3413,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "5e5e667b-542a-44fd-8426-c637c1e55045",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b3e210ff-497d-46a5-8d69-100b32c692cd",
@@ -3262,7 +3424,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "635e6e5a-4d2a-49f8-8126-c17ebae54540",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "b4e21292-467d-41ec-8e69-119e2fc68e14",
@@ -3272,7 +3435,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "635e6e5a-4d2a-49f8-8126-c17ebae54540",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "995d0d00-2ef8-42a6-8245-71cc9842584e",
@@ -3282,7 +3446,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "645e6fed-4e2a-4b8b-8226-c311bbe546d3",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "9c5d11b9-2df8-4113-8545-7685974256bb",
@@ -3292,7 +3457,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "645e6fed-4e2a-4b8b-8226-c311bbe546d3",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "de81e6d5-9f7c-4b0f-8857-ce4189150917",
@@ -3302,7 +3468,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "615e6b34-4f2a-4d1e-8f26-be58bce54866",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "db81e21c-a07c-4ca2-8557-c9888a150aaa",
@@ -3312,7 +3479,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "615e6b34-4f2a-4d1e-8f26-be58bce54866",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "dc81e3af-a17c-4e35-8657-cb1b8b150c3d",
@@ -3322,7 +3490,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "615e6b34-4f2a-4d1e-8f26-be58bce54866",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "435e4896-8459-4650-8d34-f9826d52d098",
@@ -3332,7 +3501,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "625e6cc7-502a-4eb1-8026-bfebbde549f9",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "425e4703-8759-4b09-8c34-f7ef7052d551",
@@ -3342,7 +3512,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "625e6cc7-502a-4eb1-8026-bfebbde549f9",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "df40ff93-f5cb-4159-80c4-0c2710a8cb31",
@@ -3352,7 +3523,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "575e5b76-492a-43ac-8d26-bb32c6e55824",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e0410126-f2cb-4ca0-81c4-0dba0da8c678",
@@ -3362,7 +3534,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "575e5b76-492a-43ac-8d26-bb32c6e55824",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e14102b9-f3cb-4e33-82c4-0f4d0ea8c80b",
@@ -3372,7 +3545,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "575e5b76-492a-43ac-8d26-bb32c6e55824",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e50bdfd4-7aa7-457a-85a1-3768f4e692b2",
@@ -3382,7 +3556,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "585e5d09-4a2a-453f-8e26-bcc5c7e559b7",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e80be48d-79a7-43e7-88a1-3c21f3e6911f",
@@ -3392,7 +3567,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "585e5d09-4a2a-453f-8e26-bcc5c7e559b7",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e70be2fa-78a7-4254-87a1-3a8ef2e68f8c",
@@ -3402,7 +3578,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "585e5d09-4a2a-453f-8e26-bcc5c7e559b7",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "bc6599aa-5fcf-4d7c-86f0-154660d80354",
@@ -3412,7 +3589,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "45a02f43-4003-4ea5-8c0f-169744f880fd",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "bb659817-62cf-4235-85f0-13b363d8080d",
@@ -3422,7 +3600,8 @@
       "curriculumVersionId": "d8dfc2e8-9f6a-4f0e-8323-6d04a101cb46",
       "competencyId": "45a02f43-4003-4ea5-8c0f-169744f880fd",
       "subjectId": "139e589d-6c07-4f63-8d42-65717865264b",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "192477d0-8b8c-4202-8551-dc34140465aa",
@@ -3432,7 +3611,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2033539d-5da8-4997-8536-5b29e8ba2f3f",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "1c247c89-8a8c-406f-8851-e0ed13046417",
@@ -3442,7 +3622,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2033539d-5da8-4997-8536-5b29e8ba2f3f",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "de488825-fbc0-488b-8a75-ba29e4d6e413",
@@ -3452,7 +3633,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "1d334ee4-5ea8-4b2a-8236-5670e9ba30d2",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "db48836c-fcc0-4a1e-8775-b570e5d6e5a6",
@@ -3462,7 +3644,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "1d334ee4-5ea8-4b2a-8236-5670e9ba30d2",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "dc4884ff-fdc0-4bb1-8875-b703e6d6e739",
@@ -3472,7 +3655,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "1d334ee4-5ea8-4b2a-8236-5670e9ba30d2",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "c3c38426-609c-4a4c-8ff0-e88aeaa1c454",
@@ -3482,7 +3666,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "1e335077-5fa8-4cbd-8336-5803eaba3265",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "c2c38293-639c-4f05-8ef0-e6f7eda1c90d",
@@ -3492,7 +3677,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "1e335077-5fa8-4cbd-8336-5803eaba3265",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "8937465b-520e-4ed5-8bd4-69075ad5dadd",
@@ -3502,7 +3688,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "1b334bbe-58a8-41b8-8836-5fe2e3ba2760",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "8a3747ee-4f0e-4a1c-8cd4-6a9a57d5d624",
@@ -3512,7 +3699,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "1b334bbe-58a8-41b8-8836-5fe2e3ba2760",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ed75d75c-b6eb-4096-80b0-cac83fb3061e",
@@ -3522,7 +3710,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "1c334d51-59a8-434b-8936-6175e4ba28f3",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "f075dc15-b5eb-4f03-83b0-cf813eb3048b",
@@ -3532,7 +3721,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "1c334d51-59a8-434b-8936-6175e4ba28f3",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ef75da82-b4eb-4d70-82b0-cdee3db302f8",
@@ -3542,7 +3732,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "1c334d51-59a8-434b-8936-6175e4ba28f3",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "32e8d011-276f-48ff-86c3-273db1245127",
@@ -3552,7 +3743,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "19334898-5aa8-44de-8636-5cbce5ba2a86",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "2fe8cb58-286f-4a92-83c3-2284b22452ba",
@@ -3562,7 +3754,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "19334898-5aa8-44de-8636-5cbce5ba2a86",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "30e8cceb-296f-4c25-84c3-2417b324544d",
@@ -3572,7 +3765,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "19334898-5aa8-44de-8636-5cbce5ba2a86",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "752c0030-ba5d-4022-881e-ad6c88c6b9ea",
@@ -3582,7 +3776,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "32786d9d-5e77-464f-8f77-82b1a6d15117",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "782c04e9-b95d-4e8f-8b1e-b22587c6b857",
@@ -3592,7 +3787,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "32786d9d-5e77-464f-8f77-82b1a6d15117",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "772c0356-b85d-4cfc-8a1e-b09286c6b6c4",
@@ -3602,7 +3798,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "32786d9d-5e77-464f-8f77-82b1a6d15117",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "3a501085-2bce-4b2b-8cf3-d56159993853",
@@ -3612,7 +3809,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2f7868e4-5f77-47e2-8c77-7df8a7d152aa",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "37500bcc-2cce-4cbe-89f3-d0a85a9939e6",
@@ -3622,7 +3820,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2f7868e4-5f77-47e2-8c77-7df8a7d152aa",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "38500d5f-2dce-4e51-8af3-d23b5b993b79",
@@ -3632,7 +3831,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2f7868e4-5f77-47e2-8c77-7df8a7d152aa",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "9e8ea186-10ab-466c-81d0-37225f641894",
@@ -3642,7 +3842,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "30786a77-6077-4975-8d77-7f8ba8d1543d",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "9d8e9ff3-13ab-4b25-80d0-358f62641d4d",
@@ -3652,7 +3853,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "30786a77-6077-4975-8d77-7f8ba8d1543d",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "640263bb-80df-4cf5-8ef0-229fcf982f1d",
@@ -3662,7 +3864,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2d7865be-5977-4e70-8277-876aa1d14938",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "6502654e-7ddf-483c-8ff0-2432cc982a64",
@@ -3672,7 +3875,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2d7865be-5977-4e70-8277-876aa1d14938",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "497d5fbc-65bd-4836-832e-b3a0b4755a5e",
@@ -3682,7 +3886,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2e786751-5a77-4003-8377-88fda2d14acb",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4c7d6475-64bd-46a3-862e-b859b37558cb",
@@ -3692,7 +3897,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2e786751-5a77-4003-8377-88fda2d14acb",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4b7d62e2-63bd-4510-852e-b6c6b2755738",
@@ -3702,7 +3908,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2e786751-5a77-4003-8377-88fda2d14acb",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0ef121f1-577d-4b9f-8852-c3f525e6a567",
@@ -3712,7 +3919,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2b786298-5b77-4196-8077-8444a3d14c5e",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0bf11d38-587d-4d32-8552-bf3c26e6a6fa",
@@ -3722,7 +3930,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2b786298-5b77-4196-8077-8444a3d14c5e",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0cf11ecb-597d-4ec5-8652-c0cf27e6a88d",
@@ -3732,7 +3941,8 @@
       "curriculumVersionId": "891f9a90-a972-4c1a-810b-df945e4416f2",
       "competencyId": "2b786298-5b77-4196-8077-8444a3d14c5e",
       "subjectId": "e6581a11-1093-4bfb-89c5-81cd9ecbf043",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ea088e5f-59af-4419-83f6-af9ba1d77b51",
@@ -3742,7 +3952,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "0b49602a-b770-4194-847c-c5de9f30eacc",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "eb088ff2-56af-4f60-84f6-b12e9ed77698",
@@ -3752,7 +3963,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "0b49602a-b770-4194-847c-c5de9f30eacc",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "ec089185-57af-40f3-85f6-b2c19fd7782b",
@@ -3762,7 +3974,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "0b49602a-b770-4194-847c-c5de9f30eacc",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "f8485af6-348a-4ca4-8323-fed25c64829c",
@@ -3772,7 +3985,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "0a495e97-ba70-464d-837c-c44ba230ef85",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "f7485963-378a-415d-8223-fd3f5f648755",
@@ -3782,7 +3996,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "0a495e97-ba70-464d-837c-c44ba230ef85",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "136b2fb5-aec0-45e3-8da8-3951f825f19b",
@@ -3792,7 +4007,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "09495d04-b970-44ba-827c-c2b8a130edf2",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "106b2afc-afc0-4776-8aa8-3498f925f32e",
@@ -3802,7 +4018,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "09495d04-b970-44ba-827c-c2b8a130edf2",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "116b2c8f-b0c0-4909-8ba8-362bfa25f4c1",
@@ -3812,7 +4029,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "09495d04-b970-44ba-827c-c2b8a130edf2",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "a337192c-899b-4e6e-83e3-e11032b22f66",
@@ -3822,7 +4040,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "08495b71-b470-4cdb-897c-cdbd9c30e613",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "a6371de5-889b-4cdb-86e3-e5c931b22dd3",
@@ -3832,7 +4051,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "08495b71-b470-4cdb-897c-cdbd9c30e613",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "be59edeb-a55e-46ed-8f06-b5cf4d373365",
@@ -3842,7 +4062,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "074959de-b370-4b48-887c-cc2a9b30e480",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "bf59ef7e-a25e-4234-8006-b7624a372eac",
@@ -3852,7 +4073,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "074959de-b370-4b48-887c-cc2a9b30e480",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4ce8a2e2-dfea-44b8-8e82-ed6688132310",
@@ -3862,7 +4084,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "0649584b-b670-4001-877c-ca979e30e939",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4be8a14f-e2ea-4971-8d82-ebd38b1327c9",
@@ -3872,7 +4095,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "0649584b-b670-4001-877c-ca979e30e939",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "4ae89fbc-e1ea-47de-8c82-ea408a132636",
@@ -3882,7 +4106,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "0649584b-b670-4001-877c-ca979e30e939",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e80c4121-7a6e-4f37-8907-f165a335f7cf",
@@ -3892,7 +4117,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "054956b8-b570-4e6e-867c-c9049d30e7a6",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "e50c3c68-7b6e-40ca-8607-ecaca435f962",
@@ -3902,7 +4128,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "054956b8-b570-4e6e-867c-c9049d30e7a6",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "c554e0c8-677e-46d2-8030-84a47e61023a",
@@ -3912,7 +4139,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "04495525-b070-468f-8d7c-bad9a830f8f7",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "c854e581-667e-453f-8330-895d7d6100a7",
@@ -3922,7 +4150,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "04495525-b070-468f-8d7c-bad9a830f8f7",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "60787f07-0202-4151-8a66-6de3f9846e19",
@@ -3932,7 +4161,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "03495392-af70-44fc-8c7c-b946a730f764",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "6178809a-ff02-4c98-8b66-6f76f6846960",
@@ -3942,7 +4172,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "03495392-af70-44fc-8c7c-b946a730f764",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "3ed25b2b-f288-41b9-83aa-cd1f78147e41",
@@ -3952,7 +4183,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "de8248ee-69d0-452c-8e6b-95aa9601eab4",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "3fd25cbe-ef88-4d00-84aa-ceb275147988",
@@ -3962,7 +4194,8 @@
       "curriculumVersionId": "91fa046c-686a-482e-8a77-3ee82bba33f6",
       "competencyId": "de8248ee-69d0-452c-8e6b-95aa9601eab4",
       "subjectId": "ea143bd1-addd-4d4b-801c-32e58c4fcc63",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "22ab421e-f0ca-446c-8af3-568ad4a5faa4",
@@ -3972,7 +4205,8 @@
       "curriculumVersionId": "d06728ad-535a-4d73-826f-02090c6f64bb",
       "competencyId": "591c3e8f-244d-4395-8453-5433bcdda32d",
       "subjectId": "84704ff2-9a91-4ff8-8708-50f651b33df0",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "21ab408b-f3ca-4925-89f3-54f7d7a5ff5d",
@@ -3982,7 +4216,8 @@
       "curriculumVersionId": "d06728ad-535a-4d73-826f-02090c6f64bb",
       "competencyId": "591c3e8f-244d-4395-8453-5433bcdda32d",
       "subjectId": "84704ff2-9a91-4ff8-8708-50f651b33df0",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "20ab3ef8-f2ca-4792-88f3-5364d6a5fdca",
@@ -3992,7 +4227,8 @@
       "curriculumVersionId": "d06728ad-535a-4d73-826f-02090c6f64bb",
       "competencyId": "591c3e8f-244d-4395-8453-5433bcdda32d",
       "subjectId": "84704ff2-9a91-4ff8-8708-50f651b33df0",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "941c8d27-359f-4c61-8bc6-9e73f9caa219",
@@ -4002,7 +4238,8 @@
       "curriculumVersionId": "d06728ad-535a-4d73-826f-02090c6f64bb",
       "competencyId": "5a1c4022-214d-4edc-8553-55c6b9dd9e74",
       "subjectId": "84704ff2-9a91-4ff8-8708-50f651b33df0",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "951c8eba-329f-47a8-8cc6-a006f6ca9d60",
@@ -4012,7 +4249,8 @@
       "curriculumVersionId": "d06728ad-535a-4d73-826f-02090c6f64bb",
       "competencyId": "5a1c4022-214d-4edc-8553-55c6b9dd9e74",
       "subjectId": "84704ff2-9a91-4ff8-8708-50f651b33df0",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "78f9b868-9a7c-4e22-8054-4a347ea7363a",
@@ -4022,7 +4260,8 @@
       "curriculumVersionId": "d06728ad-535a-4d73-826f-02090c6f64bb",
       "competencyId": "5b1c41b5-224d-406f-8653-5759badda007",
       "subjectId": "84704ff2-9a91-4ff8-8708-50f651b33df0",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "7bf9bd21-997c-4c8f-8354-4eed7da734a7",
@@ -4032,7 +4271,8 @@
       "curriculumVersionId": "d06728ad-535a-4d73-826f-02090c6f64bb",
       "competencyId": "5b1c41b5-224d-406f-8653-5759badda007",
       "subjectId": "84704ff2-9a91-4ff8-8708-50f651b33df0",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "7af9bb8e-987c-4afc-8254-4d5a7ca73314",
@@ -4042,7 +4282,8 @@
       "curriculumVersionId": "d06728ad-535a-4d73-826f-02090c6f64bb",
       "competencyId": "5b1c41b5-224d-406f-8653-5759badda007",
       "subjectId": "84704ff2-9a91-4ff8-8708-50f651b33df0",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "f2bea7c9-379c-499f-81c5-953d1a89ed37",
@@ -4052,7 +4293,8 @@
       "curriculumVersionId": "d06728ad-535a-4d73-826f-02090c6f64bb",
       "competencyId": "541c36b0-1f4d-4bb6-8753-58ecb7dd9b4e",
       "subjectId": "84704ff2-9a91-4ff8-8708-50f651b33df0",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "efbea310-389c-4b32-8ec5-90841b89eeca",
@@ -4062,7 +4304,8 @@
       "curriculumVersionId": "d06728ad-535a-4d73-826f-02090c6f64bb",
       "competencyId": "541c36b0-1f4d-4bb6-8753-58ecb7dd9b4e",
       "subjectId": "84704ff2-9a91-4ff8-8708-50f651b33df0",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "25ba6389-8feb-4ae7-842e-fe2d681d232f",
@@ -4072,7 +4315,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "a97575a0-476f-4e9e-8ba6-7fec7e4e6b46",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "22ba5ed0-90eb-4c7a-812e-f974691d24c2",
@@ -4082,7 +4326,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "a97575a0-476f-4e9e-8ba6-7fec7e4e6b46",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "23ba6063-91eb-4e0d-822e-fb076a1d2655",
@@ -4092,7 +4337,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "a97575a0-476f-4e9e-8ba6-7fec7e4e6b46",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0095bc14-1e7a-4fde-8ebb-3bf8f65c2646",
@@ -4102,7 +4348,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "ac757a59-466f-4d0b-8ea6-84a57d4e69b3",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0395c0cd-1d7a-4e4b-81bb-40b1f55c24b3",
@@ -4112,7 +4359,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "ac757a59-466f-4d0b-8ea6-84a57d4e69b3",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "facadbd3-399d-449d-893f-7677921d9545",
@@ -4122,7 +4370,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "ab7578c6-456f-4b78-8da6-83127c4e6820",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "55a6fdde-c969-4e14-8d5c-bf7aa14ae47c",
@@ -4132,7 +4381,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "ae757d7f-4c6f-467d-88a6-7b33834e7325",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "70c9d29d-c39e-4dd3-8880-2b59bbcfe87b",
@@ -4142,7 +4392,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "ad757bec-4b6f-44ea-87a6-79a0824e7192",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "6dc9cde4-c49e-4f66-8580-26a0bccfea0e",
@@ -4152,7 +4403,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "ad757bec-4b6f-44ea-87a6-79a0824e7192",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "6ec9cf77-c59e-40f9-8680-2833bdcfeba1",
@@ -4162,7 +4414,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "ad757bec-4b6f-44ea-87a6-79a0824e7192",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "abf57428-f2cc-4f6a-835b-83e44afc6e32",
@@ -4172,7 +4425,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "b07580a5-4a6f-4357-8aa6-7e59814e6fff",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "aef578e1-f1cc-4dd7-865b-889d49fc6c9f",
@@ -4182,7 +4436,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "b07580a5-4a6f-4357-8aa6-7e59814e6fff",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "adf5774e-f0cc-4c44-855b-870a48fc6b0c",
@@ -4192,7 +4447,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "b07580a5-4a6f-4357-8aa6-7e59814e6fff",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "c71848e7-ee8e-4589-8d91-6d2366bea6b1",
@@ -4202,7 +4458,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "af757f12-496f-41c4-89a6-7cc6804e6e6c",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "c8184a7a-eb8e-40d0-8e91-6eb663bea1f8",
@@ -4212,7 +4469,8 @@
       "curriculumVersionId": "d2cc053a-50db-4100-8251-045e852e5138",
       "competencyId": "af757f12-496f-41c4-89a6-7cc6804e6e6c",
       "subjectId": "df2e7e71-f881-4df7-8a7d-6b7d2e07f57f",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "1c93abae-2443-4390-8761-563a5a7226a8",
@@ -4222,7 +4480,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "1e8ee6bf-cbf8-46d1-8773-3ac3f63343e9",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "1b93aa1b-2743-4849-8661-54a75d722b61",
@@ -4232,7 +4491,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "1e8ee6bf-cbf8-46d1-8773-3ac3f63343e9",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "1a93a888-2643-46b6-8561-53145c7229ce",
@@ -4242,7 +4502,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "1e8ee6bf-cbf8-46d1-8773-3ac3f63343e9",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0d665c77-e968-43e5-8796-03e31f46851d",
@@ -4252,7 +4513,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "1f8ee852-c8f8-4218-8873-3c56f3333f30",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0e665e0a-e667-4f2c-8896-05761c468064",
@@ -4262,7 +4524,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "1f8ee852-c8f8-4218-8873-3c56f3333f30",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0f665f9d-e768-40bf-8996-07091d4681f7",
@@ -4272,7 +4535,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "1f8ee852-c8f8-4218-8873-3c56f3333f30",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "08665498-e467-4c06-8a96-089c1a467d3e",
@@ -4282,7 +4546,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "1f8ee852-c8f8-4218-8873-3c56f3333f30",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0966562b-e567-4d99-8b96-0a2f1b467ed1",
@@ -4292,7 +4557,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "1f8ee852-c8f8-4218-8873-3c56f3333f30",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "0a6657be-e267-48e0-8c96-0bc218467a18",
@@ -4302,7 +4568,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "1f8ee852-c8f8-4218-8873-3c56f3333f30",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "72e221f8-cee2-4fe6-8d60-1aa40423b05e",
@@ -4312,7 +4579,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "208ee9e5-c9f8-43ab-8973-3de9f43340c3",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "75e226b1-cde2-4e53-8060-1f5d0323aecb",
@@ -4322,7 +4590,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "208ee9e5-c9f8-43ab-8973-3de9f43340c3",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "74e2251e-cce2-4cc0-8f60-1dca0223ad38",
@@ -4332,7 +4601,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "208ee9e5-c9f8-43ab-8973-3de9f43340c3",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     },
     {
       "id": "eca71159-9456-421b-8e33-94eda9478e53",
@@ -4342,7 +4612,8 @@
       "curriculumVersionId": "e52d47f0-bebe-462e-8484-dec47208d796",
       "competencyId": "198edee0-cef8-4b8a-8a73-3f7cf93348a2",
       "subjectId": "fa8f207d-19ee-4bf3-8092-f2e9221b1eab",
-      "weight": null
+      "weight": null,
+      "relatedKnowledgeCodes": []
     }
   ],
   "basicKnowledge": [

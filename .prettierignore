@@ -6,3 +6,6 @@ package-lock.json
 
 # JSON crudo del extractor: es un intermedio, no una fuente ni un entregable
 scripts/boja/anexo2-crudo.json
+
+# Catálogos curriculares generados: el formato lo fija el importador
+public/curriculo/*.json

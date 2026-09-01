@@ -154,6 +154,37 @@ def lineas_por_columna(pagina):
     return [sorted(c) for c in columnas]
 
 
+def agrupar_con_rango(lineas, patron):
+    """
+    Como `agrupar`, pero devuelve también la franja vertical de cada elemento.
+
+    Hace falta para saber qué saberes de la columna contigua pertenecen a cada
+    criterio: en la tabla del Anexo II eso lo dice la FILA, y una fila es un
+    rango de y. Sin esta alineación, a cada criterio se le atribuían todos los
+    saberes de su página —hasta veintitrés criterios con la misma lista—, que es
+    peor que no atribuir ninguno: un docente citaría saberes que la norma no
+    relaciona con ese criterio.
+    """
+    elementos = []
+    actual = None
+    for y, texto in lineas:
+        if patron.match(texto):
+            if actual:
+                elementos.append(actual)
+            actual = {'y0': y, 'y1': y, 'partes': [texto]}
+        elif actual is not None:
+            actual['partes'].append(texto)
+            actual['y1'] = y
+    if actual:
+        elementos.append(actual)
+
+    for i, elemento in enumerate(elementos):
+        # La fila llega hasta donde empieza la siguiente.
+        elemento['hasta'] = elementos[i + 1]['y0'] if i + 1 < len(elementos) else 10_000
+        elemento['texto'] = normalizar(' '.join(elemento['partes']))
+    return elementos
+
+
 def agrupar(lineas, patron):
     """
     Une las líneas partidas en elementos completos.
@@ -365,14 +396,23 @@ def extraer_materia(documentos, prefijo, nombre, tomo, desde, hasta):
                 for y, t in derecha
             ]
 
-            for elemento in elementos:
-                casa = RE_CRITERIO.match(elemento)
+            for elemento in agrupar_con_rango(columna, RE_CRITERIO):
+                casa = RE_CRITERIO.match(elemento['texto'])
                 if not casa:
                     continue
                 codigo = f'{casa.group(1)}.{casa.group(2)}'
                 texto = normalizar(casa.group(3))
                 if len(texto) < 20:
                     continue
+
+                # Solo los saberes cuya y cae dentro de la fila de este criterio.
+                propios = sorted({
+                    c
+                    for y, cs in refs_derecha
+                    if elemento['y0'] - 4 <= y < elemento['hasta'] - 4
+                    for c in cs
+                })
+
                 clave = (curso, codigo)
                 previo = criterios.get(clave)
                 if previo is None or len(texto) > len(previo['texto']):
@@ -381,8 +421,10 @@ def extraer_materia(documentos, prefijo, nombre, tomo, desde, hasta):
                         'competencia': int(casa.group(1)),
                         'curso': curso,
                         'texto': texto,
-                        'saberes': sorted({c for _, cs in refs_derecha for c in cs}),
+                        'saberes': propios,
                     }
+                elif previo is not None and propios:
+                    previo['saberes'] = sorted(set(previo['saberes']) | set(propios))
 
     return {
         'prefijo': prefijo,

@@ -910,6 +910,7 @@ export function buildDemoSnapshot(): ProjectSnapshot {
       competencyId: competencyId(criterion.subject),
       subjectId: subjectId(criterion.subject),
       weight: null,
+      relatedKnowledgeCodes: [],
     })),
 
     basicKnowledge: KNOWLEDGE.map((knowledge) => ({

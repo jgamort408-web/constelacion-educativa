@@ -113,6 +113,7 @@ function scenario(): ProjectSnapshot {
         competencyId: ids.mat,
         subjectId: ids.mat,
         weight: null,
+        relatedKnowledgeCodes: [],
       },
       {
         id: ids.crit2,
@@ -123,6 +124,7 @@ function scenario(): ProjectSnapshot {
         competencyId: ids.len,
         subjectId: ids.len,
         weight: null,
+        relatedKnowledgeCodes: [],
       },
     ],
     edges: [

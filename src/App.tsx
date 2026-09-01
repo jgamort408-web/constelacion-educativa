@@ -165,9 +165,35 @@ export function App() {
     const criterion = snapshot.evaluationCriteria.find((c) => c.id === criterionId);
     if (!activity || !criterion) return;
 
-    void apply(
-      singlePatch(
-        `Asignó ${criterion.officialCode ?? 'un criterio'} a «${activity.title}»`,
+    const yaMoviliza = new Set(
+      snapshot.edges
+        .filter((e) => e.type === 'moviliza' && e.sourceId === activity.id)
+        .map((e) => e.targetId),
+    );
+
+    /**
+     * Los saberes que la norma relaciona con este criterio.
+     *
+     * Van en el mismo patch, no en otro: asignar un criterio y movilizar sus
+     * saberes es un solo acto pedagógico, y si se partiera en dos escrituras un
+     * fallo a mitad dejaría la actividad con el criterio pero sin los saberes.
+     * Deshacer también los quita juntos.
+     */
+    const saberes = snapshot.basicKnowledge.filter(
+      (saber) =>
+        saber.officialCode !== null &&
+        criterion.relatedKnowledgeCodes.includes(saber.officialCode) &&
+        !yaMoviliza.has(saber.id),
+    );
+
+    const etiqueta =
+      saberes.length > 0
+        ? `Asignó ${criterion.officialCode ?? 'un criterio'} y ${saberes.length} saberes a «${activity.title}»`
+        : `Asignó ${criterion.officialCode ?? 'un criterio'} a «${activity.title}»`;
+
+    void apply({
+      label: etiqueta,
+      mutations: [
         mutation.upsert('edge', {
           id: newId(),
           projectId: snapshot.project.id,
@@ -184,8 +210,26 @@ export function App() {
             note: 'Asignado desde el catálogo curricular',
           },
         }),
-      ),
-    );
+        ...saberes.map((saber) =>
+          mutation.upsert('edge', {
+            id: newId(),
+            projectId: snapshot.project.id,
+            type: 'moviliza',
+            sourceId: activity.id,
+            sourceType: 'ACTIVIDAD',
+            targetId: saber.id,
+            targetType: 'SABER_BASICO',
+            metadata: {
+              weight: null,
+              mode: 'MANUAL',
+              sessions: null,
+              criteriaIds: [criterion.id],
+              note: `La norma lo relaciona con ${criterion.officialCode ?? 'este criterio'}`,
+            },
+          }),
+        ),
+      ],
+    });
   }
 
   return (

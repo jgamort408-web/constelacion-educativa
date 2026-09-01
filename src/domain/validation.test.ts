@@ -233,6 +233,7 @@ describe('criterios sin instrumento', () => {
           competencyId: ids.mat,
           subjectId: ids.mat,
           weight: null,
+          relatedKnowledgeCodes: [],
         },
       ],
       edges: [
@@ -258,6 +259,7 @@ describe('criterios sin instrumento', () => {
           competencyId: ids.mat,
           subjectId: ids.mat,
           weight: null,
+          relatedKnowledgeCodes: [],
         },
       ],
       assessmentInstruments: [
@@ -304,6 +306,7 @@ describe('cobertura curricular', () => {
         competencyId: ids.mat,
         subjectId: ids.mat,
         weight: null,
+        relatedKnowledgeCodes: [],
       })),
     });
 
@@ -327,6 +330,7 @@ describe('cobertura curricular', () => {
           competencyId: ids.mat,
           subjectId: ids.mat,
           weight: null,
+          relatedKnowledgeCodes: [],
         },
       ],
       edges: [
@@ -388,6 +392,7 @@ describe('datos de demostración', () => {
           competencyId: ids.mat,
           subjectId: ids.mat,
           weight: null,
+          relatedKnowledgeCodes: [],
         },
       ],
     });
@@ -409,6 +414,7 @@ describe('datos de demostración', () => {
           competencyId: ids.mat,
           subjectId: ids.mat,
           weight: null,
+          relatedKnowledgeCodes: [],
         },
       ],
     });

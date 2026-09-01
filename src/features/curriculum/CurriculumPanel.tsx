@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import type { ProjectSnapshot, Uuid } from '@/domain';
+import type { EvaluationCriterion, ProjectSnapshot, Uuid } from '@/domain';
 import type { FuenteCurricular } from '@/data';
 import { FUENTES } from '@/data';
 import { spanLabel } from '@/domain';
@@ -65,8 +65,36 @@ export function CurriculumPanel({
     );
   }, [snapshot.edges, selectedId]);
 
+  /** Saberes por materia, para poder buscar en ellos y mostrarlos. */
+  const saberesPorCodigo = useMemo(
+    () => new Map(snapshot.basicKnowledge.map((s) => [s.officialCode ?? s.id, s])),
+    [snapshot.basicKnowledge],
+  );
+
   const grupos = useMemo(() => {
     const texto = busqueda.trim().toLowerCase();
+
+    /**
+     * Un criterio casa si lo dice su texto, su código, o el de alguno de los
+     * saberes que la norma le asocia.
+     *
+     * Buscar solo en los criterios dejaba fuera justo el vocabulario que un
+     * docente teclea: «proporcionalidad», «tectónica de placas», «texto
+     * expositivo». Eso está en los saberes, no en los criterios, que están
+     * redactados en términos de destrezas.
+     */
+    const casa = (criterio: EvaluationCriterion): boolean => {
+      if (texto === '') return true;
+      if (criterio.description.toLowerCase().includes(texto)) return true;
+      if ((criterio.officialCode ?? '').toLowerCase().includes(texto)) return true;
+      return criterio.relatedKnowledgeCodes.some((codigo) => {
+        const saber = saberesPorCodigo.get(codigo);
+        return (
+          codigo.toLowerCase().includes(texto) ||
+          (saber?.description.toLowerCase().includes(texto) ?? false)
+        );
+      });
+    };
 
     const competenciasVisibles = snapshot.competencies.filter((competencia) => {
       if (materiaId !== TODAS && competencia.subjectId !== materiaId) return false;
@@ -81,11 +109,7 @@ export function CurriculumPanel({
       .map((competencia) => ({
         competencia,
         criterios: snapshot.evaluationCriteria.filter(
-          (criterio) =>
-            criterio.competencyId === competencia.id &&
-            (texto === '' ||
-              criterio.description.toLowerCase().includes(texto) ||
-              (criterio.officialCode ?? '').toLowerCase().includes(texto)),
+          (criterio) => criterio.competencyId === competencia.id && casa(criterio),
         ),
       }))
       .filter((grupo) => grupo.criterios.length > 0)
@@ -97,7 +121,15 @@ export function CurriculumPanel({
           (a.competencia.officialCode ?? '').localeCompare(b.competencia.officialCode ?? '', 'es')
         );
       });
-  }, [snapshot.competencies, snapshot.evaluationCriteria, materiaId, curso, busqueda, materias]);
+  }, [
+    snapshot.competencies,
+    snapshot.evaluationCriteria,
+    materiaId,
+    curso,
+    busqueda,
+    materias,
+    saberesPorCodigo,
+  ]);
 
   const hayOficial = snapshot.curriculumVersions.some((v) => !v.isDemo);
   const cargado = snapshot.curriculumVersions.find((v) => !v.isDemo);
@@ -198,7 +230,7 @@ export function CurriculumPanel({
 
         <label className="flex flex-1 flex-col gap-1 text-xs text-tinta-300">
           <span className="font-mono text-[10px] tracking-[0.14em] text-tinta-500 uppercase">
-            Buscar en los criterios
+            Buscar en criterios y saberes
           </span>
           <input
             type="search"
@@ -206,7 +238,7 @@ export function CurriculumPanel({
             onChange={(e) => {
               setBusqueda(e.target.value);
             }}
-            placeholder="argumentar, resolver problemas, MAT.3…"
+            placeholder="proporcionalidad, tectónica, MAT.1.3…"
             className="rounded border border-borde-500 bg-cielo-800 px-2 py-1 text-tinta-100 placeholder:text-tinta-500"
           />
         </label>
@@ -272,11 +304,27 @@ export function CurriculumPanel({
                       >
                         {asignado ? '✓ asignado' : '+ asignar'}
                       </button>
-                      <span className="min-w-0 text-sm">
+                      <span className="min-w-0 flex-1 text-sm">
                         <span className="font-mono text-[11px] text-tinta-500">
                           {criterio.officialCode}
                         </span>{' '}
                         <span className="text-tinta-100">{criterio.description}</span>
+                        {criterio.relatedKnowledgeCodes.length > 0 && (
+                          <span className="mt-1 flex flex-wrap gap-1">
+                            {criterio.relatedKnowledgeCodes.map((codigo) => {
+                              const saber = saberesPorCodigo.get(codigo);
+                              return (
+                                <span
+                                  key={codigo}
+                                  title={saber?.description ?? 'Saber no cargado'}
+                                  className="rounded bg-cielo-700 px-1.5 py-0.5 font-mono text-[9px] text-tinta-500"
+                                >
+                                  {codigo}
+                                </span>
+                              );
+                            })}
+                          </span>
+                        )}
                       </span>
                     </li>
                   );

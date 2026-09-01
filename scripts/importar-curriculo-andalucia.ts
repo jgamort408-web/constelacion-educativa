@@ -176,6 +176,9 @@ function main(): void {
           ),
           subjectId: materiaId,
           weight: null,
+          // La correspondencia criterio ↔ saberes la establece la propia Orden
+          // en su tabla; aquí se recoge alineada por fila.
+          relatedKnowledgeCodes: criterio.saberes,
         }),
       );
     }

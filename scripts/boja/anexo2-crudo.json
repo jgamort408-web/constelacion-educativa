@@ -862,13 +862,7 @@
      "curso": 3,
      "texto": "Facilitar la comprensión y análisis de información sobre procesos biológicos y geológicos o trabajos científicos, transmitiéndola de forma clara y utilizando la los terminología adecuados formatos (modelos, gráficos, tablas, informes, vídeos, diagramas, fórmulas, esquemas, símbolos, contenidos digitales, etc.).",
      "saberes": [
-      "BYG.3.F.1",
-      "BYG.3.F.2",
-      "BYG.3.F.3",
-      "BYG.3.F.4",
-      "BYG.3.F.5",
-      "BYG.3.H.1",
-      "BYG.3.H.3"
+      "BYG.3.F.1"
      ]
     },
     {
@@ -877,13 +871,9 @@
      "curso": 3,
      "texto": "Analizar y explicar fenómenos biológicos y geológicos, representándolos mediante modelos y diagramas, utilizando cuando sea necesario los pasos del diseño de ingeniería (identificación del problema, diseño, exploración, creación, evaluación y mejora).",
      "saberes": [
-      "BYG.3.F.1",
       "BYG.3.F.2",
       "BYG.3.F.3",
-      "BYG.3.F.4",
-      "BYG.3.F.5",
-      "BYG.3.H.1",
-      "BYG.3.H.3"
+      "BYG.3.F.5"
      ]
     },
     {
@@ -892,11 +882,7 @@
      "curso": 3,
      "texto": "Resolver cuestiones sobre Biología y Geología localizando, https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "BYG.3.F.1",
-      "BYG.3.F.2",
-      "BYG.3.F.3",
       "BYG.3.F.4",
-      "BYG.3.F.5",
       "BYG.3.H.1",
       "BYG.3.H.3"
      ]
@@ -907,9 +893,7 @@
      "curso": 3,
      "texto": "Reconocer la información sobre temas biológicos y geológicos con base científica, de distinguiéndola pseudociencias, bulos, teorías conspiratorias y creencias infundadas, etc., y manteniendo una actitud escéptica ante estos.",
      "saberes": [
-      "BYG.3.A.8",
-      "BYG.3.F.2",
-      "BYG.3.H.5"
+      "BYG.3.F.2"
      ]
     },
     {
@@ -918,9 +902,7 @@
      "curso": 3,
      "texto": "Valorar la contribución de la ciencia a la sociedad, la propiedad intelectual y la labor de las personas dedicadas a ella con independencia de su etnia, sexo o cultura, destacando reconociendo el papel de las mujeres científicas, fomentando vocaciones científicas desde una perspectiva de género y entendiendo la investigación como una colectiva labor en interdisciplinar https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "BYG.3.A.8",
-      "BYG.3.F.2",
-      "BYG.3.H.5"
+      "BYG.3.A.8"
      ]
     },
     {
@@ -932,15 +914,8 @@
       "BYG.3.A.1",
       "BYG.3.A.2",
       "BYG.3.A.3",
-      "BYG.3.A.4",
-      "BYG.3.A.5",
-      "BYG.3.A.6",
-      "BYG.3.A.7",
       "BYG.3.B.2",
       "BYG.3.B.3",
-      "BYG.3.B.5",
-      "BYG.3.F.1",
-      "BYG.3.F.2",
       "BYG.3.F.4"
      ]
     },
@@ -950,19 +925,8 @@
      "curso": 3,
      "texto": "Diseñar de una forma creativa la experimentación, la toma de datos y el análisis de fenómenos biológicos y geológicos de modo que permitan responder a preguntas concretas y contrastar una hipótesis planteada.",
      "saberes": [
-      "BYG.3.A.1",
-      "BYG.3.A.2",
-      "BYG.3.A.3",
       "BYG.3.A.4",
-      "BYG.3.A.5",
-      "BYG.3.A.6",
-      "BYG.3.A.7",
-      "BYG.3.B.2",
-      "BYG.3.B.3",
-      "BYG.3.B.5",
-      "BYG.3.F.1",
-      "BYG.3.F.2",
-      "BYG.3.F.4"
+      "BYG.3.B.3"
      ]
     },
     {
@@ -971,19 +935,12 @@
      "curso": 3,
      "texto": "Realizar experimentos de manera autónoma, cooperativa e igualitaria y tomar datos cuantitativos con cualitativos precisión sobre fenómenos biológicos y geológicos, utilizando los instrumentos, herramientas o técnicas adecuadas en condiciones de seguridad y con corrección.",
      "saberes": [
-      "BYG.3.A.1",
-      "BYG.3.A.2",
-      "BYG.3.A.3",
       "BYG.3.A.4",
       "BYG.3.A.5",
       "BYG.3.A.6",
-      "BYG.3.A.7",
-      "BYG.3.B.2",
-      "BYG.3.B.3",
       "BYG.3.B.5",
       "BYG.3.F.1",
-      "BYG.3.F.2",
-      "BYG.3.F.4"
+      "BYG.3.F.2"
      ]
     },
     {
@@ -992,19 +949,8 @@
      "curso": 3,
      "texto": "Interpretar críticamente los resultados obtenidos en de proyecto un https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "BYG.3.A.1",
-      "BYG.3.A.2",
-      "BYG.3.A.3",
-      "BYG.3.A.4",
-      "BYG.3.A.5",
-      "BYG.3.A.6",
       "BYG.3.A.7",
-      "BYG.3.B.2",
-      "BYG.3.B.3",
-      "BYG.3.B.5",
-      "BYG.3.F.1",
-      "BYG.3.F.2",
-      "BYG.3.F.4"
+      "BYG.3.B.2"
      ]
     },
     {
@@ -1014,13 +960,7 @@
      "texto": "Cooperar dentro de un proyecto científico, cultivando el autoconocimiento y la asumiendo confianza, responsablemente una concreta, función espacios utilizando virtuales cuando sea necesario, respetando la diversidad y la igualdad de género, y favoreciendo la inclusión.",
      "saberes": [
       "BYG.3.A.9",
-      "BYG.3.B.4",
-      "BYG.3.F.2",
-      "BYG.3.F.3",
-      "BYG.3.F.4",
-      "BYG.3.G.1",
-      "BYG.3.H.2",
-      "BYG.3.H.4"
+      "BYG.3.F.3"
      ]
     },
     {
@@ -1029,14 +969,8 @@
      "curso": 3,
      "texto": "Resolver problemas, aplicables a diferentes situaciones de la vida cotidiana, dar explicación a procesos biológicos o geológicos, utilizando conocimientos, datos e información proporcionados por el docente, el razonamiento lógico, el pensamiento computacional o recursos digitales.",
      "saberes": [
-      "BYG.3.A.9",
       "BYG.3.B.4",
-      "BYG.3.F.2",
-      "BYG.3.F.3",
-      "BYG.3.F.4",
-      "BYG.3.G.1",
-      "BYG.3.H.2",
-      "BYG.3.H.4"
+      "BYG.3.F.4"
      ]
     },
     {
@@ -1045,8 +979,6 @@
      "curso": 3,
      "texto": "Analizar críticamente, la solución a un problema fenómenos sobre biológicos y geológicos, datos utilizando información de fuentes contrastadas. https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "BYG.3.A.9",
-      "BYG.3.B.4",
       "BYG.3.F.2",
       "BYG.3.F.3",
       "BYG.3.F.4",
@@ -1063,8 +995,6 @@
      "saberes": [
       "BYG.3.B.3",
       "BYG.3.B.5",
-      "BYG.3.G.2",
-      "BYG.3.G.3",
       "BYG.3.G.4",
       "BYG.3.G.5"
      ]
@@ -1077,8 +1007,6 @@
      "saberes": [
       "BYG.3.B.3",
       "BYG.3.B.5",
-      "BYG.3.G.2",
-      "BYG.3.G.3",
       "BYG.3.G.4",
       "BYG.3.G.5"
      ]
@@ -1089,8 +1017,6 @@
      "curso": 3,
      "texto": "Proponer, adoptar y consolidar hábitos saludables, analizando las acciones propias y ajenas, con actitud crítica y a partir de fundamentos fisiológicos.",
      "saberes": [
-      "BYG.3.B.3",
-      "BYG.3.B.5",
       "BYG.3.G.2",
       "BYG.3.G.3",
       "BYG.3.G.4",
@@ -1103,12 +1029,7 @@
      "curso": 3,
      "texto": "Valorar la importancia como del paisaje patrimonio natural y fuente de recursos, analizando la fragilidad de los elementos que lo componen. https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "BYG.3.B.3",
-      "BYG.3.B.5",
-      "BYG.3.G.2",
-      "BYG.3.G.3",
-      "BYG.3.G.4",
-      "BYG.3.G.5"
+      "BYG.3.B.5"
      ]
     },
     {
@@ -1118,9 +1039,7 @@
      "texto": "Interpretar el paisaje analizando el origen, relación y evolución de integrada sus elementos, entendiendo los procesos geológicos que lo han formado y los fundamentos que determinan su dinámica.",
      "saberes": [
       "BYG.3.B.1",
-      "BYG.3.B.2",
-      "BYG.3.B.3",
-      "BYG.3.B.4"
+      "BYG.3.B.2"
      ]
     },
     {
@@ -1129,8 +1048,6 @@
      "curso": 3,
      "texto": "Reflexionar sobre los impactos riesgos naturales mediante el análisis de los elementos de un paisaje, a partir de determinadas acciones humanas pasadas, presentes y futuras. https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "BYG.3.B.1",
-      "BYG.3.B.2",
       "BYG.3.B.3",
       "BYG.3.B.4"
      ]
@@ -2502,10 +2419,7 @@
      "texto": "Incorporar hábitos rela- cionados con procesos de activación corporal, dosifi- cación del esfuerzo, alimen- tación saludable, educación postural, respiración, relaja- ción, seguridad e higiene durante la práctica de activi- dades motrices, interiori- zando las rutinas propias de una práctica motriz saluda- ble y responsable.",
      "saberes": [
       "EFI.2.A.1",
-      "EFI.2.A.3",
-      "EFI.2.B.2",
-      "EFI.2.B.4",
-      "EFI.2.B.7"
+      "EFI.2.B.2"
      ]
     },
     {
@@ -2515,9 +2429,6 @@
      "texto": "Identificar y adoptar de manera responsable y de manera autónoma medidas generales para la preven- ción de lesiones antes, durante y después de la práctica de actividad física, en diferentes contextos y situaciones motrices, apren- diendo a reconocer situacio- nes de riesgo para actuar preventivamente, haciendo uso para ello.",
      "saberes": [
       "EFI.2.A.1",
-      "EFI.2.A.3",
-      "EFI.2.B.2",
-      "EFI.2.B.4",
       "EFI.2.B.7"
      ]
     },
@@ -2527,10 +2438,6 @@
      "curso": 2,
      "texto": "Identificar y actuar ante relacionadas situaciones con accidentes derivados de la práctica de actividad física de acuerdo a los pro- tocolos de intervención, aplicando medidas básicas de primeros auxilios en dife- rentes contextos y ante dife- rentes tipos de lesiones.",
      "saberes": [
-      "EFI.2.A.1",
-      "EFI.2.A.3",
-      "EFI.2.B.2",
-      "EFI.2.B.4",
       "EFI.2.B.7"
      ]
     },
@@ -2540,11 +2447,8 @@
      "curso": 2,
      "texto": "Analizar y valorar críti- camente la incidencia que ciertas prácticas y compor- tamientos tienen en nuestra salud y en la convivencia, en diferentes contextos y situa- ciones, su valorando impacto y evitando activa- mente su reproducción en el https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "EFI.2.A.1",
       "EFI.2.A.3",
-      "EFI.2.B.2",
-      "EFI.2.B.4",
-      "EFI.2.B.7"
+      "EFI.2.B.4"
      ]
     },
     {
@@ -2553,16 +2457,9 @@
      "curso": 2,
      "texto": "Explorar diferentes recursos y aplicaciones digi- tales reconociendo su potencial, así como sus ries- gos para su uso en el ámbito de la actividad física y el deporte.",
      "saberes": [
-      "EFI.2.A.3",
-      "EFI.2.B.1",
-      "EFI.2.B.3",
       "EFI.2.B.4",
       "EFI.2.B.5",
-      "EFI.2.B.6",
-      "EFI.2.C.1",
-      "EFI.2.C.4",
-      "EFI.2.C.5",
-      "EFI.2.D.1"
+      "EFI.2.B.6"
      ]
     },
     {
@@ -2574,12 +2471,8 @@
       "EFI.2.A.3",
       "EFI.2.B.1",
       "EFI.2.B.3",
-      "EFI.2.B.4",
-      "EFI.2.B.5",
-      "EFI.2.B.6",
       "EFI.2.C.1",
       "EFI.2.C.4",
-      "EFI.2.C.5",
       "EFI.2.D.1"
      ]
     },
@@ -2589,16 +2482,9 @@
      "curso": 2,
      "texto": "Interpretar y actuar correctamente en contextos motrices variados, apli- cando principios básicos de toma de decisiones en situa- ciones lúdicas, juegos modi- ficados y actividades depor- tivas a partir de la anticipa- ción, adecuándose a las demandas motrices, a la actuación del compañero o compañera y del oponente (si lo hubiera) y a la lógica interna en contextos reales o simulados de actuación. https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "EFI.2.A.3",
-      "EFI.2.B.1",
-      "EFI.2.B.3",
-      "EFI.2.B.4",
-      "EFI.2.B.5",
-      "EFI.2.B.6",
       "EFI.2.C.1",
       "EFI.2.C.4",
-      "EFI.2.C.5",
-      "EFI.2.D.1"
+      "EFI.2.C.5"
      ]
     },
     {
@@ -2607,14 +2493,10 @@
      "curso": 2,
      "texto": "Evidenciar cierto grado de control y dominio corpo- ral al emplear los compo- nentes cualitativos y cuanti- tativos de la motricidad de manera eficiente y creativa, haciendo frente a las demandas de resolución de problemas con apoyo oca- sional en situaciones motri- ces transferibles a su espa- cio vivencial con progresiva autonomía.",
      "saberes": [
-      "EFI.2.A.2",
-      "EFI.2.A.3",
       "EFI.2.C.1",
       "EFI.2.C.2",
       "EFI.2.C.3",
-      "EFI.2.C.4",
-      "EFI.2.D.1",
-      "EFI.2.D.2"
+      "EFI.2.C.4"
      ]
     },
     {
@@ -2623,12 +2505,7 @@
      "curso": 2,
      "texto": "Practicar una gran varie- dad de actividades motri- ces, valorando las implica- ciones éticas de las actitu- des antideportivas, y gestio- nando positivamente la competitividad en contextos diversos y actuando con deportividad al asumir los roles de público, partici- pante u otros.",
      "saberes": [
-      "EFI.2.A.2",
       "EFI.2.A.3",
-      "EFI.2.C.1",
-      "EFI.2.C.2",
-      "EFI.2.C.3",
-      "EFI.2.C.4",
       "EFI.2.D.1",
       "EFI.2.D.2"
      ]
@@ -2639,12 +2516,6 @@
      "curso": 2,
      "texto": "Cooperar en la práctica de diferentes producciones motrices, especialmente a través de juegos y deportes no convencionales, para alcanzar el logro individual y grupal, participando en la toma de decisiones y asu- miendo distintos roles asig- nados y responsabilidades.",
      "saberes": [
-      "EFI.2.A.2",
-      "EFI.2.A.3",
-      "EFI.2.C.1",
-      "EFI.2.C.2",
-      "EFI.2.C.3",
-      "EFI.2.C.4",
       "EFI.2.D.1",
       "EFI.2.D.2"
      ]
@@ -2656,11 +2527,6 @@
      "texto": "Hacer uso con progre- siva autonomía de habilida- des sociales, diálogo en la resolución de conflictos y respeto ante la diversidad, ya sea de género, afectivo- sexual, de origen nacional, https://www.juntadeandalucia.es/eboja",
      "saberes": [
       "EFI.2.A.2",
-      "EFI.2.A.3",
-      "EFI.2.C.1",
-      "EFI.2.C.2",
-      "EFI.2.C.3",
-      "EFI.2.C.4",
       "EFI.2.D.1",
       "EFI.2.D.2"
      ]
@@ -2671,14 +2537,8 @@
      "curso": 2,
      "texto": "Practicar y apreciar las manifestaciones artístico- expresivas de Andalucía, favoreciendo su conserva- ción y valorando sus orí- genes, evolución e influen- cia en las sociedades con- temporáneas.",
      "saberes": [
-      "EFI.2.A.2",
-      "EFI.2.C.2",
-      "EFI.2.C.5",
-      "EFI.2.D.1",
-      "EFI.2.D.2",
       "EFI.2.E.1",
-      "EFI.2.E.2",
-      "EFI.2.E.3"
+      "EFI.2.E.2"
      ]
     },
     {
@@ -2688,12 +2548,7 @@
      "texto": "Analizar objetivamente las diferentes actividades y deportivas modalidades según sus características y requerimientos, evitando los posibles estereotipos de género o capacidad vincula- dos a dichas manifestacio- nes.",
      "saberes": [
       "EFI.2.A.2",
-      "EFI.2.C.2",
-      "EFI.2.C.5",
-      "EFI.2.D.1",
       "EFI.2.D.2",
-      "EFI.2.E.1",
-      "EFI.2.E.2",
       "EFI.2.E.3"
      ]
     },
@@ -2703,13 +2558,9 @@
      "curso": 2,
      "texto": "Utilizar intencionada- mente y con progresiva autonomía el cuerpo como herramienta de expresión y comunicación a través de diversas técnicas expresivas, participando activamente en la creación y representa- ción de composiciones indi- viduales o colectivas con y sin base musical, prestando especial atención a la edu- cación socio-afectiva y desde una perspectiva crí- tica y creativa. https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "EFI.2.A.2",
       "EFI.2.C.2",
       "EFI.2.C.5",
       "EFI.2.D.1",
-      "EFI.2.D.2",
-      "EFI.2.E.1",
-      "EFI.2.E.2",
       "EFI.2.E.3"
      ]
     },
@@ -2872,8 +2723,7 @@
      "curso": 4,
      "texto": "Incorporar de forma autónoma los procesos de https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "EFI.4.A.1",
-      "EFI.4.B.4"
+      "EFI.4.A.1"
      ]
     },
     {
@@ -2882,17 +2732,8 @@
      "curso": 4,
      "texto": "Adoptar de manera responsable y autónoma medidas específicas para la prevención de lesiones antes, durante y después de la práctica de actividad diferentes en física, contextos y situaciones motrices, identificando y valorando situaciones de riesgo y actuando de manera preventiva en su caso.",
      "saberes": [
-      "EFI.4.A.1",
-      "EFI.4.A.2",
-      "EFI.4.A.3",
-      "EFI.4.B.10",
-      "EFI.4.B.2",
-      "EFI.4.B.4",
-      "EFI.4.B.5",
       "EFI.4.B.7",
-      "EFI.4.B.8",
-      "EFI.4.B.9",
-      "EFI.4.D.2"
+      "EFI.4.B.8"
      ]
     },
     {
@@ -2901,17 +2742,8 @@
      "curso": 4,
      "texto": "Actuar de acuerdo a de los protocolos ante intervención situaciones de emergencia o accidentes, valorando diferentes contextos y tipos de lesiones para aplicar de manera autónoma medidas específicas de primeros auxilios.",
      "saberes": [
-      "EFI.4.A.1",
-      "EFI.4.A.2",
-      "EFI.4.A.3",
       "EFI.4.B.10",
-      "EFI.4.B.2",
-      "EFI.4.B.4",
-      "EFI.4.B.5",
-      "EFI.4.B.7",
-      "EFI.4.B.8",
-      "EFI.4.B.9",
-      "EFI.4.D.2"
+      "EFI.4.B.9"
      ]
     },
     {
@@ -2920,16 +2752,10 @@
      "curso": 4,
      "texto": "Adoptar actitudes comprometidas que transformadoras rechacen los estereotipos sociales asociados al ámbito de lo corporal, al https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "EFI.4.A.1",
       "EFI.4.A.2",
       "EFI.4.A.3",
-      "EFI.4.B.10",
-      "EFI.4.B.2",
       "EFI.4.B.4",
       "EFI.4.B.5",
-      "EFI.4.B.7",
-      "EFI.4.B.8",
-      "EFI.4.B.9",
       "EFI.4.D.2"
      ]
     },
@@ -2939,16 +2765,9 @@
      "curso": 4,
      "texto": "Explorar diferentes recursos y aplicaciones digitales reconociendo su potencial, así como sus riesgos para su uso en el ámbito de la actividad física y el deporte.",
      "saberes": [
-      "EFI.4.B.1",
-      "EFI.4.B.3",
       "EFI.4.B.4",
       "EFI.4.B.5",
-      "EFI.4.B.6",
-      "EFI.4.C.1",
-      "EFI.4.C.4",
-      "EFI.4.C.5",
-      "EFI.4.C.6",
-      "EFI.4.D.1"
+      "EFI.4.B.6"
      ]
     },
     {
@@ -2959,12 +2778,7 @@
      "saberes": [
       "EFI.4.B.1",
       "EFI.4.B.3",
-      "EFI.4.B.4",
-      "EFI.4.B.5",
-      "EFI.4.B.6",
       "EFI.4.C.1",
-      "EFI.4.C.4",
-      "EFI.4.C.5",
       "EFI.4.C.6",
       "EFI.4.D.1"
      ]
@@ -2975,16 +2789,9 @@
      "curso": 4,
      "texto": "Mostrar habilidades para la adaptación y la actuación ante situaciones con elevada una incertidumbre, aprovechando eficientemente las propias https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "EFI.4.B.1",
-      "EFI.4.B.3",
-      "EFI.4.B.4",
-      "EFI.4.B.5",
-      "EFI.4.B.6",
       "EFI.4.C.1",
       "EFI.4.C.4",
-      "EFI.4.C.5",
-      "EFI.4.C.6",
-      "EFI.4.D.1"
+      "EFI.4.C.5"
      ]
     },
     {
@@ -2996,10 +2803,7 @@
       "EFI.4.C.1",
       "EFI.4.C.2",
       "EFI.4.C.3",
-      "EFI.4.C.4",
-      "EFI.4.D.1",
-      "EFI.4.D.2",
-      "EFI.4.E.4"
+      "EFI.4.C.4"
      ]
     },
     {
@@ -3008,10 +2812,6 @@
      "curso": 4,
      "texto": "Practicar y participar activamente asumiendo responsabilidades en la organización de una gran variedad de actividades motrices, valorando las implicaciones éticas de las prácticas antideportivas, gestionando la positivamente competitividad y actuando con deportividad al asumir los roles de público, participante u otros.",
      "saberes": [
-      "EFI.4.C.1",
-      "EFI.4.C.2",
-      "EFI.4.C.3",
-      "EFI.4.C.4",
       "EFI.4.D.1",
       "EFI.4.D.2",
       "EFI.4.E.4"
@@ -3023,13 +2823,7 @@
      "curso": 4,
      "texto": "Cooperar o colaborar en la práctica de diferentes producciones motrices y proyectos para alcanzar el logro individual y grupal, con participando autonomía en la toma de decisiones vinculadas a la https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "EFI.4.C.1",
-      "EFI.4.C.2",
-      "EFI.4.C.3",
-      "EFI.4.C.4",
-      "EFI.4.D.1",
-      "EFI.4.D.2",
-      "EFI.4.E.4"
+      "EFI.4.D.2"
      ]
     },
     {
@@ -3039,11 +2833,7 @@
      "texto": "Relacionarse entenderse con el resto de participantes durante el desarrollo de diversas prácticas motrices con autonomía y haciendo uso efectivo de habilidades sociales de diálogo en la resolución de conflictos y respeto ante la diversidad, ya sea de género, afectivo- sexual, de origen nacional, étnica, socio-económica o de competencia motriz, y posicionándose activamente frente a los estereotipos, las actuaciones discriminatorias y la violencia.",
      "saberes": [
       "EFI.4.D.1",
-      "EFI.4.D.2",
-      "EFI.4.E.1",
-      "EFI.4.E.4",
-      "EFI.4.E.5",
-      "EFI.4.E.6"
+      "EFI.4.D.2"
      ]
     },
     {
@@ -3052,10 +2842,7 @@
      "curso": 4,
      "texto": "Contextualizar la influencia social del deporte en las sociedades actuales, valorando sus evolución, orígenes, distintas manifestaciones e económico- intereses políticos, practicando diversas modalidades con relacionadas Andalucía las procedentes de otros lugares del mundo.",
      "saberes": [
-      "EFI.4.D.1",
-      "EFI.4.D.2",
       "EFI.4.E.1",
-      "EFI.4.E.4",
       "EFI.4.E.5",
       "EFI.4.E.6"
      ]
@@ -3066,12 +2853,7 @@
      "curso": 4,
      "texto": "Adoptar actitudes comprometidas conscientes acerca de los distintos estereotipos de género y comportamientos sexistas que se siguen https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "EFI.4.D.1",
-      "EFI.4.D.2",
-      "EFI.4.E.1",
-      "EFI.4.E.4",
-      "EFI.4.E.5",
-      "EFI.4.E.6"
+      "EFI.4.E.4"
      ]
     },
     {
@@ -3083,9 +2865,7 @@
       "EFI.4.C.2",
       "EFI.4.C.5",
       "EFI.4.E.2",
-      "EFI.4.E.3",
-      "EFI.4.F.3",
-      "EFI.4.F.4"
+      "EFI.4.E.3"
      ]
     },
     {
@@ -3094,10 +2874,6 @@
      "curso": 4,
      "texto": "Participar en actividades físico- deportivas en entornos andaluces, naturales terrestres o acuáticos, disfrutando del entorno de manera sostenible, minimizando de forma autónoma el impacto ambiental que estas puedan producir, siendo https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "EFI.4.C.2",
-      "EFI.4.C.5",
-      "EFI.4.E.2",
-      "EFI.4.E.3",
       "EFI.4.F.3",
       "EFI.4.F.4"
      ]
@@ -3359,8 +3135,7 @@
      "texto": "Se introduce en el de los reconocimiento factores históricos y sociales que rodean a diferentes plásticas, producciones visuales y audiovisuales, describiendo de manera simple, de forma oral, escrita o visual diferentes corrientes artísticas, con interés y incorporando respeto, además la perspectiva de género.",
      "saberes": [
       "EPV.1.A.1",
-      "EPV.1.A.2",
-      "EPV.1.C.2"
+      "EPV.1.A.2"
      ]
     },
     {
@@ -3369,9 +3144,7 @@
      "curso": 1,
      "texto": "Muestra interés por la conservación, preservación y difusión del patrimonio cultural y artístico, a través de iniciarse en el conocimiento y el análisis guiado de obras de arte comenzando por el que le es más cercano, utilizándolo en sus propias creaciones, en las que manifieste aspectos de su propia identidad cultural.",
      "saberes": [
-      "EPV.1.A.1",
-      "EPV.1.A.2",
-      "EPV.1.C.2"
+      "EPV.1.A.2"
      ]
     },
     {
@@ -3381,8 +3154,7 @@
      "texto": "Se inicia en el análisis de la importancia de las formas geométricas básicas de su entorno, identificando los elementos plásticos del lenguaje visual en el arte y en el entorno, tomando como modelo el legado andalusí y el mosaico romano.",
      "saberes": [
       "EPV.1.A.1",
-      "EPV.1.A.2",
-      "EPV.1.C.2"
+      "EPV.1.A.2"
      ]
     },
     {
@@ -3391,8 +3163,6 @@
      "curso": 1,
      "texto": "Conoce y emplea el proceso creativo desde la intención hasta la realización, comprendiendo las del dificultades mismo mediante el intercambio de experiencias y el diálogo, detectando prejuicios hacia otras expresiones culturales y la reflexionando sobre",
      "saberes": [
-      "EPV.1.A.1",
-      "EPV.1.A.2",
       "EPV.1.C.2"
      ]
     },
@@ -3402,15 +3172,11 @@
      "curso": 1,
      "texto": "Se inicia en el análisis, de forma guiada, de diversas artísticas, producciones incluidas las propias y las de sus iguales, respetando las creaciones, vengan estas de donde vengan, comenzando a establecer un juicio basado en el conocimiento.",
      "saberes": [
-      "EPV.1.A.1",
-      "EPV.1.A.2",
       "EPV.1.B.1",
       "EPV.1.B.2",
       "EPV.1.B.3",
       "EPV.1.B.4",
-      "EPV.1.B.5",
-      "EPV.1.C.1",
-      "EPV.1.D.1"
+      "EPV.1.B.5"
      ]
     },
     {
@@ -3419,15 +3185,9 @@
      "curso": 1,
      "texto": "Analiza, valora y realiza composiciones inspiradas en la naturaleza introduciendo aspectos básicos compositivos experimentando al menos con dos técnicas de expresión gráfico-plásticas bidimensionales.",
      "saberes": [
-      "EPV.1.A.1",
-      "EPV.1.A.2",
       "EPV.1.B.1",
-      "EPV.1.B.2",
-      "EPV.1.B.3",
-      "EPV.1.B.4",
       "EPV.1.B.5",
-      "EPV.1.C.1",
-      "EPV.1.D.1"
+      "EPV.1.C.1"
      ]
     },
     {
@@ -3436,14 +3196,6 @@
      "curso": 1,
      "texto": "Iniciar un acercamiento a la observación y análisis de forma respetuosa en relación con las diversas propuestas plásticas, visuales audiovisuales como forma de configuración de la cultura artística personal.",
      "saberes": [
-      "EPV.1.A.1",
-      "EPV.1.A.2",
-      "EPV.1.B.1",
-      "EPV.1.B.2",
-      "EPV.1.B.3",
-      "EPV.1.B.4",
-      "EPV.1.B.5",
-      "EPV.1.C.1",
       "EPV.1.D.1"
      ]
     },
@@ -3455,12 +3207,6 @@
      "saberes": [
       "EPV.1.A.1",
       "EPV.1.A.2",
-      "EPV.1.B.1",
-      "EPV.1.B.2",
-      "EPV.1.B.3",
-      "EPV.1.B.4",
-      "EPV.1.B.5",
-      "EPV.1.C.1",
       "EPV.1.D.1"
      ]
     },
@@ -3470,15 +3216,8 @@
      "curso": 1,
      "texto": "Se inicia en la de identificación la de importancia la",
      "saberes": [
-      "EPV.1.A.1",
-      "EPV.1.A.2",
-      "EPV.1.B.1",
-      "EPV.1.B.2",
       "EPV.1.B.3",
-      "EPV.1.B.4",
-      "EPV.1.B.5",
-      "EPV.1.C.1",
-      "EPV.1.D.1"
+      "EPV.1.B.4"
      ]
     },
     {
@@ -3487,11 +3226,9 @@
      "curso": 1,
      "texto": "Iniciar la exploración y el de las reconocimiento características propias de los diversos lenguajes y medios de expresión artística en relación con los contextos culturales, sociales y artísticos en los que han sido producidos como forma de investigación dentro del ámbito creativo.",
      "saberes": [
-      "EPV.1.B.5",
       "EPV.1.C.1",
       "EPV.1.C.2",
-      "EPV.1.D.1",
-      "EPV.1.D.2"
+      "EPV.1.D.1"
      ]
     },
     {
@@ -3500,10 +3237,7 @@
      "curso": 1,
      "texto": "Comenzar a aplicar en las plásticas, producciones visuales y audiovisuales propias las conclusiones el extraídas mediante reconocimiento comprensión de las otros que respuestas creadores y creadoras han efectuado ante preguntas similares.",
      "saberes": [
-      "EPV.1.B.5",
-      "EPV.1.C.1",
       "EPV.1.C.2",
-      "EPV.1.D.1",
       "EPV.1.D.2"
      ]
     },
@@ -3513,11 +3247,8 @@
      "curso": 1,
      "texto": "Iniciar un acercamiento al proceso de comunicación que constituye la creación de obras plásticas, visuales y audiovisuales como medio de transmisión de ideas y pensamientos.",
      "saberes": [
-      "EPV.1.B.5",
       "EPV.1.C.1",
-      "EPV.1.C.2",
-      "EPV.1.D.1",
-      "EPV.1.D.2"
+      "EPV.1.C.2"
      ]
     },
     {
@@ -3528,9 +3259,7 @@
      "saberes": [
       "EPV.1.B.5",
       "EPV.1.C.1",
-      "EPV.1.C.2",
-      "EPV.1.D.1",
-      "EPV.1.D.2"
+      "EPV.1.C.2"
      ]
     },
     {
@@ -3539,13 +3268,8 @@
      "curso": 1,
      "texto": "Empezar a descubrir y aquellos seleccionar procedimientos y técnicas más idóneos en relación con los fines de presentación y representación perseguidos.",
      "saberes": [
-      "EPV.1.A.1",
-      "EPV.1.A.2",
-      "EPV.1.B.5",
       "EPV.1.C.1",
-      "EPV.1.C.2",
-      "EPV.1.E.1",
-      "EPV.1.E.2"
+      "EPV.1.C.2"
      ]
     },
     {
@@ -3555,12 +3279,7 @@
      "texto": "Comprender su pertenencia a un contexto cultural, en este caso el Andaluz, con el descubrimiento y análisis de los aspectos formales y de los factores que sociales determinan las producciones actuales, artistas de mostrando empatía y una actitud colaborativa, abierta y respetuosa.",
      "saberes": [
       "EPV.1.A.1",
-      "EPV.1.A.2",
-      "EPV.1.B.5",
-      "EPV.1.C.1",
-      "EPV.1.C.2",
-      "EPV.1.E.1",
-      "EPV.1.E.2"
+      "EPV.1.A.2"
      ]
     },
     {
@@ -3569,11 +3288,7 @@
      "curso": 1,
      "texto": "Identificar la de las representación vivencias y la visión del mundo que habita el alumnado, como un medio válido para aumentar la autoestima y el conocimiento de sí mismo y de sus iguales, favoreciendo los procesos de relación interpersonales.",
      "saberes": [
-      "EPV.1.A.1",
-      "EPV.1.A.2",
       "EPV.1.B.5",
-      "EPV.1.C.1",
-      "EPV.1.C.2",
       "EPV.1.E.1",
       "EPV.1.E.2"
      ]
@@ -3584,13 +3299,7 @@
      "curso": 1,
      "texto": "Entender la historia del arte y la cultura como un todo continuo e inseparable, en el cual las obras del pasado son la base sobre la que se construyen las creaciones del presente.",
      "saberes": [
-      "EPV.1.A.1",
-      "EPV.1.A.2",
-      "EPV.1.B.5",
-      "EPV.1.C.1",
-      "EPV.1.C.2",
-      "EPV.1.E.1",
-      "EPV.1.E.2"
+      "EPV.1.A.2"
      ]
     },
     {
@@ -3599,13 +3308,8 @@
      "curso": 1,
      "texto": "Analizar y comprender el proceso creativo de un",
      "saberes": [
-      "EPV.1.A.1",
-      "EPV.1.A.2",
-      "EPV.1.B.5",
       "EPV.1.C.1",
-      "EPV.1.C.2",
-      "EPV.1.E.1",
-      "EPV.1.E.2"
+      "EPV.1.C.2"
      ]
     },
     {
@@ -3614,13 +3318,7 @@
      "curso": 1,
      "texto": "Iniciar la elaboración de artísticas producciones ajustadas al objetivo propuesto, utilizando las posibilidades expresivas de los elementos formales básicos en las artes visuales y audiovisuales, esforzándose en superarse y demostrando un criterio propio.",
      "saberes": [
-      "EPV.1.B.1",
-      "EPV.1.B.2",
-      "EPV.1.B.3",
-      "EPV.1.B.4",
-      "EPV.1.B.5",
-      "EPV.1.C.2",
-      "EPV.1.D.1"
+      "EPV.1.C.2"
      ]
     },
     {
@@ -3630,11 +3328,6 @@
      "texto": "Identificar rasgos básicos de distintas manifestaciones artísticas en el entorno cotidiano, exponiendo de forma individual o colectiva el significado y/o finalidad de las mismas.",
      "saberes": [
       "EPV.1.B.1",
-      "EPV.1.B.2",
-      "EPV.1.B.3",
-      "EPV.1.B.4",
-      "EPV.1.B.5",
-      "EPV.1.C.2",
       "EPV.1.D.1"
      ]
     },
@@ -3649,7 +3342,6 @@
       "EPV.1.B.3",
       "EPV.1.B.4",
       "EPV.1.B.5",
-      "EPV.1.C.2",
       "EPV.1.D.1"
      ]
     },
@@ -3661,10 +3353,6 @@
      "saberes": [
       "EPV.1.B.1",
       "EPV.1.B.2",
-      "EPV.1.B.3",
-      "EPV.1.B.4",
-      "EPV.1.B.5",
-      "EPV.1.C.2",
       "EPV.1.D.1"
      ]
     },
@@ -3675,10 +3363,7 @@
      "texto": "Reconocer los factores históricos y sociales que rodean las producciones plásticas, visuales audiovisuales más relevantes, así como su función y finalidad, describiendo sus particularidades y su papel como transmisoras de valores y convicciones, con interés y desde respeto, una perspectiva de género.",
      "saberes": [
       "EPV.3.A.1",
-      "EPV.3.A.2",
-      "EPV.3.C.2",
-      "EPV.3.E.1",
-      "EPV.3.E.2"
+      "EPV.3.A.2"
      ]
     },
     {
@@ -3687,11 +3372,7 @@
      "curso": 3,
      "texto": "Valorar la importancia de la conservación, preservación y difusión del patrimonio cultural y artístico a través del conocimiento y el análisis guiado de obras de arte.",
      "saberes": [
-      "EPV.3.A.1",
-      "EPV.3.A.2",
-      "EPV.3.C.2",
-      "EPV.3.E.1",
-      "EPV.3.E.2"
+      "EPV.3.A.2"
      ]
     },
     {
@@ -3700,9 +3381,6 @@
      "curso": 3,
      "texto": "Analizar la importancia de las formas geométricas básicas identificando los elementos plásticos del Lenguaje Visual en el arte y en el entorno tomando como modelo el legado andalusí y el mosaico romano.",
      "saberes": [
-      "EPV.3.A.1",
-      "EPV.3.A.2",
-      "EPV.3.C.2",
       "EPV.3.E.1",
       "EPV.3.E.2"
      ]
@@ -3713,11 +3391,7 @@
      "curso": 3,
      "texto": "Identificar y explicar, de forma la razonada, importancia del proceso que media entre la realidad, el imaginario y la producción, superando estereotipos y mostrando un comportamiento respetuoso con la diversidad cultural. https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "EPV.3.A.1",
-      "EPV.3.A.2",
-      "EPV.3.C.2",
-      "EPV.3.E.1",
-      "EPV.3.E.2"
+      "EPV.3.C.2"
      ]
     },
     {
@@ -3726,15 +3400,11 @@
      "curso": 3,
      "texto": "Analizar, con autonomía, diversas producciones artísticas, incluidas las propias, las de sus iguales y las del patrimonio cultural y artístico, el valorando andaluz, patrimonio desarrollando con interés una mirada estética hacia el mundo y respetando la diversidad de las expresiones culturales.",
      "saberes": [
-      "EPV.3.A.2",
       "EPV.3.B.1",
       "EPV.3.B.2",
       "EPV.3.B.3",
       "EPV.3.B.4",
-      "EPV.3.B.5",
-      "EPV.3.C.1",
-      "EPV.3.D.1",
-      "EPV.3.D.2"
+      "EPV.3.B.5"
      ]
     },
     {
@@ -3743,15 +3413,9 @@
      "curso": 3,
      "texto": "Realizar composiciones inspiradas en la naturaleza donde puedan aplicarse distintas situaciones compositivas, utilizando para ello las técnicas de expresión gráfico-plásticas bidimensionales necesarias",
      "saberes": [
-      "EPV.3.A.2",
       "EPV.3.B.1",
-      "EPV.3.B.2",
-      "EPV.3.B.3",
-      "EPV.3.B.4",
       "EPV.3.B.5",
-      "EPV.3.C.1",
-      "EPV.3.D.1",
-      "EPV.3.D.2"
+      "EPV.3.C.1"
      ]
     },
     {
@@ -3760,15 +3424,7 @@
      "curso": 3,
      "texto": "Seleccionar y describir propuestas plásticas, visuales y audiovisuales de diversos tipos y épocas, analizándolas con curiosidad y respeto desde una perspectiva de género, e incorporándolas a su cultura personal y su imaginario propio.",
      "saberes": [
-      "EPV.3.A.2",
-      "EPV.3.B.1",
-      "EPV.3.B.2",
-      "EPV.3.B.3",
-      "EPV.3.B.4",
-      "EPV.3.B.5",
-      "EPV.3.C.1",
-      "EPV.3.D.1",
-      "EPV.3.D.2"
+      "EPV.3.D.1"
      ]
     },
     {
@@ -3778,14 +3434,7 @@
      "texto": "Argumentar el disfrute producido por la recepción del arte en todas sus formas y vertientes, compartiendo con impresiones respeto emociones y expresando la opinión personal de forma abierta.",
      "saberes": [
       "EPV.3.A.2",
-      "EPV.3.B.1",
-      "EPV.3.B.2",
-      "EPV.3.B.3",
-      "EPV.3.B.4",
-      "EPV.3.B.5",
-      "EPV.3.C.1",
-      "EPV.3.D.1",
-      "EPV.3.D.2"
+      "EPV.3.D.1"
      ]
     },
     {
@@ -3794,14 +3443,8 @@
      "curso": 3,
      "texto": "Identificar la importancia de la presentación de las creaciones propias a partir de https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "EPV.3.A.2",
-      "EPV.3.B.1",
-      "EPV.3.B.2",
       "EPV.3.B.3",
       "EPV.3.B.4",
-      "EPV.3.B.5",
-      "EPV.3.C.1",
-      "EPV.3.D.1",
       "EPV.3.D.2"
      ]
     },
@@ -3811,11 +3454,8 @@
      "curso": 3,
      "texto": "Reconocer los rasgos particulares de diversas técnicas y lenguajes artísticos, así como sus distintos procesos y resultados en función de los contextos históricos, sociales, geográficos y tecnológicos, buscando y analizando la información con interés y eficacia.",
      "saberes": [
-      "EPV.3.B.5",
       "EPV.3.C.1",
-      "EPV.3.C.2",
-      "EPV.3.D.1",
-      "EPV.3.D.2"
+      "EPV.3.C.2"
      ]
     },
     {
@@ -3824,10 +3464,7 @@
      "curso": 3,
      "texto": "Analizar de forma guiada las especificidades de los lenguajes de diferentes producciones culturales y artísticas, estableciendo conexiones entre ellas e incorporándolas creativamente en las producciones propias.",
      "saberes": [
-      "EPV.3.B.5",
-      "EPV.3.C.1",
       "EPV.3.C.2",
-      "EPV.3.D.1",
       "EPV.3.D.2"
      ]
     },
@@ -3837,10 +3474,8 @@
      "curso": 3,
      "texto": "Expresar ideas y sentimientos en diferentes plásticas, producciones visuales y audiovisuales, a través de la experimentación con diversas herramientas, soportes, técnicas desarrollando la capacidad de comunicación y la reflexión crítica.",
      "saberes": [
-      "EPV.3.B.5",
       "EPV.3.C.1",
       "EPV.3.C.2",
-      "EPV.3.D.1",
       "EPV.3.D.2"
      ]
     },
@@ -3853,8 +3488,7 @@
       "EPV.3.B.5",
       "EPV.3.C.1",
       "EPV.3.C.2",
-      "EPV.3.D.1",
-      "EPV.3.D.2"
+      "EPV.3.D.1"
      ]
     },
     {
@@ -3863,15 +3497,8 @@
      "curso": 3,
      "texto": "Descubrir y seleccionar aquellos procedimientos y técnicas más idóneos en relación con los fines de presentación y representación perseguidos.",
      "saberes": [
-      "EPV.3.A.1",
-      "EPV.3.A.2",
-      "EPV.3.B.5",
       "EPV.3.C.1",
-      "EPV.3.C.2",
-      "EPV.3.E.1",
-      "EPV.3.E.2",
-      "EPV.3.E.3",
-      "EPV.3.E.4"
+      "EPV.3.C.2"
      ]
     },
     {
@@ -3881,14 +3508,7 @@
      "texto": "Explicar su pertenencia a un contexto cultural concreto, de manera específica el Andaluz, a través del análisis de los aspectos formales y de los factores sociales que determinan diversas producciones culturales y artísticas actuales.",
      "saberes": [
       "EPV.3.A.1",
-      "EPV.3.A.2",
-      "EPV.3.B.5",
-      "EPV.3.C.1",
-      "EPV.3.C.2",
-      "EPV.3.E.1",
-      "EPV.3.E.2",
-      "EPV.3.E.3",
-      "EPV.3.E.4"
+      "EPV.3.A.2"
      ]
     },
     {
@@ -3897,11 +3517,7 @@
      "curso": 3,
      "texto": "Utilizar creativamente referencias culturales y artísticas del entorno en la elaboración de producciones propias, mostrando una visión personal.",
      "saberes": [
-      "EPV.3.A.1",
-      "EPV.3.A.2",
       "EPV.3.B.5",
-      "EPV.3.C.1",
-      "EPV.3.C.2",
       "EPV.3.E.1",
       "EPV.3.E.2",
       "EPV.3.E.3",
@@ -3915,14 +3531,7 @@
      "texto": "Entender y concebir la historia del arte y la cultura, y también la propia producción artística, como un todo continuo e indesligable, en el cual las obras del pasado son la base sobre la que se construyen las creaciones del presente.",
      "saberes": [
       "EPV.3.A.1",
-      "EPV.3.A.2",
-      "EPV.3.B.5",
-      "EPV.3.C.1",
-      "EPV.3.C.2",
-      "EPV.3.E.1",
-      "EPV.3.E.2",
-      "EPV.3.E.3",
-      "EPV.3.E.4"
+      "EPV.3.A.2"
      ]
     },
     {
@@ -3931,15 +3540,7 @@
      "curso": 3,
      "texto": "Realizar un proyecto artístico, con creatividad y de https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "EPV.3.A.1",
-      "EPV.3.A.2",
-      "EPV.3.B.5",
-      "EPV.3.C.1",
-      "EPV.3.C.2",
-      "EPV.3.E.1",
-      "EPV.3.E.2",
-      "EPV.3.E.3",
-      "EPV.3.E.4"
+      "EPV.3.C.2"
      ]
     },
     {
@@ -3948,14 +3549,8 @@
      "curso": 3,
      "texto": "Elaborar producciones artísticas ajustadas al objetivo propuesto, individuales o colectivas, a partir del análisis de las posibilidades expresivas plásticas utilizadas por creadores dentro de este ámbito, esforzándose en superarse y demostrando un criterio propio.",
      "saberes": [
-      "EPV.3.B.1",
-      "EPV.3.B.2",
-      "EPV.3.B.3",
-      "EPV.3.B.4",
-      "EPV.3.B.5",
       "EPV.3.C.1",
       "EPV.3.C.2",
-      "EPV.3.D.1",
       "EPV.3.E.4"
      ]
     },
@@ -3966,14 +3561,7 @@
      "texto": "Reconocer los diferentes usos y funciones de las producciones artísticas, manifestaciones argumentando de forma individual o colectiva sus conclusiones acerca de las oportunidades que pueden generar, con una actitud abierta y con interés por conocer su importancia en la sociedad.",
      "saberes": [
       "EPV.3.B.1",
-      "EPV.3.B.2",
-      "EPV.3.B.3",
-      "EPV.3.B.4",
-      "EPV.3.B.5",
-      "EPV.3.C.1",
-      "EPV.3.C.2",
-      "EPV.3.D.1",
-      "EPV.3.E.4"
+      "EPV.3.D.1"
      ]
     },
     {
@@ -3986,11 +3574,7 @@
       "EPV.3.B.2",
       "EPV.3.B.3",
       "EPV.3.B.4",
-      "EPV.3.B.5",
-      "EPV.3.C.1",
-      "EPV.3.C.2",
-      "EPV.3.D.1",
-      "EPV.3.E.4"
+      "EPV.3.B.5"
      ]
     },
     {
@@ -4001,13 +3585,7 @@
      "saberes": [
       "EPV.3.B.1",
       "EPV.3.B.2",
-      "EPV.3.B.3",
-      "EPV.3.B.4",
-      "EPV.3.B.5",
-      "EPV.3.C.1",
-      "EPV.3.C.2",
-      "EPV.3.D.1",
-      "EPV.3.E.4"
+      "EPV.3.D.1"
      ]
     }
    ]
@@ -4762,18 +4340,12 @@
      "curso": 2,
      "texto": "Resolver los problemas fisicoquímicos que se le en proponen, situaciones habituales de escasa complejidad, aplicando los aspectos básicos de las leyes y científicas teorías estudiadas, razonando los procedimientos para utilizados encontrar y comprobar la(s) solución(es) obtenidas y expresando adecuadamente los resultados.",
      "saberes": [
-      "FYQ.2.A.1",
       "FYQ.2.A.2",
       "FYQ.2.A.4",
       "FYQ.2.B.1",
-      "FYQ.2.B.2",
-      "FYQ.2.C.1",
-      "FYQ.2.C.2",
-      "FYQ.2.C.3",
       "FYQ.2.C.4",
       "FYQ.2.D.1",
       "FYQ.2.D.2",
-      "FYQ.2.E.1",
       "FYQ.2.E.2"
      ]
     },
@@ -4784,11 +4356,6 @@
      "texto": "Reconocer describir en el entorno inmediato, siguiendo las del orientaciones profesorado, situaciones problemáticas reales de índole científica y emprender, de forma guiada, iniciativas en las que la ciencia, y en particular la física y la pueden química, contribuir a su solución, reflexionando de forma motivada acerca de su impacto en la sociedad.",
      "saberes": [
       "FYQ.2.A.1",
-      "FYQ.2.A.2",
-      "FYQ.2.A.4",
-      "FYQ.2.B.1",
-      "FYQ.2.B.2",
-      "FYQ.2.C.1",
       "FYQ.2.C.2",
       "FYQ.2.C.3",
       "FYQ.2.C.4",
@@ -4804,19 +4371,9 @@
      "curso": 2,
      "texto": "Aplicar, de forma guiada, las metodologías propias",
      "saberes": [
-      "FYQ.2.A.1",
-      "FYQ.2.A.2",
-      "FYQ.2.A.4",
-      "FYQ.2.B.1",
       "FYQ.2.B.2",
       "FYQ.2.C.1",
-      "FYQ.2.C.2",
-      "FYQ.2.C.3",
-      "FYQ.2.C.4",
-      "FYQ.2.D.1",
-      "FYQ.2.D.2",
-      "FYQ.2.E.1",
-      "FYQ.2.E.2"
+      "FYQ.2.C.2"
      ]
     },
     {
@@ -4825,19 +4382,13 @@
      "curso": 2,
      "texto": "Seleccionar, de de forma guiada, acuerdo con la de las naturaleza cuestiones que se traten, una manera adecuada de comprobar o refutar las hipótesis formuladas, para diseñar estrategias sencillas de indagación búsqueda de evidencias que permitan obtener conclusiones y respuestas ajustadas a la naturaleza de la pregunta formulada.",
      "saberes": [
-      "FYQ.2.A.1",
       "FYQ.2.A.2",
-      "FYQ.2.A.5",
-      "FYQ.2.B.1",
       "FYQ.2.B.2",
       "FYQ.2.C.1",
       "FYQ.2.C.2",
       "FYQ.2.C.3",
-      "FYQ.2.C.4",
       "FYQ.2.D.1",
-      "FYQ.2.D.2",
-      "FYQ.2.E.1",
-      "FYQ.2.E.2"
+      "FYQ.2.D.2"
      ]
     },
     {
@@ -4847,17 +4398,14 @@
      "texto": "Aplicar, siguiendo las orientaciones del profesorado, las leyes y científicas teorías estudiadas para formular cuestiones e hipótesis, en situaciones de habituales la realidad, de manera",
      "saberes": [
       "FYQ.2.A.1",
-      "FYQ.2.A.2",
       "FYQ.2.A.5",
       "FYQ.2.B.1",
       "FYQ.2.B.2",
       "FYQ.2.C.1",
       "FYQ.2.C.2",
-      "FYQ.2.C.3",
       "FYQ.2.C.4",
       "FYQ.2.D.1",
       "FYQ.2.D.2",
-      "FYQ.2.E.1",
       "FYQ.2.E.2"
      ]
     },
@@ -4867,13 +4415,9 @@
      "curso": 2,
      "texto": "Emplear datos a un nivel básico y en los formatos que se indiquen para interpretar y transmitir información relativa a proceso un fisicoquímico concreto, relacionando entre sí lo que cada uno de ellos contiene, y extrayendo en cada caso, siguiendo las orientaciones del profesorado, lo más la para relevante de resolución un problema.",
      "saberes": [
-      "FYQ.2.A.2",
-      "FYQ.2.A.3",
       "FYQ.2.A.4",
       "FYQ.2.B.1",
-      "FYQ.2.B.2",
       "FYQ.2.C.1",
-      "FYQ.2.C.2",
       "FYQ.2.C.4",
       "FYQ.2.D.1",
       "FYQ.2.D.2"
@@ -4885,13 +4429,9 @@
      "curso": 2,
      "texto": "Aplicar adecuadamente las reglas básicas de la física y la química, incluyendo el uso de unidades de medida, las herramientas básicas matemáticas y unas mínimas reglas de nomenclatura, para facilitar una comunicación efectiva con toda la comunidad científica.",
      "saberes": [
-      "FYQ.2.A.2",
-      "FYQ.2.A.3",
       "FYQ.2.A.4",
       "FYQ.2.B.1",
-      "FYQ.2.B.2",
       "FYQ.2.C.1",
-      "FYQ.2.C.2",
       "FYQ.2.C.4",
       "FYQ.2.D.1",
       "FYQ.2.D.2"
@@ -4905,14 +4445,8 @@
      "saberes": [
       "FYQ.2.A.2",
       "FYQ.2.A.3",
-      "FYQ.2.A.4",
-      "FYQ.2.B.1",
       "FYQ.2.B.2",
-      "FYQ.2.C.1",
-      "FYQ.2.C.2",
-      "FYQ.2.C.4",
-      "FYQ.2.D.1",
-      "FYQ.2.D.2"
+      "FYQ.2.C.2"
      ]
     },
     {
@@ -4922,14 +4456,11 @@
      "texto": "Utilizar al menos dos recursos tradicionales y dos digitales, para el aprendizaje para participar y colaborar con otros miembros de la comunidad educativa, con hacia respeto docentes y estudiantes y reflexionando de forma argumentada acerca de las aportaciones de cada participante.",
      "saberes": [
       "FYQ.2.A.3",
-      "FYQ.2.A.5",
       "FYQ.2.B.1",
-      "FYQ.2.B.2",
       "FYQ.2.C.2",
       "FYQ.2.C.3",
       "FYQ.2.D.1",
       "FYQ.2.D.2",
-      "FYQ.2.E.1",
       "FYQ.2.E.2"
      ]
     },
@@ -4941,14 +4472,12 @@
      "saberes": [
       "FYQ.2.A.3",
       "FYQ.2.A.5",
-      "FYQ.2.B.1",
       "FYQ.2.B.2",
       "FYQ.2.C.2",
       "FYQ.2.C.3",
       "FYQ.2.D.1",
       "FYQ.2.D.2",
-      "FYQ.2.E.1",
-      "FYQ.2.E.2"
+      "FYQ.2.E.1"
      ]
     },
     {
@@ -4957,11 +4486,8 @@
      "curso": 2,
      "texto": "Participar en interacciones constructivas coeducativas, a través de actividades previamente de planificadas cooperación y del uso de las estrategias propias del colaborativo, trabajo como forma de establecer un medio de trabajo eficiente en la ciencia.",
      "saberes": [
-      "FYQ.2.A.1",
       "FYQ.2.A.2",
       "FYQ.2.A.3",
-      "FYQ.2.A.5",
-      "FYQ.2.A.6",
       "FYQ.2.C.2",
       "FYQ.2.C.3",
       "FYQ.2.D.1",
@@ -4976,12 +4502,8 @@
      "texto": "Emprender, de forma guiada y de acuerdo a la metodología adecuada, proyectos científicos que involucren al alumnado en la mejora de la sociedad andaluza y global y que creen valor para el individuo y para la comunidad.",
      "saberes": [
       "FYQ.2.A.1",
-      "FYQ.2.A.2",
-      "FYQ.2.A.3",
       "FYQ.2.A.5",
-      "FYQ.2.A.6",
       "FYQ.2.C.2",
-      "FYQ.2.C.3",
       "FYQ.2.D.1",
       "FYQ.2.D.2",
       "FYQ.2.E.2"
@@ -4993,10 +4515,6 @@
      "curso": 2,
      "texto": "Conocer y apreciar a análisis del través histórico de los hombres y mujeres de ciencia y los avances científicos, que la ciencia es un proceso en permanente construcción las reconocer y, repercusiones mutuas de la ciencia actual con la tecnología, la sociedad y el medioambiente.",
      "saberes": [
-      "FYQ.2.A.1",
-      "FYQ.2.A.2",
-      "FYQ.2.A.3",
-      "FYQ.2.A.5",
       "FYQ.2.A.6",
       "FYQ.2.C.2",
       "FYQ.2.C.3",
@@ -5011,16 +4529,10 @@
      "curso": 2,
      "texto": "Identificar, de forma guiada, en el entorno próximo y en situaciones actualidad de las",
      "saberes": [
-      "FYQ.2.A.1",
-      "FYQ.2.A.2",
-      "FYQ.2.A.3",
       "FYQ.2.A.5",
       "FYQ.2.A.6",
       "FYQ.2.C.2",
-      "FYQ.2.C.3",
-      "FYQ.2.D.1",
-      "FYQ.2.D.2",
-      "FYQ.2.E.2"
+      "FYQ.2.C.3"
      ]
     },
     {
@@ -5042,13 +4554,10 @@
      "curso": 3,
      "texto": "Resolver los problemas fisicoquímicos planteados utilizando las leyes y teorías científicas adecuadas, los razonando procedimientos para utilizados encontrar las soluciones expresando adecuadamente los resultados.",
      "saberes": [
-      "FYQ.3.A.1",
       "FYQ.3.A.2",
       "FYQ.3.A.4",
       "FYQ.3.B.1",
       "FYQ.3.B.2",
-      "FYQ.3.C.1",
-      "FYQ.3.C.2",
       "FYQ.3.D.1",
       "FYQ.3.D.2"
      ]
@@ -5060,10 +4569,6 @@
      "texto": "Reconocer describir en el entorno inmediato situaciones problemáticas reales de índole científica y emprender iniciativas en las que la ciencia, y en particular la física y la química, pueden contribuir su solución, analizando críticamente su impacto en la sociedad.",
      "saberes": [
       "FYQ.3.A.1",
-      "FYQ.3.A.2",
-      "FYQ.3.A.4",
-      "FYQ.3.B.1",
-      "FYQ.3.B.2",
       "FYQ.3.C.1",
       "FYQ.3.C.2",
       "FYQ.3.D.1",
@@ -5076,15 +4581,9 @@
      "curso": 3,
      "texto": "Emplear las metodologías propias de la ciencia para https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "FYQ.3.A.1",
       "FYQ.3.A.2",
-      "FYQ.3.A.4",
       "FYQ.3.B.1",
-      "FYQ.3.B.2",
-      "FYQ.3.C.1",
-      "FYQ.3.C.2",
-      "FYQ.3.D.1",
-      "FYQ.3.D.2"
+      "FYQ.3.B.2"
      ]
     },
     {
@@ -5093,17 +4592,12 @@
      "curso": 3,
      "texto": "Seleccionar, de acuerdo con la naturaleza de las cuestiones que se traten, la mejor manera de comprobar o refutar hipótesis las formuladas, para diseñar estrategias de indagación y búsqueda de evidencias que obtener permitan conclusiones repuestas ajustadas a la de la naturaleza pregunta formulada.",
      "saberes": [
-      "FYQ.3.A.1",
       "FYQ.3.A.2",
-      "FYQ.3.A.5",
       "FYQ.3.B.1",
-      "FYQ.3.B.2",
       "FYQ.3.C.1",
       "FYQ.3.C.2",
-      "FYQ.3.C.3",
       "FYQ.3.D.1",
       "FYQ.3.D.2",
-      "FYQ.3.D.3",
       "FYQ.3.E.2",
       "FYQ.3.E.3"
      ]
@@ -5115,18 +4609,13 @@
      "texto": "Aplicar las leyes y científicas teorías conocidas para formular cuestiones e hipótesis, de manera informada y coherente con el conocimiento científico existente y diseñar los https://www.juntadeandalucia.es/eboja",
      "saberes": [
       "FYQ.3.A.1",
-      "FYQ.3.A.2",
       "FYQ.3.A.5",
       "FYQ.3.B.1",
       "FYQ.3.B.2",
-      "FYQ.3.C.1",
-      "FYQ.3.C.2",
-      "FYQ.3.C.3",
       "FYQ.3.D.1",
       "FYQ.3.D.2",
       "FYQ.3.D.3",
-      "FYQ.3.E.2",
-      "FYQ.3.E.3"
+      "FYQ.3.E.2"
      ]
     },
     {
@@ -5135,12 +4624,8 @@
      "curso": 3,
      "texto": "Emplear datos en diferentes formatos para interpretar y comunicar información relativa a un proceso fisicoquímico concreto, relacionando entre sí lo que cada uno de ellos contiene, y extrayendo en cada caso lo más relevante para la resolución de un problema.",
      "saberes": [
-      "FYQ.3.A.2",
-      "FYQ.3.A.3",
       "FYQ.3.A.4",
       "FYQ.3.B.1",
-      "FYQ.3.B.2",
-      "FYQ.3.B.3",
       "FYQ.3.C.1",
       "FYQ.3.C.2",
       "FYQ.3.D.1",
@@ -5153,14 +4638,10 @@
      "curso": 3,
      "texto": "Utilizar adecuadamente las reglas básicas de la física y la química, incluyendo el uso de unidades de medida, herramientas las matemáticas y las de reglas nomenclatura, consiguiendo una comunicación efectiva con toda la comunidad científica.",
      "saberes": [
-      "FYQ.3.A.2",
-      "FYQ.3.A.3",
       "FYQ.3.A.4",
       "FYQ.3.B.1",
       "FYQ.3.B.2",
       "FYQ.3.B.3",
-      "FYQ.3.C.1",
-      "FYQ.3.C.2",
       "FYQ.3.D.1",
       "FYQ.3.D.2"
      ]
@@ -5173,14 +4654,8 @@
      "saberes": [
       "FYQ.3.A.2",
       "FYQ.3.A.3",
-      "FYQ.3.A.4",
       "FYQ.3.B.1",
-      "FYQ.3.B.2",
-      "FYQ.3.B.3",
-      "FYQ.3.C.1",
-      "FYQ.3.C.2",
-      "FYQ.3.D.1",
-      "FYQ.3.D.2"
+      "FYQ.3.B.2"
      ]
     },
     {
@@ -5190,9 +4665,7 @@
      "texto": "Utilizar recursos variados, tradicionales y digitales, mejorando aprendizaje el autónomo y para mejorar la interacción con otros miembros de comunidad la educativa, con respeto hacia docentes y estudiantes analizando críticamente las aportaciones de cada participante.",
      "saberes": [
       "FYQ.3.A.3",
-      "FYQ.3.A.5",
       "FYQ.3.B.1",
-      "FYQ.3.B.2",
       "FYQ.3.B.3",
       "FYQ.3.C.1",
       "FYQ.3.C.2",
@@ -5200,7 +4673,6 @@
       "FYQ.3.D.2",
       "FYQ.3.D.3",
       "FYQ.3.E.1",
-      "FYQ.3.E.2",
       "FYQ.3.E.3"
      ]
     },
@@ -5212,7 +4684,6 @@
      "saberes": [
       "FYQ.3.A.3",
       "FYQ.3.A.5",
-      "FYQ.3.B.1",
       "FYQ.3.B.2",
       "FYQ.3.B.3",
       "FYQ.3.C.1",
@@ -5220,7 +4691,6 @@
       "FYQ.3.D.1",
       "FYQ.3.D.2",
       "FYQ.3.D.3",
-      "FYQ.3.E.1",
       "FYQ.3.E.2",
       "FYQ.3.E.3"
      ]
@@ -5231,16 +4701,12 @@
      "curso": 3,
      "texto": "Establecer interacciones constructivas coeducativas, emprendiendo actividades de cooperación y del uso de las estrategias propias del trabajo colaborativo, como forma de construir un medio de trabajo eficiente en la ciencia.",
      "saberes": [
-      "FYQ.3.A.1",
       "FYQ.3.A.2",
       "FYQ.3.A.3",
-      "FYQ.3.A.5",
-      "FYQ.3.A.6",
       "FYQ.3.B.1",
       "FYQ.3.B.2",
       "FYQ.3.C.1",
       "FYQ.3.C.2",
-      "FYQ.3.C.3",
       "FYQ.3.D.1",
       "FYQ.3.D.2",
       "FYQ.3.D.3",
@@ -5255,14 +4721,9 @@
      "texto": "Emprender, de forma guiada y de acuerdo la metodología adecuada, proyectos científicos que involucren al alumnado en la mejora de la sociedad y que creen valor para el individuo y para la comunidad, tanto local como globalmente.",
      "saberes": [
       "FYQ.3.A.1",
-      "FYQ.3.A.2",
-      "FYQ.3.A.3",
       "FYQ.3.A.5",
-      "FYQ.3.A.6",
-      "FYQ.3.B.1",
       "FYQ.3.B.2",
       "FYQ.3.C.1",
-      "FYQ.3.C.2",
       "FYQ.3.C.3",
       "FYQ.3.D.1",
       "FYQ.3.D.2",
@@ -5277,21 +4738,14 @@
      "curso": 3,
      "texto": "Reconocer valorar, a través del análisis histórico de los avances científicos logrados por hombres y mujeres de ciencia, que la ciencia es un proceso en permanente construcción, así como las reconocer repercusiones mutuas de la ciencia actual con la la tecnología, el sociedad medioambiente.",
      "saberes": [
-      "FYQ.3.A.1",
-      "FYQ.3.A.2",
-      "FYQ.3.A.3",
-      "FYQ.3.A.5",
       "FYQ.3.A.6",
       "FYQ.3.B.1",
-      "FYQ.3.B.2",
       "FYQ.3.C.1",
       "FYQ.3.C.2",
-      "FYQ.3.C.3",
       "FYQ.3.D.1",
       "FYQ.3.D.2",
       "FYQ.3.D.3",
-      "FYQ.3.E.1",
-      "FYQ.3.E.3"
+      "FYQ.3.E.1"
      ]
     },
     {
@@ -5300,21 +4754,10 @@
      "curso": 3,
      "texto": "Detectar en el entorno las necesidades tecnológicas, https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "FYQ.3.A.1",
-      "FYQ.3.A.2",
-      "FYQ.3.A.3",
       "FYQ.3.A.5",
       "FYQ.3.A.6",
-      "FYQ.3.B.1",
-      "FYQ.3.B.2",
       "FYQ.3.C.1",
-      "FYQ.3.C.2",
-      "FYQ.3.C.3",
-      "FYQ.3.D.1",
-      "FYQ.3.D.2",
-      "FYQ.3.D.3",
-      "FYQ.3.E.1",
-      "FYQ.3.E.3"
+      "FYQ.3.C.2"
      ]
     },
     {
@@ -6399,9 +5842,7 @@
      "texto": "Iniciarse en la elaboración, expresión y presentación de contenidos propios en forma de esquemas, tablas informativas otros formatos utilizando estrategias sencillas de búsqueda, selección y de la tratamiento información de forma guiada sobre procesos y acontecimientos relevantes del presente y del pasado.",
      "saberes": [
       "GEH.1.A.1",
-      "GEH.1.A.3",
-      "GEH.1.A.5",
-      "GEH.1.B.2"
+      "GEH.1.A.5"
      ]
     },
     {
@@ -6410,8 +5851,6 @@
      "curso": 1,
      "texto": "Contrastar argumentar sobre temas y acontecimientos de la Edad Prehistoria, la Antigua, la Edad Media y la Edad Moderna, iniciándose en el uso y análisis de forma crítica de fuentes primarias como secundarias pruebas históricas.",
      "saberes": [
-      "GEH.1.A.1",
-      "GEH.1.A.3",
       "GEH.1.A.5",
       "GEH.1.B.2"
      ]
@@ -6422,10 +5861,7 @@
      "curso": 1,
      "texto": "Identificar, valorar y",
      "saberes": [
-      "GEH.1.A.1",
-      "GEH.1.A.3",
-      "GEH.1.A.5",
-      "GEH.1.B.2"
+      "GEH.1.A.3"
      ]
     },
     {
@@ -6434,14 +5870,9 @@
      "curso": 1,
      "texto": "Iniciarse en la exposición argumentada de crítica forma sobre problemas de actualidad del entorno más próximo a través de conocimientos geográficos e históricos, contrastando y valorando fuentes diversas.",
      "saberes": [
-      "GEH.1.A.6",
-      "GEH.1.A.7",
       "GEH.1.B.1",
       "GEH.1.B.2",
-      "GEH.1.C.4",
-      "GEH.1.C.5",
-      "GEH.1.C.6",
-      "GEH.1.C.9"
+      "GEH.1.C.4"
      ]
     },
     {
@@ -6450,14 +5881,7 @@
      "curso": 1,
      "texto": "Iniciarse en el uso adecuado de términos, conceptos acontecimientos relevantes en su entorno relacionados con la geografía, la historia y otras disciplinas de las ciencias sociales, a través de intervenciones orales, textos escritos y otros ofreciendo productos, planteamientos personales.",
      "saberes": [
-      "GEH.1.A.6",
-      "GEH.1.A.7",
-      "GEH.1.B.1",
-      "GEH.1.B.2",
-      "GEH.1.C.4",
-      "GEH.1.C.5",
-      "GEH.1.C.6",
-      "GEH.1.C.9"
+      "GEH.1.A.6"
      ]
     },
     {
@@ -6466,13 +5890,7 @@
      "curso": 1,
      "texto": "Identificar los elementos que conforman la propia identidad en el contexto del mundo actual, de sus retos y conflictos aportando juicios propios, críticos y argumentados desde el respeto a las opiniones de los demás.",
      "saberes": [
-      "GEH.1.A.6",
-      "GEH.1.A.7",
-      "GEH.1.B.1",
-      "GEH.1.B.2",
       "GEH.1.C.4",
-      "GEH.1.C.5",
-      "GEH.1.C.6",
       "GEH.1.C.9"
      ]
     },
@@ -6482,14 +5900,7 @@
      "curso": 1,
      "texto": "Conocer acontecimientos relevantes",
      "saberes": [
-      "GEH.1.A.6",
-      "GEH.1.A.7",
-      "GEH.1.B.1",
-      "GEH.1.B.2",
-      "GEH.1.C.4",
-      "GEH.1.C.5",
-      "GEH.1.C.6",
-      "GEH.1.C.9"
+      "GEH.1.A.6"
      ]
     },
     {
@@ -6498,11 +5909,9 @@
      "curso": 1,
      "texto": "Identificar de una general los manera principales problemas, a los que se ha enfrentado la humanidad a lo largo de la historia, los cambios producidos, señalando sus causas y consecuencias, así como los problemas que, en la actualidad, debemos plantear en torno a los Objetivos de Desarrollo Sostenible.",
      "saberes": [
-      "GEH.1.A.1",
       "GEH.1.A.6",
       "GEH.1.A.7",
-      "GEH.1.B.1",
-      "GEH.1.B.3"
+      "GEH.1.B.1"
      ]
     },
     {
@@ -6511,11 +5920,7 @@
      "curso": 1,
      "texto": "Representar información básica sobre acontecimientos geográficos e históricos mapas, utilizando representaciones gráficas sencillas y visuales, tanto en soporte físico como digital.",
      "saberes": [
-      "GEH.1.A.1",
-      "GEH.1.A.6",
-      "GEH.1.A.7",
-      "GEH.1.B.1",
-      "GEH.1.B.3"
+      "GEH.1.A.1"
      ]
     },
     {
@@ -6526,8 +5931,6 @@
      "saberes": [
       "GEH.1.A.1",
       "GEH.1.A.6",
-      "GEH.1.A.7",
-      "GEH.1.B.1",
       "GEH.1.B.3"
      ]
     },
@@ -6537,17 +5940,9 @@
      "curso": 1,
      "texto": "Describir el entorno desde una perspectiva sistémica e integradora, a través del concepto de paisaje, identificando sus principales elementos.",
      "saberes": [
-      "GEH.1.A.1",
       "GEH.1.A.2",
       "GEH.1.A.4",
-      "GEH.1.B.10",
-      "GEH.1.B.2",
-      "GEH.1.B.4",
-      "GEH.1.B.6",
-      "GEH.1.B.7",
-      "GEH.1.C.10",
-      "GEH.1.C.4",
-      "GEH.1.C.7"
+      "GEH.1.B.10"
      ]
     },
     {
@@ -6557,16 +5952,9 @@
      "texto": "Conocer el grado de de sostenibilidad equilibrio de los diferentes espacios y desde distintas escalas y entender su transformación degradación a través del tiempo por la acción humana en la explotación de los recursos, su relación con la evolución de la población y las estrategias desarrolladas para su control y dominio y los conflictos ha que provocado.",
      "saberes": [
       "GEH.1.A.1",
-      "GEH.1.A.2",
       "GEH.1.A.4",
-      "GEH.1.B.10",
-      "GEH.1.B.2",
-      "GEH.1.B.4",
       "GEH.1.B.6",
-      "GEH.1.B.7",
-      "GEH.1.C.10",
-      "GEH.1.C.4",
-      "GEH.1.C.7"
+      "GEH.1.B.7"
      ]
     },
     {
@@ -6575,15 +5963,7 @@
      "curso": 1,
      "texto": "Investigar, con cierto grado de autonomía, acerca de la necesidad de acciones de defensa, protección, conservación y mejora del entorno (natural, rural y urbano) a través de propuestas e iniciativas que reflejen compromisos y conductas en favor de la sostenibilidad y del reparto justo y solidario de los recursos.",
      "saberes": [
-      "GEH.1.A.1",
-      "GEH.1.A.2",
       "GEH.1.A.4",
-      "GEH.1.B.10",
-      "GEH.1.B.2",
-      "GEH.1.B.4",
-      "GEH.1.B.6",
-      "GEH.1.B.7",
-      "GEH.1.C.10",
       "GEH.1.C.4",
       "GEH.1.C.7"
      ]
@@ -6594,17 +5974,7 @@
      "curso": 1,
      "texto": "Identificar e interpretar",
      "saberes": [
-      "GEH.1.A.1",
-      "GEH.1.A.2",
-      "GEH.1.A.4",
-      "GEH.1.B.10",
-      "GEH.1.B.2",
-      "GEH.1.B.4",
-      "GEH.1.B.6",
-      "GEH.1.B.7",
-      "GEH.1.C.10",
-      "GEH.1.C.4",
-      "GEH.1.C.7"
+      "GEH.1.B.4"
      ]
     },
     {
@@ -6613,21 +5983,10 @@
      "curso": 1,
      "texto": "Señalar aquellas experiencias históricas más destacables, y anteriores a la época contemporánea, en las que se logró establecer sistemas políticos que favorecieron el ejercicio de derechos y libertades de los individuos y de la colectividad, como considerándolas antecedentes de las conquistas posteriores democráticas y referentes históricos de las libertades actuales.",
      "saberes": [
-      "GEH.1.A.1",
-      "GEH.1.B.11",
-      "GEH.1.B.13",
       "GEH.1.B.15",
-      "GEH.1.B.3",
-      "GEH.1.B.5",
-      "GEH.1.B.6",
       "GEH.1.B.8",
-      "GEH.1.B.9",
       "GEH.1.C.1",
-      "GEH.1.C.2",
-      "GEH.1.C.3",
-      "GEH.1.C.6",
-      "GEH.1.C.8",
-      "GEH.1.C.9"
+      "GEH.1.C.6"
      ]
     },
     {
@@ -6636,20 +5995,8 @@
      "curso": 1,
      "texto": "Mostrar actitudes pacíficas y respetuosas y asumir las normas como marco necesario para la convivencia, entendiendo qué significa tener capacidad crítica identificando respondiendo de manera asertiva ante las situaciones de injusticia y desigualdad.",
      "saberes": [
-      "GEH.1.A.1",
-      "GEH.1.B.11",
-      "GEH.1.B.13",
-      "GEH.1.B.15",
-      "GEH.1.B.3",
-      "GEH.1.B.5",
-      "GEH.1.B.6",
-      "GEH.1.B.8",
-      "GEH.1.B.9",
-      "GEH.1.C.1",
       "GEH.1.C.2",
       "GEH.1.C.3",
-      "GEH.1.C.6",
-      "GEH.1.C.8",
       "GEH.1.C.9"
      ]
     },
@@ -6662,18 +6009,10 @@
       "GEH.1.A.1",
       "GEH.1.B.11",
       "GEH.1.B.13",
-      "GEH.1.B.15",
       "GEH.1.B.3",
       "GEH.1.B.5",
-      "GEH.1.B.6",
       "GEH.1.B.8",
-      "GEH.1.B.9",
-      "GEH.1.C.1",
-      "GEH.1.C.2",
-      "GEH.1.C.3",
-      "GEH.1.C.6",
-      "GEH.1.C.8",
-      "GEH.1.C.9"
+      "GEH.1.C.8"
      ]
     },
     {
@@ -6682,16 +6021,9 @@
      "curso": 1,
      "texto": "Reconocer las desigualdades sociales existentes en épocas pasadas y los mecanismos de dominación y control que se han aplicado, aquellos reconociendo grupos que se han visto sometidos y silenciados, identificando la presencia de mujeres y de personajes pertenecientes a otros colectivos discriminados.",
      "saberes": [
-      "GEH.1.A.5",
       "GEH.1.B.12",
-      "GEH.1.B.13",
-      "GEH.1.B.14",
-      "GEH.1.B.15",
       "GEH.1.B.5",
-      "GEH.1.B.9",
-      "GEH.1.C.2",
-      "GEH.1.C.3",
-      "GEH.1.C.8"
+      "GEH.1.B.9"
      ]
     },
     {
@@ -6700,16 +6032,7 @@
      "curso": 1,
      "texto": "Mostrar actitudes no discriminatorias y valorar la diversidad social multicultural, argumentando en favor de el inclusión, la reconocimiento de las minorías étnico-culturales, la colaboración y la cohesión social.",
      "saberes": [
-      "GEH.1.A.5",
-      "GEH.1.B.12",
-      "GEH.1.B.13",
-      "GEH.1.B.14",
-      "GEH.1.B.15",
-      "GEH.1.B.5",
-      "GEH.1.B.9",
-      "GEH.1.C.2",
-      "GEH.1.C.3",
-      "GEH.1.C.8"
+      "GEH.1.C.2"
      ]
     },
     {
@@ -6719,15 +6042,7 @@
      "texto": "Investigar acerca de la igualdad real de hombres y mujeres actuando en contra de cualquier actitud y comportamiento discriminatorio por razón de género.",
      "saberes": [
       "GEH.1.A.5",
-      "GEH.1.B.12",
-      "GEH.1.B.13",
-      "GEH.1.B.14",
-      "GEH.1.B.15",
-      "GEH.1.B.5",
-      "GEH.1.B.9",
-      "GEH.1.C.2",
-      "GEH.1.C.3",
-      "GEH.1.C.8"
+      "GEH.1.C.3"
      ]
     },
     {
@@ -6736,15 +6051,10 @@
      "curso": 1,
      "texto": "Identificar las culturas y civilizaciones que se han desarrollado a lo largo de la antigua historia con las relacionarlas diversas identidades",
      "saberes": [
-      "GEH.1.A.5",
-      "GEH.1.B.12",
       "GEH.1.B.13",
       "GEH.1.B.14",
       "GEH.1.B.15",
       "GEH.1.B.5",
-      "GEH.1.B.9",
-      "GEH.1.C.2",
-      "GEH.1.C.3",
       "GEH.1.C.8"
      ]
     },
@@ -6756,9 +6066,7 @@
      "saberes": [
       "GEH.1.B.14",
       "GEH.1.B.15",
-      "GEH.1.B.9",
-      "GEH.1.C.2",
-      "GEH.1.C.8"
+      "GEH.1.C.2"
      ]
     },
     {
@@ -6767,11 +6075,7 @@
      "curso": 1,
      "texto": "Identificar los fundamentos de la idea de Europa a través de las diferentes experiencias históricas del pasado el legado histórico, artístico y cultural como patrimonio común de la ciudadanía europea.",
      "saberes": [
-      "GEH.1.B.14",
-      "GEH.1.B.15",
-      "GEH.1.B.9",
-      "GEH.1.C.2",
-      "GEH.1.C.8"
+      "GEH.1.B.15"
      ]
     },
     {
@@ -6780,10 +6084,7 @@
      "curso": 1,
      "texto": "Iniciarse en la valoración, protección y conservación del artístico, patrimonio histórico y cultural como fundamento de la identidad colectiva local, autonómica, europea nacional, universal, considerándolo como un bien para el disfrute recreativo y cultural y un recurso para el desarrollo de los pueblos.",
      "saberes": [
-      "GEH.1.B.14",
       "GEH.1.B.15",
-      "GEH.1.B.9",
-      "GEH.1.C.2",
       "GEH.1.C.8"
      ]
     },
@@ -6793,11 +6094,7 @@
      "curso": 1,
      "texto": "Identificar de una general los manera",
      "saberes": [
-      "GEH.1.B.14",
-      "GEH.1.B.15",
-      "GEH.1.B.9",
-      "GEH.1.C.2",
-      "GEH.1.C.8"
+      "GEH.1.B.9"
      ]
     },
     {
@@ -6806,11 +6103,8 @@
      "curso": 1,
      "texto": "Identificar los elementos que constituyen el ciclo vital y analizar a un nivel básico cómo han cambiado sus características, necesidades y obligaciones en distintos momentos históricos, así como las raíces de la distribución por motivos de del género trabajo doméstico, asumiendo las responsabilidades compromisos propios de la edad en el ámbito familiar, en el entorno escolar y en la comunidad y valorando la riqueza que aportan las relaciones intergeneracionales..",
      "saberes": [
-      "GEH.1.B.14",
       "GEH.1.C.10",
-      "GEH.1.C.3",
-      "GEH.1.C.7",
-      "GEH.1.C.8"
+      "GEH.1.C.3"
      ]
     },
     {
@@ -6819,11 +6113,8 @@
      "curso": 1,
      "texto": "Identificar los cambios en los hábitos de vida actuales respecto a los tradicionales contrastarlos con los que saludables son sostenibles en su entorno, a través de comportamientos respetuosos con la salud propia, con la de los demás y con otros seres vivos, tomando conciencia de la importancia de promover el propio desarrollo personal.",
      "saberes": [
-      "GEH.1.B.14",
       "GEH.1.C.10",
-      "GEH.1.C.3",
-      "GEH.1.C.7",
-      "GEH.1.C.8"
+      "GEH.1.C.7"
      ]
     },
     {
@@ -6833,9 +6124,6 @@
      "texto": "Identificar e interpretar de forma guiada la conexión de España y",
      "saberes": [
       "GEH.1.B.14",
-      "GEH.1.C.10",
-      "GEH.1.C.3",
-      "GEH.1.C.7",
       "GEH.1.C.8"
      ]
     },
@@ -6859,10 +6147,7 @@
      "texto": "Elaborar, expresar y contenidos presentar propios en forma de esquemas, tablas informativas otros formatos mediante el desarrollo de estrategias de búsqueda, selección y tratamiento de información relativas a procesos y acontecimientos relevantes del presente y del pasado.",
      "saberes": [
       "GEH.2.A.1",
-      "GEH.2.A.2",
-      "GEH.2.B.1",
-      "GEH.2.B.2",
-      "GEH.2.C.4"
+      "GEH.2.A.2"
      ]
     },
     {
@@ -6871,11 +6156,8 @@
      "curso": 2,
      "texto": "Contrastar argumentar sobre temas y acontecimientos de la Prehistoria, la Edad Antigua, la Edad Media y la Edad Moderna, localizando y analizando de forma crítica fuentes primarias secundarias como pruebas históricas.",
      "saberes": [
-      "GEH.2.A.1",
-      "GEH.2.A.2",
       "GEH.2.B.1",
-      "GEH.2.B.2",
-      "GEH.2.C.4"
+      "GEH.2.B.2"
      ]
     },
     {
@@ -6884,10 +6166,6 @@
      "curso": 2,
      "texto": "Identificar, valorar y https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.2.A.1",
-      "GEH.2.A.2",
-      "GEH.2.B.1",
-      "GEH.2.B.2",
       "GEH.2.C.4"
      ]
     },
@@ -6897,15 +6175,9 @@
      "curso": 2,
      "texto": "Argumentar de forma crítica sobre problemas de actualidad a través de conocimientos geográficos e históricos, contrastando y valorando fuentes diversas.",
      "saberes": [
-      "GEH.2.A.3",
-      "GEH.2.A.9",
       "GEH.2.B.1",
       "GEH.2.B.2",
-      "GEH.2.C.2",
-      "GEH.2.C.4",
-      "GEH.2.C.5",
-      "GEH.2.C.6",
-      "GEH.2.C.9"
+      "GEH.2.C.4"
      ]
     },
     {
@@ -6915,13 +6187,6 @@
      "texto": "Incorporar y utilizar adecuadamente términos, conceptos acontecimientos con la relacionados geografía, la historia y otras disciplinas de las ciencias sociales, a través de intervenciones orales, textos escritos y otros mostrando productos, planteamientos originales y propuestas creativas.",
      "saberes": [
       "GEH.2.A.3",
-      "GEH.2.A.9",
-      "GEH.2.B.1",
-      "GEH.2.B.2",
-      "GEH.2.C.2",
-      "GEH.2.C.4",
-      "GEH.2.C.5",
-      "GEH.2.C.6",
       "GEH.2.C.9"
      ]
     },
@@ -6931,15 +6196,8 @@
      "curso": 2,
      "texto": "Elaborar juicios argumentados, respetando las opiniones de los demás y enriqueciendo el acervo común en el contexto del mundo actual, de sus retos y sus conflictos, y desde una perspectiva sistémica y global, a través de la elaboración de juicios críticos propios, argumentados, y el respeto a las opiniones de los demás.",
      "saberes": [
-      "GEH.2.A.3",
       "GEH.2.A.9",
-      "GEH.2.B.1",
-      "GEH.2.B.2",
-      "GEH.2.C.2",
-      "GEH.2.C.4",
-      "GEH.2.C.5",
-      "GEH.2.C.6",
-      "GEH.2.C.9"
+      "GEH.2.C.2"
      ]
     },
     {
@@ -6949,14 +6207,7 @@
      "texto": "Adquirir y construir conocimiento relevante del https://www.juntadeandalucia.es/eboja",
      "saberes": [
       "GEH.2.A.3",
-      "GEH.2.A.9",
-      "GEH.2.B.1",
-      "GEH.2.B.2",
-      "GEH.2.C.2",
-      "GEH.2.C.4",
-      "GEH.2.C.5",
-      "GEH.2.C.6",
-      "GEH.2.C.9"
+      "GEH.2.B.1"
      ]
     },
     {
@@ -6965,11 +6216,7 @@
      "curso": 2,
      "texto": "Identificar los principales problemas, retos y desafíos a los que se enfrentado ha la humanidad a lo largo de la cambios historia, los producidos, sus causas y consecuencias, así como los que, en la actualidad, debemos plantear y resolver en torno a los Objetivos de Desarrollo Sostenible.",
      "saberes": [
-      "GEH.2.A.1",
-      "GEH.2.A.3",
-      "GEH.2.A.9",
-      "GEH.2.B.2",
-      "GEH.2.B.3"
+      "GEH.2.A.9"
      ]
     },
     {
@@ -6978,11 +6225,7 @@
      "curso": 2,
      "texto": "Representar adecuadamente información geográfica e histórica a través de de diversas formas gráfica, representación cartográfica y visual.",
      "saberes": [
-      "GEH.2.A.1",
-      "GEH.2.A.3",
-      "GEH.2.A.9",
-      "GEH.2.B.2",
-      "GEH.2.B.3"
+      "GEH.2.A.1"
      ]
     },
     {
@@ -6991,10 +6234,7 @@
      "curso": 2,
      "texto": "Utilizar una secuencia cronológica con objeto de examinar la relación entre hechos y procesos en diferentes períodos y históricos lugares (simultaneidad y duración), utilizando términos y conceptos apropiados.",
      "saberes": [
-      "GEH.2.A.1",
       "GEH.2.A.3",
-      "GEH.2.A.9",
-      "GEH.2.B.2",
       "GEH.2.B.3"
      ]
     },
@@ -7004,11 +6244,7 @@
      "curso": 2,
      "texto": "Analizar procesos de https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.2.A.1",
-      "GEH.2.A.3",
-      "GEH.2.A.9",
-      "GEH.2.B.2",
-      "GEH.2.B.3"
+      "GEH.2.B.2"
      ]
     },
     {
@@ -7017,15 +6253,8 @@
      "curso": 2,
      "texto": "Interpretar el entorno desde una perspectiva sistémica e integradora, a través del concepto de paisaje, identificando sus principales elementos y las interrelaciones existentes.",
      "saberes": [
-      "GEH.2.A.4",
       "GEH.2.A.5",
-      "GEH.2.A.6",
-      "GEH.2.A.7",
-      "GEH.2.B.10",
-      "GEH.2.B.4",
-      "GEH.2.B.5",
-      "GEH.2.C.4",
-      "GEH.2.C.8"
+      "GEH.2.B.10"
      ]
     },
     {
@@ -7035,14 +6264,8 @@
      "texto": "Valorar el grado de de sostenibilidad equilibrio de los diferentes espacios y desde distintas escalas y analizar su transformación degradación a través del tiempo por la acción humana en la explotación de los recursos, su relación con la evolución de la población y las estrategias desarrolladas para su control y dominio y los conflictos ha que provocado.",
      "saberes": [
       "GEH.2.A.4",
-      "GEH.2.A.5",
       "GEH.2.A.6",
-      "GEH.2.A.7",
-      "GEH.2.B.10",
-      "GEH.2.B.4",
-      "GEH.2.B.5",
-      "GEH.2.C.4",
-      "GEH.2.C.8"
+      "GEH.2.B.4"
      ]
     },
     {
@@ -7051,13 +6274,8 @@
      "curso": 2,
      "texto": "Argumentar la necesidad de acciones de defensa, protección, conservación y mejora del entorno (natural, rural y urbano) a través de propuestas e iniciativas que reflejen compromisos y conductas en favor de la sostenibilidad y del reparto justo y solidario de los recursos.",
      "saberes": [
-      "GEH.2.A.4",
       "GEH.2.A.5",
-      "GEH.2.A.6",
       "GEH.2.A.7",
-      "GEH.2.B.10",
-      "GEH.2.B.4",
-      "GEH.2.B.5",
       "GEH.2.C.4",
       "GEH.2.C.8"
      ]
@@ -7068,15 +6286,7 @@
      "curso": 2,
      "texto": "Identificar, interpretar y https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.2.A.4",
-      "GEH.2.A.5",
-      "GEH.2.A.6",
-      "GEH.2.A.7",
-      "GEH.2.B.10",
-      "GEH.2.B.4",
-      "GEH.2.B.5",
-      "GEH.2.C.4",
-      "GEH.2.C.8"
+      "GEH.2.B.5"
      ]
     },
     {
@@ -7085,20 +6295,8 @@
      "curso": 2,
      "texto": "Señalar y explicar aquellas experiencias históricas más destacables, y anteriores a la época contemporánea, en las que se logró establecer sistemas políticos que favorecieron el ejercicio de derechos y libertades de los individuos y de la colectividad, como considerándolas antecedentes de las conquistas posteriores democráticas y referentes históricos de las libertades actuales.",
      "saberes": [
-      "GEH.2.B.11",
-      "GEH.2.B.12",
-      "GEH.2.B.15",
-      "GEH.2.B.16",
-      "GEH.2.B.3",
-      "GEH.2.B.6",
       "GEH.2.B.7",
-      "GEH.2.B.8",
-      "GEH.2.B.9",
-      "GEH.2.C.1",
-      "GEH.2.C.11",
-      "GEH.2.C.12",
-      "GEH.2.C.2",
-      "GEH.2.C.6"
+      "GEH.2.C.12"
      ]
     },
     {
@@ -7107,18 +6305,8 @@
      "curso": 2,
      "texto": "Mostrar actitudes pacíficas y respetuosas y asumir las normas como marco necesario para la convivencia, demostrando capacidad crítica identificando respondiendo de manera asertiva ante las situaciones de injusticia y desigualdad.",
      "saberes": [
-      "GEH.2.B.11",
-      "GEH.2.B.12",
-      "GEH.2.B.15",
-      "GEH.2.B.16",
-      "GEH.2.B.3",
-      "GEH.2.B.6",
-      "GEH.2.B.7",
-      "GEH.2.B.8",
-      "GEH.2.B.9",
       "GEH.2.C.1",
       "GEH.2.C.11",
-      "GEH.2.C.12",
       "GEH.2.C.2",
       "GEH.2.C.6"
      ]
@@ -7129,20 +6317,11 @@
      "curso": 2,
      "texto": "Situar el nacimiento y desarrollo de distintas civilizaciones y ubicarlas en el espacio y en el tiempo, integrando los elementos culturales, históricos, institucionales y religiosos https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.2.B.11",
       "GEH.2.B.12",
       "GEH.2.B.15",
       "GEH.2.B.16",
       "GEH.2.B.3",
-      "GEH.2.B.6",
-      "GEH.2.B.7",
-      "GEH.2.B.8",
-      "GEH.2.B.9",
-      "GEH.2.C.1",
-      "GEH.2.C.11",
-      "GEH.2.C.12",
-      "GEH.2.C.2",
-      "GEH.2.C.6"
+      "GEH.2.B.8"
      ]
     },
     {
@@ -7151,13 +6330,8 @@
      "curso": 2,
      "texto": "Reconocer las desigualdades sociales en existentes épocas pasadas y los mecanismos de dominación y control que se han aplicado, aquellos identificando grupos que se han visto sometidos y silenciados, destacando la presencia de mujeres y de personajes pertenecientes a otros colectivos discriminados.",
      "saberes": [
-      "GEH.2.A.8",
       "GEH.2.B.14",
-      "GEH.2.B.16",
-      "GEH.2.B.6",
-      "GEH.2.C.1",
-      "GEH.2.C.2",
-      "GEH.2.C.3"
+      "GEH.2.B.6"
      ]
     },
     {
@@ -7166,13 +6340,8 @@
      "curso": 2,
      "texto": "Valorar la diversidad cultural, social argumentando interviniendo en favor de la así como inclusión, rechazando y actuando en contra de cualquier actitud comportamiento discriminatorio o basado en estereotipos.",
      "saberes": [
-      "GEH.2.A.8",
-      "GEH.2.B.14",
-      "GEH.2.B.16",
-      "GEH.2.B.6",
       "GEH.2.C.1",
-      "GEH.2.C.2",
-      "GEH.2.C.3"
+      "GEH.2.C.2"
      ]
     },
     {
@@ -7182,11 +6351,6 @@
      "texto": "Argumentar e intervenir acerca de la igualdad real de hombres mujeres actuando en contra de actitud cualquier comportamiento discriminatorio por razón de género.",
      "saberes": [
       "GEH.2.A.8",
-      "GEH.2.B.14",
-      "GEH.2.B.16",
-      "GEH.2.B.6",
-      "GEH.2.C.1",
-      "GEH.2.C.2",
       "GEH.2.C.3"
      ]
     },
@@ -7196,13 +6360,7 @@
      "curso": 2,
      "texto": "Relacionar las culturas y civilizaciones que se han desarrollado a lo largo de la historia antigua, medieval y moderna con las diversas identidades colectivas que https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.2.A.8",
-      "GEH.2.B.14",
-      "GEH.2.B.16",
-      "GEH.2.B.6",
-      "GEH.2.C.1",
-      "GEH.2.C.2",
-      "GEH.2.C.3"
+      "GEH.2.B.16"
      ]
     },
     {
@@ -7211,13 +6369,7 @@
      "curso": 2,
      "texto": "Identificar el origen de distintas histórico identidades colectivas que se han desarrollado en España, interpretando el uso que se ha hecho de las mismas y mostrando una actitud de respeto y hacia los tolerancia diferentes sentidos de pertenencia, promoviendo la solidaridad y la cohesión social.",
      "saberes": [
-      "GEH.2.A.4",
-      "GEH.2.B.10",
-      "GEH.2.B.13",
-      "GEH.2.B.15",
-      "GEH.2.B.16",
-      "GEH.2.C.12",
-      "GEH.2.C.7"
+      "GEH.2.B.13"
      ]
     },
     {
@@ -7226,13 +6378,8 @@
      "curso": 2,
      "texto": "Señalar los fundamentos de la idea de Europa a través de las diferentes experiencias históricas del pasado e el identificar legado histórico, institucional, artístico y cultural como patrimonio común de la ciudadanía europea.",
      "saberes": [
-      "GEH.2.A.4",
-      "GEH.2.B.10",
-      "GEH.2.B.13",
-      "GEH.2.B.15",
       "GEH.2.B.16",
-      "GEH.2.C.12",
-      "GEH.2.C.7"
+      "GEH.2.C.12"
      ]
     },
     {
@@ -7241,12 +6388,8 @@
      "curso": 2,
      "texto": "Valorar, proteger y conservar el patrimonio artístico, histórico y cultural como fundamento de la identidad colectiva local, autonómica, nacional, europea universal, considerándolo un bien para el disfrute recreativo y cultural y un recurso para el desarrollo de los pueblos.",
      "saberes": [
-      "GEH.2.A.4",
       "GEH.2.B.10",
-      "GEH.2.B.13",
       "GEH.2.B.15",
-      "GEH.2.B.16",
-      "GEH.2.C.12",
       "GEH.2.C.7"
      ]
     },
@@ -7256,13 +6399,7 @@
      "curso": 2,
      "texto": "Conocer e interpretar comportamientos los https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.2.A.4",
-      "GEH.2.B.10",
-      "GEH.2.B.13",
-      "GEH.2.B.15",
-      "GEH.2.B.16",
-      "GEH.2.C.12",
-      "GEH.2.C.7"
+      "GEH.2.A.4"
      ]
     },
     {
@@ -7272,9 +6409,7 @@
      "texto": "Tomar conciencia del ciclo vital y analizar cómo cambiado han sus características, necesidades y obligaciones en distintos momentos históricos, así como las raíces de la distribución por motivos de del género trabajo doméstico, asumiendo las responsabilidades compromisos propios de la edad en el ámbito familiar, en el entorno escolar y en la comunidad, y valorando la riqueza que aportan las relaciones intergeneracionales.",
      "saberes": [
       "GEH.2.A.8",
-      "GEH.2.B.13",
-      "GEH.2.C.10",
-      "GEH.2.C.13"
+      "GEH.2.C.10"
      ]
     },
     {
@@ -7283,8 +6418,6 @@
      "curso": 2,
      "texto": "Relacionar los cambios en los hábitos de vida actuales respecto a los tradicionales y contrastarlos con los que son saludables y sostenibles en el entorno, a través de comportamientos respetuosos con la salud propia, con la de los demás y con otros seres vivos, tomando conciencia de la importancia de promover el propio desarrollo personal.",
      "saberes": [
-      "GEH.2.A.8",
-      "GEH.2.B.13",
       "GEH.2.C.10",
       "GEH.2.C.13"
      ]
@@ -7295,10 +6428,7 @@
      "curso": 2,
      "texto": "Identificar e interpretar la conexión de España y Andalucía con los grandes https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.2.A.8",
-      "GEH.2.B.13",
-      "GEH.2.C.10",
-      "GEH.2.C.13"
+      "GEH.2.B.13"
      ]
     },
     {
@@ -7319,11 +6449,7 @@
      "texto": "Elaborar contenidos propios en distintos formatos, mediante aplicaciones estrategias de recogida y representación de datos sencillas, aprendiendo a contrastar usar críticamente fuentes fiables, tanto analógicas como digitales, del presente y de la historia contemporánea, identificando desinformación y la manipulación.",
      "saberes": [
       "GEH.3.A.2",
-      "GEH.3.A.3",
-      "GEH.4.C.10",
-      "GEH.4.C.11",
-      "GEH.4.C.12",
-      "GEH.4.C.9"
+      "GEH.3.A.3"
      ]
     },
     {
@@ -7332,12 +6458,7 @@
      "curso": 3,
      "texto": "Establecer conexiones y relaciones básicas entre los conocimientos informaciones adquiridos, elaborando explicativas síntesis mediante sencillas, informes, estudios o dosieres informativos,",
      "saberes": [
-      "GEH.3.A.2",
-      "GEH.3.A.3",
-      "GEH.4.C.10",
-      "GEH.4.C.11",
-      "GEH.4.C.12",
-      "GEH.4.C.9"
+      "GEH.3.A.3"
      ]
     },
     {
@@ -7346,11 +6467,7 @@
      "curso": 3,
      "texto": "Transferir de manera sencilla la el información conocimiento por medio de narraciones, pósteres, presentaciones, exposiciones orales, medios audiovisuales y otros productos.",
      "saberes": [
-      "GEH.3.A.1",
-      "GEH.3.A.3",
-      "GEH.3.A.4",
-      "GEH.3.B.1",
-      "GEH.3.B.3"
+      "GEH.3.A.3"
      ]
     },
     {
@@ -7359,11 +6476,9 @@
      "curso": 3,
      "texto": "Generar productos originales y creativos sencillos mediante la de organización conocimientos previos utilizando herramientas de investigación sencillas que permitan explicar problemas presentes y pasados de la humanidad a distintas escalas temporales y espaciales, partiendo del entorno más cercano, utilizando conceptos, situaciones y datos relevantes.",
      "saberes": [
-      "GEH.3.A.1",
       "GEH.3.A.3",
       "GEH.3.A.4",
-      "GEH.3.B.1",
-      "GEH.3.B.3"
+      "GEH.3.B.1"
      ]
     },
     {
@@ -7372,10 +6487,6 @@
      "curso": 3,
      "texto": "Construir la propia identidad y enriquecer el acervo común en el contexto del mundo actual, de sus retos y conflictos, desde una perspectiva sistémica y global, iniciándose en la producción y expresión discursiva y abierta al diálogo de juicios y planteamientos personales, críticos y argumentados.",
      "saberes": [
-      "GEH.3.A.1",
-      "GEH.3.A.3",
-      "GEH.3.A.4",
-      "GEH.3.B.1",
       "GEH.3.B.3"
      ]
     },
@@ -7385,11 +6496,7 @@
      "curso": 3,
      "texto": "Identificar, desde un ecosocial, enfoque problemas y desafíos pasados, actuales de futuros las sociedades contemporáneas señalando sus de relaciones interdependencia ecodependencia.",
      "saberes": [
-      "GEH.3.A.2",
-      "GEH.3.A.3",
       "GEH.3.A.5",
-      "GEH.3.B.1",
-      "GEH.3.B.2",
       "GEH.3.C.3"
      ]
     },
@@ -7399,12 +6506,7 @@
      "curso": 3,
      "texto": "Utilizar secuencias cronológicas complejas en las que identificar, comparar y relacionar hechos y procesos en diferentes períodos y históricos lugares (simultaneidad, duración, causalidad), utilizando términos y conceptos del ámbito de la Historia y de la Geografía.",
      "saberes": [
-      "GEH.3.A.2",
-      "GEH.3.A.3",
-      "GEH.3.A.5",
-      "GEH.3.B.1",
-      "GEH.3.B.2",
-      "GEH.3.C.3"
+      "GEH.3.B.2"
      ]
     },
     {
@@ -7414,11 +6516,7 @@
      "texto": "Analizar procesos de cambio histórico y comparar casos del ámbito de la Historia y la Geografía a través del uso de fuentes de",
      "saberes": [
       "GEH.3.A.2",
-      "GEH.3.A.3",
-      "GEH.3.A.5",
-      "GEH.3.B.1",
-      "GEH.3.B.2",
-      "GEH.3.C.3"
+      "GEH.3.B.1"
      ]
     },
     {
@@ -7427,16 +6525,8 @@
      "curso": 3,
      "texto": "Identificar los elementos del entorno y conocer su funcionamiento como un sistema complejo por medio del análisis multicausal de sus relaciones naturales y humanas, presentes y pasadas, investigando de sobre el grado conservación y de equilibrio dinámico.",
      "saberes": [
-      "GEH.3.A.2",
       "GEH.3.A.4",
-      "GEH.3.B.4",
-      "GEH.3.B.5",
-      "GEH.3.B.8",
-      "GEH.3.C.1",
-      "GEH.3.C.3",
-      "GEH.3.C.4",
-      "GEH.3.C.6",
-      "GEH.3.C.9"
+      "GEH.3.C.1"
      ]
     },
     {
@@ -7446,15 +6536,10 @@
      "texto": "Identificar comportamientos acciones que contribuyan la conservación y mejora del entorno natural, rural y urbano, a través del respeto a todos los seres vivos, mostrando comportamientos orientados al logro de un desarrollo sostenible de dichos entornos, y comprendiendo el acceso universal, justo y equitativo a los recursos que nos ofrece el planeta.",
      "saberes": [
       "GEH.3.A.2",
-      "GEH.3.A.4",
       "GEH.3.B.4",
       "GEH.3.B.5",
-      "GEH.3.B.8",
-      "GEH.3.C.1",
       "GEH.3.C.3",
-      "GEH.3.C.4",
-      "GEH.3.C.6",
-      "GEH.3.C.9"
+      "GEH.3.C.4"
      ]
     },
     {
@@ -7463,14 +6548,7 @@
      "curso": 3,
      "texto": "Conocer, valorar y ejercitar responsabilidades, derechos y deberes y",
      "saberes": [
-      "GEH.3.A.2",
-      "GEH.3.A.4",
-      "GEH.3.B.4",
-      "GEH.3.B.5",
       "GEH.3.B.8",
-      "GEH.3.C.1",
-      "GEH.3.C.3",
-      "GEH.3.C.4",
       "GEH.3.C.6",
       "GEH.3.C.9"
      ]
@@ -7481,12 +6559,7 @@
      "curso": 3,
      "texto": "Reconocer movimientos y causas generen que una conciencia solidaria, promuevan la cohesión social, y trabajen para la eliminación de la desigualdad, especialmente la motivada por cuestión de género, y el pleno de desarrollo la ciudadanía, mediante el trabajo en equipo, la mediación y resolución pacífica de conflictos.",
      "saberes": [
-      "GEH.3.A.2",
       "GEH.3.A.7",
-      "GEH.3.A.8",
-      "GEH.3.A.9",
-      "GEH.3.B.4",
-      "GEH.3.B.5",
       "GEH.3.B.6",
       "GEH.3.C.10",
       "GEH.3.C.6",
@@ -7504,11 +6577,7 @@
       "GEH.3.A.8",
       "GEH.3.A.9",
       "GEH.3.B.4",
-      "GEH.3.B.5",
-      "GEH.3.B.6",
-      "GEH.3.C.10",
-      "GEH.3.C.6",
-      "GEH.3.C.9"
+      "GEH.3.B.5"
      ]
     },
     {
@@ -7517,10 +6586,6 @@
      "curso": 3,
      "texto": "Contribuir al bienestar individual y colectivo a través del diseño y exposición de iniciativas orientadas a promover un compromiso activo con los valores comunes, la mejora del entorno y el servicio a la comunidad.",
      "saberes": [
-      "GEH.3.A.9",
-      "GEH.3.B.1",
-      "GEH.3.C.1",
-      "GEH.3.C.2",
       "GEH.3.C.5",
       "GEH.3.C.7"
      ]
@@ -7532,11 +6597,7 @@
      "texto": "Reconocer los que rasgos van conformando la identidad propia y de los demás, la riqueza de identidades las múltiples en relación con distintas escalas espaciales, a través de la en iniciación la el investigación análisis guiado de sus fundamentos geográficos, históricos, artísticos, ideológicos y el lingüísticos, reconocimiento de sus expresiones culturales.",
      "saberes": [
       "GEH.3.A.9",
-      "GEH.3.B.1",
-      "GEH.3.C.1",
-      "GEH.3.C.2",
-      "GEH.3.C.5",
-      "GEH.3.C.7"
+      "GEH.3.B.1"
      ]
     },
     {
@@ -7545,12 +6606,8 @@
      "curso": 3,
      "texto": "Conocer y contribuir conservar el",
      "saberes": [
-      "GEH.3.A.9",
-      "GEH.3.B.1",
       "GEH.3.C.1",
-      "GEH.3.C.2",
-      "GEH.3.C.5",
-      "GEH.3.C.7"
+      "GEH.3.C.2"
      ]
     },
     {
@@ -7562,13 +6619,8 @@
       "GEH.3.A.7",
       "GEH.3.B.5",
       "GEH.3.C.10",
-      "GEH.3.C.11",
       "GEH.3.C.12",
-      "GEH.3.C.13",
-      "GEH.3.C.5",
-      "GEH.3.C.6",
-      "GEH.3.C.7",
-      "GEH.3.C.8"
+      "GEH.3.C.5"
      ]
     },
     {
@@ -7577,16 +6629,10 @@
      "curso": 3,
      "texto": "Identificar las de iniciativas la sociedad civil, reflejadas en asociaciones y entidades sociales, adoptando actitudes de participación transformación en el local ámbito",
      "saberes": [
-      "GEH.3.A.7",
-      "GEH.3.B.5",
-      "GEH.3.C.10",
       "GEH.3.C.11",
       "GEH.3.C.12",
-      "GEH.3.C.13",
-      "GEH.3.C.5",
       "GEH.3.C.6",
-      "GEH.3.C.7",
-      "GEH.3.C.8"
+      "GEH.3.C.7"
      ]
     },
     {
@@ -7595,13 +6641,10 @@
      "curso": 3,
      "texto": "Interpretar explicar de forma argumentada la conexión de España con los grandes procesos históricos de la época contemporánea, valorando lo que han para su supuesto evolución y señalando las aportaciones de sus habitantes a lo largo de la historia, así como las aportaciones del Estado y sus instituciones a la cultura europea y mundial.",
      "saberes": [
-      "GEH.3.A.6",
       "GEH.3.B.6",
       "GEH.3.B.7",
       "GEH.3.B.8",
-      "GEH.3.C.14",
-      "GEH.3.C.8",
-      "GEH.3.C.9"
+      "GEH.3.C.14"
      ]
     },
     {
@@ -7611,9 +6654,6 @@
      "texto": "Contribuir desde su entorno más cercano a la consecución de un mundo más seguro, justo, solidario sostenible, a través del análisis guiado y el reconocimiento de los compromisos de internacionales de nuestro país y Andalucía, en favor de la paz, la seguridad, la cooperación, la los sostenibilidad, valores democráticos y Objetivos de los Desarrollo Sostenible.",
      "saberes": [
       "GEH.3.A.6",
-      "GEH.3.B.6",
-      "GEH.3.B.7",
-      "GEH.3.B.8",
       "GEH.3.C.14",
       "GEH.3.C.8",
       "GEH.3.C.9"
@@ -7626,8 +6666,7 @@
      "texto": "Elaborar contenidos propios en distintos formatos, mediante aplicaciones de estrategias recogida de representación datos más complejas, usando y contrastando críticamente fuentes fiables, tanto analógicas como digitales, del presente y de historia la contemporánea, identificando la desinformación y la manipulación.",
      "saberes": [
       "GEH.4.B.1",
-      "GEH.4.B.2",
-      "GEH.4.B.3"
+      "GEH.4.B.2"
      ]
     },
     {
@@ -7647,10 +6686,7 @@
      "curso": 4,
      "texto": "Transferir adecuadamente la el información conocimiento por medio de narraciones, pósteres, presentaciones, exposiciones orales, medios audiovisuales y otros productos.",
      "saberes": [
-      "GEH.4.A.1",
       "GEH.4.B.15",
-      "GEH.4.B.2",
-      "GEH.4.B.3",
       "GEH.4.B.4"
      ]
     },
@@ -7660,11 +6696,7 @@
      "curso": 4,
      "texto": "Generar productos originales y creativos la mediante de reelaboración conocimientos previos de través de herramientas investigación que explicar permitan problemas presentes y de la pasados humanidad a distintas escalas temporales y espaciales, de lo local a lo global, utilizando conceptos, situaciones y datos relevantes.",
      "saberes": [
-      "GEH.4.A.1",
-      "GEH.4.B.15",
-      "GEH.4.B.2",
-      "GEH.4.B.3",
-      "GEH.4.B.4"
+      "GEH.4.B.3"
      ]
     },
     {
@@ -7673,10 +6705,7 @@
      "curso": 4,
      "texto": "Producir y expresar juicios y argumentos personales y críticos de abierta forma respetuosa, haciendo patente la propia identidad enriqueciendo el acervo común en el contexto del mundo actual, sus retos y sus conflictos, desde una perspectiva sistémica y global.",
      "saberes": [
-      "GEH.4.A.1",
-      "GEH.4.B.15",
       "GEH.4.B.2",
-      "GEH.4.B.3",
       "GEH.4.B.4"
      ]
     },
@@ -7686,11 +6715,7 @@
      "curso": 4,
      "texto": "Conocer los https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.4.A.1",
-      "GEH.4.B.15",
-      "GEH.4.B.2",
-      "GEH.4.B.3",
-      "GEH.4.B.4"
+      "GEH.4.A.1"
      ]
     },
     {
@@ -7699,10 +6724,6 @@
      "curso": 4,
      "texto": "Entender y afrontar, desde un enfoque ecosocial, problemas y desafíos pasados, actuales o futuros de las sociedades contemporáneas teniendo en cuenta sus de relaciones interdependencia ecodependencia.",
      "saberes": [
-      "GEH.4.A.2",
-      "GEH.4.B.2",
-      "GEH.4.B.3",
-      "GEH.4.B.7",
       "GEH.4.B.8",
       "GEH.4.C.3",
       "GEH.4.C.4"
@@ -7714,13 +6735,7 @@
      "curso": 4,
      "texto": "Utilizar secuencias cronológicas complejas en las que identificar, comparar y relacionar hechos y procesos en diferentes períodos y históricos lugares (simultaneidad, duración, causalidad), utilizando términos y conceptos del ámbito de la Historia y de la Geografía.",
      "saberes": [
-      "GEH.4.A.2",
-      "GEH.4.B.2",
-      "GEH.4.B.3",
-      "GEH.4.B.7",
-      "GEH.4.B.8",
-      "GEH.4.C.3",
-      "GEH.4.C.4"
+      "GEH.4.B.3"
      ]
     },
     {
@@ -7729,13 +6744,7 @@
      "curso": 4,
      "texto": "Analizar procesos de cambio histórico y comparar casos del ámbito de la Historia y la Geografía a través del uso de fuentes de https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.4.A.2",
-      "GEH.4.B.2",
-      "GEH.4.B.3",
-      "GEH.4.B.7",
-      "GEH.4.B.8",
-      "GEH.4.C.3",
-      "GEH.4.C.4"
+      "GEH.4.B.2"
      ]
     },
     {
@@ -7744,11 +6753,7 @@
      "curso": 4,
      "texto": "Identificar los elementos del entorno su y comprender funcionamiento como un sistema complejo por medio del análisis multicausal de sus relaciones naturales y humanas, presentes y pasadas, valorando el grado de conservación de equilibrio dinámico.",
      "saberes": [
-      "GEH.4.B.10",
-      "GEH.4.B.13",
-      "GEH.4.B.5",
-      "GEH.4.B.6",
-      "GEH.4.C.4"
+      "GEH.4.B.10"
      ]
     },
     {
@@ -7757,10 +6762,7 @@
      "curso": 4,
      "texto": "Idear y adoptar, cuando sea posible, comportamientos acciones que contribuyan la conservación y mejora del entorno natural, rural y urbano, a través del respeto a todos los seres vivos, mostrando comportamientos orientados al logro de un desarrollo sostenible de dichos entornos, y defendiendo el acceso universal, justo y equitativo los recursos que nos ofrece el planeta.",
      "saberes": [
-      "GEH.4.B.10",
       "GEH.4.B.13",
-      "GEH.4.B.5",
-      "GEH.4.B.6",
       "GEH.4.C.4"
      ]
     },
@@ -7770,11 +6772,8 @@
      "curso": 4,
      "texto": "Conocer, valorar y ejercitar responsabilidades, derechos y deberes y https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.4.B.10",
-      "GEH.4.B.13",
       "GEH.4.B.5",
-      "GEH.4.B.6",
-      "GEH.4.C.4"
+      "GEH.4.B.6"
      ]
     },
     {
@@ -7784,7 +6783,6 @@
      "texto": "Reconocer movimientos y causas que generen una conciencia solidaria, promuevan la cohesión social, y trabajen para la eliminación de la desigualdad, especialmente la motivada por cuestión de género, y para el pleno desarrollo de la ciudadanía, mediante la movilización de conocimientos de estrategias participación, trabajo en equipo, mediación y resolución pacífica de conflictos.",
      "saberes": [
       "GEH.4.B.14",
-      "GEH.4.B.9",
       "GEH.4.C.6"
      ]
     },
@@ -7794,9 +6792,7 @@
      "curso": 4,
      "texto": "Rechazar actitudes discriminatorias reconocer la riqueza de la diversidad, a partir del análisis de la relación entre los aspectos geográficos, históricos, ecosociales y culturales que han https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.4.B.14",
-      "GEH.4.B.9",
-      "GEH.4.C.6"
+      "GEH.4.B.9"
      ]
     },
     {
@@ -7805,11 +6801,6 @@
      "curso": 4,
      "texto": "Contribuir al bienestar individual y colectivo a través del diseño, exposición y puesta en práctica de iniciativas orientadas a promover un compromiso activo con los valores comunes, la mejora del entorno y el la servicio comunidad.",
      "saberes": [
-      "GEH.4.B.11",
-      "GEH.4.B.12",
-      "GEH.4.B.13",
-      "GEH.4.B.16",
-      "GEH.4.C.2",
       "GEH.4.C.5",
       "GEH.4.C.7"
      ]
@@ -7822,11 +6813,7 @@
      "saberes": [
       "GEH.4.B.11",
       "GEH.4.B.12",
-      "GEH.4.B.13",
-      "GEH.4.B.16",
-      "GEH.4.C.2",
-      "GEH.4.C.5",
-      "GEH.4.C.7"
+      "GEH.4.C.2"
      ]
     },
     {
@@ -7835,13 +6822,8 @@
      "curso": 4,
      "texto": "Conocer contribuir a conservar https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.4.B.11",
-      "GEH.4.B.12",
       "GEH.4.B.13",
-      "GEH.4.B.16",
-      "GEH.4.C.2",
-      "GEH.4.C.5",
-      "GEH.4.C.7"
+      "GEH.4.B.16"
      ]
     },
     {
@@ -7852,12 +6834,7 @@
      "saberes": [
       "GEH.4.B.7",
       "GEH.4.C.10",
-      "GEH.4.C.11",
-      "GEH.4.C.12",
-      "GEH.4.C.2",
-      "GEH.4.C.5",
-      "GEH.4.C.6",
-      "GEH.4.C.8"
+      "GEH.4.C.5"
      ]
     },
     {
@@ -7866,14 +6843,9 @@
      "curso": 4,
      "texto": "Reconocer las de iniciativas la civil, sociedad en reflejadas asociaciones entidades sociales, adoptando actitudes de participación transformación en el https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.4.B.7",
-      "GEH.4.C.10",
       "GEH.4.C.11",
       "GEH.4.C.12",
-      "GEH.4.C.2",
-      "GEH.4.C.5",
-      "GEH.4.C.6",
-      "GEH.4.C.8"
+      "GEH.4.C.6"
      ]
     },
     {
@@ -7885,10 +6857,7 @@
       "GEH.4.B.10",
       "GEH.4.B.17",
       "GEH.4.B.18",
-      "GEH.4.B.19",
-      "GEH.4.C.3",
-      "GEH.4.C.4",
-      "GEH.4.C.9"
+      "GEH.4.B.19"
      ]
     },
     {
@@ -7897,10 +6866,6 @@
      "curso": 4,
      "texto": "Contribuir a la consecución de un mundo más seguro, justo, solidario sostenible, a través del análisis de los principales conflictos del presente y el reconocimiento de las del instituciones Estado, y de las asociaciones civiles que garantizan la seguridad integral y la convivencia social, así como de los compromisos de internacionales de nuestro país y Andalucía en favor de la paz, la seguridad, la cooperación, la los sostenibilidad, valores democráticos y Objetivos de los Desarrollo Sostenible. https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "GEH.4.B.10",
-      "GEH.4.B.17",
-      "GEH.4.B.18",
-      "GEH.4.B.19",
       "GEH.4.C.3",
       "GEH.4.C.4",
       "GEH.4.C.9"
@@ -8624,11 +7589,7 @@
       "LCL.2.A.2",
       "LCL.2.A.3",
       "LCL.2.A.4",
-      "LCL.2.A.5",
-      "LCL.2.A.6",
-      "LCL.2.B.2",
-      "LCL.2.B.3",
-      "LCL.2.B.4"
+      "LCL.2.A.5"
      ]
     },
     {
@@ -8638,14 +7599,7 @@
      "texto": "Identificar prejuicios y estereotipos lingüísticos adoptando una actitud de respeto y valoración de la riqueza cultural, lingüística y dialectal, a partir de la de la observación diversidad lingüística del entorno.",
      "saberes": [
       "LCL.2.A.1",
-      "LCL.2.A.2",
-      "LCL.2.A.3",
-      "LCL.2.A.4",
-      "LCL.2.A.5",
-      "LCL.2.A.6",
-      "LCL.2.B.2",
-      "LCL.2.B.3",
-      "LCL.2.B.4"
+      "LCL.2.A.6"
      ]
     },
     {
@@ -8654,12 +7608,6 @@
      "curso": 2,
      "texto": "Comprender el sentido global, la estructura, la información más relevante en función de las necesidades comunicativas y la intención del emisor en https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LCL.2.A.1",
-      "LCL.2.A.2",
-      "LCL.2.A.3",
-      "LCL.2.A.4",
-      "LCL.2.A.5",
-      "LCL.2.A.6",
       "LCL.2.B.2",
       "LCL.2.B.3",
       "LCL.2.B.4"
@@ -8707,7 +7655,6 @@
      "curso": 2,
      "texto": "Comprender interpretar el sentido global, la estructura, la información más relevante y la intención del emisor de escritos textos multimodales sencillos de diferentes ámbitos personales, educativos y sociales, que respondan a diferentes propósitos de lectura, realizando las inferencias necesarias que permitan reconstruir la relación entre sus partes, formular hipótesis acerca de intención la comunicativa que subyace a dichos textos, y reflexionar con sentido crítico sobre su forma y contenido.",
      "saberes": [
-      "LCL.2.B.1",
       "LCL.2.B.2",
       "LCL.2.B.3",
       "LCL.2.B.4"
@@ -8732,7 +7679,6 @@
      "texto": "Planificar la redacción de textos escritos y multimodales sencillos, atendiendo a la situación comunicativa, destinatario, canal, propósito enfatizando los usos de la escritura para la toma de apuntes, esquemas, mapas conceptuales o resúmenes, y en la elaboración de carácter de textos académico; redactar borradores y revisarlos con ayuda del diálogo entre iguales e instrumentos de consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
      "saberes": [
       "LCL.2.B.1",
-      "LCL.2.B.2",
       "LCL.2.B.3",
       "LCL.2.B.4"
      ]
@@ -8755,10 +7701,8 @@
      "curso": 2,
      "texto": "Localizar, seleccionar y contrastar información de manera dirigida procedente de diferentes fuentes, calibrando su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios, y reelaborarla en diferentes tipos de textos.",
      "saberes": [
-      "LCL.2.B.1",
       "LCL.2.B.2",
-      "LCL.2.B.3",
-      "LCL.2.B.4"
+      "LCL.2.B.3"
      ]
     },
     {
@@ -8767,10 +7711,8 @@
      "curso": 2,
      "texto": "Elaborar trabajos de investigación de manera dirigida en diferentes soportes sobre diversos de interés temas académico, personal o social a partir de la https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LCL.2.B.1",
       "LCL.2.B.2",
-      "LCL.2.B.3",
-      "LCL.2.B.4"
+      "LCL.2.B.3"
      ]
     },
     {
@@ -8780,9 +7722,7 @@
      "texto": "Iniciarse en hábitos de uso, seguro, y saludable de las tecnologías digitales en relación con la búsqueda y la comunicación de la información.",
      "saberes": [
       "LCL.2.B.2",
-      "LCL.2.B.3",
-      "LCL.2.C.1",
-      "LCL.2.C.2"
+      "LCL.2.B.3"
      ]
     },
     {
@@ -8791,7 +7731,6 @@
      "curso": 2,
      "texto": "Elegir y leer textos, a partir de preselecciones guiándose por los propios gustos, intereses dejando necesidades, constancia del propio itinerario lector y de la experiencia de lectura, tanto de forma oral como de escrita, a través de diferentes soportes, manera que se materialice la progresivamente construcción de un conocimiento y gusto por la lectura.",
      "saberes": [
-      "LCL.2.B.2",
       "LCL.2.B.3",
       "LCL.2.C.1",
       "LCL.2.C.2"
@@ -8803,7 +7742,6 @@
      "curso": 2,
      "texto": "Compartir la experiencia de lectura en diversos soportes relacionando el sentido de la obra con la propia experiencia biográfica y lectora.",
      "saberes": [
-      "LCL.2.B.2",
       "LCL.2.B.3",
       "LCL.2.C.1",
       "LCL.2.C.2"
@@ -8815,8 +7753,6 @@
      "curso": 2,
      "texto": "Explicar y argumentar, con la ayuda de pautas y modelos, la interpretación de las obras leídas a partir del análisis de las relaciones internas de sus constitutivos elementos con el sentido de la obra, atendiendo la https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LCL.2.B.2",
-      "LCL.2.B.3",
       "LCL.2.C.1",
       "LCL.2.C.2"
      ]
@@ -8829,13 +7765,7 @@
      "saberes": [
       "LCL.2.B.3",
       "LCL.2.C.1",
-      "LCL.2.C.2",
-      "LCL.2.D.2",
-      "LCL.2.D.3",
-      "LCL.2.D.4",
-      "LCL.2.D.5",
-      "LCL.2.D.6",
-      "LCL.2.D.7"
+      "LCL.2.C.2"
      ]
     },
     {
@@ -8846,13 +7776,7 @@
      "saberes": [
       "LCL.2.B.3",
       "LCL.2.C.1",
-      "LCL.2.C.2",
-      "LCL.2.D.2",
-      "LCL.2.D.3",
-      "LCL.2.D.4",
-      "LCL.2.D.5",
-      "LCL.2.D.6",
-      "LCL.2.D.7"
+      "LCL.2.C.2"
      ]
     },
     {
@@ -8862,8 +7786,6 @@
      "texto": "Revisar los propios textos de manera guiada y hacer propuestas de mejora argumentando los cambios a partir de la reflexión metalingüística interlingüística y con un metalenguaje específico, e identificar y subsanar algunos problemas de comprensión lectora los utilizando conocimientos explícitos sobre la lengua y su uso.",
      "saberes": [
       "LCL.2.B.3",
-      "LCL.2.C.1",
-      "LCL.2.C.2",
       "LCL.2.D.2",
       "LCL.2.D.3",
       "LCL.2.D.4",
@@ -8878,15 +7800,7 @@
      "curso": 2,
      "texto": "Explicar y argumentar https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LCL.2.B.3",
-      "LCL.2.C.1",
-      "LCL.2.C.2",
-      "LCL.2.D.2",
-      "LCL.2.D.3",
-      "LCL.2.D.4",
-      "LCL.2.D.5",
-      "LCL.2.D.6",
-      "LCL.2.D.7"
+      "LCL.2.C.2"
      ]
     },
     {
@@ -8895,12 +7809,8 @@
      "curso": 2,
      "texto": "Formular de generalizaciones manera guiada sobre aspectos básicos del funcionamiento de la la lengua a partir de manipulación, comparación de transformación enunciados, así como la formulación de hipótesis y búsqueda de la contraejemplos utilizando un metalenguaje específico y consultando de manera diccionarios, guiada manuales y gramáticas. Identificar, distinguir y caracterizar las categorías de gramaticales las palabras variables invariables.",
      "saberes": [
-      "LCL.2.A.6",
-      "LCL.2.B.1",
-      "LCL.2.B.3",
       "LCL.2.D.1",
       "LCL.2.D.2",
-      "LCL.2.D.3",
       "LCL.2.D.4",
       "LCL.2.D.5",
       "LCL.2.D.6",
@@ -8915,14 +7825,7 @@
      "saberes": [
       "LCL.2.A.6",
       "LCL.2.B.1",
-      "LCL.2.B.3",
-      "LCL.2.D.1",
-      "LCL.2.D.2",
-      "LCL.2.D.3",
-      "LCL.2.D.4",
-      "LCL.2.D.5",
-      "LCL.2.D.6",
-      "LCL.2.D.7"
+      "LCL.2.B.3"
      ]
     },
     {
@@ -8931,16 +7834,8 @@
      "curso": 2,
      "texto": "Utilizar estrategias la para resolución https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LCL.2.A.6",
       "LCL.2.B.1",
-      "LCL.2.B.3",
-      "LCL.2.D.1",
-      "LCL.2.D.2",
-      "LCL.2.D.3",
-      "LCL.2.D.4",
-      "LCL.2.D.5",
-      "LCL.2.D.6",
-      "LCL.2.D.7"
+      "LCL.2.B.3"
      ]
     },
     {
@@ -8963,11 +7858,7 @@
      "texto": "Identificar prejuicios estereotipos lingüísticos adoptando una actitud de respeto y valoración de la riqueza cultural, lingüística y dialectal, a partir del análisis de la diversidad lingüística en el entorno social próximo.",
      "saberes": [
       "LCL.3.A.1",
-      "LCL.3.A.6",
-      "LCL.3.B.1",
-      "LCL.3.B.2",
-      "LCL.3.B.3",
-      "LCL.3.B.4"
+      "LCL.3.A.6"
      ]
     },
     {
@@ -8976,8 +7867,6 @@
      "curso": 3,
      "texto": "Comprender e interpretar el sentido global, la estructura, la información más relevante en función de las necesidades comunicativas y la intención del emisor en orales textos multimodales de cierta complejidad de diferentes ámbitos, incorporando prácticas",
      "saberes": [
-      "LCL.3.A.1",
-      "LCL.3.A.6",
       "LCL.3.B.1",
       "LCL.3.B.2",
       "LCL.3.B.3",
@@ -8992,8 +7881,7 @@
      "saberes": [
       "LCL.3.B.1",
       "LCL.3.B.2",
-      "LCL.3.B.3",
-      "LCL.3.B.4"
+      "LCL.3.B.3"
      ]
     },
     {
@@ -9015,7 +7903,6 @@
      "texto": "Participar de manera activa y adecuada en interacciones orales informales, en el trabajo en equipo y en orales situaciones carácter formales de dialogado, con actitudes de escucha activa y de estrategias cooperación conversacional y cortesía lingüística.",
      "saberes": [
       "LCL.3.B.1",
-      "LCL.3.B.2",
       "LCL.3.B.3"
      ]
     },
@@ -9036,10 +7923,8 @@
      "curso": 3,
      "texto": "Valorar críticamente el contenido y la forma de textos escritos y multimodales de progresivamente cierta complejidad evaluando su calidad y fiabilidad, así como los procedimientos lingüísticos empleados.",
      "saberes": [
-      "LCL.3.B.1",
       "LCL.3.B.2",
-      "LCL.3.B.3",
-      "LCL.3.B.4"
+      "LCL.3.B.3"
      ]
     },
     {
@@ -9048,7 +7933,6 @@
      "curso": 3,
      "texto": "Planificar la redacción de textos escritos y multimodales de cierta extensión atendiendo a la situación comunicativa, destinatario, propósito y canal enfatizando los usos de la escritura para la toma de apuntes, esquemas, mapas conceptuales resúmenes, y en la elaboración de textos de académico; carácter redactar borradores y revisarlos con ayuda del diálogo entre iguales e de instrumentos consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
      "saberes": [
-      "LCL.3.B.1",
       "LCL.3.B.2",
       "LCL.3.B.3",
       "LCL.3.B.4"
@@ -9062,8 +7946,7 @@
      "saberes": [
       "LCL.3.B.1",
       "LCL.3.B.2",
-      "LCL.3.B.3",
-      "LCL.3.B.4"
+      "LCL.3.B.3"
      ]
     },
     {
@@ -9073,8 +7956,7 @@
      "texto": "Localizar, seleccionar y contrastar información de manera autónoma procedente de diferentes fuentes, calibrando su fiabilidad y pertinencia en función de los objetivos de lectura; adoptando un punto de vista crítico respetando y comprendiendo los principios de propiedad intelectual.",
      "saberes": [
       "LCL.3.B.2",
-      "LCL.3.B.3",
-      "LCL.3.B.4"
+      "LCL.3.B.3"
      ]
     },
     {
@@ -9084,8 +7966,7 @@
      "texto": "Elaborar trabajos de investigación de manera progresivamente autónoma en diferentes soportes sobre diversos de interés temas académico, personal o social a partir de la información seleccionada.",
      "saberes": [
       "LCL.3.B.2",
-      "LCL.3.B.3",
-      "LCL.3.B.4"
+      "LCL.3.B.3"
      ]
     },
     {
@@ -9095,8 +7976,7 @@
      "texto": "Iniciarse en hábitos de uso crítico, seguro, sostenible y saludable de las tecnologías digitales en relación con la búsqueda la comunicación de la información.",
      "saberes": [
       "LCL.3.B.2",
-      "LCL.3.B.3",
-      "LCL.3.B.4"
+      "LCL.3.B.3"
      ]
     },
     {
@@ -9139,9 +8019,7 @@
      "texto": "Crear textos personales o colectivos con intención literaria y conciencia de estilo, en distintos soportes, a partir de la lectura de obras o fragmentos del significativos andaluz patrimonio nacional y universal en los que se empleen convenciones formales de los diversos géneros y estilos literarios.",
      "saberes": [
       "LCL.3.B.3",
-      "LCL.3.C.2",
-      "LCL.3.D.1",
-      "LCL.3.D.2"
+      "LCL.3.C.2"
      ]
     },
     {
@@ -9152,8 +8030,7 @@
      "saberes": [
       "LCL.3.B.3",
       "LCL.3.C.2",
-      "LCL.3.D.1",
-      "LCL.3.D.2"
+      "LCL.3.D.1"
      ]
     },
     {
@@ -9162,9 +8039,7 @@
      "curso": 3,
      "texto": "Explicar la interrelación entre el",
      "saberes": [
-      "LCL.3.B.3",
       "LCL.3.C.2",
-      "LCL.3.D.1",
       "LCL.3.D.2"
      ]
     },
@@ -9174,12 +8049,8 @@
      "curso": 3,
      "texto": "Formular generalizaciones sobre aspectos básicos del funcionamiento de la lengua a partir de la manipulación, comparación de transformación enunciados, utilizando y consultando de manera progresivamente autónoma diccionarios, manuales y gramáticas.",
      "saberes": [
-      "LCL.3.A.6",
-      "LCL.3.B.1",
-      "LCL.3.B.3",
       "LCL.3.D.1",
       "LCL.3.D.2",
-      "LCL.3.D.3",
       "LCL.3.D.4",
       "LCL.3.D.5",
       "LCL.3.D.6",
@@ -9194,14 +8065,7 @@
      "saberes": [
       "LCL.3.A.6",
       "LCL.3.B.1",
-      "LCL.3.B.3",
-      "LCL.3.D.1",
-      "LCL.3.D.2",
-      "LCL.3.D.3",
-      "LCL.3.D.4",
-      "LCL.3.D.5",
-      "LCL.3.D.6",
-      "LCL.3.D.7"
+      "LCL.3.B.3"
      ]
     },
     {
@@ -9210,16 +8074,7 @@
      "curso": 3,
      "texto": "Utilizar estrategias",
      "saberes": [
-      "LCL.3.A.6",
-      "LCL.3.B.1",
-      "LCL.3.B.3",
-      "LCL.3.D.1",
-      "LCL.3.D.2",
-      "LCL.3.D.3",
-      "LCL.3.D.4",
-      "LCL.3.D.5",
-      "LCL.3.D.6",
-      "LCL.3.D.7"
+      "LCL.3.B.1"
      ]
     },
     {
@@ -9244,10 +8099,6 @@
       "LCL.4.A.1",
       "LCL.4.A.6",
       "LCL.4.A.7",
-      "LCL.4.B.1",
-      "LCL.4.B.2",
-      "LCL.4.B.3",
-      "LCL.4.B.4",
       "LCL.4.C.2"
      ]
     },
@@ -9257,14 +8108,10 @@
      "curso": 4,
      "texto": "Comprender e interpretar el sentido global, la estructura, la información más relevante en función de las necesidades comunicativas y la intención del emisor en orales textos multimodales de cierta complejidad de diferentes ámbitos, incorporando prácticas https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LCL.4.A.1",
-      "LCL.4.A.6",
-      "LCL.4.A.7",
       "LCL.4.B.1",
       "LCL.4.B.2",
       "LCL.4.B.3",
-      "LCL.4.B.4",
-      "LCL.4.C.2"
+      "LCL.4.B.4"
      ]
     },
     {
@@ -9275,8 +8122,7 @@
      "saberes": [
       "LCL.4.B.1",
       "LCL.4.B.2",
-      "LCL.4.B.3",
-      "LCL.4.B.4"
+      "LCL.4.B.3"
      ]
     },
     {
@@ -9298,7 +8144,6 @@
      "texto": "Participar de activa manera adecuada en interacciones orales informales, en el trabajo en en equipo y orales situaciones formales relacionadas con diferentes contextos de carácter dialogado, actitudes con de de escucha activa, el hacia respeto interlocutor de estrategias cooperación conversacional cortesía lingüística.",
      "saberes": [
       "LCL.4.B.1",
-      "LCL.4.B.2",
       "LCL.4.B.3"
      ]
     },
@@ -9319,10 +8164,8 @@
      "curso": 4,
      "texto": "Valorar críticamente el contenido y la forma de textos escritos y multimodales de cierta complejidad, evaluando su calidad y fiabilidad, así como la eficacia de los procedimientos lingüísticos empleados.",
      "saberes": [
-      "LCL.4.B.1",
       "LCL.4.B.2",
-      "LCL.4.B.3",
-      "LCL.4.B.4"
+      "LCL.4.B.3"
      ]
     },
     {
@@ -9331,7 +8174,6 @@
      "curso": 4,
      "texto": "Planificar la redacción de textos escritos y multimodales de cierta extensión y cierto de grado complejidad atendiendo la situación comunicativa, destinatario, propósito y canal, enfatizando los usos de la escritura para la toma de apuntes, esquemas, mapas conceptuales resúmenes, y en la elaboración de textos de académico; carácter redactar borradores y revisarlos con ayuda del diálogo entre iguales e de instrumentos consulta, y presentar un texto final coherente, cohesionado y con el registro adecuado.",
      "saberes": [
-      "LCL.4.B.1",
       "LCL.4.B.2",
       "LCL.4.B.3",
       "LCL.4.B.4"
@@ -9345,8 +8187,7 @@
      "saberes": [
       "LCL.4.B.1",
       "LCL.4.B.2",
-      "LCL.4.B.3",
-      "LCL.4.B.4"
+      "LCL.4.B.3"
      ]
     },
     {
@@ -9356,8 +8197,7 @@
      "texto": "Localizar, seleccionar y contrastar información de manera autónoma procedente de diferentes fuentes, calibrando su fiabilidad y pertinencia en función de los objetivos de lectura; organizarla e integrarla en esquemas propios, y reelaborarla y comunicarla de manera creativa, adoptando un punto de vista crítico los respetando principios de propiedad intelectual.",
      "saberes": [
       "LCL.4.B.2",
-      "LCL.4.B.3",
-      "LCL.4.B.4"
+      "LCL.4.B.3"
      ]
     },
     {
@@ -9367,8 +8207,7 @@
      "texto": "Elaborar trabajos de investigación de manera autónoma en diferentes soportes sobre diversos de interés temas académico, personal o social a partir de la información seleccionada.",
      "saberes": [
       "LCL.4.B.2",
-      "LCL.4.B.3",
-      "LCL.4.B.4"
+      "LCL.4.B.3"
      ]
     },
     {
@@ -9378,8 +8217,7 @@
      "texto": "Adoptar hábitos de uso crítico, seguro, sostenible y saludable de las tecnologías digitales en relación con la búsqueda y la comunicación de la información.",
      "saberes": [
       "LCL.4.B.2",
-      "LCL.4.B.3",
-      "LCL.4.B.4"
+      "LCL.4.B.3"
      ]
     },
     {
@@ -9388,9 +8226,7 @@
      "curso": 4,
      "texto": "Leer de manera https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LCL.4.B.2",
-      "LCL.4.B.3",
-      "LCL.4.B.4"
+      "LCL.4.B.3"
      ]
     },
     {
@@ -9433,9 +8269,7 @@
      "texto": "Crear textos personales o colectivos con intención literaria y conciencia de estilo, en distintos soportes y con ayuda de otros lenguajes artísticos y audiovisuales, a partir de la lectura de obras o fragmentos del significativos andaluz patrimonio nacional y universal en los que se empleen convenciones formales de los diversos géneros y estilos literarios..",
      "saberes": [
       "LCL.4.B.3",
-      "LCL.4.C.2",
-      "LCL.4.D.1",
-      "LCL.4.D.2"
+      "LCL.4.C.2"
      ]
     },
     {
@@ -9446,8 +8280,7 @@
      "saberes": [
       "LCL.4.B.3",
       "LCL.4.C.2",
-      "LCL.4.D.1",
-      "LCL.4.D.2"
+      "LCL.4.D.1"
      ]
     },
     {
@@ -9456,9 +8289,7 @@
      "curso": 4,
      "texto": "Explicar argumentar la https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LCL.4.B.3",
       "LCL.4.C.2",
-      "LCL.4.D.1",
       "LCL.4.D.2"
      ]
     },
@@ -9468,12 +8299,8 @@
      "curso": 4,
      "texto": "Formular generalizaciones sobre aspectos básicos del funcionamiento de la lengua a partir de la la observación, comparación la de transformación enunciados, así como la formulación de hipótesis y la búsqueda de contraejemplos, un utilizando metalenguaje específico de y consultando autónoma manera diccionarios, manuales y gramáticas.",
      "saberes": [
-      "LCL.4.A.6",
-      "LCL.4.B.1",
-      "LCL.4.B.3",
       "LCL.4.D.1",
       "LCL.4.D.2",
-      "LCL.4.D.3",
       "LCL.4.D.4",
       "LCL.4.D.5",
       "LCL.4.D.6",
@@ -9488,14 +8315,7 @@
      "saberes": [
       "LCL.4.A.6",
       "LCL.4.B.1",
-      "LCL.4.B.3",
-      "LCL.4.D.1",
-      "LCL.4.D.2",
-      "LCL.4.D.3",
-      "LCL.4.D.4",
-      "LCL.4.D.5",
-      "LCL.4.D.6",
-      "LCL.4.D.7"
+      "LCL.4.B.3"
      ]
     },
     {
@@ -9504,16 +8324,7 @@
      "curso": 4,
      "texto": "Utilizar estrategias https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LCL.4.A.6",
-      "LCL.4.B.1",
-      "LCL.4.B.3",
-      "LCL.4.D.1",
-      "LCL.4.D.2",
-      "LCL.4.D.3",
-      "LCL.4.D.4",
-      "LCL.4.D.5",
-      "LCL.4.D.6",
-      "LCL.4.D.7"
+      "LCL.4.B.1"
      ]
     }
    ]
@@ -10207,13 +9018,8 @@
      "curso": 1,
      "texto": "Iniciarse en la interpretación y valoración del contenido y los rasgos discursivos de textos escritos orales, multimodales breves y sencillos, propios de los ámbitos de las relaciones interpersonales, de los medios de comunicación social y del aprendizaje.",
      "saberes": [
-      "LEX.1.A.12",
-      "LEX.1.A.2",
-      "LEX.1.A.4",
       "LEX.1.A.5",
-      "LEX.1.A.6",
-      "LEX.1.A.7",
-      "LEX.1.A.8"
+      "LEX.1.A.7"
      ]
     },
     {
@@ -10223,12 +9029,7 @@
      "texto": "Iniciarse en el proceso de seleccionar, organizar y aplicar de forma guiada las estrategias conocimientos más adecuados en situaciones comunicativas cotidianas para comprender general, sentido información esencial y los detalles más relevantes de los textos orales, escritos y multimodales; comenzar a interpretar elementos no verbales; e iniciarse en la búsqueda y selección de información mediante la consulta en fuentes fiables.",
      "saberes": [
       "LEX.1.A.12",
-      "LEX.1.A.2",
-      "LEX.1.A.4",
-      "LEX.1.A.5",
-      "LEX.1.A.6",
-      "LEX.1.A.7",
-      "LEX.1.A.8"
+      "LEX.1.A.2"
      ]
     },
     {
@@ -10237,10 +9038,7 @@
      "curso": 1,
      "texto": "Expresar oralmente de manera guiada, textos breves, sencillos, estructurados, comprensibles adecuados a la situación comunicativa sobre asuntos cotidianos y frecuentes, de relevancia",
      "saberes": [
-      "LEX.1.A.12",
-      "LEX.1.A.2",
       "LEX.1.A.4",
-      "LEX.1.A.5",
       "LEX.1.A.6",
       "LEX.1.A.7",
       "LEX.1.A.8"
@@ -10252,8 +9050,6 @@
      "curso": 1,
      "texto": "Iniciarse en la organización y redacción de textos breves, sencillos y comprensibles con aceptable claridad, coherencia, cohesión y adecuación a la situación comunicativa propuesta, pautas siguiendo establecidas, a través de herramientas analógicas y digitales, sobre asuntos cotidianos y frecuentes de para relevancia alumnado y próximos a su experiencia, respetando la propiedad intelectual y evitando el plagio.",
      "saberes": [
-      "LEX.1.A.11",
-      "LEX.1.A.2",
       "LEX.1.A.4",
       "LEX.1.A.6",
       "LEX.1.A.7",
@@ -10267,11 +9063,7 @@
      "texto": "Iniciarse en el proceso de seleccionar, organizar y aplicar de forma guiada conocimientos estrategias para planificar, producir y revisar textos escritos, orales comprensibles, coherentes a las y adecuados intenciones comunicativas, las características contextuales y la tipología textual, basándose en el uso guiado de los recursos físicos o digitales más adecuados en función de la tarea y las necesidades",
      "saberes": [
       "LEX.1.A.11",
-      "LEX.1.A.2",
-      "LEX.1.A.4",
-      "LEX.1.A.6",
-      "LEX.1.A.7",
-      "LEX.1.A.9"
+      "LEX.1.A.2"
      ]
     },
     {
@@ -10280,9 +9072,6 @@
      "curso": 1,
      "texto": "Iniciarse en la planificación en participación situaciones interactivas breves y sencillas sobre temas cotidianos próximos a su experiencia, a través de algunos soportes analógicos y digitales, apoyándose en recursos tales como la repetición, el ritmo pausado o el lenguaje no verbal, mostrando interés y respeto por la cortesía lingüística y la etiqueta digital, así como por las diferentes necesidades e ideas de las y los interlocutores.",
      "saberes": [
-      "LEX.1.A.1",
-      "LEX.1.A.10",
-      "LEX.1.A.4",
       "LEX.1.A.8",
       "LEX.1.B.1"
      ]
@@ -10293,11 +9082,8 @@
      "curso": 1,
      "texto": "Iniciarse en la selección y uso de algunas estrategias de cooperación adecuadas de forma guiada y en entornos próximos, para iniciar, mantener y terminar la comunicación; tomar y ceder la palabra; y solicitar y formular aclaraciones y en explicaciones situaciones cercanas a su entorno personal familiar.",
      "saberes": [
-      "LEX.1.A.1",
       "LEX.1.A.10",
-      "LEX.1.A.4",
-      "LEX.1.A.8",
-      "LEX.1.B.1"
+      "LEX.1.A.4"
      ]
     },
     {
@@ -10306,11 +9092,7 @@
      "curso": 1,
      "texto": "Aprender a inferir y",
      "saberes": [
-      "LEX.1.A.1",
-      "LEX.1.A.10",
-      "LEX.1.A.4",
-      "LEX.1.A.8",
-      "LEX.1.B.1"
+      "LEX.1.A.1"
      ]
     },
     {
@@ -10320,11 +9102,7 @@
      "texto": "Iniciarse, de forma guiada, en la aplicación de estrategias básicas que ayuden a facilitar la comprensión, reformulación, explicación de producción información comunicación, adecuadas intenciones las comunicativas, usando recursos y apoyos físicos o digitales en función de las necesidades de cada momento.",
      "saberes": [
       "LEX.1.A.11",
-      "LEX.1.A.2",
-      "LEX.1.A.3",
-      "LEX.1.B.4",
-      "LEX.1.B.5",
-      "LEX.1.C.1"
+      "LEX.1.A.2"
      ]
     },
     {
@@ -10333,12 +9111,8 @@
      "curso": 1,
      "texto": "Iniciarse en la comparación y contraste de las similitudes y diferencias básicas entre distintas lenguas, a partir de repertorios lingüísticos personales simples, reflexionando de manera gradualmente autónoma sobre su funcionamiento.",
      "saberes": [
-      "LEX.1.A.11",
-      "LEX.1.A.2",
-      "LEX.1.A.3",
       "LEX.1.B.4",
-      "LEX.1.B.5",
-      "LEX.1.C.1"
+      "LEX.1.B.5"
      ]
     },
     {
@@ -10347,12 +9121,8 @@
      "curso": 1,
      "texto": "Utilizar y diferenciar los conocimientos básicos y estrategias simples de mejora de la capacidad de comunicar y de aprender la lengua extranjera, a partir de situaciones sencillas con apoyo de otros participantes y de herramientas analógicas y digitales básicas para la comprensión, producción y coproducción oral y escrita.",
      "saberes": [
-      "LEX.1.A.1",
       "LEX.1.B.1",
-      "LEX.1.B.2",
-      "LEX.1.B.3",
-      "LEX.1.C.3",
-      "LEX.1.C.4"
+      "LEX.1.B.2"
      ]
     },
     {
@@ -10362,11 +9132,7 @@
      "texto": "Identificar y registrar, modelos siguiendo simples, los progresos y dificultades de aprendizaje de la lengua extranjera a nivel oral y escrita, seleccionando de forma guiada las estrategias más eficaces para superar esas dificultades y progresar en su aprendizaje, realizando actividades de autoevaluación básicas, coevaluación como las propuestas en el Portfolio Europeo de las Lenguas (PEL) o en un diario de aprendizaje con soporte analógico o digital, haciendo esos progresos y dificultades explícitos compartiéndolos con otros en un contexto similar de aprendizaje colaborativo.",
      "saberes": [
       "LEX.1.A.1",
-      "LEX.1.B.1",
-      "LEX.1.B.2",
-      "LEX.1.B.3",
-      "LEX.1.C.3",
-      "LEX.1.C.4"
+      "LEX.1.B.3"
      ]
     },
     {
@@ -10375,10 +9141,6 @@
      "curso": 1,
      "texto": "Actuar de forma empática y respetuosa en",
      "saberes": [
-      "LEX.1.A.1",
-      "LEX.1.B.1",
-      "LEX.1.B.2",
-      "LEX.1.B.3",
       "LEX.1.C.3",
       "LEX.1.C.4"
      ]
@@ -10389,8 +9151,6 @@
      "curso": 1,
      "texto": "Iniciarse en conocimiento aceptación de diversidad lingüística, cultural y artística propia de países donde se habla extranjera, la lengua como reconociéndola fuente de enriquecimiento mostrando personal y compartir interés por elementos culturales y básicos lingüísticos propios y ajenos que fomenten la sostenibilidad y la democracia.",
      "saberes": [
-      "LEX.1.C.1",
-      "LEX.1.C.2",
       "LEX.1.C.5",
       "LEX.1.C.6"
      ]
@@ -10402,9 +9162,7 @@
      "texto": "Iniciarse en la aplicación, de forma estrategias guiada, de básicas para comprender, explicar y apreciar la diversidad lingüística, cultural y artística, usando la lengua extranjera como de instrumento cultural, intercambio a valores atendiendo ecosociales democráticos y respetando los principios de justicia, equidad e igualdad.",
      "saberes": [
       "LEX.1.C.1",
-      "LEX.1.C.2",
-      "LEX.1.C.5",
-      "LEX.1.C.6"
+      "LEX.1.C.2"
      ]
     },
     {
@@ -10424,13 +9182,8 @@
      "curso": 2,
      "texto": "Interpretar y valorar el contenido y los rasgos discursivos de textos escritos orales, multimodales breves y sencillos de los ámbitos de las relaciones interpersonales, de los medios de comunicación social y del aprendizaje.",
      "saberes": [
-      "LEX.2.A.12",
-      "LEX.2.A.2",
-      "LEX.2.A.4",
       "LEX.2.A.5",
-      "LEX.2.A.6",
-      "LEX.2.A.7",
-      "LEX.2.A.8"
+      "LEX.2.A.7"
      ]
     },
     {
@@ -10440,12 +9193,7 @@
      "texto": "Seleccionar, organizar y aplicar de forma guiada las estrategias conocimientos más adecuados en situaciones comunicativas cotidianas para comprender el sentido general, la información esencial y detalles los más relevantes de los textos escritos orales, inferir multimodales; significados basándose en el ámbito contextual e interpretar elementos no verbales; y buscar y seleccionar información mediante la consulta en fuentes fiables.",
      "saberes": [
       "LEX.2.A.12",
-      "LEX.2.A.2",
-      "LEX.2.A.4",
-      "LEX.2.A.5",
-      "LEX.2.A.6",
-      "LEX.2.A.7",
-      "LEX.2.A.8"
+      "LEX.2.A.2"
      ]
     },
     {
@@ -10454,10 +9202,7 @@
      "curso": 2,
      "texto": "Expresar oralmente textos breves, sencillos, estructurados, comprensibles adecuados a la situación comunicativa sobre asuntos cotidianos y frecuentes, de relevancia para el alumnado, con el https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LEX.2.A.12",
-      "LEX.2.A.2",
       "LEX.2.A.4",
-      "LEX.2.A.5",
       "LEX.2.A.6",
       "LEX.2.A.7",
       "LEX.2.A.8"
@@ -10469,8 +9214,6 @@
      "curso": 2,
      "texto": "Organizar y redactar textos breves, sencillos y comprensibles con aceptable claridad, coherencia, cohesión y adecuación a la situación comunicativa propuesta, de manera gradualmente autónoma, a través de herramientas analógicas y digitales, sobre asuntos cotidianos y frecuentes de relevancia para el alumnado y próximos a experiencia, su respetando la propiedad intelectual y evitando el plagio.",
      "saberes": [
-      "LEX.2.A.11",
-      "LEX.2.A.2",
       "LEX.2.A.4",
       "LEX.2.A.6",
       "LEX.2.A.7",
@@ -10484,11 +9227,7 @@
      "texto": "Seleccionar, organizar y aplicar de forma guiada gradualmente autónoma conocimientos estrategias para planificar, producir y revisar textos orales y escritos comprensibles, coherentes y adecuados intenciones las comunicativas, las características contextuales la tipología textual, usando con ayuda los recursos físicos o digitales más adecuados en función de https://www.juntadeandalucia.es/eboja",
      "saberes": [
       "LEX.2.A.11",
-      "LEX.2.A.2",
-      "LEX.2.A.4",
-      "LEX.2.A.6",
-      "LEX.2.A.7",
-      "LEX.2.A.9"
+      "LEX.2.A.2"
      ]
     },
     {
@@ -10497,9 +9236,6 @@
      "curso": 2,
      "texto": "Planificar participar en situaciones interactivas breves y sencillas sobre temas cotidianos, de relevancia personal y próximos a su experiencia, a través de diversos soportes analógicos y digitales en entornos síncronos o asíncronos, apoyándose en recursos tales como la repetición, el ritmo pausado o el lenguaje no verbal, y mostrando empatía y respeto por la cortesía lingüística y la etiqueta digital, así como diferentes las por ideas, necesidades, inquietudes, iniciativas y motivaciones de las y los interlocutores.",
      "saberes": [
-      "LEX.2.A.1",
-      "LEX.2.A.10",
-      "LEX.2.A.4",
       "LEX.2.A.8",
       "LEX.2.B.1"
      ]
@@ -10510,11 +9246,8 @@
      "curso": 2,
      "texto": "Seleccionar, organizar y utilizar en progresivamente, entornos próximos, de personal, relevancia adecuadas estrategias para iniciar, mantener y la terminar comunicación; tomar y ceder la palabra; y solicitar y formular aclaraciones explicaciones, comparar y resumir brevemente en situaciones cercanas a su entorno personal, familiar y escolar.",
      "saberes": [
-      "LEX.2.A.1",
       "LEX.2.A.10",
-      "LEX.2.A.4",
-      "LEX.2.A.8",
-      "LEX.2.B.1"
+      "LEX.2.A.4"
      ]
     },
     {
@@ -10523,11 +9256,7 @@
      "curso": 2,
      "texto": "Inferir, reformular y https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LEX.2.A.1",
-      "LEX.2.A.10",
-      "LEX.2.A.4",
-      "LEX.2.A.8",
-      "LEX.2.B.1"
+      "LEX.2.A.1"
      ]
     },
     {
@@ -10537,11 +9266,7 @@
      "texto": "Aplicar, de forma gradualmente autónoma, estrategias variadas que ayuden a crear puentes y faciliten comprensión, la explicación y producción de información y la comunicación, adecuadas las intenciones comunicativas, usando recursos y apoyos físicos o digitales en función de las necesidades de cada momento.",
      "saberes": [
       "LEX.2.A.11",
-      "LEX.2.A.2",
-      "LEX.2.A.3",
-      "LEX.2.B.4",
-      "LEX.2.B.5",
-      "LEX.2.C.1"
+      "LEX.2.A.2"
      ]
     },
     {
@@ -10550,12 +9275,8 @@
      "curso": 2,
      "texto": "Comparar contrastar las similitudes y diferencias entre distintas lenguas, a partir de textos orales y escritos, reflexionando autonomía con progresiva sobre su funcionamiento. https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LEX.2.A.11",
-      "LEX.2.A.2",
-      "LEX.2.A.3",
       "LEX.2.B.4",
-      "LEX.2.B.5",
-      "LEX.2.C.1"
+      "LEX.2.B.5"
      ]
     },
     {
@@ -10564,12 +9285,8 @@
      "curso": 2,
      "texto": "Utilizar y diferenciar los conocimientos y estrategias de mejora de capacidad de la comunicar y de aprender la lengua extranjera a un nivel intermedio, a partir de situaciones cotidianas con apoyo de otros participantes y de herramientas analógicas y digitales adaptadas para la comprensión, producción coproducción oral y escrita.",
      "saberes": [
-      "LEX.2.A.1",
       "LEX.2.B.1",
-      "LEX.2.B.2",
-      "LEX.2.B.3",
-      "LEX.2.C.3",
-      "LEX.2.C.4"
+      "LEX.2.B.2"
      ]
     },
     {
@@ -10579,11 +9296,7 @@
      "texto": "Identificar y registrar, siguiendo modelos de complejidad adaptada, los progresos de dificultades aprendizaje de la lengua extranjera a nivel oral y escrita, seleccionando de forma guiada las estrategias más eficaces esas para superar dificultades y progresar en su aprendizaje, realizando actividades de autoevaluación y coevaluación de nivel intermedio, como las el en propuestas Portfolio Europeo de las Lenguas (PEL) o en un diario de aprendizaje con soporte analógico o digital, haciendo esos progresos y dificultades explícitos compartiéndolos con otros en un contexto similar de aprendizaje colaborativo.",
      "saberes": [
       "LEX.2.A.1",
-      "LEX.2.B.1",
-      "LEX.2.B.2",
-      "LEX.2.B.3",
-      "LEX.2.C.3",
-      "LEX.2.C.4"
+      "LEX.2.B.3"
      ]
     },
     {
@@ -10592,10 +9305,6 @@
      "curso": 2,
      "texto": "Actuar de forma empática y respetuosa https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LEX.2.A.1",
-      "LEX.2.B.1",
-      "LEX.2.B.2",
-      "LEX.2.B.3",
       "LEX.2.C.3",
       "LEX.2.C.4"
      ]
@@ -10606,8 +9315,6 @@
      "curso": 2,
      "texto": "Aceptar y adecuarse diversidad la lingüística, cultural y artística propia de países donde se habla la lengua extranjera, reconociéndola como de fuente enriquecimiento personal y mostrando interés por compartir y contrastar elementos culturales y lingüísticos propios y ajenos de progresiva complejidad fomenten la que sostenibilidad y la democracia.",
      "saberes": [
-      "LEX.2.C.1",
-      "LEX.2.C.2",
       "LEX.2.C.5",
       "LEX.2.C.6"
      ]
@@ -10619,9 +9326,7 @@
      "texto": "Aplicar, de forma estrategias guiada, habituales para comprender, explicar y apreciar la diversidad lingüística, cultural y artística, usando la lengua extranjera como de instrumento cultural, intercambio atendiendo a valores ecosociales democráticos respetando los principios de justicia, equidad e igualdad. https://www.juntadeandalucia.es/eboja",
      "saberes": [
       "LEX.2.C.1",
-      "LEX.2.C.2",
-      "LEX.2.C.5",
-      "LEX.2.C.6"
+      "LEX.2.C.2"
      ]
     },
     {
@@ -10637,13 +9342,8 @@
      "curso": 3,
      "texto": "Interpretar y valorar el contenido y los rasgos discursivos de textos, escritos orales, multimodales, propios de los ámbitos de las relaciones interpersonales, de los medios de comunicación social y del aprendizaje, así como de textos literarios adecuados al nivel de madurez del alumnado.",
      "saberes": [
-      "LEX.3.A.12",
-      "LEX.3.A.2",
-      "LEX.3.A.4",
       "LEX.3.A.5",
-      "LEX.3.A.6",
-      "LEX.3.A.7",
-      "LEX.3.A.8"
+      "LEX.3.A.7"
      ]
     },
     {
@@ -10653,12 +9353,7 @@
      "texto": "Seleccionar, organizar y aplicar, de manera gradualmente autónoma, estrategias las conocimientos más adecuados en cada situación comunicativa concreta para comprender el sentido general, la información esencial y los detalles más relevantes de los textos orales y escritos; inferir significados basándose en el ámbito contextual e interpretar elementos no verbales; y seleccionar y validar información veraz mediante la búsqueda en fuentes fiables.",
      "saberes": [
       "LEX.3.A.12",
-      "LEX.3.A.2",
-      "LEX.3.A.4",
-      "LEX.3.A.5",
-      "LEX.3.A.6",
-      "LEX.3.A.7",
-      "LEX.3.A.8"
+      "LEX.3.A.2"
      ]
     },
     {
@@ -10667,10 +9362,7 @@
      "curso": 3,
      "texto": "Expresar oralmente textos de extensión estructurados, media, comprensibles,",
      "saberes": [
-      "LEX.3.A.12",
-      "LEX.3.A.2",
       "LEX.3.A.4",
-      "LEX.3.A.5",
       "LEX.3.A.6",
       "LEX.3.A.7",
       "LEX.3.A.8"
@@ -10682,8 +9374,6 @@
      "curso": 3,
      "texto": "Redactar y difundir textos de extensión media con aceptable claridad, coherencia, cohesión, corrección y adecuación a la situación comunicativa propuesta, a la tipología textual y a herramientas las analógicas y digitales utilizadas, sobre asuntos de diversa índole, de relevancia personal y de interés público próximos a su experiencia, con el fin de describir, narrar, explicar, argumentar e informar, respetando la propiedad intelectual y evitando el plagio.",
      "saberes": [
-      "LEX.3.A.11",
-      "LEX.3.A.2",
       "LEX.3.A.4",
       "LEX.3.A.6",
       "LEX.3.A.7",
@@ -10697,11 +9387,7 @@
      "texto": "Seleccionar, organizar y aplicar de autónoma, manera conocimientos",
      "saberes": [
       "LEX.3.A.11",
-      "LEX.3.A.2",
-      "LEX.3.A.4",
-      "LEX.3.A.6",
-      "LEX.3.A.7",
-      "LEX.3.A.9"
+      "LEX.3.A.2"
      ]
     },
     {
@@ -10720,13 +9406,8 @@
      "curso": 3,
      "texto": "Seleccionar, organizar y desarrollar estrategias adecuadas de manera gradualmente autónoma para iniciar, mantener y la terminar comunicación, tomar y ceder la palabra, solicitar y formular aclaraciones y explicaciones, reformular, comparar y contrastar, colaborar, resumir, debatir, resolver problemas y gestionar diferentes situaciones.",
      "saberes": [
-      "LEX.3.A.1",
       "LEX.3.A.10",
-      "LEX.3.A.11",
-      "LEX.3.A.2",
-      "LEX.3.A.3",
-      "LEX.3.A.4",
-      "LEX.3.C.1"
+      "LEX.3.A.4"
      ]
     },
     {
@@ -10736,11 +9417,7 @@
      "texto": "Inferir, analizar y explicar textos, conceptos y comunicaciones breves y sencillas en diferentes situaciones en las que atender a la diversidad, mostrando respeto y empatía por las y los interlocutores y por las lenguas empleadas, e intentando participar en la solución de problemas de intercomprensión y de entendimiento en su entorno próximo, apoyándose en diversos recursos y soportes analógicos y digitales.",
      "saberes": [
       "LEX.3.A.1",
-      "LEX.3.A.10",
-      "LEX.3.A.11",
-      "LEX.3.A.2",
       "LEX.3.A.3",
-      "LEX.3.A.4",
       "LEX.3.C.1"
      ]
     },
@@ -10750,13 +9427,8 @@
      "curso": 3,
      "texto": "Aplicar estrategias de manera autónoma que ayuden a crear puentes, faciliten la comunicación y sirvan para explicar y simplificar textos, conceptos y mensajes, y que sean adecuadas a las intenciones comunicativas, las características contextuales y la tipología",
      "saberes": [
-      "LEX.3.A.1",
-      "LEX.3.A.10",
       "LEX.3.A.11",
-      "LEX.3.A.2",
-      "LEX.3.A.3",
-      "LEX.3.A.4",
-      "LEX.3.C.1"
+      "LEX.3.A.2"
      ]
     },
     {
@@ -10765,10 +9437,6 @@
      "curso": 3,
      "texto": "Comparar argumentar las similitudes y diferencias entre distintas lenguas, a partir de repertorios lingüísticos personales de complejidad media, con reflexionando autonomía progresiva sobre su funcionamiento.",
      "saberes": [
-      "LEX.3.A.1",
-      "LEX.3.B.1",
-      "LEX.3.B.2",
-      "LEX.3.B.3",
       "LEX.3.B.4",
       "LEX.3.B.5"
      ]
@@ -10779,12 +9447,8 @@
      "curso": 3,
      "texto": "Utilizar de forma creativa estrategias y conocimientos de mejora de la capacidad de comunicar y de aprender la lengua extranjera, en situaciones reales con apoyo de otros de participantes herramientas analógicas y digitales adaptadas a un nivel intermedio de complejidad para la comprensión, producción y coproducción oral y escrita.",
      "saberes": [
-      "LEX.3.A.1",
       "LEX.3.B.1",
-      "LEX.3.B.2",
-      "LEX.3.B.3",
-      "LEX.3.B.4",
-      "LEX.3.B.5"
+      "LEX.3.B.2"
      ]
     },
     {
@@ -10794,11 +9458,7 @@
      "texto": "Registrar y analizar los progresos de dificultades aprendizaje de la lengua extranjera a nivel oral y escrita, seleccionando de forma progresivamente autónoma las estrategias más eficaces para superar dificultades esas consolidar su aprendizaje, realizando actividades de planificación del propio",
      "saberes": [
       "LEX.3.A.1",
-      "LEX.3.B.1",
-      "LEX.3.B.2",
-      "LEX.3.B.3",
-      "LEX.3.B.4",
-      "LEX.3.B.5"
+      "LEX.3.B.3"
      ]
     },
     {
@@ -10808,9 +9468,7 @@
      "texto": "Actuar de forma adecuada, empática y respetuosa en situaciones interculturales comunes, construyendo vínculos entre las diferentes lenguas y culturas, cualquier rechazando tipo de discriminación, prejuicio y estereotipo en contextos comunicativos cotidianos, considerando vías de solución a aquellos factores que socioculturales dificulten la comunicación la convivencia.",
      "saberes": [
       "LEX.3.C.3",
-      "LEX.3.C.4",
-      "LEX.3.C.5",
-      "LEX.3.C.6"
+      "LEX.3.C.4"
      ]
     },
     {
@@ -10819,8 +9477,6 @@
      "curso": 3,
      "texto": "Valorar críticamente expresiones en interculturales relación con los derechos humanos y adecuarse a la diversidad lingüística, cultural y artística propia y de países donde se habla la lengua extranjera, fomentando la progresivamente curiosidad y el interés por",
      "saberes": [
-      "LEX.3.C.3",
-      "LEX.3.C.4",
       "LEX.3.C.5",
       "LEX.3.C.6"
      ]
@@ -10852,13 +9508,8 @@
      "curso": 4,
      "texto": "Interpretar y valorar el contenido y los rasgos discursivos de textos escritos orales multimodales más progresivamente complejos propios de los ámbitos de las relaciones interpersonales, de los medios de comunicación social y del aprendizaje, así como de textos literarios adecuados al nivel de madurez del alumnado.",
      "saberes": [
-      "LEX.4.A.12",
-      "LEX.4.A.2",
-      "LEX.4.A.4",
       "LEX.4.A.5",
-      "LEX.4.A.6",
-      "LEX.4.A.7",
-      "LEX.4.A.8"
+      "LEX.4.A.7"
      ]
     },
     {
@@ -10868,12 +9519,7 @@
      "texto": "Seleccionar, organizar y aplicar de manera autónoma, las estrategias conocimientos más adecuados en cada comunicativa situación concreta para comprender el sentido general, la información esencial y los detalles más relevantes de los textos orales y escritos; inferir significados basándose en el ámbito contextual e interpretar elementos no verbales; seleccionar, gestionar y validar información veraz mediante la búsqueda en fuentes fiables.",
      "saberes": [
       "LEX.4.A.12",
-      "LEX.4.A.2",
-      "LEX.4.A.4",
-      "LEX.4.A.5",
-      "LEX.4.A.6",
-      "LEX.4.A.7",
-      "LEX.4.A.8"
+      "LEX.4.A.2"
      ]
     },
     {
@@ -10882,10 +9528,7 @@
      "curso": 4,
      "texto": "Expresar oralmente originales textos creativos sencillos de extensión media, https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LEX.4.A.12",
-      "LEX.4.A.2",
       "LEX.4.A.4",
-      "LEX.4.A.5",
       "LEX.4.A.6",
       "LEX.4.A.7",
       "LEX.4.A.8"
@@ -10897,8 +9540,6 @@
      "curso": 4,
      "texto": "Redactar y difundir textos de extensión media con claridad, coherencia, cohesión, corrección y adecuación a la situación comunicativa propuesta, a la tipología textual y a herramientas las analógicas y digitales utilizadas, sobre asuntos de diversa índole, de relevancia personal y de interés público próximos a su experiencia, con el fin de describir, narrar, explicar, argumentar e informar, respetando la propiedad intelectual y evitando el plagio.",
      "saberes": [
-      "LEX.4.A.11",
-      "LEX.4.A.2",
       "LEX.4.A.4",
       "LEX.4.A.6",
       "LEX.4.A.7",
@@ -10912,11 +9553,7 @@
      "texto": "Seleccionar, organizar y aplicar con eficacia y de autónoma manera conocimientos https://www.juntadeandalucia.es/eboja",
      "saberes": [
       "LEX.4.A.11",
-      "LEX.4.A.2",
-      "LEX.4.A.4",
-      "LEX.4.A.6",
-      "LEX.4.A.7",
-      "LEX.4.A.9"
+      "LEX.4.A.2"
      ]
     },
     {
@@ -10935,13 +9572,8 @@
      "curso": 4,
      "texto": "Seleccionar, organizar y utilizar estrategias adecuadas de manera autónoma y eficiente para iniciar, mantener terminar la comunicación, tomar y ceder la palabra, formular solicitar y aclaraciones explicaciones, reformular, comparar y contrastar, colaborar, resumir, debatir, resolver problemas y gestionar situaciones comprometidas.",
      "saberes": [
-      "LEX.4.A.1",
       "LEX.4.A.10",
-      "LEX.4.A.11",
-      "LEX.4.A.2",
-      "LEX.4.A.3",
-      "LEX.4.A.4",
-      "LEX.4.C.1"
+      "LEX.4.A.4"
      ]
     },
     {
@@ -10951,11 +9583,7 @@
      "texto": "Inferir y explicar textos, conceptos y comunicaciones breves y sencillas en cualquier tipo de situación conocida o no, en las que atender a la diversidad, mostrando respeto y empatía por las y los interlocutores y por las lenguas empleadas, y participando eficazmente de en la solución de problemas de intercomprensión y entendimiento en su entorno, apoyándose en diversos recursos soportes analógicos y digitales.",
      "saberes": [
       "LEX.4.A.1",
-      "LEX.4.A.10",
-      "LEX.4.A.11",
-      "LEX.4.A.2",
       "LEX.4.A.3",
-      "LEX.4.A.4",
       "LEX.4.C.1"
      ]
     },
@@ -10965,13 +9593,8 @@
      "curso": 4,
      "texto": "Aplicar estrategias de manera autónoma y eficiente, que ayuden a crear puentes, faciliten la comunicación y sirvan para explicar y simplificar textos, conceptos y mensajes complejos, y que sean adecuadas a las intenciones comunicativas, las características https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LEX.4.A.1",
-      "LEX.4.A.10",
       "LEX.4.A.11",
-      "LEX.4.A.2",
-      "LEX.4.A.3",
-      "LEX.4.A.4",
-      "LEX.4.C.1"
+      "LEX.4.A.2"
      ]
     },
     {
@@ -10980,10 +9603,6 @@
      "curso": 4,
      "texto": "Comparar argumentar de forma crítica las similitudes y diferencias entre distintas lenguas, a partir de textos escritos orales, multimodales complejos, con reflexionando autonomía sobre su funcionamiento.",
      "saberes": [
-      "LEX.4.A.1",
-      "LEX.4.B.1",
-      "LEX.4.B.2",
-      "LEX.4.B.3",
       "LEX.4.B.4",
       "LEX.4.B.5"
      ]
@@ -10994,12 +9613,8 @@
      "curso": 4,
      "texto": "Utilizar de forma autónoma y creativa estrategias conocimientos de mejora de la capacidad de comunicar y de aprender la lengua extranjera, en situaciones reales con apoyo de otros de participantes herramientas analógicas y digitales adaptadas a un nivel alto de complejidad para la comprensión, producción coproducción oral y escrita.",
      "saberes": [
-      "LEX.4.A.1",
       "LEX.4.B.1",
-      "LEX.4.B.2",
-      "LEX.4.B.3",
-      "LEX.4.B.4",
-      "LEX.4.B.5"
+      "LEX.4.B.2"
      ]
     },
     {
@@ -11009,11 +9624,7 @@
      "texto": "Registrar y analizar los progresos de dificultades aprendizaje de la lengua extranjera a nivel oral y escrita, seleccionando de forma autónoma las estrategias más eficaces esas para superar dificultades y consolidar su aprendizaje, realizando actividades de planificación del propio https://www.juntadeandalucia.es/eboja",
      "saberes": [
       "LEX.4.A.1",
-      "LEX.4.B.1",
-      "LEX.4.B.2",
-      "LEX.4.B.3",
-      "LEX.4.B.4",
-      "LEX.4.B.5"
+      "LEX.4.B.3"
      ]
     },
     {
@@ -11023,9 +9634,7 @@
      "texto": "Actuar de forma adecuada, empática y respetuosa en diferentes contextos y situaciones interculturales construyendo vínculos entre las diferentes lenguas y culturas, rechazando cualquier tipo de discriminación, prejuicio y estereotipo en contextos comunicativos cotidianos, considerando vías y proponiendo efectivas de solución a aquellos factores que socioculturales dificulten la comunicación la convivencia.",
      "saberes": [
       "LEX.4.C.3",
-      "LEX.4.C.4",
-      "LEX.4.C.5",
-      "LEX.4.C.6"
+      "LEX.4.C.4"
      ]
     },
     {
@@ -11034,8 +9643,6 @@
      "curso": 4,
      "texto": "Valorar críticamente de manifestaciones diversidad intercultural en relación con los derechos humanos y adecuarse a la diversidad lingüística, cultural y artística propia y de países donde se habla la extranjera, lengua fomentando la curiosidad y el interés por el https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "LEX.4.C.3",
-      "LEX.4.C.4",
       "LEX.4.C.5",
       "LEX.4.C.6"
      ]
@@ -11564,10 +10171,8 @@
      "curso": 1,
      "texto": "Aplicar, en problemas de contextos cercanos de la vida cotidiana, herramientas y estrategias apropiadas, como pueden la ser descomposici en ón problemas más sencillos, el tanteo, el ensayo y error o la búsqueda de patrones, que contribuyan a la resolución de problemas de su entorno más cercano.",
      "saberes": [
-      "MAT.1.A.2",
       "MAT.1.A.3",
-      "MAT.1.B.1",
-      "MAT.1.F.1"
+      "MAT.1.B.1"
      ]
     },
     {
@@ -11578,7 +10183,6 @@
      "saberes": [
       "MAT.1.A.2",
       "MAT.1.A.3",
-      "MAT.1.B.1",
       "MAT.1.F.1"
      ]
     },
@@ -11588,10 +10192,7 @@
      "curso": 1,
      "texto": "Comprobar, de forma la razonada corrección de las soluciones de un problema, usando herramientas digitales como calculadoras, de hojas cálculo programas específicos.",
      "saberes": [
-      "MAT.1.A.3",
-      "MAT.1.A.6",
-      "MAT.1.B.2",
-      "MAT.1.F.3"
+      "MAT.1.A.3"
      ]
     },
     {
@@ -11600,7 +10201,6 @@
      "curso": 1,
      "texto": "Comprobar, la mediante lectura comprensiva, la validez de las soluciones obtenidas en un problema comprobando su coherencia en el contexto planteado el evaluando alcance repercusión de estas soluciones desde diferentes perspectivas: de igualdad género, sostenibilidad, consumo",
      "saberes": [
-      "MAT.1.A.3",
       "MAT.1.A.6",
       "MAT.1.B.2",
       "MAT.1.F.3"
@@ -11613,8 +10213,7 @@
      "texto": "Formular y comprobar conjeturas en sencillas situaciones del entorno cercano, de forma guiada, trabajando de forma individual colectiva la utilización del razonamiento inductivo para formular argumentos matemáticos, analizando patrones, propiedades y relaciones.",
      "saberes": [
       "MAT.1.A.3",
-      "MAT.1.B.1",
-      "MAT.1.D.4"
+      "MAT.1.B.1"
      ]
     },
     {
@@ -11623,8 +10222,6 @@
      "curso": 1,
      "texto": "Plantear, en términos matemáticos, variantes de un problema dado, en contextos cercanos de la vida cotidiana, modificando alguno de sus datos o alguna",
      "saberes": [
-      "MAT.1.A.3",
-      "MAT.1.B.1",
       "MAT.1.D.4"
      ]
     },
@@ -11634,7 +10231,6 @@
      "curso": 1,
      "texto": "Emplear herramientas tecnológicas adecuadas, calculadoras o software matemáticos como paquetes estadísticos o programas de análisis numérico en la investigación comprobación de conjeturas o problemas.",
      "saberes": [
-      "MAT.1.A.1",
       "MAT.1.E.2"
      ]
     },
@@ -11644,8 +10240,7 @@
      "curso": 1,
      "texto": "Reconocer patrones en la resolución de problemas sencillos, organizar datos descomponer un problema en partes más simples, facilitando su interpretación computaciona",
      "saberes": [
-      "MAT.1.A.1",
-      "MAT.1.E.2"
+      "MAT.1.A.1"
      ]
     },
     {
@@ -11654,7 +10249,6 @@
      "curso": 1,
      "texto": "Modelizar situaciones del entorno cercano resolver problemas sencillos de forma eficaz, interpretando y modificando algoritmos, creando modelos de situaciones cotidianas.",
      "saberes": [
-      "MAT.1.A.3",
       "MAT.1.D.1",
       "MAT.1.D.2"
      ]
@@ -11665,9 +10259,7 @@
      "curso": 1,
      "texto": "Reconocer y usar las relaciones entre los conocimiento experiencias matemáticas de los bloques de saberes formando un todo coherente,",
      "saberes": [
-      "MAT.1.A.3",
-      "MAT.1.D.1",
-      "MAT.1.D.2"
+      "MAT.1.A.3"
      ]
     },
     {
@@ -11676,12 +10268,8 @@
      "curso": 1,
      "texto": "Realizar conexiones entre diferentes procesos matemáticos sencillos, aplicando conocimiento experiencias previas enlazándolas con las nuevas ideas.",
      "saberes": [
-      "MAT.1.A.1",
       "MAT.1.A.2",
-      "MAT.1.A.4",
-      "MAT.1.A.5",
-      "MAT.1.E.1",
-      "MAT.1.E.2"
+      "MAT.1.A.4"
      ]
     },
     {
@@ -11691,8 +10279,6 @@
      "texto": "Reconocer situaciones en el entorno más cercano susceptibles de ser formuladas y resueltas mediante herramientas y estrategias matemáticas, estableciendo conexiones el entre mundo real y las matemáticas y los usando procesos inherentes a la",
      "saberes": [
       "MAT.1.A.1",
-      "MAT.1.A.2",
-      "MAT.1.A.4",
       "MAT.1.A.5",
       "MAT.1.E.1",
       "MAT.1.E.2"
@@ -11704,9 +10290,7 @@
      "curso": 1,
      "texto": "Analizar conexiones coherentes entre ideas y conceptos matemáticos con otras materias y con la vida real y aplicarlas mediante el de uso procedimient os sencillos en la resolución de problemas en situaciones del entorno cercano.",
      "saberes": [
-      "MAT.1.D.4",
-      "MAT.1.E.2",
-      "MAT.1.F.3"
+      "MAT.1.D.4"
      ]
     },
     {
@@ -11715,7 +10299,6 @@
      "curso": 1,
      "texto": "Reconocer en diferentes contextos del entorno más cercano, la aportación de las matemáticas al progreso de la humanidad su contribución a la superación",
      "saberes": [
-      "MAT.1.D.4",
       "MAT.1.E.2",
       "MAT.1.F.3"
      ]
@@ -11727,7 +10310,6 @@
      "texto": "Representar conceptos, procedimient os, información y resultados matemáticos usando herramientas digitales sencillas, de formas representació n adecuadas para visualizar ideas estructurar procesos matemáticos, interpretando y resolviendo problemas del entorno cercano valorando su utilidad para compartir información.",
      "saberes": [
       "MAT.1.A.2",
-      "MAT.1.A.5",
       "MAT.1.E.1"
      ]
     },
@@ -11737,7 +10319,6 @@
      "curso": 1,
      "texto": "Esbozar representacio nes matemáticas utilizando herramientas de interpretación",
      "saberes": [
-      "MAT.1.A.2",
       "MAT.1.A.5",
       "MAT.1.E.1"
      ]
@@ -11748,7 +10329,6 @@
      "curso": 1,
      "texto": "Comunicar ideas, conceptos procesos sencillos, el utilizando lenguaje matemático apropiado, empleando diferentes medios, incluidos los digitales, oralmente y por escrito, al describir, explicar justificar sus conocimiento matemáticos.",
      "saberes": [
-      "MAT.1.A.4",
       "MAT.1.D.3"
      ]
     },
@@ -11758,8 +10338,7 @@
      "curso": 1,
      "texto": "Reconocer y emplear el lenguaje matemático presente en contextos cotidianos de entorno su personal, expresando y comunicando",
      "saberes": [
-      "MAT.1.A.4",
-      "MAT.1.D.3"
+      "MAT.1.A.4"
      ]
     },
     {
@@ -11786,8 +10365,7 @@
      "curso": 1,
      "texto": "Colaborar activamente y construir relaciones saludables en el trabajo de las matemáticas en equipos heterogéneos, respetando diferentes opiniones, iniciándose en el desarrollo de destrezas: de comunicación efectiva, de planificación, de indagación, de motivación y confianza en sus propias posibilidades de pensamiento crítico creativo, tomando decisiones y realizando juicios informados.",
      "saberes": [
-      "MAT.1.F.2",
-      "MAT.1.F.3"
+      "MAT.1.F.2"
      ]
     },
     {
@@ -11966,11 +10544,7 @@
      "competencia": 1,
      "curso": 3,
      "texto": "problemas matemáticos complejos, organizando y analizando datos, estableciendo las relaciones entre ellos comprendiendo",
-     "saberes": [
-      "MAT.3.F.1",
-      "MAT.3.F.2",
-      "MAT.3.F.3"
-     ]
+     "saberes": []
     },
     {
      "codigo": "1.2",
@@ -11978,13 +10552,10 @@
      "curso": 3,
      "texto": "Aplicar, en problemas de la vida cotidiana y propios de las matemáticas, herramientas y estrategias apropiadas como pueden ser la analogía con otros problemas, la resolución de manera inversa (ir hacia atrás), la descomposición en problemas más sencillos, el la tanteo, el estimación, ensayo y error o la búsqueda de etc., patrones, que contribuyan a la resolución de en problemas de situaciones diversa complejidad.",
      "saberes": [
-      "MAT.3.A.2",
       "MAT.3.A.3",
       "MAT.3.B.1",
       "MAT.3.D.4",
-      "MAT.3.E.1",
-      "MAT.3.E.2",
-      "MAT.3.F.1"
+      "MAT.3.E.2"
      ]
     },
     {
@@ -11995,10 +10566,7 @@
      "saberes": [
       "MAT.3.A.2",
       "MAT.3.A.3",
-      "MAT.3.B.1",
-      "MAT.3.D.4",
       "MAT.3.E.1",
-      "MAT.3.E.2",
       "MAT.3.F.1"
      ]
     },
@@ -12025,9 +10593,7 @@
       "MAT.3.A.3",
       "MAT.3.B.1",
       "MAT.3.B.3",
-      "MAT.3.D.4",
-      "MAT.3.D.5",
-      "MAT.3.D.6"
+      "MAT.3.D.4"
      ]
     },
     {
@@ -12036,10 +10602,6 @@
      "curso": 3,
      "texto": "Plantear, proporcionando una representación matemática adecuada, variantes de un problema dado, diversos en contextos, modificando alguno de sus https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "MAT.3.A.3",
-      "MAT.3.B.1",
-      "MAT.3.B.3",
-      "MAT.3.D.4",
       "MAT.3.D.5",
       "MAT.3.D.6"
      ]
@@ -12050,10 +10612,7 @@
      "curso": 3,
      "texto": "Emplear herramientas tecnológicas adecuadas, calculadoras o software matemáticos como: Sistemas Algebraicos Computacionales (CAS); entornos de geometría dinámica; paquetes estadísticos de programas análisis numérico, en la investigación y comprobación de conjeturas problemas.",
      "saberes": [
-      "MAT.3.A.1",
-      "MAT.3.A.4",
       "MAT.3.C.1",
-      "MAT.3.D.6",
       "MAT.3.E.3"
      ]
     },
@@ -12065,9 +10624,7 @@
      "saberes": [
       "MAT.3.A.1",
       "MAT.3.A.4",
-      "MAT.3.C.1",
-      "MAT.3.D.6",
-      "MAT.3.E.3"
+      "MAT.3.D.6"
      ]
     },
     {
@@ -12076,13 +10633,9 @@
      "curso": 3,
      "texto": "Modelizar situaciones de la vida cotidiana y resolver de problemas eficaz, forma interpretando y modificando algoritmos, creando modelos abstractos de situaciones cotidianas, para su automatización, modelización y codificación en un lenguaje fácil de interpretar por un sistema informático.",
      "saberes": [
-      "MAT.3.A.3",
-      "MAT.3.C.1",
-      "MAT.3.C.2",
       "MAT.3.C.4",
       "MAT.3.D.1",
-      "MAT.3.D.2",
-      "MAT.3.E.1"
+      "MAT.3.D.2"
      ]
     },
     {
@@ -12094,9 +10647,6 @@
       "MAT.3.A.3",
       "MAT.3.C.1",
       "MAT.3.C.2",
-      "MAT.3.C.4",
-      "MAT.3.D.1",
-      "MAT.3.D.2",
       "MAT.3.E.1"
      ]
     },
@@ -12106,16 +10656,10 @@
      "curso": 3,
      "texto": "Realizar conexiones entre diferentes procesos matemáticos y comprender cómo unas ideas construyen se otras, sobre aplicando conocimientos y experiencias previas enlazándolas con las nuevas ideas.",
      "saberes": [
-      "MAT.3.A.1",
       "MAT.3.A.2",
       "MAT.3.A.4",
-      "MAT.3.A.5",
-      "MAT.3.B.2",
-      "MAT.3.C.1",
       "MAT.3.C.3",
-      "MAT.3.E.1",
-      "MAT.3.E.2",
-      "MAT.3.E.3"
+      "MAT.3.E.2"
      ]
     },
     {
@@ -12125,12 +10669,9 @@
      "texto": "Reconocer en situaciones diferentes contextos (personal, escolar, social, científico humanístico) de susceptibles ser formuladas y resueltas mediante herramientas y estrategias matemáticas, estableciendo conexiones entre el mundo real y las matemáticas, los usando procesos https://www.juntadeandalucia.es/eboja",
      "saberes": [
       "MAT.3.A.1",
-      "MAT.3.A.2",
-      "MAT.3.A.4",
       "MAT.3.A.5",
       "MAT.3.B.2",
       "MAT.3.C.1",
-      "MAT.3.C.3",
       "MAT.3.E.1",
       "MAT.3.E.2",
       "MAT.3.E.3"
@@ -12145,9 +10686,7 @@
       "MAT.3.A.6",
       "MAT.3.C.4",
       "MAT.3.D.2",
-      "MAT.3.D.4",
-      "MAT.3.E.3",
-      "MAT.3.F.3"
+      "MAT.3.D.4"
      ]
     },
     {
@@ -12156,10 +10695,6 @@
      "curso": 3,
      "texto": "Reconocer en diferentes contextos (personal, escolar, social, científico humanístico) la aportación de las matemáticas al progreso de la humanidad y su contribución a la superación de los https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "MAT.3.A.6",
-      "MAT.3.C.4",
-      "MAT.3.D.2",
-      "MAT.3.D.4",
       "MAT.3.E.3",
       "MAT.3.F.3"
      ]
@@ -12172,7 +10707,6 @@
      "saberes": [
       "MAT.3.A.2",
       "MAT.3.A.4",
-      "MAT.3.A.5",
       "MAT.3.E.1"
      ]
     },
@@ -12182,8 +10716,6 @@
      "curso": 3,
      "texto": "Elaborar representaciones matemáticas utilizando herramientas de interpretación y modelización como diagramas, https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "MAT.3.A.2",
-      "MAT.3.A.4",
       "MAT.3.A.5",
       "MAT.3.E.1"
      ]
@@ -12194,9 +10726,7 @@
      "curso": 3,
      "texto": "Comunicar ideas, conceptos procesos, seleccionando y el utilizando lenguaje matemático apropiado empleando diferentes medios, incluidos digitales, los oralmente y por al escrito, describir, explicar justificar razonamientos, procedimientos y conclusiones, de forma clara y precisa.",
      "saberes": [
-      "MAT.3.A.4",
-      "MAT.3.D.3",
-      "MAT.3.D.5"
+      "MAT.3.D.3"
      ]
     },
     {
@@ -12206,7 +10736,6 @@
      "texto": "Reconocer y el emplear lenguaje matemático presente en la vida cotidiana, expresando comunicando con mensajes contenido matemático https://www.juntadeandalucia.es/eboja",
      "saberes": [
       "MAT.3.A.4",
-      "MAT.3.D.3",
       "MAT.3.D.5"
      ]
     },
@@ -12234,8 +10763,7 @@
      "curso": 3,
      "texto": "Colaborar activamente y construir relaciones saludables en el trabajo de las matemáticas en equipos heterogéneos, respetando diferentes opiniones, comunicándose de manera efectiva empática, planificando e indagando con motivación confianza en sus propias posibilidades, de pensando forma crítica y creativa tomando decisiones realizando juicios informados.",
      "saberes": [
-      "MAT.3.F.2",
-      "MAT.3.F.3"
+      "MAT.3.F.2"
      ]
     },
     {
@@ -12806,15 +11334,9 @@
      "texto": "Identificar los principales rasgos estilísticos de obras musicales y dancísticas de diferentes épocas y culturas, evidenciando una actitud de apertura, interés y respeto en la escucha o el visionado de las mismas.",
      "saberes": [
       "MUS.2.A.1",
-      "MUS.2.A.2",
-      "MUS.2.A.3",
       "MUS.2.A.4",
       "MUS.2.A.5",
-      "MUS.2.A.6",
-      "MUS.2.C.1",
-      "MUS.2.C.2",
-      "MUS.2.C.3",
-      "MUS.2.C.4"
+      "MUS.2.C.1"
      ]
     },
     {
@@ -12823,13 +11345,9 @@
      "curso": 2,
      "texto": "Explicar, con actitud abierta y respetuosa, las funciones desempeñadas determinadas por producciones musicales y dancísticas, relacionándolas con las principales características de su contexto histórico, social y cultural.",
      "saberes": [
-      "MUS.2.A.1",
-      "MUS.2.A.2",
       "MUS.2.A.3",
       "MUS.2.A.4",
-      "MUS.2.A.5",
       "MUS.2.A.6",
-      "MUS.2.C.1",
       "MUS.2.C.2",
       "MUS.2.C.3",
       "MUS.2.C.4"
@@ -12841,16 +11359,11 @@
      "curso": 2,
      "texto": "Establecer conexiones entre manifestaciones musicales y dancísticas de diferentes épocas y https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "MUS.2.A.1",
       "MUS.2.A.2",
       "MUS.2.A.3",
       "MUS.2.A.4",
-      "MUS.2.A.5",
-      "MUS.2.A.6",
       "MUS.2.C.1",
-      "MUS.2.C.2",
-      "MUS.2.C.3",
-      "MUS.2.C.4"
+      "MUS.2.C.2"
      ]
     },
     {
@@ -12862,11 +11375,7 @@
       "MUS.2.B.1",
       "MUS.2.B.10",
       "MUS.2.B.2",
-      "MUS.2.B.3",
-      "MUS.2.B.5",
-      "MUS.2.B.6",
-      "MUS.2.B.7",
-      "MUS.2.C.3"
+      "MUS.2.B.6"
      ]
     },
     {
@@ -12875,14 +11384,9 @@
      "curso": 2,
      "texto": "Expresar ideas, sentimientos emociones en actividades de pautadas improvisación, las seleccionando técnicas más adecuadas de entre las que conforman el repertorio personal de recursos.",
      "saberes": [
-      "MUS.2.B.1",
       "MUS.2.B.10",
-      "MUS.2.B.2",
-      "MUS.2.B.3",
-      "MUS.2.B.5",
       "MUS.2.B.6",
-      "MUS.2.B.7",
-      "MUS.2.C.3"
+      "MUS.2.B.7"
      ]
     },
     {
@@ -12892,13 +11396,7 @@
      "texto": "Leer partituras sencillas, identificando de forma guiada los elementos básicos del lenguaje musical, con o sin apoyo de la audición.",
      "saberes": [
       "MUS.2.B.1",
-      "MUS.2.B.10",
-      "MUS.2.B.2",
-      "MUS.2.B.3",
-      "MUS.2.B.5",
-      "MUS.2.B.6",
-      "MUS.2.B.7",
-      "MUS.2.C.3"
+      "MUS.2.B.2"
      ]
     },
     {
@@ -12907,14 +11405,8 @@
      "curso": 2,
      "texto": "Emplear técnicas básicas de interpretación corporal vocal, instrumental, aplicando de estrategias memorización valorando los ensayos como de espacios escucha y aprendizaje.",
      "saberes": [
-      "MUS.2.B.1",
       "MUS.2.B.10",
-      "MUS.2.B.2",
-      "MUS.2.B.3",
-      "MUS.2.B.5",
-      "MUS.2.B.6",
-      "MUS.2.B.7",
-      "MUS.2.C.3"
+      "MUS.2.B.5"
      ]
     },
     {
@@ -12923,14 +11415,7 @@
      "curso": 2,
      "texto": "Interpretar con https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "MUS.2.B.1",
-      "MUS.2.B.10",
-      "MUS.2.B.2",
-      "MUS.2.B.3",
-      "MUS.2.B.5",
-      "MUS.2.B.6",
-      "MUS.2.B.7",
-      "MUS.2.C.3"
+      "MUS.2.B.3"
      ]
     },
     {
@@ -12939,8 +11424,6 @@
      "curso": 2,
      "texto": "Planificar con desarrollar, creatividad, propuestas artístico-musicales, tanto como individuales colaborativas, empleando medios musicales y dancísticos, así como herramientas analógicas y digitales.",
      "saberes": [
-      "MUS.2.B.4",
-      "MUS.2.B.5",
       "MUS.2.B.7",
       "MUS.2.B.8",
       "MUS.2.B.9",
@@ -12953,12 +11436,9 @@
      "curso": 2,
      "texto": "Participar activamente en la planificación y en la ejecución de propuestas artístico-musicales colaborativas, valorando las aportaciones del resto de integrantes del grupo descubriendo de oportunidades desarrollo personal, social, académico y profesional. https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "MUS.2.B.4",
       "MUS.2.B.5",
       "MUS.2.B.7",
-      "MUS.2.B.8",
-      "MUS.2.B.9",
-      "MUS.2.C.4"
+      "MUS.2.B.9"
      ]
     },
     {
@@ -13437,14 +11917,8 @@
      "saberes": [
       "TYD.3.A.1",
       "TYD.3.A.2",
-      "TYD.3.A.3",
-      "TYD.3.A.4",
       "TYD.3.A.5",
-      "TYD.3.B.1",
-      "TYD.3.B.2",
-      "TYD.3.B.3",
-      "TYD.3.C.3",
-      "TYD.3.E.2"
+      "TYD.3.C.3"
      ]
     },
     {
@@ -13453,16 +11927,8 @@
      "curso": 3,
      "texto": "Comprender y examinar productos tecnológicos de uso habitual a través del análisis de objetos y sistemas, empleando el método científico y utilizando herramientas de simulación en la construcción de conocimiento.",
      "saberes": [
-      "TYD.3.A.1",
       "TYD.3.A.2",
-      "TYD.3.A.3",
-      "TYD.3.A.4",
-      "TYD.3.A.5",
-      "TYD.3.B.1",
-      "TYD.3.B.2",
-      "TYD.3.B.3",
-      "TYD.3.C.3",
-      "TYD.3.E.2"
+      "TYD.3.A.3"
      ]
     },
     {
@@ -13471,15 +11937,7 @@
      "curso": 3,
      "texto": "Adoptar medidas preventivas para la protección de los dispositivos, los datos y la salud personal, identificando problemas riesgos relacionados con el uso de la tecnología y analizándolos de manera ética y crítica.",
      "saberes": [
-      "TYD.3.A.1",
-      "TYD.3.A.2",
-      "TYD.3.A.3",
       "TYD.3.A.4",
-      "TYD.3.A.5",
-      "TYD.3.B.1",
-      "TYD.3.B.2",
-      "TYD.3.B.3",
-      "TYD.3.C.3",
       "TYD.3.E.2"
      ]
     },
@@ -13490,15 +11948,10 @@
      "texto": "Idear y diseñar soluciones eficaces, innovadoras problemas sostenibles definidos, aplicando conceptos, técnicas y procedimientos interdisciplinares, así como criterios de sostenibilidad, con actitud emprendedora, perseverante y creativa.",
      "saberes": [
       "TYD.3.A.1",
-      "TYD.3.A.2",
-      "TYD.3.A.3",
-      "TYD.3.A.4",
       "TYD.3.A.5",
       "TYD.3.B.1",
       "TYD.3.B.2",
-      "TYD.3.B.3",
-      "TYD.3.C.3",
-      "TYD.3.E.2"
+      "TYD.3.B.3"
      ]
     },
     {
@@ -13507,16 +11960,7 @@
      "curso": 3,
      "texto": "Seleccionar, planificar y organizar los materiales y https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "TYD.3.A.1",
-      "TYD.3.A.2",
-      "TYD.3.A.3",
-      "TYD.3.A.4",
-      "TYD.3.A.5",
-      "TYD.3.B.1",
-      "TYD.3.B.2",
-      "TYD.3.B.3",
-      "TYD.3.C.3",
-      "TYD.3.E.2"
+      "TYD.3.A.4"
      ]
     },
     {
@@ -13526,14 +11970,7 @@
      "texto": "Fabricar objetos o modelos mediante la manipulación y conformación de materiales, empleando herramientas y máquinas adecuadas, aplicando los fundamentos de estructuras, mecanismos, electricidad y electrónica y respetando las normas de seguridad y salud correspondientes.",
      "saberes": [
       "TYD.3.A.3",
-      "TYD.3.A.4",
-      "TYD.3.B.1",
-      "TYD.3.B.2",
-      "TYD.3.B.3",
-      "TYD.3.C.1",
-      "TYD.3.C.2",
-      "TYD.3.C.3",
-      "TYD.3.D.2"
+      "TYD.3.A.4"
      ]
     },
     {
@@ -13542,14 +11979,9 @@
      "curso": 3,
      "texto": "Representar y comunicar el proceso de creación de un producto, desde su diseño hasta difusión, elaborando su documentación técnica y gráfica con la ayuda de herramientas digitales, empleando los formatos y el vocabulario técnico adecuados, de manera colaborativa, tanto presencialmente como en remoto.",
      "saberes": [
-      "TYD.3.A.3",
-      "TYD.3.A.4",
       "TYD.3.B.1",
       "TYD.3.B.2",
       "TYD.3.B.3",
-      "TYD.3.C.1",
-      "TYD.3.C.2",
-      "TYD.3.C.3",
       "TYD.3.D.2"
      ]
     },
@@ -13559,15 +11991,9 @@
      "curso": 3,
      "texto": "Describir, interpretar y diseñar soluciones a problemas informáticos a través de algoritmos y diagramas de flujo, aplicando los elementos y https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "TYD.3.A.3",
-      "TYD.3.A.4",
-      "TYD.3.B.1",
-      "TYD.3.B.2",
-      "TYD.3.B.3",
       "TYD.3.C.1",
       "TYD.3.C.2",
-      "TYD.3.C.3",
-      "TYD.3.D.2"
+      "TYD.3.C.3"
      ]
     },
     {
@@ -13578,11 +12004,7 @@
      "saberes": [
       "TYD.3.C.1",
       "TYD.3.C.2",
-      "TYD.3.C.3",
-      "TYD.3.D.1",
-      "TYD.3.D.2",
-      "TYD.3.D.3",
-      "TYD.3.D.4"
+      "TYD.3.C.3"
      ]
     },
     {
@@ -13591,13 +12013,8 @@
      "curso": 3,
      "texto": "Automatizar procesos, máquinas y objetos de manera autónoma, con conexión a internet, mediante el análisis, construcción y programación de robots y sistemas de control.",
      "saberes": [
-      "TYD.3.C.1",
       "TYD.3.C.2",
-      "TYD.3.C.3",
-      "TYD.3.D.1",
-      "TYD.3.D.2",
-      "TYD.3.D.3",
-      "TYD.3.D.4"
+      "TYD.3.C.3"
      ]
     },
     {
@@ -13606,11 +12023,7 @@
      "curso": 3,
      "texto": "Hacer un uso eficiente y seguro de los dispositivos digitales de uso cotidiano en la de problemas resolución analizando los sencillos, componentes y los sistemas de comunicación, conociendo los riesgos y adoptando medidas de seguridad para la protección de datos y equipos.",
      "saberes": [
-      "TYD.3.C.1",
-      "TYD.3.C.2",
-      "TYD.3.C.3",
       "TYD.3.D.1",
-      "TYD.3.D.2",
       "TYD.3.D.3",
       "TYD.3.D.4"
      ]
@@ -13621,12 +12034,7 @@
      "curso": 3,
      "texto": "Crear contenidos, elaborar materiales y difundirlos en distintas plataformas, configurando correctamente las digitales herramientas habituales del entorno de aprendizaje, ajustándolas a sus necesidades y respetando los derechos de autor y la etiqueta digital.",
      "saberes": [
-      "TYD.3.C.1",
-      "TYD.3.C.2",
-      "TYD.3.C.3",
-      "TYD.3.D.1",
       "TYD.3.D.2",
-      "TYD.3.D.3",
       "TYD.3.D.4"
      ]
     },
@@ -13636,10 +12044,6 @@
      "curso": 3,
      "texto": "Organizar la información de manera estructurada, aplicando técnicas de almacenamiento seguro. https://www.juntadeandalucia.es/eboja",
      "saberes": [
-      "TYD.3.C.1",
-      "TYD.3.C.2",
-      "TYD.3.C.3",
-      "TYD.3.D.1",
       "TYD.3.D.2",
       "TYD.3.D.3",
       "TYD.3.D.4"
