@@ -539,11 +539,14 @@ function ordenar(proyeccion: GraphProjection): GraphProjection {
 export function highlightFor(
   projection: GraphProjection,
   selectedId: Uuid | null,
-): { nodes: Set<Uuid>; edges: Set<Uuid> } {
+): { nodes: Set<Uuid>; edges: Set<Uuid>; ancestors: Set<Uuid> } {
   const nodes = new Set<Uuid>();
   const edges = new Set<Uuid>();
-  if (selectedId === null) return { nodes, edges };
-  if (!projection.nodes.some((node) => node.id === selectedId)) return { nodes, edges };
+  const ancestors = new Set<Uuid>();
+  if (selectedId === null) return { nodes, edges, ancestors };
+  if (!projection.nodes.some((node) => node.id === selectedId)) {
+    return { nodes, edges, ancestors };
+  }
 
   nodes.add(selectedId);
   for (const edge of projection.edges) {
@@ -554,5 +557,25 @@ export function highlightFor(
     }
   }
 
-  return { nodes, edges };
+  /**
+   * Los contenedores de lo resaltado tampoco se atenúan.
+   *
+   * Un criterio vive dentro de su competencia y esta dentro de su materia. Si
+   * esos dos contenedores se apagan, el criterio queda encerrado en una caja
+   * oscura y parece que no se ha encendido, aunque sus conexiones sí lo estén.
+   * Es lo que hacía que seleccionar un criterio iluminara sus aristas pero no a
+   * él mismo.
+   */
+  const padreDe = new Map(projection.nodes.map((node) => [node.id, node.parent]));
+  for (const id of nodes) {
+    let actual = padreDe.get(id);
+    let saltos = 0;
+    while (actual !== undefined && saltos < 6) {
+      ancestors.add(actual);
+      actual = padreDe.get(actual);
+      saltos += 1;
+    }
+  }
+
+  return { nodes, edges, ancestors };
 }

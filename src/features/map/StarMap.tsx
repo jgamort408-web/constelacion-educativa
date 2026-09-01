@@ -216,17 +216,22 @@ export function StarMap({ projection, selectedId, onSelect, highContrast }: Prop
     const cy = cyRef.current;
     if (!cy) return;
 
-    const { nodes, edges } = highlightFor(projection, selectedId);
+    const { nodes, edges, ancestors } = highlightFor(projection, selectedId);
 
     cy.batch(() => {
-      cy.elements().removeClass('resaltado atenuado seleccionado');
+      cy.elements().removeClass('resaltado atenuado seleccionado contenedor-activo');
       // Conjunto vacío = el nodo seleccionado no está en este nivel. Atenuar todo
       // sin encender nada deja el mapa apagado y parece que la app se ha roto.
       if (nodes.size === 0) return;
 
       cy.elements().addClass('atenuado');
+      // Primero los contenedores, para que lo resaltado los sobrescriba si un
+      // nodo es a la vez contenedor y parte de la selección.
+      for (const id of ancestors) {
+        cy.getElementById(id).removeClass('atenuado').addClass('contenedor-activo');
+      }
       for (const id of nodes) {
-        cy.getElementById(id).removeClass('atenuado').addClass('resaltado');
+        cy.getElementById(id).removeClass('atenuado contenedor-activo').addClass('resaltado');
       }
       for (const id of edges) {
         cy.getElementById(id).removeClass('atenuado').addClass('resaltado');

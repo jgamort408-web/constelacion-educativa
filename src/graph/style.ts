@@ -81,11 +81,22 @@ export function buildStylesheet(palette: Palette = PALETA_POR_DEFECTO): Styleshe
         'background-color': 'data(color)',
         'background-opacity': 0.92,
         'background-image': 'data(icono)',
-        'background-image-opacity': 0.92,
-        'background-width': '50%',
-        'background-height': '50%',
+        'background-image-opacity': 0.95,
+        // El icono se recorta a la silueta del nodo: con `none` se salía por las
+        // esquinas de un rombo o una estrella y quedaba un trazo suelto flotando
+        // fuera de la forma.
+        'background-clip': 'node',
         'background-fit': 'contain',
-        'background-clip': 'none',
+        // En porcentaje, no en píxeles: así el icono crece y mengua con el nodo,
+        // y como Cytoscape transforma el lienzo entero, también con el zoom.
+        'background-width': '54%',
+        'background-height': '54%',
+        'background-width-relative-to': 'inner',
+        'background-height-relative-to': 'inner',
+        'background-position-x': '50%',
+        'background-position-y': '50%',
+        'background-offset-x': 0,
+        'background-offset-y': 0,
         width: 'data(size)',
         height: 'data(size)',
         label: 'data(label)',
@@ -121,7 +132,28 @@ export function buildStylesheet(palette: Palette = PALETA_POR_DEFECTO): Styleshe
       // Los contenedores no se atenúan del todo: son el mapa de referencia que
       // permite situar lo resaltado.
       selector: ':parent.atenuado',
-      style: { opacity: 0.5 },
+      style: { opacity: 0.45 },
+    },
+    {
+      /**
+       * Contenedor de algo resaltado.
+       *
+       * Ni encendido como lo seleccionado ni apagado como el resto: la caja tiene
+       * que verse lo justo para situar lo que hay dentro. Sin este estado, un
+       * criterio seleccionado quedaba encerrado en una caja atenuada y parecía
+       * que no se había encendido, aunque sus conexiones sí lo estuvieran.
+       */
+      selector: ':parent.contenedor-activo',
+      style: {
+        opacity: 1,
+        'background-opacity': 0.14,
+        'border-width': 1.5,
+        'border-opacity': 0.9,
+        'border-color': LATON,
+        'border-style': 'solid',
+        color: LATON,
+        'z-index': 5,
+      },
     },
     {
       selector: ':parent',
@@ -258,6 +290,9 @@ export function buildStylesheet(palette: Palette = PALETA_POR_DEFECTO): Styleshe
         'border-width': 3,
         'border-color': LATON,
         'z-index': 20,
+        // Sin esto, un nodo dentro de un contenedor se dibuja por debajo de él y
+        // el resaltado no se ve: los compuestos pintan al padre encima del hijo.
+        'z-compound-depth': 'top',
       },
     },
     {
@@ -291,7 +326,14 @@ export function buildStylesheet(palette: Palette = PALETA_POR_DEFECTO): Styleshe
         'background-opacity': 1,
         color: LATON,
         'font-weight': 600,
+        'font-size': 15,
+        'text-background-opacity': 0.95,
         'z-index': 30,
+        'z-compound-depth': 'top',
+        // Un halo, para encontrarlo entre ciento setenta nodos sin buscarlo.
+        'overlay-color': LATON,
+        'overlay-opacity': 0.16,
+        'overlay-padding': 10,
       },
     },
   ];
