@@ -897,7 +897,7 @@ export function buildDemoSnapshot(): ProjectSnapshot {
       curriculumVersionId: versionId,
       subjectId: subjectId(subject.key),
       stage: 'ESO',
-      grade: '3',
+      gradeSpan: { from: 3, to: 3 },
       operativeDescriptors: [],
     })),
 

@@ -36,3 +36,7 @@ pnpm-debug.log*
 .env
 .env.local
 .env.*.local
+
+# currículo importado y caché de descargas
+.cache/
+curriculo/*.json

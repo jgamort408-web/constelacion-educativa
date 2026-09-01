@@ -62,14 +62,52 @@ const curricularBase = {
   curriculumVersionId: uuidSchema,
 };
 
+/**
+ * Tramo de cursos que cubre un elemento curricular.
+ *
+ * NO es un curso suelto, y esa es una decisión forzada por las fuentes:
+ *
+ *   - El currículo del Estado (RD 217/2022) agrupa cursos. Para Matemáticas los
+ *     criterios de 1.º, 2.º y 3.º son literalmente los mismos y la norma no los
+ *     separa. Para Lengua, Inglés, Geografía e Historia y Educación Física van
+ *     1.º-2.º y 3.º-4.º. Presentar «los criterios de 3.º» como lista cerrada
+ *     sería inventar una división que la norma no hace.
+ *   - El currículo de Andalucía (Orden de 30 de mayo de 2023) SÍ separa por
+ *     curso, con una columna por curso en su Anexo II.
+ *
+ * Un tramo cubre ambos casos: `{from: 3, to: 3}` es un curso suelto y
+ * `{from: 1, to: 3}` es un agrupamiento. Ver docs/FUENTE-CURRICULO.md.
+ */
+export const gradeSpanSchema = z
+  .object({
+    from: z.number().int().min(1).max(6),
+    to: z.number().int().min(1).max(6),
+  })
+  .refine((span) => span.from <= span.to, {
+    message: 'El curso inicial no puede ser posterior al final',
+  });
+export type GradeSpan = z.infer<typeof gradeSpanSchema>;
+
+/** Si un tramo incluye un curso concreto. */
+export function spanIncludes(span: GradeSpan, grade: number): boolean {
+  return grade >= span.from && grade <= span.to;
+}
+
+/** Rótulo legible: "3.º ESO" o "1.º a 3.º ESO". */
+export function spanLabel(span: GradeSpan, stage = 'ESO'): string {
+  return span.from === span.to
+    ? `${span.from}.º ${stage}`
+    : `${span.from}.º a ${span.to}.º ${stage}`;
+}
+
 /** Competencia específica de una materia. */
 export const competencySchema = z.object({
   ...curricularBase,
   subjectId: uuidSchema,
   /** Etapa educativa: "ESO", "Bachillerato". */
   stage: nonEmptyString(40),
-  /** Curso dentro de la etapa: "3", "4". */
-  grade: nonEmptyString(10),
+  /** Cursos que cubre. Puede ser uno solo o un agrupamiento. */
+  gradeSpan: gradeSpanSchema,
   /** Descriptores operativos del perfil de salida asociados, si se conocen. */
   operativeDescriptors: z.array(nonEmptyString(40)).default([]),
 });

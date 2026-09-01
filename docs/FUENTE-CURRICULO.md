@@ -50,7 +50,7 @@ https://educagob.educacionfpydeportes.gob.es/curriculo/curriculo-lomloe/
 | Biología y Geología                | `biologia-geologia`       | `criterios-evaluacion-primer-tercer-curso.html`  | 1-2-3  |   6 |        18 |      43 |
 | Educación Física                   | `educacion-fisica`        | `criterios-evaluacion-primer-segundo-curso.html` | 1-2    |   5 |        17 |      32 |
 | Educación Física                   | `educacion-fisica`        | `criterios-evaluacion-tercer-cuarto-curso.html`  | 3-4    |   5 |        17 |      33 |
-| Ed. Plástica, Visual y Audiovisual | `educacion-plastica-visu` | `criterios-evaluacion-primer-tercer-curso.html`  | 1-2-3  |   7 |        16 |      18 |
+| Ed. Plástica, Visual y Audiovisual | `educacion-plastica-visu` | `criterios-evaluacion-primer-tercer-curso.html`  | 1-2-3  |   8 |        16 |      18 |
 | Física y Química                   | `fisica-quimica`          | `criterios-eval-primer-tercer-curso.html`        | 1-2-3  |   6 |        15 |      26 |
 | Geografía e Historia               | `geografia-historia`      | `criterios-eval-primer-segundo-curso.html`       | 1-2    |   9 |        30 |      43 |
 | Geografía e Historia               | `geografia-historia`      | `criterios-eval-cuarto-curso.html` ⚠️            | 3-4    |   9 |        20 |      43 |
@@ -63,7 +63,7 @@ https://educagob.educacionfpydeportes.gob.es/curriculo/curriculo-lomloe/
 | Tecnología y Digitalización        | `tecno-digitali`          | `criterios-evaluacion-primer-tercer-curso.html`  | 1-2-3  |   7 |        15 |      27 |
 | Ed. en Valores Cívicos y Éticos    | `ed-valores-civic-et`     | `criterios-evaluacion-etapa.html`                | toda   |   4 |        13 |      25 |
 
-**Totales:** 74 competencias específicas distintas, 271 criterios de evaluación y unas
+**Totales:** 75 competencias específicas distintas, 271 criterios de evaluación y unas
 534 líneas de saberes básicos, repartidas en 15 páginas.
 
 Cada materia tiene además `competencias-especificas.html` (el texto completo de sus
@@ -141,7 +141,16 @@ descartaría por estar fuera de alcance.
 Conviven `criterios-evaluacion-…` y `criterios-eval-…` sin ningún patrón. No se pueden
 generar las URL: hay que descubrirlas leyendo los enlaces de la página de cada materia.
 
-### 4.4 Educación Física rotula distinto
+### 4.4 Una competencia sin su rótulo
+
+Educación Plástica, Visual y Audiovisual tiene **8 competencias específicas**, pero la
+segunda aparece escrita como `2. Explicar las producciones…`, sin el prefijo
+«Competencia específica». Es una inconsistencia de la propia fuente.
+
+El primer recuento manual de este mapa decía 7 porque solo buscaba el prefijo. Lo
+detectó el contraste de recuentos del importador, que es exactamente para lo que está.
+
+### 4.5 Educación Física rotula distinto
 
 Donde el resto escribe `Competencia específica 1: …`, Educación Física escribe
 solamente `1. …`. Además invierte el título: «Criterios de evaluación, competencias
@@ -153,7 +162,7 @@ confunda un subbloque de saberes (`1. Conteo`) con una competencia.
 
 ---
 
-## 5. Lo que esto obliga a cambiar en el modelo
+## 5. Lo que esto obligó a cambiar en el modelo
 
 **El currículo no separa curso por curso.** Su unidad no es «3.º ESO», es un **bloque
 de cursos** que varía según la materia:
@@ -167,14 +176,12 @@ criterios de 3.º de los de 4.º**: la norma no lo hace. Cualquier aplicación q
 presente «los criterios de 3.º ESO de Lengua» como una lista cerrada está inventando
 una división que no existe.
 
-Consecuencia para `src/domain/curriculum.ts`: el campo `grade: string` de
-`competencySchema` no vale. Hace falta representar un rango:
+Hecho: `competencySchema` ya no tiene `grade: string`, tiene `gradeSpan`:
 
 ```ts
-// En vez de grade: '3'
-gradeSpan: { from: 1, to: 3 }   // Matemáticas
-gradeSpan: { from: 3, to: 4 }   // Lengua, tercer y cuarto curso
-gradeSpan: { from: 1, to: 4 }   // Educación en Valores
+gradeSpan: { from: 1, to: 3 }   // Matemáticas (Estado)
+gradeSpan: { from: 3, to: 4 }   // Lengua, tercer y cuarto curso (Estado)
+gradeSpan: { from: 3, to: 3 }   // un curso suelto, como los da Andalucía
 ```
 
 Y la interfaz, al filtrar por 3.º ESO, debe mostrar los bloques que **contienen** 3.º y
@@ -183,7 +190,71 @@ sensación de precisión.
 
 ---
 
-## 6. Plan de importación
+## 6. La fuente andaluza: Orden de 30 de mayo de 2023
+
+El enlace que da el Ministerio (<https://www.juntadeandalucia.es/boja/2023/90/3>) es el
+**Decreto 102/2023**, cuyo único anexo es el perfil competencial: **no contiene el
+currículo por materias**.
+
+El currículo real está en la **Orden de 30 de mayo de 2023**, BOJA n.º 104 de 2 de junio
+de 2023, entrada 36: <https://www.juntadeandalucia.es/boja/2023/104/36>. Se publica en
+dos PDF que suman 535 páginas:
+
+| Archivo                                 | Páginas | Contiene                                    |
+| --------------------------------------- | ------: | ------------------------------------------- |
+| `BOJA23-104-00289-9727-01_00284752.pdf` |     289 | Articulado, Anexo I y comienzo del Anexo II |
+| `BOJA23-104-00246-9727-02_00284752.pdf` |     246 | Fin del Anexo II y Anexos III a X           |
+
+**El Anexo II ocupa 256 páginas** (de la 50 del primero a la 16 del segundo) y es el que
+lleva competencias específicas, criterios de evaluación y saberes básicos por materia.
+
+### 6.1 Dos diferencias de fondo con el currículo del Estado
+
+**Andalucía SÍ separa por curso.** Su Anexo II es una tabla con una columna por curso:
+para Biología y Geología, las cabeceras son literalmente «PRIMER CURSO» y «TERCER
+CURSO», cada una con sus propios saberes. Donde el Estado agrupa 1.º-2.º-3.º sin
+distinguir, Andalucía distingue.
+
+**Andalucía SÍ codifica los saberes básicos**, con un esquema propio
+`MATERIA.CURSO.BLOQUE.ORDEN`:
+
+```
+BYG.1.E.8.  Valoración de la contribución de las ciencias ambientales…
+BYG.3.H.2.  Medidas de prevención y tratamientos de las enfermedades infecciosas…
+```
+
+Eso son códigos citables en una programación, cosa que el currículo estatal no ofrece.
+Es la razón de peso para acabar importando el andaluz.
+
+### 6.2 Lo que hace difícil esta importación
+
+Verificado probando los extractores sobre el PDF real:
+
+- **pypdf destroza el texto.** El texto justificado sale con espacios entre letras
+  («pr oc esos geológic os int ernos»). Inservible para indexar con fidelidad.
+- **pymupdf extrae limpio.** Es el extractor a usar.
+- **El contenido está en tablas de dos columnas cuyas celdas se parten entre páginas.**
+  La detección automática de tablas de pymupdf devuelve una fila por página, no las
+  filas reales: no basta con extraerlas, hay que reconstruir la correspondencia entre
+  competencia, criterio y saberes recorriendo posiciones en la página.
+- Cada página arrastra unas trece líneas de encabezado del boletín que hay que descartar.
+
+No es imposible, pero **no es el mismo trabajo que el importador de educagob**: aquel
+analiza HTML bien estructurado; este exige reconstruir una tabla a partir de
+coordenadas, y verificar el resultado materia por materia contra el PDF.
+
+### 6.3 Cómo conviven las dos fuentes
+
+El modelo ya lo admite: cada elemento apunta a su `CurriculumVersion`, y `gradeSpan`
+representa tanto un curso suelto (Andalucía) como un agrupamiento (Estado). Se pueden
+cargar las dos y la interfaz dirá de cuál viene cada criterio.
+
+**Para una programación en un centro andaluz manda el BOJA.** Lo estatal sirve para
+empezar a trabajar y para comparar, no para citar.
+
+---
+
+## 7. Plan de importación
 
 1. **Descubrir** las URL reales leyendo los enlaces de cada `<materia>.html`, sin
    generarlas.

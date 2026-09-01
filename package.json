@@ -20,7 +20,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "schema": "tsx scripts/generate-schema.ts",
-    "ci": "npm run typecheck && npm run lint && npm run format:check && npm run test && npm run build"
+    "ci": "npm run typecheck && npm run lint && npm run format:check && npm run test && npm run build",
+    "importar:curriculo": "tsx --tsconfig tsconfig.app.json scripts/importar-curriculo.ts"
   },
   "dependencies": {
     "cytoscape": "^3.31.0",
