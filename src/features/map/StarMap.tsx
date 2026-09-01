@@ -3,7 +3,7 @@ import cytoscape, { type Core, type EventObjectNode } from 'cytoscape';
 import fcose from 'cytoscape-fcose';
 import type { Uuid } from '@/domain';
 import type { GraphProjection } from '@/graph';
-import { buildStylesheet, highlightFor, layoutFor, readPalette } from '@/graph';
+import { buildStylesheet, highlightFor, layoutFor, radialPositions, readPalette } from '@/graph';
 import { MapNavigation } from './MapNavigation.tsx';
 
 /**
@@ -195,7 +195,13 @@ export function StarMap({ projection, selectedId, onSelect, highContrast }: Prop
       cy.add([...elements.nodes, ...elements.edges]);
     });
 
-    const layout = cy.layout(layoutFor(projection.level, prefersReducedMotion()));
+    const layout = cy.layout(
+      layoutFor(
+        projection.level,
+        prefersReducedMotion(),
+        projection.level === 'CURRICULO' ? radialPositions(projection) : undefined,
+      ),
+    );
 
     // `fit` encuadra todo el grafo, y con muchos nodos eso significa alejarse
     // tanto que las etiquetas dejan de leerse. Se pone un suelo al zoom y se deja
@@ -209,7 +215,7 @@ export function StarMap({ projection, selectedId, onSelect, highContrast }: Prop
     });
 
     layout.run();
-  }, [elements, projection.level]);
+  }, [elements, projection]);
 
   // El resaltado va por clases, nunca modificando el estilo de cada elemento.
   useEffect(() => {

@@ -8,4 +8,6 @@
 
 export * from './projection.ts';
 export { buildStylesheet, layoutFor, readPalette } from './style.ts';
+export { radialPositions } from './radial.ts';
+export type { Posicion } from './radial.ts';
 export type { Palette } from './style.ts';

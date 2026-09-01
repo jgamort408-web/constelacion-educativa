@@ -347,7 +347,11 @@ export function buildStylesheet(palette: Palette = PALETA_POR_DEFECTO): Styleshe
  * niveles densos usan fCoSE, que separa los grupos sin que haya que decirle dónde
  * va cada cosa.
  */
-export function layoutFor(level: SemanticLevel, reducedMotion: boolean): LayoutOptions {
+export function layoutFor(
+  level: SemanticLevel,
+  reducedMotion: boolean,
+  posiciones?: Record<string, { x: number; y: number }>,
+): LayoutOptions {
   const base = {
     animate: !reducedMotion,
     animationDuration: 460,
@@ -358,6 +362,17 @@ export function layoutFor(level: SemanticLevel, reducedMotion: boolean): LayoutO
 
   if (level === 'GALAXIA') {
     return { ...base, name: 'concentric', concentric: () => 1, minNodeSpacing: 90 };
+  }
+
+  // El nivel de currículo usa posiciones calculadas: ver src/graph/radial.ts.
+  // Un algoritmo de fuerzas no puede ordenar lo que no está conectado, y aquí la
+  // mayoría de los criterios aún no se ha asignado a ninguna actividad.
+  if (level === 'CURRICULO' && posiciones) {
+    return {
+      ...base,
+      name: 'preset',
+      positions: (nodo: { id(): string }) => posiciones[nodo.id()] ?? { x: 0, y: 0 },
+    } as unknown as LayoutOptions;
   }
 
   // fCoSE se registra en tiempo de ejecución, así que sus opciones no están en
