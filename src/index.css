@@ -108,3 +108,109 @@
     }
   }
 }
+
+/*
+ * Impresión y exportación a PDF (§13, §29).
+ *
+ * ── Por qué el PDF se genera imprimiendo ──
+ * El navegador ya sabe componer texto: parte líneas, corta páginas, incrusta las
+ * fuentes y produce un PDF con texto real —seleccionable, buscable y legible por
+ * un lector de pantalla—. Una biblioteca de PDF en JavaScript pesaría cientos de
+ * kilobytes, obligaría a empaquetar una fuente con tildes y compondría peor.
+ *
+ * ── Lo que hace esta hoja ──
+ * Invierte el tema. El informe se ve en pantalla sobre fondo oscuro, y en papel
+ * eso es un cartucho de tóner entero y un documento ilegible en fotocopia. Se
+ * redefinen los tokens en vez de reescribir cada componente, que es la misma
+ * técnica del modo de alto contraste.
+ */
+@media print {
+  :root {
+    --color-cielo-950: #ffffff;
+    --color-cielo-900: #ffffff;
+    --color-cielo-800: #ffffff;
+    --color-cielo-700: #c9cbd4;
+    --color-cielo-600: #9aa0b0;
+    --color-borde-500: #6b7280;
+    --color-tinta-100: #14161f;
+    --color-tinta-300: #33384a;
+    --color-tinta-500: #565c70;
+    --color-laton-400: #6b4f00;
+    --color-laton-500: #6b4f00;
+  }
+
+  @page {
+    margin: 16mm 14mm;
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    background: #ffffff;
+    color: #14161f;
+    font-size: 10pt;
+  }
+
+  /* Los controles no son el documento: eligen qué documento se imprime. */
+  .no-imprimir,
+  .salto {
+    display: none !important;
+  }
+
+  /*
+   * El armazón de la aplicación es una rejilla de dos columnas con un ancho
+   * máximo pensado para una pantalla. En papel sobra: el documento ocupa la caja
+   * de la página y punto.
+   */
+  .marco,
+  #contenido {
+    display: block !important;
+    max-width: none !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+
+  /*
+   * `#contenido` es una rejilla de dos columnas: barra lateral y panel. En papel
+   * la barra lateral no se imprime, pero la columna que ocupaba **sí sigue ahí**:
+   * el informe se metía entero en los 320 píxeles de la segunda columna y salía
+   * en una tira estrecha con dos tercios de la hoja en blanco. Convertirla en
+   * bloque es lo que devuelve el ancho de la página al documento.
+   */
+
+  .documento {
+    color: #14161f;
+  }
+
+  /* Una sección que empieza al final de una página y sigue en la siguiente se lee
+     mal; una ficha partida por la mitad, peor. */
+  .bloque {
+    break-inside: avoid-page;
+  }
+  .ficha {
+    break-inside: avoid;
+    border-color: #c9cbd4;
+  }
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+
+  /*
+   * Lo replegado en pantalla se despliega en papel.
+   *
+   * Un desplegable es una comodidad de pantalla: ahorra sitio a quien puede
+   * hacer clic. En un PDF nadie puede, así que un bloque replegado sería
+   * información perdida sin ni siquiera avisar de que falta.
+   */
+  .solo-impresion {
+    display: block !important;
+  }
+}
+
+/* Fuera de la impresión, lo que solo va en papel no ocupa sitio. */
+.solo-impresion {
+  display: none;
+}

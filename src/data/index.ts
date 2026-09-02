@@ -10,7 +10,10 @@ export * from './repository.ts';
 export { ConstelacionDatabase, getDatabase, setDatabase } from './database.ts';
 export type { Backup, ProjectMeta } from './database.ts';
 export { IndexedDbProjectRepository } from './indexeddb-repository.ts';
-export { buildDemoSnapshot, DEMO_INFO } from './demo/barrio.ts';
+// El ejemplo NO se reexporta aquí. Reexportarlo lo ataría al grafo de módulos
+// que carga la aplicación al arrancar, y con él sus trescientos kilobytes de
+// currículo, anulando la importación diferida de `bootstrap.ts`. Quien lo
+// necesite —las pruebas y los scripts— lo importa de `./demo/ejemplo.ts`.
 export { openProject, seedIfEmpty } from './bootstrap.ts';
 export { adoptForProject, FUENTES, loadCatalogue, matchSubjects } from './curriculum-catalogue.ts';
 export type {

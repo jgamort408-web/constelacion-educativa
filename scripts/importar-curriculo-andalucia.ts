@@ -254,6 +254,8 @@ function main(): void {
           curriculumVersionId: versionId,
           subjectId: materiaId,
           block: `Bloque ${saber.bloque} · ${saber.curso}.º ESO`,
+          // La Orden pone un saber en un curso y solo uno: el tramo es puntual.
+          gradeSpan: { from: saber.curso, to: saber.curso },
         }),
       );
     }

@@ -2,7 +2,7 @@ import 'fake-indexeddb/auto';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { validateSnapshot } from '@/domain';
 import { ConstelacionDatabase } from './database.ts';
-import { buildDemoSnapshot } from './demo/barrio.ts';
+import { buildDemoSnapshot } from './demo/ejemplo.ts';
 import { IndexedDbProjectRepository } from './indexeddb-repository.ts';
 import { openProject, seedIfEmpty } from './bootstrap.ts';
 import { mutation, RepositoryError, singlePatch } from './repository.ts';

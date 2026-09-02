@@ -152,6 +152,19 @@ export const basicKnowledgeSchema = z.object({
   subjectId: uuidSchema,
   /** Bloque de saberes al que pertenece, tal como lo agrupa la norma. */
   block: richText(200),
+  /**
+   * Cursos a los que la norma adscribe este saber.
+   *
+   * Es `null` cuando la fuente de la que salió no lo dice. Ambos currículos sí lo
+   * dicen —Andalucía por columna de curso, el Estado por tramo—, así que en la
+   * práctica solo queda a null lo importado antes de que existiera este campo.
+   *
+   * Nulo NO significa «todos los cursos»: significa «no consta». Por eso el
+   * filtro por curso deja pasar los nulos en lugar de esconderlos. Ocultar un
+   * saber por una adscripción que nadie ha afirmado sería inventar la norma en
+   * sentido contrario, y en esta aplicación eso es peor que mostrar de más.
+   */
+  gradeSpan: gradeSpanSchema.nullable().default(null),
 });
 export type BasicKnowledge = z.infer<typeof basicKnowledgeSchema>;
 

@@ -1,4 +1,5 @@
 import type { ProjectSnapshot, Uuid } from '@/domain';
+import { gradesPresent } from '@/domain';
 import type { SemanticLevel } from '@/graph';
 import { LEVEL_INFO, SEMANTIC_LEVELS } from '@/graph';
 
@@ -21,6 +22,8 @@ interface Props {
   onMinWeight: (value: number) => void;
   weekIndex: number | null;
   onWeek: (value: number | null) => void;
+  grade: number | null;
+  onGrade: (value: number | null) => void;
 }
 
 export function MapControls({
@@ -33,10 +36,13 @@ export function MapControls({
   onMinWeight,
   weekIndex,
   onWeek,
+  grade,
+  onGrade,
 }: Props) {
   const weeks = [...new Set(snapshot.sessions.map((session) => session.weekIndex))].sort(
     (a, b) => a - b,
   );
+  const cursos = gradesPresent(snapshot);
 
   function toggleSubject(id: Uuid) {
     onSubjects(
@@ -116,6 +122,33 @@ export function MapControls({
       </div>
 
       <div className="flex flex-wrap items-end gap-6">
+        {/*
+          El curso solo se ofrece en el nivel de currículo, que es el único que
+          dibuja elementos normativos. En los demás no hay nada que acotar: una
+          actividad no pertenece a un curso, pertenece al proyecto.
+        */}
+        {level === 'CURRICULO' && cursos.length > 0 && (
+          <label className="flex flex-col gap-1 text-xs text-tinta-300">
+            <span className="font-mono text-[10px] tracking-[0.14em] text-tinta-500 uppercase">
+              Curso
+            </span>
+            <select
+              value={grade ?? ''}
+              onChange={(event) => {
+                onGrade(event.target.value === '' ? null : Number(event.target.value));
+              }}
+              className="rounded border border-borde-500 bg-cielo-800 px-2 py-1 text-tinta-100"
+            >
+              {cursos.map((curso) => (
+                <option key={curso} value={curso}>
+                  {curso}.º ESO
+                </option>
+              ))}
+              <option value="">Todos los cursos</option>
+            </select>
+          </label>
+        )}
+
         <label className="flex flex-col gap-1 text-xs text-tinta-300">
           <span className="font-mono text-[10px] tracking-[0.14em] text-tinta-500 uppercase">
             Conexiones por encima de {Math.round(minWeight * 100)} %

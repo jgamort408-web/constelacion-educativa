@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import type { EvaluationCriterion, ProjectSnapshot, Uuid } from '@/domain';
 import type { FuenteCurricular } from '@/data';
 import { FUENTES } from '@/data';
-import { spanLabel } from '@/domain';
+import { gradesPresent, spanLabel } from '@/domain';
 
 /**
  * Catálogo curricular del proyecto (§9).
@@ -30,6 +30,16 @@ interface Props {
   onCargarOficial: (fuente: FuenteCurricular) => void;
   onRetirarOficial: () => void;
   onAsignar: (criterionId: Uuid) => void;
+  /**
+   * Curso al que se acota el catálogo. `null` los muestra todos.
+   *
+   * Viene de fuera y no de un estado local a propósito: el mapa, los informes y
+   * este panel comparten el mismo curso, así que un docente que acota a 1.º lo
+   * acota en toda la aplicación y no se encuentra tres listas distintas del
+   * mismo currículo según por dónde entre.
+   */
+  grade: number | null;
+  onGrade: (grade: number | null) => void;
 }
 
 export function CurriculumPanel({
@@ -39,12 +49,14 @@ export function CurriculumPanel({
   onCargarOficial,
   onRetirarOficial,
   onAsignar,
+  grade,
+  onGrade,
 }: Props) {
   // `Uuid` es un alias de string, así que una unión con 'todas' no aporta tipo.
   // El centinela va aparte para que el compilador siga distinguiéndolos.
   const [materiaId, setMateriaId] = useState<string>(TODAS);
-  const [curso, setCurso] = useState<number | 'todos'>('todos');
   const [busqueda, setBusqueda] = useState('');
+  const cursos = useMemo(() => gradesPresent(snapshot), [snapshot]);
 
   const versiones = useMemo(
     () => new Map(snapshot.curriculumVersions.map((v) => [v.id, v])),
@@ -98,9 +110,9 @@ export function CurriculumPanel({
 
     const competenciasVisibles = snapshot.competencies.filter((competencia) => {
       if (materiaId !== TODAS && competencia.subjectId !== materiaId) return false;
-      if (curso !== 'todos') {
+      if (grade !== null) {
         const { from, to } = competencia.gradeSpan;
-        if (curso < from || curso > to) return false;
+        if (grade < from || grade > to) return false;
       }
       return true;
     });
@@ -125,7 +137,7 @@ export function CurriculumPanel({
     snapshot.competencies,
     snapshot.evaluationCriteria,
     materiaId,
-    curso,
+    grade,
     busqueda,
     materias,
     saberesPorCodigo,
@@ -215,16 +227,23 @@ export function CurriculumPanel({
             Curso
           </span>
           <select
-            value={curso}
+            value={grade ?? ''}
             onChange={(e) => {
-              setCurso(e.target.value === 'todos' ? 'todos' : Number(e.target.value));
+              onGrade(e.target.value === '' ? null : Number(e.target.value));
             }}
             className="rounded border border-borde-500 bg-cielo-800 px-2 py-1 text-tinta-100"
           >
-            <option value="todos">Todos</option>
-            <option value="1">1.º ESO</option>
-            <option value="2">2.º ESO</option>
-            <option value="3">3.º ESO</option>
+            {/*
+              Los cursos salen del currículo cargado, no de una lista fija. Con
+              una lista fija de 1.º a 3.º, importar 4.º dejaría sus criterios
+              visibles pero imposibles de aislar, y nadie entendería por qué.
+            */}
+            {cursos.map((candidato) => (
+              <option key={candidato} value={candidato}>
+                {candidato}.º ESO
+              </option>
+            ))}
+            <option value="">Todos</option>
           </select>
         </label>
 

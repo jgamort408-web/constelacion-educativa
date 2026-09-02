@@ -1,4 +1,4 @@
-import { buildDemoSnapshot } from '../src/data/demo/barrio.ts';
+import { buildDemoSnapshot } from '../src/data/demo/ejemplo.ts';
 import {
   buildContributionMatrix,
   summarizeFindings,

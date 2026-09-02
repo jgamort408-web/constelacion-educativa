@@ -432,6 +432,9 @@ async function main(): Promise<void> {
             curriculumVersionId: versionId,
             subjectId: materiaId,
             block: saber.subbloque ? `${saber.bloque} › ${saber.subbloque}` : saber.bloque,
+            // El Estado publica los saberes por tramo, no por curso: el tramo del
+            // saber es el mismo de la página de la que se extrajo.
+            gradeSpan: esperado.span,
           }),
         );
       });

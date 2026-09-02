@@ -1,5 +1,5 @@
 import type { EdgeType, NodeType, ProjectSnapshot, Uuid } from '@/domain';
-import { buildContributionMatrix, computeContribution } from '@/domain';
+import { buildContributionMatrix, computeContribution, scopeCurriculum } from '@/domain';
 import { ASPECTO, iconoDeCriterio } from './iconos.ts';
 
 /**
@@ -107,6 +107,14 @@ export interface GraphFilters {
   readonly minWeight?: number;
   /** Semana concreta del proyecto, para el nivel de sesiones. */
   readonly weekIndex?: number | null;
+  /**
+   * Curso al que acotar el currículo. `null` los muestra todos.
+   *
+   * Solo afecta al nivel de currículo, que es el único que dibuja elementos
+   * normativos. Un criterio de 3.º no es «menos relevante» en un proyecto de 1.º:
+   * es de otro curso y no pinta nada en el mapa (§9).
+   */
+  readonly grade?: number | null;
 }
 
 /** Tamaños relativos por tipo de nodo. El proyecto es el sol del sistema. */
@@ -405,12 +413,16 @@ export function project(
     // criterios de tres materias salían mezclados y era imposible encontrar uno.
     subjectNodes.forEach(addNode);
 
+    // El recorte por curso y por materia lo hace el dominio, no este archivo. Es
+    // lo que garantiza que el mapa y el panel de currículo enseñen exactamente el
+    // mismo conjunto: si cada uno filtrara por su cuenta, acabarían discrepando.
+    const ambito = scopeCurriculum(snapshot, filters.grade ?? null, [...visibleSubjects]);
+
     const competenciasConCriterios = new Set(
-      snapshot.evaluationCriteria.map((criterion) => criterion.competencyId),
+      ambito.criteria.map((criterion) => criterion.competencyId),
     );
 
-    for (const competency of snapshot.competencies) {
-      if (!visibleSubjects.has(competency.subjectId)) continue;
+    for (const competency of ambito.competencies) {
       if (!competenciasConCriterios.has(competency.id)) continue;
       addNode(
         node(
@@ -424,8 +436,7 @@ export function project(
       );
     }
 
-    for (const criterion of snapshot.evaluationCriteria) {
-      if (!visibleSubjects.has(criterion.subjectId)) continue;
+    for (const criterion of ambito.criteria) {
       addNode(
         node(
           criterion.id,
@@ -444,8 +455,7 @@ export function project(
       );
     }
 
-    for (const knowledge of snapshot.basicKnowledge) {
-      if (!visibleSubjects.has(knowledge.subjectId)) continue;
+    for (const knowledge of ambito.knowledge) {
       addNode(
         node(
           knowledge.id,

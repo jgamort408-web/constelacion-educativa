@@ -5,11 +5,11 @@
 > [PROPUESTA.md](PROPUESTA.md).
 >
 > Versión legible: <https://claude.ai/code/artifact/b1b69b20-ca19-44c9-836c-e7b5c2857a7f>
-> Última revisión: 2026-09-01.
+> Última revisión: 2026-09-02.
 
 ## Estado
 
-**v0.1 desplegada y en uso.** 157 pruebas en verde.
+**v0.1 desplegada y en uso.** 195 pruebas en verde.
 
 - En línea: <https://jgamort408-web.github.io/constelacion-educativa/>
 - Repositorio: `jgamort408-web/constelacion-educativa`
@@ -25,6 +25,7 @@
 | 5 · Panel, matriz y alertas     | ✅ Terminada                                   |
 | 6 · Accesibilidad y despliegue  | ✅ Terminada                                   |
 | 7 · Currículo oficial           | ✅ Terminada · **no estaba en este plan**      |
+| 8 · Informes y acotación        | ✅ Terminada · **tampoco estaba**              |
 
 ### Lo que se hizo y este plan no preveía
 
@@ -40,9 +41,39 @@ documentado». La realidad pedía más, y se hizo:
 - **El currículo llega a la aplicación**: se elige fuente, se explora por materia, curso
   y texto —la búsqueda entra también en los saberes— y al asignar un criterio se
   arrastran los saberes que la norma le relaciona.
-- **El proyecto de ejemplo se rehízo** con criterios reales: «Cartografía sonora de
-  nuestro barrio», una situación y tres materias, en vez de las cuatro situaciones y
+- **El proyecto de ejemplo se rehízo** con criterios reales: «El entorno que habitamos»,
+  dos situaciones y las ocho materias de 1.º de ESO, en vez de las cuatro situaciones y
   catorce actividades con códigos DEMO del ejemplo anterior.
+
+### Fase 8 · Lo que pidió el uso, no la especificación
+
+Salió de mirar la aplicación con el currículo entero cargado. Nada de esto estaba en el
+plan, y todo era necesario para que un equipo docente la abriera un lunes:
+
+- **Acotación por curso.** El catálogo de la etapa son casi quinientos criterios; un
+  docente de 1.º no necesita ver ni uno de los demás. El curso se elige una vez y vale
+  para el mapa, el catálogo y los informes: [`src/domain/scope.ts`](../src/domain/scope.ts).
+- **Reparto del mapa sin solapamientos.** El radio del anillo de materias estaba escrito
+  a mano y una materia con muchos criterios desbordaba sobre su vecina. Ahora se calcula
+  por bisección el radio mínimo que hace falta, y cada materia se coloca del lado de las
+  actividades que la usan. Lo vigila [`radial.test.ts`](../src/graph/radial.test.ts),
+  que mide distancias entre nodos reales y no radios teóricos.
+- **Pantalla completa y descarga en PNG**, porque el mapa se proyecta en reuniones y
+  acaba en actas.
+- **Informes en texto**: [`src/reports/`](../src/reports/), capa pura hermana de
+  `graph/`. Programa completo, reparto por materia y semana a semana, con los avisos de
+  coordinación entre materias. Exportación a PDF por la hoja de impresión del navegador,
+  no por una biblioteca: compone mejor y no pesa nada.
+
+### Fallos que solo aparecen al usar la aplicación
+
+- El nivel de currículo se abría al 91 % de zoom, viendo cuatro nodos del centro. No era
+  el cálculo de posiciones: el `layoutstop` del nivel anterior seguía vivo y pisaba el
+  encuadre del nuevo. Lo arregla una bandera de vigencia en el efecto.
+- El mapa aparecía atenuado antes de que nadie pulsara nada, porque se preseleccionaba la
+  primera actividad y seleccionar apaga todo lo demás. Ahora se abre sin selección.
+- El informe salía impreso en una tira de 320 píxeles: la barra lateral no se imprime,
+  pero su columna de la rejilla seguía ocupando sitio.
 
 ### Cambios de modelo que forzaron las fuentes
 
@@ -55,19 +86,26 @@ documentado». La realidad pedía más, y se hizo:
 - Regla de validación nueva: identificadores duplicados. Y la de cobertura curricular
   pasó a emitir **un solo hallazgo con el recuento** en vez de uno por criterio, porque
   al cargar el currículo completo saltaban 165 advertencias que enterraban los errores.
+- `basicKnowledgeSchema` ganó `gradeSpan`, nulo cuando la fuente no lo dice. Sin él no se
+  podía acotar el currículo por curso. Nulo **no significa «todos los cursos»**: significa
+  «no consta», y por eso el filtro lo deja pasar en vez de esconderlo.
+- `projectSchema` ganó `grade`. El campo `course` es un rótulo —«1.º ESO», «1 ESO»,
+  «Primero de ESO» son el mismo curso y tres cadenas distintas— y deducir el número
+  leyéndolo funcionaría casi siempre; «casi siempre», aplicado a qué criterios ve un
+  docente, significa enseñarle los de otro curso sin avisar.
 
 ## 0. Decisiones tomadas (marco del plan)
 
-| Decisión          | Valor                                           | Consecuencia arquitectónica                              |
-| ----------------- | ----------------------------------------------- | -------------------------------------------------------- |
-| Usuarios de la v1 | Solo el autor; equipo docente en fase posterior | Sin backend, sin cuentas. Persistencia local.            |
-| Plazo             | Sprint intenso (~8 días de trabajo efectivo)    | Ampliado de 6 a 8 al entrar la edición (ADR 0005).       |
-| IA                | Fuera de la v1, con la costura preparada        | Existe `AIProvider` y JSON Schema; ninguna llamada real. |
-| Currículo         | Real: Estado y Andalucía, ambos importados      | Superado: el plan solo preveía datos DEMO.               |
-| Primer entregable | Mapa + panel + filtros + matriz + dashboard     | Con edición real: crear, modificar y borrar.             |
-| Nombre            | `constelacion-educativa`                        | Repo `jgamort408/constelacion-educativa`.                |
-| Licencia          | MIT, repositorio público                        | Sin datos personales en el repo.                         |
-| Caso de uso       | Ejemplo «Cartografía sonora de nuestro barrio»  | Una situación, tres materias, criterios reales del BOJA. |
+| Decisión          | Valor                                           | Consecuencia arquitectónica                                |
+| ----------------- | ----------------------------------------------- | ---------------------------------------------------------- |
+| Usuarios de la v1 | Solo el autor; equipo docente en fase posterior | Sin backend, sin cuentas. Persistencia local.              |
+| Plazo             | Sprint intenso (~8 días de trabajo efectivo)    | Ampliado de 6 a 8 al entrar la edición (ADR 0005).         |
+| IA                | Fuera de la v1, con la costura preparada        | Existe `AIProvider` y JSON Schema; ninguna llamada real.   |
+| Currículo         | Real: Estado y Andalucía, ambos importados      | Superado: el plan solo preveía datos DEMO.                 |
+| Primer entregable | Mapa + panel + filtros + matriz + dashboard     | Con edición real: crear, modificar y borrar.               |
+| Nombre            | `constelacion-educativa`                        | Repo `jgamort408/constelacion-educativa`.                  |
+| Licencia          | MIT, repositorio público                        | Sin datos personales en el repo.                           |
+| Caso de uso       | Ejemplo «El entorno que habitamos»              | Dos situaciones, ocho materias, criterios reales del BOJA. |
 
 ---
 

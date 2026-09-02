@@ -23,6 +23,7 @@ import { MapControls } from '@/features/map/MapControls.tsx';
 import { StarMap } from '@/features/map/StarMap.tsx';
 import { ContributionMatrix } from '@/features/matrix/ContributionMatrix.tsx';
 import { NodeList } from '@/features/explorer/NodeList.tsx';
+import { ReportsPanel } from '@/features/reports/ReportsPanel.tsx';
 import { TraceabilityPanel } from '@/features/traceability/TraceabilityPanel.tsx';
 import { useHighContrast } from '@/hooks/useHighContrast.ts';
 
@@ -34,10 +35,11 @@ import { useHighContrast } from '@/hooks/useHighContrast.ts';
  * por eso no podrán discrepar (§5).
  */
 
-type Tab = 'mapa' | 'trazabilidad' | 'matriz' | 'curriculo' | 'alertas';
+type Tab = 'mapa' | 'informes' | 'trazabilidad' | 'matriz' | 'curriculo' | 'alertas';
 
 const TABS: { id: Tab; label: string }[] = [
   { id: 'mapa', label: 'Mapa estelar' },
+  { id: 'informes', label: 'Informes' },
   { id: 'trazabilidad', label: 'Trazabilidad' },
   { id: 'matriz', label: 'Matriz de contribución' },
   { id: 'curriculo', label: 'Currículo' },
@@ -71,6 +73,15 @@ export function App() {
   const [subjectIds, setSubjectIds] = useState<readonly string[]>([]);
   const [minWeight, setMinWeight] = useState(0);
   const [weekIndex, setWeekIndex] = useState<number | null>(null);
+  /**
+   * Curso al que se acota el currículo.
+   *
+   * `undefined` significa «el docente no ha elegido», y entonces manda el curso
+   * del proyecto. No es lo mismo que `null`, que significa «los quiere todos».
+   * Confundirlos haría que abrir un proyecto de 1.º enseñara los criterios de
+   * toda la etapa, que es justo lo que había que arreglar.
+   */
+  const [gradeElegido, setGradeElegido] = useState<number | null | undefined>(undefined);
 
   useEffect(() => {
     void load();
@@ -115,9 +126,11 @@ export function App() {
 
   // La proyección del grafo también se deriva: el mapa y el panel de trazabilidad
   // leen el mismo snapshot, así que no pueden mostrar cosas distintas (§5).
+  const grade = gradeElegido === undefined ? (snapshot?.project.grade ?? null) : gradeElegido;
+
   const projection = useMemo(
-    () => (snapshot ? project(snapshot, level, { subjectIds, minWeight, weekIndex }) : null),
-    [snapshot, level, subjectIds, minWeight, weekIndex],
+    () => (snapshot ? project(snapshot, level, { subjectIds, minWeight, weekIndex, grade }) : null),
+    [snapshot, level, subjectIds, minWeight, weekIndex, grade],
   );
 
   if (status === 'cargando' || status === 'inicial') {
@@ -233,12 +246,12 @@ export function App() {
   }
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-[1240px] flex-col px-6 pb-16">
+    <div className="marco mx-auto flex min-h-screen max-w-[1240px] flex-col px-6 pb-16">
       <a href="#contenido" className="salto">
         Saltar al contenido
       </a>
 
-      <header className="border-b border-cielo-600 py-6">
+      <header className="no-imprimir border-b border-cielo-600 py-6">
         <div className="flex flex-wrap items-baseline justify-between gap-3">
           <div>
             <p className="font-mono text-[10px] tracking-[0.16em] text-laton-500 uppercase">
@@ -270,7 +283,7 @@ export function App() {
         </dl>
       </header>
 
-      <div className="flex flex-wrap items-center gap-2 border-b border-cielo-700 py-3">
+      <div className="no-imprimir flex flex-wrap items-center gap-2 border-b border-cielo-700 py-3">
         <button
           type="button"
           onClick={renameSelected}
@@ -322,7 +335,7 @@ export function App() {
       )}
 
       <main id="contenido" className="grid flex-1 gap-8 pt-6 lg:grid-cols-[320px_minmax(0,1fr)]">
-        <aside className="lg:sticky lg:top-6 lg:self-start">
+        <aside className="no-imprimir lg:sticky lg:top-6 lg:self-start">
           <h2 className="mb-3 font-mono text-[10px] tracking-[0.14em] text-tinta-500 uppercase">
             Proyecto
           </h2>
@@ -330,7 +343,10 @@ export function App() {
         </aside>
 
         <section className="min-w-0">
-          <div role="tablist" className="mb-5 flex gap-1 border-b border-cielo-700">
+          <div
+            role="tablist"
+            className="no-imprimir mb-5 flex flex-wrap gap-1 border-b border-cielo-700"
+          >
             {TABS.map((entry) => (
               <button
                 key={entry.id}
@@ -366,14 +382,26 @@ export function App() {
                 onMinWeight={setMinWeight}
                 weekIndex={weekIndex}
                 onWeek={setWeekIndex}
+                grade={grade}
+                onGrade={setGradeElegido}
               />
               <StarMap
                 projection={projection}
                 selectedId={selectedId}
                 onSelect={select}
                 highContrast={contraste.activo}
+                titulo={snapshot.project.title}
               />
             </div>
+          )}
+          {tab === 'informes' && (
+            <ReportsPanel
+              snapshot={snapshot}
+              grade={grade}
+              onGrade={setGradeElegido}
+              subjectIds={subjectIds}
+              onSubjects={setSubjectIds}
+            />
           )}
           {tab === 'trazabilidad' && (
             <TraceabilityPanel
@@ -393,6 +421,8 @@ export function App() {
               onCargarOficial={(fuente) => void adoptCurriculum(fuente)}
               onRetirarOficial={() => void dropCurriculum()}
               onAsignar={assignCriterion}
+              grade={grade}
+              onGrade={setGradeElegido}
             />
           )}
           {tab === 'alertas' && <AlertsPanel findings={findings} nodes={nodes} onSelect={select} />}

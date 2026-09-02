@@ -5,14 +5,18 @@ import type { RefObject } from 'react';
  *
  * La rueda del ratón sola es un mal instrumento para recorrer un grafo: obliga a
  * muchos gestos pequeños para cruzar el rango útil de zoom, y en un portátil con
- * panel táctil se vuelve impreciso. Aquí van los tres controles que un docente
- * espera y que la rueda no da:
+ * panel táctil se vuelve impreciso. Aquí van los controles que un docente espera
+ * y que la rueda no da:
  *
  *   · una barra para saltar a cualquier nivel de zoom de un tirón;
  *   · botones de acercar y alejar, que son lo que se usa al proyectar en clase
  *     con un mando o un ratón sin rueda cómoda;
  *   · encuadrar, que devuelve al mapa completo cuando uno se pierde, y que es la
- *     salida de emergencia más pedida en cualquier lienzo navegable.
+ *     salida de emergencia más pedida en cualquier lienzo navegable;
+ *   · pantalla completa, porque un mapa de cuatrocientos nodos dentro de una
+ *     columna de setecientos píxeles no se puede leer por mucho que se acerque;
+ *   · descargar la imagen, que es lo que acaba en el acta de la reunión de
+ *     departamento.
  *
  * Todos animan el cambio en lugar de saltar: un salto instantáneo obliga a
  * reconstruir mentalmente dónde estaba cada cosa.
@@ -25,6 +29,9 @@ interface Props {
   onZoom: (nivel: number) => void;
   onFit: () => void;
   onCenterSelection: () => void;
+  onFullscreen: () => void;
+  onExport: () => void;
+  enPantallaCompleta: boolean;
   haySeleccion: boolean;
   barraRef?: RefObject<HTMLInputElement | null>;
 }
@@ -44,6 +51,9 @@ function aZoom(posicion: number, min: number, max: number): number {
   return Math.exp(Math.log(min) + posicion * (Math.log(max) - Math.log(min)));
 }
 
+const BOTON =
+  'rounded border border-borde-500 px-2.5 py-1 text-xs text-tinta-300 transition-colors hover:border-laton-500 hover:text-laton-400 disabled:opacity-40';
+
 export function MapNavigation({
   zoom,
   minZoom,
@@ -51,6 +61,9 @@ export function MapNavigation({
   onZoom,
   onFit,
   onCenterSelection,
+  onFullscreen,
+  onExport,
+  enPantallaCompleta,
   haySeleccion,
   barraRef,
 }: Props) {
@@ -101,20 +114,27 @@ export function MapNavigation({
       </label>
 
       <div className="flex items-center gap-2">
-        <button
-          type="button"
-          onClick={onFit}
-          className="rounded border border-borde-500 px-2.5 py-1 text-xs text-tinta-300 transition-colors hover:border-laton-500 hover:text-laton-400"
-        >
+        <button type="button" onClick={onFit} className={BOTON}>
           Encuadrar
         </button>
         <button
           type="button"
           onClick={onCenterSelection}
           disabled={!haySeleccion}
-          className="rounded border border-borde-500 px-2.5 py-1 text-xs text-tinta-300 transition-colors hover:border-laton-500 hover:text-laton-400 disabled:opacity-40"
+          className={BOTON}
         >
           Ir a la selección
+        </button>
+        <button
+          type="button"
+          onClick={onFullscreen}
+          aria-pressed={enPantallaCompleta}
+          className={BOTON}
+        >
+          {enPantallaCompleta ? 'Salir de pantalla completa' : 'Pantalla completa'}
+        </button>
+        <button type="button" onClick={onExport} className={BOTON}>
+          Descargar imagen
         </button>
       </div>
 
@@ -122,7 +142,8 @@ export function MapNavigation({
         Arrastra el fondo para desplazarte · doble clic en un nodo para centrarlo ·{' '}
         <kbd className="rounded bg-cielo-700 px-1">+</kbd>{' '}
         <kbd className="rounded bg-cielo-700 px-1">−</kbd> con el mapa enfocado ·{' '}
-        <kbd className="rounded bg-cielo-700 px-1">0</kbd> para encuadrar
+        <kbd className="rounded bg-cielo-700 px-1">0</kbd> para encuadrar ·{' '}
+        <kbd className="rounded bg-cielo-700 px-1">F</kbd> para pantalla completa
       </p>
     </div>
   );

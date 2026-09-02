@@ -55,8 +55,21 @@ export const projectSchema = z.object({
   id: uuidSchema,
   title: nonEmptyString(200),
   description: richText(),
-  /** Curso al que se dirige: "3.º ESO". */
+  /** Curso al que se dirige, tal como se escribe: "3.º ESO". */
   course: nonEmptyString(40),
+  /**
+   * El mismo curso, como número, para poder acotar el currículo.
+   *
+   * `course` es un rótulo y no se puede consultar: «1.º ESO», «1 ESO» y «Primero
+   * de ESO» son el mismo curso y tres cadenas distintas. Deducir el número
+   * leyendo el rótulo funcionaría casi siempre, y «casi siempre» aplicado a qué
+   * criterios ve un docente significa enseñarle los de otro curso sin avisar.
+   *
+   * Es nulo cuando el proyecto abarca varios cursos o cuando se creó antes de que
+   * existiera este campo. Con nulo, la aplicación no acota por su cuenta: pide
+   * elegir el curso.
+   */
+  grade: z.number().int().min(1).max(6).nullable().default(null),
   /** Grupo o grupos concretos, si el proyecto se acota a alguno. */
   group: richText(120),
   startDate: isoDateSchema,

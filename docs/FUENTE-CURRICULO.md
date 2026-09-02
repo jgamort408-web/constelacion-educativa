@@ -185,9 +185,20 @@ gradeSpan: { from: 3, to: 4 }   // Lengua, tercer y cuarto curso (Estado)
 gradeSpan: { from: 3, to: 3 }   // un curso suelto, como los da Andalucía
 ```
 
-Y la interfaz, al filtrar por 3.º ESO, debe mostrar los bloques que **contienen** 3.º y
-decir claramente que algunos abarcan también otro curso. Ocultarlo daría una falsa
-sensación de precisión.
+Y la interfaz, al filtrar por 3.º ESO, muestra los bloques que **contienen** 3.º y dice
+tal cual el tramo de cada uno. Ocultarlo daría una falsa sensación de precisión.
+
+El **saber básico** lleva su propio `gradeSpan` desde el 2 de septiembre de 2026, porque
+sin él no se podía acotar el currículo por curso: Andalucía adscribe cada saber a un
+curso y el Estado a un tramo, así que ambas fuentes lo saben decir. Es nulo solo cuando
+la fuente calla, y **nulo no significa «todos los cursos»**: significa «no consta». Por
+eso el filtro deja pasar los nulos en vez de esconderlos — esconder algo cuya adscripción
+nadie ha afirmado sería inventar la norma en sentido contrario.
+
+El **criterio de evaluación**, en cambio, no lleva curso propio: lo hereda de su
+competencia. Duplicarlo permitiría que un criterio dijera 2.º mientras su competencia
+dice 1.º, y esa contradicción no tiene ninguna lectura sensata. Lo resuelve
+[`src/domain/scope.ts`](../src/domain/scope.ts).
 
 ---
 

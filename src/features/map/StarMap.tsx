@@ -38,6 +38,8 @@ interface Props {
    * releerle la paleta y volver a aplicarle el estilo a mano.
    */
   highContrast: boolean;
+  /** Nombre para el archivo de imagen que se descarga. */
+  titulo: string;
 }
 
 /** Por debajo de este zoom las etiquetas de los nodos dejan de leerse. */
@@ -54,12 +56,14 @@ function centroDeVista(cy: Core): { x: number; y: number } {
   return { x: cy.width() / 2, y: cy.height() / 2 };
 }
 
-export function StarMap({ projection, selectedId, onSelect, highContrast }: Props) {
+export function StarMap({ projection, selectedId, onSelect, highContrast, titulo }: Props) {
+  const shellRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const cyRef = useRef<Core | null>(null);
   const onSelectRef = useRef(onSelect);
   onSelectRef.current = onSelect;
   const [zoom, setZoom] = useState(1);
+  const [pantallaCompleta, setPantallaCompleta] = useState(false);
 
   /** Anima hasta un nivel de zoom conservando el centro de la vista. */
   const irA = useCallback((nivel: number) => {
@@ -93,6 +97,60 @@ export function StarMap({ projection, selectedId, onSelect, highContrast }: Prop
       { duration: prefersReducedMotion() ? 0 : 340, easing: 'ease-out-cubic' },
     );
   }, [selectedId]);
+
+  /**
+   * Pantalla completa sobre el contenedor, no sobre el documento.
+   *
+   * Se pide sobre la envoltura y no sobre el lienzo para que los controles de
+   * navegación entren también: un mapa a pantalla completa sin barra de zoom ni
+   * botón de salida es una trampa, sobre todo proyectando en clase.
+   */
+  const alternarPantallaCompleta = useCallback(() => {
+    const shell = shellRef.current;
+    if (!shell) return;
+    if (document.fullscreenElement) void document.exitFullscreen();
+    else void shell.requestFullscreen().catch(() => undefined);
+  }, []);
+
+  useEffect(() => {
+    function alCambiar() {
+      const activa = document.fullscreenElement === shellRef.current;
+      setPantallaCompleta(activa);
+      // El lienzo de Cytoscape no se entera de que su contenedor ha cambiado de
+      // tamaño: hay que decírselo, o dibuja en el rectángulo anterior y el mapa
+      // queda recortado en una esquina.
+      const cy = cyRef.current;
+      if (!cy) return;
+      requestAnimationFrame(() => {
+        cy.resize();
+        cy.fit(cy.elements(), 60);
+      });
+    }
+    document.addEventListener('fullscreenchange', alCambiar);
+    return () => {
+      document.removeEventListener('fullscreenchange', alCambiar);
+    };
+  }, []);
+
+  /**
+   * Descarga el mapa tal como se ve, en PNG.
+   *
+   * `full: true` exporta el grafo entero y no solo lo que cabe en pantalla, que
+   * es lo que se quiere para pegarlo en un acta: nadie quiere el encuadre
+   * accidental en el que estuviera la cámara. El fondo se pinta explícitamente
+   * porque un PNG transparente sobre un documento blanco deja el texto claro
+   * invisible.
+   */
+  const exportarImagen = useCallback(() => {
+    const cy = cyRef.current;
+    if (!cy) return;
+    const fondo = getComputedStyle(document.body).backgroundColor || '#0e1120';
+    const datos = cy.png({ full: true, scale: 2, bg: fondo });
+    const enlace = document.createElement('a');
+    enlace.href = datos;
+    enlace.download = `${titulo.replace(/[^\p{L}\p{N}]+/gu, '-').toLowerCase()}-mapa.png`;
+    enlace.click();
+  }, [titulo]);
 
   // Instancia única. El array de dependencias vacío es deliberado y esencial.
   useEffect(() => {
@@ -203,18 +261,48 @@ export function StarMap({ projection, selectedId, onSelect, highContrast }: Prop
       ),
     );
 
-    // `fit` encuadra todo el grafo, y con muchos nodos eso significa alejarse
-    // tanto que las etiquetas dejan de leerse. Se pone un suelo al zoom y se deja
-    // que el docente desplace: prefiere ver menos y entenderlo que verlo todo y
-    // no leer nada.
+    /**
+     * Encuadre al terminar el reparto.
+     *
+     * El `fit` del propio layout no basta: al cambiar de nivel dejaba la cámara
+     * donde estaba, y se llegaba al nivel de currículo al 91 % de zoom viendo un
+     * puñado de nodos del centro, sin ninguna pista de que alrededor había un
+     * anillo de ocho materias. Se encuadra aquí, explícitamente, y se sincroniza
+     * la barra con el resultado.
+     *
+     * El suelo de zoom —por debajo del cual las etiquetas no se leen— no se
+     * aplica en el nivel de currículo: ahí la forma del conjunto **es** la
+     * información, y para leer una etiqueta concreta están la barra y la
+     * pantalla completa.
+     */
+    /**
+     * `vigente` cancela el encuadre de un reparto que ya no manda.
+     *
+     * Cambiar de nivel lanza un layout nuevo mientras el anterior puede seguir
+     * animando. Sin esta bandera, el `layoutstop` del nivel viejo se ejecutaba
+     * **después** del encuadre del nuevo y aplicaba el suelo de zoom de otro
+     * nivel: por eso el mapa de currículo aparecía al 62 % en vez de encuadrado.
+     * El síntoma parecía del cálculo de posiciones y era del ciclo de vida.
+     */
+    let vigente = true;
+
     layout.one('layoutstop', () => {
-      if (cy.zoom() < MIN_LEGIBLE_ZOOM) {
-        cy.zoom({ level: MIN_LEGIBLE_ZOOM, renderedPosition: { x: 0, y: 0 } });
+      if (!vigente) return;
+      cy.fit(cy.elements(), 60);
+      const suelo = projection.level === 'CURRICULO' ? MIN_ZOOM : MIN_LEGIBLE_ZOOM;
+      if (cy.zoom() < suelo) {
+        cy.zoom(suelo);
         cy.center();
       }
+      setZoom(cy.zoom());
     });
 
     layout.run();
+
+    return () => {
+      vigente = false;
+      layout.stop();
+    };
   }, [elements, projection]);
 
   // El resaltado va por clases, nunca modificando el estilo de cada elemento.
@@ -259,11 +347,19 @@ export function StarMap({ projection, selectedId, onSelect, highContrast }: Prop
     } else if (evento.key === '0') {
       evento.preventDefault();
       encuadrar();
+    } else if (evento.key === 'f' || evento.key === 'F') {
+      evento.preventDefault();
+      alternarPantallaCompleta();
     }
   }
 
   return (
-    <div className="relative flex flex-col gap-2">
+    <div
+      ref={shellRef}
+      className={`relative flex flex-col gap-2 ${
+        pantallaCompleta ? 'h-screen bg-cielo-900 p-3' : ''
+      }`}
+    >
       <MapNavigation
         zoom={zoom}
         minZoom={MIN_ZOOM}
@@ -271,6 +367,9 @@ export function StarMap({ projection, selectedId, onSelect, highContrast }: Prop
         onZoom={irA}
         onFit={encuadrar}
         onCenterSelection={centrarSeleccion}
+        onFullscreen={alternarPantallaCompleta}
+        onExport={exportarImagen}
+        enPantallaCompleta={pantallaCompleta}
         haySeleccion={selectedId !== null}
       />
       <div
@@ -279,7 +378,13 @@ export function StarMap({ projection, selectedId, onSelect, highContrast }: Prop
         aria-label="Mapa estelar del proyecto. El mismo contenido, navegable por teclado, está en la pestaña de Trazabilidad."
         tabIndex={0}
         onKeyDown={alPulsarTecla}
-        className="h-[600px] w-full rounded border border-cielo-600 bg-cielo-950"
+        className={`w-full rounded border border-cielo-600 bg-cielo-950 ${
+          // Alto en proporción a la ventana y no en píxeles fijos: el nivel de
+          // currículo dibuja un anillo de varios miles de unidades y en 600 px
+          // se veía como una miniatura. El mínimo evita que en una ventana baja
+          // el lienzo quede reducido a una franja inservible.
+          pantallaCompleta ? 'min-h-0 flex-1' : 'h-[72vh] min-h-[520px]'
+        }`}
       />
       <p className="mt-2 text-xs text-tinta-500">
         {projection.nodes.length} nodos y {projection.edges.length} conexiones. Rueda para acercar,

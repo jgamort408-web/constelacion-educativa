@@ -87,7 +87,15 @@ export const useAppStore = create<AppState>((set, get) => ({
         status: 'listo',
         snapshot,
         findings: validateSnapshot(snapshot),
-        selectedId: snapshot.activities[0]?.id ?? null,
+        /*
+         * Se abre sin nada seleccionado.
+         *
+         * Antes se preseleccionaba la primera actividad, y como seleccionar
+         * atenúa todo lo que no se relaciona con lo elegido, el mapa aparecía
+         * apagado antes de que nadie hubiera pulsado nada: parecía una
+         * aplicación rota, no un mapa a la espera.
+         */
+        selectedId: null,
       });
     } catch (cause) {
       set({

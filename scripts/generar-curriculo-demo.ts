@@ -20,8 +20,15 @@ const RAIZ = join(dirname(fileURLToPath(import.meta.url)), '..');
 const ORIGEN = join(RAIZ, 'public', 'curriculo', 'eso-andalucia-orden-2023.json');
 const DESTINO = join(RAIZ, 'src', 'data', 'demo', 'curriculo-demo.json');
 
-/** Las tres materias del proyecto de ejemplo, en 1.º de ESO. */
-const MATERIAS = ['MAT', 'GEH', 'LCL'];
+/**
+ * Las materias del proyecto de ejemplo: **todas las de 1.º de ESO**.
+ *
+ * No es una selección: son las ocho que la Orden desarrolla para primer curso.
+ * Física y Química, Tecnología y Digitalización y Educación en Valores Cívicos y
+ * Éticos no aparecen porque en Andalucía no se cursan en 1.º, y el propio
+ * catálogo lo confirma: no tienen ni una competencia con tramo de primer curso.
+ */
+const MATERIAS = ['BYG', 'EFI', 'EPV', 'GEH', 'LCL', 'LEX', 'MAT', 'MUS'];
 const CURSO = 1;
 
 interface Elemento {
@@ -29,7 +36,7 @@ interface Elemento {
   officialCode: string | null;
   subjectId: string;
   curriculumVersionId: string;
-  gradeSpan?: { from: number; to: number };
+  gradeSpan?: { from: number; to: number } | null;
   [clave: string]: unknown;
 }
 
@@ -47,17 +54,20 @@ const catalogo = JSON.parse(readFileSync(ORIGEN, 'utf8')) as Catalogo;
 const materias = catalogo.subjects.filter((m) => MATERIAS.includes(m.corto));
 const idsMateria = new Set(materias.map((m) => m.id));
 
-const deCurso = (codigo: string | null): boolean =>
-  codigo !== null && codigo.split('.')[1] === String(CURSO);
-
 const competencies = catalogo.competencies.filter(
   (c) => idsMateria.has(c.subjectId) && c.gradeSpan?.from === CURSO,
 );
+
+// El criterio no declara curso: lo hereda de su competencia. Filtrarlo por su
+// propio código funcionaría en Andalucía, donde el código lo lleva dentro, pero
+// se rompería con cualquier otra fuente. Se filtra por la competencia, que es
+// donde el curso está afirmado de verdad.
+const idsCompetencia = new Set(competencies.map((c) => c.id));
 const evaluationCriteria = catalogo.evaluationCriteria.filter(
-  (c) => idsMateria.has(c.subjectId) && deCurso(c.officialCode),
+  (c) => idsMateria.has(c.subjectId) && idsCompetencia.has(c.competencyId as string),
 );
 const basicKnowledge = catalogo.basicKnowledge.filter(
-  (c) => idsMateria.has(c.subjectId) && deCurso(c.officialCode),
+  (c) => idsMateria.has(c.subjectId) && c.gradeSpan?.from === CURSO,
 );
 
 const versiones = new Set([

@@ -23,6 +23,11 @@ const FORBIDDEN_IMPORTS: Record<string, { packages: string[]; reason: string }> 
     packages: ['react', 'react-dom', 'cytoscape', 'cytoscape-fcose'],
     reason: 'La capa de datos no dibuja nada. Solo persiste.',
   },
+  reports: {
+    packages: ['react', 'react-dom', 'dexie', 'cytoscape', 'cytoscape-fcose', 'zustand'],
+    reason:
+      'Un informe se calcula, no se pinta. Mantenerlo puro es lo que permite probar que la semana 3 contiene lo que dice sin abrir un navegador, y lo que dejaría generarlo en un servidor el día que haga falta.',
+  },
   components: {
     packages: ['dexie', 'cytoscape'],
     reason:

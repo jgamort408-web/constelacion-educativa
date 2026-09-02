@@ -1,5 +1,4 @@
 import type { ProjectSnapshot, Uuid } from '@/domain';
-import { buildDemoSnapshot } from './demo/barrio.ts';
 import type { ProjectRepository } from './repository.ts';
 
 /**
@@ -27,6 +26,11 @@ export async function seedIfEmpty(repository: ProjectRepository): Promise<Uuid |
     return mostRecent?.id ?? null;
   }
 
+  // Importación diferida a propósito. El ejemplo arrastra el currículo de 1.º de
+  // ESO entero —trescientos kilobytes de criterios reales— y solo hace falta la
+  // primerísima vez. Estático, todo el que ya tiene su proyecto lo descargaría
+  // en cada visita para no usarlo jamás.
+  const { buildDemoSnapshot } = await import('./demo/ejemplo.ts');
   const demo = buildDemoSnapshot();
   await repository.save(demo);
   return demo.project.id;

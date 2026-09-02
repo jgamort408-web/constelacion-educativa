@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { buildDemoSnapshot } from '@/data';
+import { buildDemoSnapshot } from '@/data/demo/ejemplo.ts';
 import { highlightFor, project, SEMANTIC_LEVELS } from './projection.ts';
 
 /**
@@ -40,10 +40,12 @@ describe('niveles semánticos', () => {
     expect(situations).toHaveLength(snapshot.learningSituations.length);
   });
 
-  it('el nivel de actividades incluye las catorce y el producto final', () => {
+  it('el nivel de actividades incluye todas y los productos finales', () => {
     const { nodes } = project(snapshot, 'ACTIVIDADES');
     expect(nodes.filter((n) => n.type === 'ACTIVIDAD')).toHaveLength(snapshot.activities.length);
-    expect(nodes.filter((n) => n.type === 'PRODUCTO_FINAL')).toHaveLength(1);
+    expect(nodes.filter((n) => n.type === 'PRODUCTO_FINAL')).toHaveLength(
+      snapshot.finalProducts.length,
+    );
   });
 
   it('el nivel de currículo trae criterios y saberes', () => {
@@ -56,7 +58,7 @@ describe('niveles semánticos', () => {
     );
   });
 
-  it('el nivel de sesiones trae las treinta y una sesiones', () => {
+  it('el nivel de sesiones trae todas las sesiones', () => {
     const { nodes } = project(snapshot, 'SESIONES');
     expect(nodes.filter((n) => n.type === 'SESION')).toHaveLength(snapshot.sessions.length);
   });

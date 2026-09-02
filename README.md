@@ -20,7 +20,13 @@ sin instalar nada, con un proyecto de ejemplo cargado.
 
 - **Mapa estelar interactivo** con cinco niveles de zoom semántico: del proyecto completo a
   las sesiones concretas de cada materia. Pulsar un nodo enciende sus relaciones y atenúa el
-  resto.
+  resto. Cada materia ocupa su propio territorio alrededor de las actividades, sin pisar a
+  las demás; se abre a pantalla completa y se descarga como imagen.
+- **Currículo acotado al curso**: se elige el curso una vez y vale para el mapa, el
+  catálogo y los informes. Un docente de 1.º no ve criterios de 3.º entre los suyos.
+- **Informes en texto, listos para imprimir**: el programa completo, lo que le toca a cada
+  materia y **qué toca cada semana**, con sus horas, sus materiales y los avisos de lo que
+  otra materia tiene que haber terminado antes. Se exporta a PDF desde el navegador.
 - **Trazabilidad en ambos sentidos**: de una actividad a los criterios que desarrolla, y de
   un criterio a todas las actividades donde se trabaja. Incluye la cadena completa de
   prerrequisitos.
@@ -74,12 +80,21 @@ El mapa de ambas fuentes, con sus trampas verificadas, está en
 
 ## El proyecto de ejemplo
 
-**«Cartografía sonora de nuestro barrio»** — 1.º de ESO, cinco semanas, tres materias.
-El alumnado recorre su barrio grabando cómo suena, mide el ruido, lo cartografía y lo
-cuenta en público. Geografía levanta el mapa, Matemáticas lo mide y Lengua lo convierte
-en discurso.
+**«El entorno que habitamos»** — 1.º de ESO, ocho semanas, dos situaciones de aprendizaje y
+**las ocho materias que la Orden desarrolla para primer curso**. No es una selección: Física
+y Química, Tecnología y Digitalización y Educación en Valores no aparecen porque en
+Andalucía no se cursan en 1.º, y el propio catálogo importado lo confirma.
 
-Usa criterios reales de la Orden de 30 de mayo de 2023, con sus códigos citables.
+- **Cartografía sonora de nuestro barrio.** El alumnado recorre su barrio grabando cómo
+  suena, mide el ruido, lo cartografía, lo dibuja y lo cuenta en público. Geografía,
+  Matemáticas, Música, Plástica y Lengua.
+- **Un patio que respira.** El patio como objeto de estudio y de decisión: qué vive en él,
+  cuánto mide, quién lo ocupa y quién no. Biología, Matemáticas, Educación Física, Inglés y
+  Lengua.
+
+Las dos se solapan en el calendario y comparten materias, que es cuando el informe semanal
+y las alertas de dependencia empiezan a valer para algo. Criterios reales de la Orden de 30
+de mayo de 2023, con sus códigos citables.
 
 ## Empezar
 
@@ -119,7 +134,8 @@ src/
   domain/     Entidades, esquemas Zod y funciones puras. El núcleo reutilizable.
   data/       Interfaz ProjectRepository e implementación sobre IndexedDB.
   graph/      Proyección del dominio a Cytoscape: niveles, estilos, iconos, layouts.
-  features/   Rebanadas verticales: map/ curriculum/ matrix/ alerts/ traceability/
+  reports/    Proyección del dominio a texto: programa, reparto por materia, semanas.
+  features/   Rebanadas verticales: map/ reports/ curriculum/ matrix/ alerts/ traceability/
   components/ Interfaz reutilizable, sin conocimiento del dominio.
   ai/         Contrato del futuro copiloto. Sin llamadas reales en la v0.1.
 ```
